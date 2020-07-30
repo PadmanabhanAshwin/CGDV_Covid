@@ -8,6 +8,12 @@ File Name | Description | Notes |
 --- | --- | --- | --- |--- |
 BSE_in_2020 | Movement of Bombay Stock exchange | NA |  
 
+| File Name        | Description           | Notes  |
+| ------------- |:-------------:| -----:|
+| BSE_in_2020     | Movement of Bombay Stock exchange | NA |
+|       | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 ## Visualizations
 
 TBD
