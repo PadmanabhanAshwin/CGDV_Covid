@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 /Users/ashwinpadmanabhan/Desktop/PostGrad/CGDV_Covid/data/risk_india
+/.DS_Store
 __pycache__/
 *.py[cod]
 *$py.class
