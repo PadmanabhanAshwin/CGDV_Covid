@@ -8,8 +8,7 @@ Storytelling using Visualizations for showcasing economic impact of COVID19 viru
 | File Name        | Description           | Notes  |
 | ------------- |:-------------:| -----:|
 | BSE_in_2020     | Movement of Bombay Stock exchange | NA |
-|       | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| covid_case_death_counts      | Deaths/Cases in relevant countries      |   NA |
 
 ## Visualizations
 
