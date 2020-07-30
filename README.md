@@ -4,9 +4,6 @@ Storytelling using Visualizations for showcasing economic impact of COVID19 viru
 
 ## Data Sources
 
-File Name | Description | Notes | 
---- | --- | --- | --- |--- |
-BSE_in_2020 | Movement of Bombay Stock exchange | NA |  
 
 | File Name        | Description           | Notes  |
 | ------------- |:-------------:| -----:|
