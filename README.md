@@ -6,7 +6,7 @@ Storytelling using Visualizations for showcasing economic impact of COVID19 viru
 
 
 | File Name        | Description           | Notes    | Source.  |
-| ------------- |.  -------------    | -----:| -----:|
+| ------------- |-------------| -----:| -----:|
 | BSE_in_2020     | Movement of Bombay Stock exchange     | NA.    | https://www.bseindia.com/Indices/IndexArchiveData.html.   |
 | covid_case_death_counts      | Deaths/Cases in relevant countries      |   NA     |    Unknown (to find)    |
 | owid-covid-data      |   General Data on Covid throughout the world    |   NA     |  https://ourworldindata.org/coronavirus.   |
