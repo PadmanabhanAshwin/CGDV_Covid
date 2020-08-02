@@ -13,14 +13,20 @@
   <body>
     <div class="container">
       <div class="arrow arrow-left" onclick="plusDivs(-1)">
-          &#10094;
+          <i class="fas fa-angle-left fa-2x"></i>
       </div>
       <div class="arrow arrow-right" onclick="plusDivs(1)">
-          &#10095;
+          <i class="fas fa-angle-right fa-2x"></i>
       </div>
 
       <div class="mySlides content animate-fading">
-          <h1> Slide 1 </h1>
+          <h1 style="margin-bottom:20px;"> TODAY'S HEADLINE PANDEMIC HITS </h1>
+          <img src="images/sample_image.jpg" style="width: 350px; height: 350px; margin:0px 20px auto 0px; float:left;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum vitae mi sed scelerisque. Duis in risus et sem rutrum cursus id non ex. Sed vel dolor ullamcorper, hendrerit orci et, dictum erat. Quisque auctor rutrum bibendum. Curabitur pellentesque erat nisi, sed vestibulum purus laoreet non. Cras elementum, lectus eu facilisis hendrerit, orci arcu vestibulum sem, eget elementum arcu mi vitae nisl. Sed eget dui in ligula bibendum blandit.
+
+Praesent vel facilisis elit. Proin eu ipsum at nibh gravida aliquam. Phasellus arcu elit, luctus sed facilisis nec, egestas vitae enim. Duis congue eros vitae ex ornare dignissim. Aliquam vel quam malesuada, malesuada dui sed, vulputate risus. Nam ac dui nec nisi laoreet ultrices. Aenean a congue leo, nec porta turpis. Fusce ac faucibus sapien. Sed sit amet blandit diam. Suspendisse potenti. Sed lacinia vitae ex eget posuere. Aliquam erat volutpat. In volutpat felis rutrum leo pharetra, nec ultrices velit sodales. Duis posuere nibh sed tortor consectetur, eu tristique est bibendum.
+
+Etiam gravida auctor nisl, sit amet luctus lacus ultricies eget. Donec placerat ultrices rutrum. Maecenas arcu urna, eleifend et orci non, hendrerit ullamcorper urna.</p>
       </div>
 
       <div class="mySlides content animate-fading">
@@ -32,9 +38,9 @@
       </div>
 
       <div class="slider-nav">
-        <span class="badge demo" onclick="currentDiv(1)"></span>
-        <span class="badge demo" onclick="currentDiv(2)"></span>
-        <span class="badge demo" onclick="currentDiv(3)"></span>
+        <span class="dot demo" onclick="currentDiv(1)"> </span>
+        <span class="dot demo" onclick="currentDiv(2)"> </span>
+        <span class="dot demo" onclick="currentDiv(3)"> </span>
       </div>
     </div>
   <script src="script.js"> </script>

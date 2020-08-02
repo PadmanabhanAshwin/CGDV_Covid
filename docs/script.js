@@ -19,8 +19,8 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("badge-select", "");
+    dots[i].className = dots[i].className.replace("dot-select", "");
   }
   x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " badge-select";
+  dots[slideIndex-1].className += " dot-select";
 }
