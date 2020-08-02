@@ -13,6 +13,8 @@ Storytelling using Visualizations for showcasing economic impact of COVID19 viru
 | death_count_county      |   USA country death rate data      |   Not relevant, but of interest as a concept     |  NA.   |
 | unemployment      |   Unemployment rates in India.    |   Monthly from Aug 19 to Jun 20.   |  NA| https://tradingeconomics.com/india/unemployment-rate.   |
 | age_gender_india      |   Age/Gender distribution in India  by state     |     NA.      | https://tradingeconomics.com/india/unemployment-rate.    |
+| age_gender_bangla      |   Age/Gender distribution in Bangladesh  aggregate     |     Census 2011      |  WIKIPEDIA,  https://unstats.un.org/unsd/demographic/products/dyb/dyb2013/Table07.pdf  |
+| age_gender_brasil      |   Age/Gender distribution in Brazil  aggregate     |     NA      |  https://www.cia.gov/library/publications/the-world-factbook/fields/341.html  |
 
 
 
