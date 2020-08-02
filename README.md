@@ -1,14 +1,19 @@
 # CGDV- COVID Data Visualization 
 
-Storytelling using Visualizations for showcasing economic impact of COVID19 virus in Indian Subcontinent, Egypt, Brazil and Indonesia. 
+Storytelling using Visualizations for showcasing economic impact of COVID19 virus in the Indian Subcontinent, Egypt, Brazil and Indonesia. 
 
 ## Data Sources
 
 
-| File Name        | Description           | Notes  |
+| File Name        | Description           | Notes  | Source
 | ------------- |:-------------:| -----:|
-| BSE_in_2020     | Movement of Bombay Stock exchange | NA |
+| BSE_in_2020     | Movement of Bombay Stock exchange | NA | https://www.bseindia.com/Indices/IndexArchiveData.html
 | covid_case_death_counts      | Deaths/Cases in relevant countries      |   NA |
+| owid-covid-data      |   General Data on Covid throughout the world    |   NA |  https://ourworldindata.org/coronavirus
+| death_count_county      |   USA country death rate data   |   Not relevant, but of interest as a concept |  NA|
+| unemployment      |   Unemployment rates in India   |   Monthly from Aug 19 to Jun 20|  NA| https://tradingeconomics.com/india/unemployment-rate|
+
+
 
 ## Visualizations
 
