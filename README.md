@@ -20,6 +20,7 @@ Storytelling using Visualizations for showcasing economic impact of COVID19 viru
 | age_gender_egypt     |   Age/Gender distribution in Egypt      |     NA      |  https://www.cia.gov/library/publications/the-world-factbook/fields/341.html |
 | age_gender_lanka     |   Age/Gender distribution in Sri Lanka      |     NA      |  https://www.cia.gov/library/publications/the-world-factbook/fields/341.html |
 | routes.txt     |   International flight traffic      |     Cols: Airline, AirlineID, Source, SourceID, Dest, DestID, CodeShare, Stops, Equip      |  https://openflights.org/data.html |
+| pop_density	    |   Population Density by Lat/Lon      |     ASCII, GeoTiff format.     |  https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density-rev11/data-download |
 
 
 
