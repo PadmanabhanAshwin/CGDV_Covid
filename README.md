@@ -23,6 +23,11 @@ Storytelling using Visualizations for showcasing economic impact of COVID19 viru
 | pop_density	    |   Population Density by Lat/Lon      |     ASCII, GeoTiff format.     |  https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density-rev11/data-download |
 | hospital_beds	    |   Timeseries of hospital beds by country     |     NA     | WHO https://apps.who.int/gho/data/view.main.HS07v     |
 | health_infra	    |   Health Infrastructure, Types of hospitals by country     |     NA     | WHO https://apps.who.int/gho/data/view.main.30000     |
+| positive_rate	    |   Positivity rate by country     |     NA     | https://ourworldindata.org/coronavirus-testing     |
+| testing	    |   testing by country     |     NA     | https://ourworldindata.org/grapher/full-list-total-tests-for-covid-19     |
+
+
+
 
 
 
