@@ -1,1485 +1,1485 @@
-﻿PEOPLE_POSITIVE_CASES_COUNT,COUNTY_NAME,PROVINCE_STATE_NAME,REPORT_DATE,CONTINENT_NAME,DATA_SOURCE_NAME,PEOPLE_DEATH_NEW_COUNT,COUNTY_FIPS_NUMBER,COUNTRY_ALPHA_3_CODE,COUNTRY_SHORT_NAME,COUNTRY_ALPHA_2_CODE,PEOPLE_POSITIVE_NEW_CASES_COUNT,PEOPLE_DEATH_COUNT
-86521,,,7/20/20,Asia,European Centre for Disease Prevention and Control,127,,IDN,Indonesia,ID,1639,4143
-2956,,,4/9/20,Asia,European Centre for Disease Prevention and Control,19,,IDN,Indonesia,ID,218,240
-14265,,,5/12/20,Asia,European Centre for Disease Prevention and Control,18,,IDN,Indonesia,ID,233,991
-0,,,1/13/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-63749,,,7/6/20,Asia,European Centre for Disease Prevention and Control,82,,IDN,Indonesia,ID,1607,3171
-0,,,1/10/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,2/9/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,2/13/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-83930,,,7/15/20,Africa,European Centre for Disease Prevention and Control,73,,EGY,Egypt,EG,929,4008
-15,,,3/7/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,12,0
-1,,,2/27/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-65188,,,6/29/20,Africa,European Centre for Disease Prevention and Control,81,,EGY,Egypt,EG,1265,2789
-77279,,,7/8/20,Africa,European Centre for Disease Prevention and Control,67,,EGY,Egypt,EG,1057,3489
-0,,,1/7/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/17/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-1,,,2/24/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-2724,,,7/20/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,20,11
-166,,,4/6/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,7,5
-1801,,,6/6/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,4,11
-115,,,3/29/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,9,1
-869,,,5/12/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,6,9
-0,,,1/10/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,2/16/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-27474,,,5/9/20,Asia,European Centre for Disease Prevention and Control,24,,PAK,Pakistan,PK,1637,618
-887,,,3/24/20,Asia,European Centre for Disease Prevention and Control,1,,PAK,Pakistan,PK,103,6
-64028,,,5/29/20,Asia,European Centre for Disease Prevention and Control,57,,PAK,Pakistan,PK,2801,1317
-3864,,,4/7/20,Asia,European Centre for Disease Prevention and Control,4,,PAK,Pakistan,PK,587,54
-259999,,,7/17/20,Asia,European Centre for Disease Prevention and Control,49,,PAK,Pakistan,PK,2085,5475
-0,,,1/28/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,2/3/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-2037,,,6/29/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,4,11
-61888,,,4/27/20,America,European Centre for Disease Prevention and Control,189,,BRA,Brazil,BR,3379,4205
-1344143,,,6/29/20,America,European Centre for Disease Prevention and Control,552,,BRA,Brazil,BR,30476,57622
-0,,,2/2/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/25/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/8/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,12/31/19,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/1/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/2/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/3/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/4/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/5/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-5,,,3/17/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,2,0
-51,,,4/1/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,2,5
-4319,,,4/26/20,Africa,European Centre for Disease Prevention and Control,13,,EGY,Egypt,EG,227,307
-13484,,,5/20/20,Africa,European Centre for Disease Prevention and Control,14,,EGY,Egypt,EG,720,659
-87172,,,7/19/20,Africa,European Centre for Disease Prevention and Control,63,,EGY,Egypt,EG,698,4251
-1,,,2/22/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,2/27/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-106,,,3/28/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-2054,,,7/2/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,7,11
-143,,,4/2/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,21,2
-992,,,5/19/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,11,9
-420,,,4/25/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,52,7
-1,,,2/11/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1469,,,5/28/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,150,10
-1905,,,6/16/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,16,11
-0,,,2/25/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-4,,,3/3/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-103671,,,6/8/20,Asia,European Centre for Disease Prevention and Control,65,,PAK,Pakistan,PK,4728,2067
-21,,,3/13/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,1,0
-0,,,1/31/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-923189,,,6/17/20,America,European Centre for Disease Prevention and Control,1282,,BRA,Brazil,BR,34918,45241
-66501,,,4/28/20,America,European Centre for Disease Prevention and Control,338,,BRA,Brazil,BR,4613,4543
-135106,,,5/8/20,America,European Centre for Disease Prevention and Control,610,,BRA,Brazil,BR,9888,9146
-1839850,,,7/12/20,America,European Centre for Disease Prevention and Control,1071,,BRA,Brazil,BR,39023,71469
-1603055,,,7/6/20,America,European Centre for Disease Prevention and Control,602,,BRA,Brazil,BR,26051,64867
-0,,,1/6/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/7/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/8/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/9/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/10/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/11/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/12/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/13/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/14/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/15/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/16/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-4186,,,4/24/20,Asia,European Centre for Disease Prevention and Control,7,,BGD,Bangladesh,BD,414,127
-56,,,4/3/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,2,6
-0,,,2/18/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,3/3/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-186894,,,7/14/20,Asia,European Centre for Disease Prevention and Control,39,,BGD,Bangladesh,BD,3099,2391
-226225,,,7/28/20,Asia,European Centre for Disease Prevention and Control,37,,BGD,Bangladesh,BD,2772,2965
-3,,,3/13/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-3659,,,4/24/20,Africa,European Centre for Disease Prevention and Control,12,,EGY,Egypt,EG,169,276
-4319,,,4/27/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,307
-5042,,,4/29/20,Africa,European Centre for Disease Prevention and Control,22,,EGY,Egypt,EG,260,359
-22082,,,5/30/20,Africa,European Centre for Disease Prevention and Control,34,,EGY,Egypt,EG,1289,879
-0,,,1/27/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/12/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/18/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,12/31/19,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-1145906,,,6/24/20,America,European Centre for Disease Prevention and Control,1374,,BRA,Brazil,BR,39436,52645
-11130,,,4/6/20,America,European Centre for Disease Prevention and Control,54,,BRA,Brazil,BR,852,486
-1755779,,,7/10/20,America,European Centre for Disease Prevention and Control,1220,,BRA,Brazil,BR,42619,69184
-40581,,,4/21/20,America,European Centre for Disease Prevention and Control,113,,BRA,Brazil,BR,1927,2575
-1884967,,,7/14/20,America,European Centre for Disease Prevention and Control,733,,BRA,Brazil,BR,20286,72833
-0,,,2/6/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/17/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/18/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/19/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/20/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/21/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/22/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/23/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-10,,,3/20/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-168645,,,7/8/20,Asia,European Centre for Disease Prevention and Control,55,,BGD,Bangladesh,BD,3027,2151
-0,,,2/4/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/24/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-2770,,,7/26/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,6,11
-889,,,5/13/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,20,9
-2617,,,7/13/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,106,11
-1,,,2/20/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-2687,,,7/17/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,13,11
-1683,,,6/3/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,40,11
-197,,,4/11/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,7,7
-1,,,2/2/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-273113,,,7/26/20,Asia,European Centre for Disease Prevention and Control,35,,PAK,Pakistan,PK,1226,5822
-4072,,,4/8/20,Asia,European Centre for Disease Prevention and Control,4,,PAK,Pakistan,PK,208,58
-5,,,3/6/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-5716,,,4/14/20,Asia,European Centre for Disease Prevention and Control,3,,PAK,Pakistan,PK,342,96
-2,,,2/27/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,2,0
-267428,,,7/22/20,Asia,European Centre for Disease Prevention and Control,38,,PAK,Pakistan,PK,1332,5677
-0,,,2/1/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,2/9/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/6/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/1/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-40400,,,6/17/20,Asia,European Centre for Disease Prevention and Control,33,,IDN,Indonesia,ID,1106,2231
-22750,,,5/26/20,Asia,European Centre for Disease Prevention and Control,19,,IDN,Indonesia,ID,479,1391
-0,,,2/18/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-29521,,,6/6/20,Asia,European Centre for Disease Prevention and Control,49,,IDN,Indonesia,ID,703,1770
-6,,,3/10/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-56385,,,7/1/20,Asia,European Centre for Disease Prevention and Control,71,,IDN,Indonesia,ID,1293,2876
-14032,,,5/11/20,Asia,European Centre for Disease Prevention and Control,14,,IDN,Indonesia,ID,387,973
-74018,,,7/12/20,Asia,European Centre for Disease Prevention and Control,66,,IDN,Indonesia,ID,1671,3535
-0,,,12/31/19,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-3490,,,4/23/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,264
-285,,,3/22/20,Africa,European Centre for Disease Prevention and Control,1,,EGY,Egypt,EG,29,8
-2,,,3/5/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-294,,,3/23/20,Africa,European Centre for Disease Prevention and Control,2,,EGY,Egypt,EG,9,10
-609,,,3/31/20,Africa,European Centre for Disease Prevention and Control,4,,EGY,Egypt,EG,33,40
-0,,,1/19/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-2118646,,,7/21/20,America,European Centre for Disease Prevention and Control,632,,BRA,Brazil,BR,20257,80120
-0,,,2/16/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-145328,,,5/9/20,America,European Centre for Disease Prevention and Control,751,,BRA,Brazil,BR,10222,9897
-3904,,,3/29/20,America,European Centre for Disease Prevention and Control,22,,BRA,Brazil,BR,487,114
-428,,,3/19/20,America,European Centre for Disease Prevention and Control,3,,BRA,Brazil,BR,137,4
-8,,,3/6/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,5,0
-0,,,1/25/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/26/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/27/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/28/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/29/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-1,,,1/30/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,1,0
-1,,,1/31/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-1,,,2/1/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-2,,,2/2/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,1,0
-221178,,,7/26/20,Asia,European Centre for Disease Prevention and Control,38,,BGD,Bangladesh,BD,2520,2874
-204525,,,7/20/20,Asia,European Centre for Disease Prevention and Control,37,,BGD,Bangladesh,BD,2459,2618
-25121,,,5/20/20,Asia,European Centre for Disease Prevention and Control,21,,BGD,Bangladesh,BD,1251,370
-122660,,,6/25/20,Asia,European Centre for Disease Prevention and Control,37,,BGD,Bangladesh,BD,3462,1582
-162417,,,7/6/20,Asia,European Centre for Disease Prevention and Control,55,,BGD,Bangladesh,BD,2738,2052
-3,,,3/14/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,2/5/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/1/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-1991,,,6/24/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,40,11
-237,,,4/16/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,4,7
-2511,,,7/12/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,57,11
-1,,,1/30/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/18/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-2078,,,7/7/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,2,11
-1950,,,6/21/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,11
-0,,,1/5/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-7025,,,4/17/20,Asia,European Centre for Disease Prevention and Control,11,,PAK,Pakistan,PK,520,135
-48091,,,5/21/20,Asia,European Centre for Disease Prevention and Control,32,,PAK,Pakistan,PK,2193,1017
-3277,,,4/6/20,Asia,European Centre for Disease Prevention and Control,15,,PAK,Pakistan,PK,827,50
-61227,,,5/28/20,Asia,European Centre for Disease Prevention and Control,35,,PAK,Pakistan,PK,2076,1260
-50694,,,5/22/20,Asia,European Centre for Disease Prevention and Control,50,,PAK,Pakistan,PK,2603,1067
-0,,,1/21/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,2/5/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-8882,,,4/27/20,Asia,European Centre for Disease Prevention and Control,23,,IDN,Indonesia,ID,275,743
-1155,,,3/29/20,Asia,European Centre for Disease Prevention and Control,15,,IDN,Indonesia,ID,109,102
-0,,,3/1/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-11192,,,5/4/20,Asia,European Centre for Disease Prevention and Control,14,,IDN,Indonesia,ID,349,845
-0,,,2/8/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-14749,,,5/13/20,Asia,European Centre for Disease Prevention and Control,16,,IDN,Indonesia,ID,484,1007
-5136,,,4/16/20,Asia,European Centre for Disease Prevention and Control,10,,IDN,Indonesia,ID,297,469
-24985,,,6/1/20,Africa,European Centre for Disease Prevention and Control,46,,EGY,Egypt,EG,1536,959
-3144,,,4/20/20,Africa,European Centre for Disease Prevention and Control,15,,EGY,Egypt,EG,112,239
-5537,,,5/1/20,Africa,European Centre for Disease Prevention and Control,12,,EGY,Egypt,EG,269,392
-19666,,,5/28/20,Africa,European Centre for Disease Prevention and Control,19,,EGY,Egypt,EG,910,816
-0,,,2/14/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-92482,,,7/28/20,Africa,European Centre for Disease Prevention and Control,46,,EGY,Egypt,EG,420,4652
-0,,,2/8/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/15/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/21/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-7588,,,5/7/20,Africa,European Centre for Disease Prevention and Control,17,,EGY,Egypt,EG,387,469
-58141,,,6/24/20,Africa,European Centre for Disease Prevention and Control,87,,EGY,Egypt,EG,1332,2365
-0,,,2/25/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-1546,,,3/23/20,America,European Centre for Disease Prevention and Control,7,,BRA,Brazil,BR,418,25
-955377,,,6/18/20,America,European Centre for Disease Prevention and Control,1269,,BRA,Brazil,BR,32188,46510
-23430,,,4/14/20,America,European Centre for Disease Prevention and Control,105,,BRA,Brazil,BR,1261,1328
-850514,,,6/14/20,America,European Centre for Disease Prevention and Control,892,,BRA,Brazil,BR,21704,42720
-2,,,2/3/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/4/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,1,0
-3,,,2/5/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/6/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/7/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/8/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,2/24/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-94481,,,6/17/20,Asia,European Centre for Disease Prevention and Control,53,,BGD,Bangladesh,BD,3862,1262
-175494,,,7/10/20,Asia,European Centre for Disease Prevention and Control,41,,BGD,Bangladesh,BD,3360,2238
-165618,,,7/7/20,Asia,European Centre for Disease Prevention and Control,44,,BGD,Bangladesh,BD,3201,2096
-108775,,,6/21/20,Asia,European Centre for Disease Prevention and Control,37,,BGD,Bangladesh,BD,3240,1425
-3,,,3/12/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-3,,,3/16/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-3,,,3/9/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,3,0
-42844,,,5/30/20,Asia,European Centre for Disease Prevention and Control,23,,BGD,Bangladesh,BD,2523,582
-2273,,,4/6/20,Asia,European Centre for Disease Prevention and Control,7,,IDN,Indonesia,ID,181,198
-102051,,,7/29/20,Asia,European Centre for Disease Prevention and Control,63,,IDN,Indonesia,ID,1748,4901
-10843,,,5/3/20,Asia,European Centre for Disease Prevention and Control,31,,IDN,Indonesia,ID,292,831
-1986,,,4/4/20,Asia,European Centre for Disease Prevention and Control,11,,IDN,Indonesia,ID,196,181
-1285,,,3/30/20,Asia,European Centre for Disease Prevention and Control,12,,IDN,Indonesia,ID,130,114
-57770,,,7/2/20,Asia,European Centre for Disease Prevention and Control,58,,IDN,Indonesia,ID,1385,2934
-37420,,,6/14/20,Asia,European Centre for Disease Prevention and Control,43,,IDN,Indonesia,ID,1014,2091
-0,,,1/23/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-1633,,,6/1/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,13,10
-1,,,3/11/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-2810,,,7/29/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,5,11
-1,,,2/25/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-690,,,5/2/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,25,7
-824,,,5/8/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,27,9
-981,,,5/18/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,21,9
-6505,,,4/16/20,Asia,European Centre for Disease Prevention and Control,17,,PAK,Pakistan,PK,517,124
-5,,,3/4/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,1,0
-0,,,2/14/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,2/6/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/22/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-43966,,,5/19/20,Asia,European Centre for Disease Prevention and Control,36,,PAK,Pakistan,PK,1841,939
-1,,,2/26/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-38284,,,6/11/20,Africa,European Centre for Disease Prevention and Control,36,,EGY,Egypt,EG,1455,1342
-0,,,2/6/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,2/19/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-2343366,,,7/25/20,America,European Centre for Disease Prevention and Control,1156,,BRA,Brazil,BR,55891,85238
-9056,,,4/4/20,America,European Centre for Disease Prevention and Control,60,,BRA,Brazil,BR,1146,359
-2442375,,,7/28/20,America,European Centre for Disease Prevention and Control,614,,BRA,Brazil,BR,23284,87618
-241080,,,5/18/20,America,European Centre for Disease Prevention and Control,485,,BRA,Brazil,BR,7938,16118
-0,,,1/27/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-3,,,2/9/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/10/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/11/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/12/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/13/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/14/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/15/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/16/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/17/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-1012,,,4/15/20,Asia,European Centre for Disease Prevention and Control,7,,BGD,Bangladesh,BD,209,46
-61,,,4/4/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,5,6
-803,,,4/14/20,Asia,European Centre for Disease Prevention and Control,5,,BGD,Bangladesh,BD,182,39
-65769,,,6/8/20,Asia,European Centre for Disease Prevention and Control,42,,BGD,Bangladesh,BD,2743,888
-10118,,,5/1/20,Asia,European Centre for Disease Prevention and Control,8,,IDN,Indonesia,ID,347,792
-0,,,1/31/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-2,,,3/3/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,2/29/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/22/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-185,,,4/8/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,7,6
-523,,,4/27/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,61,7
-588,,,4/28/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,65,7
-1,,,1/28/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,1,0
-0,,,1/7/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-925,,,5/15/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,10,9
-24073,,,5/7/20,Asia,European Centre for Disease Prevention and Control,38,,PAK,Pakistan,PK,1523,564
-784,,,3/23/20,Asia,European Centre for Disease Prevention and Control,2,,PAK,Pakistan,PK,138,5
-1057,,,3/26/20,Asia,European Centre for Disease Prevention and Control,1,,PAK,Pakistan,PK,66,8
-148921,,,6/16/20,Asia,European Centre for Disease Prevention and Control,110,,PAK,Pakistan,PK,4443,2839
-20,,,3/12/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,4,0
-85264,,,6/4/20,Asia,European Centre for Disease Prevention and Control,82,,PAK,Pakistan,PK,4801,1770
-132405,,,6/13/20,Asia,European Centre for Disease Prevention and Control,88,,PAK,Pakistan,PK,6472,2551
-0,,,1/12/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/7/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-9216,,,4/21/20,Asia,European Centre for Disease Prevention and Control,16,,PAK,Pakistan,PK,798,192
-1,,,2/23/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-1,,,2/29/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-58141,,,6/25/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,2365
-42980,,,6/14/20,Africa,European Centre for Disease Prevention and Control,62,,EGY,Egypt,EG,1676,1484
-93,,,3/14/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,13,2
-1,,,3/1/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-374898,,,5/26/20,America,European Centre for Disease Prevention and Control,807,,BRA,Brazil,BR,11687,23473
-1623284,,,7/7/20,America,European Centre for Disease Prevention and Control,620,,BRA,Brazil,BR,20229,65487
-691758,,,6/8/20,America,European Centre for Disease Prevention and Control,525,,BRA,Brazil,BR,18921,36455
-0,,,1/12/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/11/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-3,,,2/18/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/19/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/20/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-5913,,,4/28/20,Asia,European Centre for Disease Prevention and Control,7,,BGD,Bangladesh,BD,497,152
-98489,,,6/18/20,Asia,European Centre for Disease Prevention and Control,43,,BGD,Bangladesh,BD,4008,1305
-0,,,1/13/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-3,,,2/21/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-0,,,1/25/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/2/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,3/1/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-95418,,,7/25/20,Asia,European Centre for Disease Prevention and Control,89,,IDN,Indonesia,ID,1761,4665
-2,,,3/5/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-579,,,3/24/20,Asia,European Centre for Disease Prevention and Control,1,,IDN,Indonesia,ID,65,49
-3293,,,4/10/20,Asia,European Centre for Disease Prevention and Control,40,,IDN,Indonesia,ID,337,280
-68079,,,7/9/20,Asia,European Centre for Disease Prevention and Control,50,,IDN,Indonesia,ID,1853,3359
-36406,,,6/13/20,Asia,European Centre for Disease Prevention and Control,48,,IDN,Indonesia,ID,1111,2048
-0,,,2/3/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-46845,,,6/23/20,Asia,European Centre for Disease Prevention and Control,35,,IDN,Indonesia,ID,954,2500
-0,,,2/22/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-91751,,,7/23/20,Asia,European Centre for Disease Prevention and Control,139,,IDN,Indonesia,ID,1882,4459
-0,,,2/15/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-1,,,2/29/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-120,,,3/30/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,5,1
-0,,,1/24/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/26/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,2/5/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,2/12/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-165062,,,6/19/20,Asia,European Centre for Disease Prevention and Control,136,,PAK,Pakistan,PK,4944,3229
-206512,,,6/29/20,Asia,European Centre for Disease Prevention and Control,49,,PAK,Pakistan,PK,3557,4167
-144478,,,6/15/20,Asia,European Centre for Disease Prevention and Control,97,,PAK,Pakistan,PK,5248,2729
-0,,,1/14/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/8/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-56809,,,6/23/20,Africa,European Centre for Disease Prevention and Control,85,,EGY,Egypt,EG,1576,2278
-0,,,2/12/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-9400,,,5/11/20,Africa,European Centre for Disease Prevention and Control,11,,EGY,Egypt,EG,436,525
-0,,,1/14/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-1713160,,,7/9/20,America,European Centre for Disease Prevention and Control,1223,,BRA,Brazil,BR,44571,67964
-177589,,,5/13/20,America,European Centre for Disease Prevention and Control,881,,BRA,Brazil,BR,9258,12400
-1,,,2/26/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,1,0
-162699,,,5/11/20,America,European Centre for Disease Prevention and Control,496,,BRA,Brazil,BR,6760,11123
-2,,,3/1/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,1,0
-672837,,,6/7/20,America,European Centre for Disease Prevention and Control,904,,BRA,Brazil,BR,27075,35930
-5717,,,4/1/20,America,European Centre for Disease Prevention and Control,42,,BRA,Brazil,BR,1138,201
-1668589,,,7/8/20,America,European Centre for Disease Prevention and Control,1254,,BRA,Brazil,BR,45305,66741
-0,,,1/17/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,12/31/19,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-3,,,2/22/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/23/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/24/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/25/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/26/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/27/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/28/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,2/29/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-3,,,3/1/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-11719,,,5/7/20,Asia,European Centre for Disease Prevention and Control,3,,BGD,Bangladesh,BD,790,186
-17822,,,5/14/20,Asia,European Centre for Disease Prevention and Control,19,,BGD,Bangladesh,BD,1162,269
-0,,,2/19/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-3772,,,4/23/20,Asia,European Centre for Disease Prevention and Control,10,,BGD,Bangladesh,BD,390,120
-16660,,,5/13/20,Asia,European Centre for Disease Prevention and Control,11,,BGD,Bangladesh,BD,969,250
-4689,,,4/25/20,Asia,European Centre for Disease Prevention and Control,4,,BGD,Bangladesh,BD,503,131
-12425,,,5/8/20,Asia,European Centre for Disease Prevention and Control,13,,BGD,Bangladesh,BD,706,199
-15691,,,5/12/20,Asia,European Centre for Disease Prevention and Control,11,,BGD,Bangladesh,BD,1034,239
-57563,,,6/5/20,Asia,European Centre for Disease Prevention and Control,35,,BGD,Bangladesh,BD,2423,781
-63026,,,6/7/20,Asia,European Centre for Disease Prevention and Control,35,,BGD,Bangladesh,BD,2635,846
-0,,,1/20/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,2/23/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-223453,,,7/27/20,Asia,European Centre for Disease Prevention and Control,54,,BGD,Bangladesh,BD,2275,2928
-4241,,,4/13/20,Asia,European Centre for Disease Prevention and Control,46,,IDN,Indonesia,ID,399,373
-0,,,2/21/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-18010,,,5/19/20,Asia,European Centre for Disease Prevention and Control,43,,IDN,Indonesia,ID,496,1191
-0,,,2/1/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/21/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-59394,,,7/3/20,Asia,European Centre for Disease Prevention and Control,53,,IDN,Indonesia,ID,1624,2987
-0,,,1/20/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-238,,,4/17/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,1,7
-2764,,,7/25/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,11,11
-649,,,4/30/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,30,7
-1,,,2/23/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-244,,,4/18/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,6,7
-2752,,,7/23/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,22,11
-1,,,2/28/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/14/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-29465,,,5/10/20,Asia,European Centre for Disease Prevention and Control,21,,PAK,Pakistan,PK,1991,639
-56349,,,5/25/20,Asia,European Centre for Disease Prevention and Control,34,,PAK,Pakistan,PK,1748,1167
-0,,,2/26/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-261917,,,7/18/20,Asia,European Centre for Disease Prevention and Control,47,,PAK,Pakistan,PK,1918,5522
-234509,,,7/7/20,Asia,European Centre for Disease Prevention and Control,77,,PAK,Pakistan,PK,2691,4839
-0,,,1/30/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/3/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-2419091,,,7/27/20,America,European Centre for Disease Prevention and Control,555,,BRA,Brazil,BR,24578,87004
-291,,,3/18/20,America,European Centre for Disease Prevention and Control,1,,BRA,Brazil,BR,57,1
-4256,,,3/30/20,America,European Centre for Disease Prevention and Control,22,,BRA,Brazil,BR,352,136
-2227514,,,7/23/20,America,European Centre for Disease Prevention and Control,1284,,BRA,Brazil,BR,67860,82771
-25,,,3/9/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,12,0
-0,,,1/30/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/5/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-3,,,3/2/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-5,,,3/3/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,2,0
-6,,,3/4/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,1,0
-28,,,3/5/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,22,0
-29,,,3/6/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,1,0
-156391,,,7/4/20,Asia,European Centre for Disease Prevention and Control,42,,BGD,Bangladesh,BD,3114,1968
-130474,,,6/27/20,Asia,European Centre for Disease Prevention and Control,40,,BGD,Bangladesh,BD,3868,1661
-424,,,4/11/20,Asia,European Centre for Disease Prevention and Control,6,,BGD,Bangladesh,BD,94,27
-210510,,,7/22/20,Asia,European Centre for Disease Prevention and Control,41,,BGD,Bangladesh,BD,3057,2709
-0,,,1/17/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-31,,,3/7/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,2,0
-327,,,3/24/20,Africa,European Centre for Disease Prevention and Control,4,,EGY,Egypt,EG,33,14
-1,,,2/17/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-7418,,,4/23/20,Asia,European Centre for Disease Prevention and Control,19,,IDN,Indonesia,ID,283,635
-4,,,3/7/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,2,0
-12071,,,5/6/20,Asia,European Centre for Disease Prevention and Control,8,,IDN,Indonesia,ID,484,872
-84882,,,7/19/20,Asia,European Centre for Disease Prevention and Control,59,,IDN,Indonesia,ID,1752,4016
-25216,,,5/30/20,Asia,European Centre for Disease Prevention and Control,24,,IDN,Indonesia,ID,678,1520
-790,,,3/26/20,Asia,European Centre for Disease Prevention and Control,3,,IDN,Indonesia,ID,104,58
-10551,,,5/2/20,Asia,European Centre for Disease Prevention and Control,8,,IDN,Indonesia,ID,433,800
-2674,,,7/16/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,9,11
-218,,,4/14/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,8,7
-1,,,3/1/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1814,,,6/7/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,13,11
-3,,,3/13/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,1,0
-0,,,1/27/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/8/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1141,,,5/25/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,52,9
-72460,,,6/1/20,Asia,European Centre for Disease Prevention and Control,60,,PAK,Pakistan,PK,2964,1543
-255769,,,7/15/20,Asia,European Centre for Disease Prevention and Control,66,,PAK,Pakistan,PK,2165,5386
-13328,,,4/27/20,Asia,European Centre for Disease Prevention and Control,12,,PAK,Pakistan,PK,605,281
-0,,,2/20/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-176617,,,6/21/20,Asia,European Centre for Disease Prevention and Control,119,,PAK,Pakistan,PK,4951,3501
-2450,,,4/5/20,Asia,European Centre for Disease Prevention and Control,4,,PAK,Pakistan,PK,159,35
-0,,,1/23/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-6,,,3/8/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-72711,,,7/4/20,Africa,European Centre for Disease Prevention and Control,81,,EGY,Egypt,EG,1412,3201
-1,,,2/21/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-78304,,,7/9/20,Africa,European Centre for Disease Prevention and Control,75,,EGY,Egypt,EG,1025,3564
-49219,,,6/18/20,Africa,European Centre for Disease Prevention and Control,84,,EGY,Egypt,EG,1363,1850
-0,,,1/31/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-125218,,,5/7/20,America,European Centre for Disease Prevention and Control,615,,BRA,Brazil,BR,10503,8536
-2201,,,3/25/20,America,European Centre for Disease Prevention and Control,12,,BRA,Brazil,BR,310,46
-828810,,,6/13/20,America,European Centre for Disease Prevention and Control,909,,BRA,Brazil,BR,25982,41828
-555383,,,6/3/20,America,European Centre for Disease Prevention and Control,1262,,BRA,Brazil,BR,28936,31199
-0,,,1/24/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-34,,,3/8/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,3,0
-34,,,3/9/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,0,0
-44,,,3/10/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,10,0
-50,,,3/11/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,6,0
-73,,,3/12/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,23,0
-75,,,3/13/20,Asia,European Centre for Disease Prevention and Control,1,,IND,India,IN,2,1
-0,,,3/7/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-3,,,3/11/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-8,,,3/18/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,3,0
-0,,,1/29/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/9/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/14/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,12/31/19,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-58509,,,4/26/20,America,European Centre for Disease Prevention and Control,346,,BRA,Brazil,BR,5514,4016
-83,,,3/14/20,Asia,European Centre for Disease Prevention and Control,1,,IND,India,IN,8,2
-5516,,,4/17/20,Asia,European Centre for Disease Prevention and Control,27,,IDN,Indonesia,ID,380,496
-22271,,,5/25/20,Asia,European Centre for Disease Prevention and Control,21,,IDN,Indonesia,ID,526,1372
-20162,,,5/22/20,Asia,European Centre for Disease Prevention and Control,36,,IDN,Indonesia,ID,973,1278
-0,,,2/25/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-28233,,,6/4/20,Asia,European Centre for Disease Prevention and Control,35,,IDN,Indonesia,ID,684,1698
-23851,,,5/28/20,Asia,European Centre for Disease Prevention and Control,55,,IDN,Indonesia,ID,686,1473
-0,,,1/25/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-2665,,,7/15/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,19,11
-1,,,2/18/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-102,,,3/25/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,5,0
-233,,,4/15/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,15,7
-2081,,,7/8/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,3,11
-0,,,1/22/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-45898,,,5/20/20,Asia,European Centre for Disease Prevention and Control,46,,PAK,Pakistan,PK,1932,985
-34336,,,5/13/20,Asia,European Centre for Disease Prevention and Control,31,,PAK,Pakistan,PK,2255,737
-276288,,,7/29/20,Asia,European Centre for Disease Prevention and Control,27,,PAK,Pakistan,PK,1063,5892
-66457,,,5/30/20,Asia,European Centre for Disease Prevention and Control,78,,PAK,Pakistan,PK,2429,1395
-185034,,,6/23/20,Asia,European Centre for Disease Prevention and Control,105,,PAK,Pakistan,PK,3946,3695
-10431,,,5/14/20,Africa,European Centre for Disease Prevention and Control,12,,EGY,Egypt,EG,338,556
-84843,,,7/16/20,Africa,European Centre for Disease Prevention and Control,59,,EGY,Egypt,EG,913,4067
-92947,,,7/29/20,Africa,European Centre for Disease Prevention and Control,39,,EGY,Egypt,EG,465,4691
-5268,,,4/30/20,Africa,European Centre for Disease Prevention and Control,21,,EGY,Egypt,EG,226,380
-17967,,,5/26/20,Africa,European Centre for Disease Prevention and Control,19,,EGY,Egypt,EG,702,783
-1,,,2/18/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-12764,,,5/19/20,Africa,European Centre for Disease Prevention and Control,15,,EGY,Egypt,EG,535,645
-2433,,,3/26/20,America,European Centre for Disease Prevention and Control,11,,BRA,Brazil,BR,232,57
-28320,,,4/16/20,America,European Centre for Disease Prevention and Control,204,,BRA,Brazil,BR,3058,1736
-1,,,2/27/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,2/5/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-90,,,3/15/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,7,2
-93,,,3/16/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,3,2
-125,,,3/17/20,Asia,European Centre for Disease Prevention and Control,1,,IND,India,IN,32,3
-137,,,3/18/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,12,3
-165,,,3/19/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,28,3
-191,,,3/20/20,Asia,European Centre for Disease Prevention and Control,1,,IND,India,IN,26,4
-231,,,3/21/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,40,4
-320,,,3/22/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,89,4
-439,,,3/23/20,Asia,European Centre for Disease Prevention and Control,3,,IND,India,IN,119,7
-621,,,4/13/20,Asia,European Centre for Disease Prevention and Control,4,,BGD,Bangladesh,BD,139,34
-0,,,2/12/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-141801,,,6/30/20,Asia,European Centre for Disease Prevention and Control,45,,BGD,Bangladesh,BD,4014,1783
-7667,,,5/1/20,Asia,European Centre for Disease Prevention and Control,5,,BGD,Bangladesh,BD,564,168
-38292,,,5/28/20,Asia,European Centre for Disease Prevention and Control,22,,BGD,Bangladesh,BD,1541,544
-137787,,,6/29/20,Asia,European Centre for Disease Prevention and Control,43,,BGD,Bangladesh,BD,3809,1738
-0,,,1/30/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/15/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-126606,,,6/26/20,Asia,European Centre for Disease Prevention and Control,39,,BGD,Bangladesh,BD,3946,1621
-0,,,1/10/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-330,,,4/23/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,20,7
-1,,,2/13/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-97,,,3/24/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,10,0
-2094,,,7/9/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,13,11
-1,,,2/22/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-254,,,4/19/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,10,7
-718,,,5/4/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,13,7
-12723,,,4/26/20,Asia,European Centre for Disease Prevention and Control,16,,PAK,Pakistan,PK,783,269
-246351,,,7/11/20,Asia,European Centre for Disease Prevention and Control,65,,PAK,Pakistan,PK,2752,5123
-1408,,,3/29/20,Asia,European Centre for Disease Prevention and Control,2,,PAK,Pakistan,PK,211,11
-269191,,,7/23/20,Asia,European Centre for Disease Prevention and Control,32,,PAK,Pakistan,PK,1763,5709
-1046,,,3/28/20,Asia,European Centre for Disease Prevention and Control,9,,IDN,Indonesia,ID,153,87
-80094,,,7/16/20,Asia,European Centre for Disease Prevention and Control,87,,IDN,Indonesia,ID,1522,3797
-93657,,,7/24/20,Asia,European Centre for Disease Prevention and Control,117,,IDN,Indonesia,ID,1906,4576
-7135,,,4/22/20,Asia,European Centre for Disease Prevention and Control,26,,IDN,Indonesia,ID,375,616
-3512,,,4/11/20,Asia,European Centre for Disease Prevention and Control,26,,IDN,Indonesia,ID,219,306
-10093,,,5/13/20,Africa,European Centre for Disease Prevention and Control,11,,EGY,Egypt,EG,347,544
-6465,,,5/4/20,Africa,European Centre for Disease Prevention and Control,14,,EGY,Egypt,EG,272,429
-0,,,1/5/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-16613,,,5/24/20,Africa,European Centre for Disease Prevention and Control,28,,EGY,Egypt,EG,827,735
-3417,,,3/28/20,America,European Centre for Disease Prevention and Control,15,,BRA,Brazil,BR,502,92
-45757,,,4/23/20,America,European Centre for Disease Prevention and Control,165,,BRA,Brazil,BR,2678,2906
-17857,,,4/10/20,America,European Centre for Disease Prevention and Control,141,,BRA,Brazil,BR,1930,941
-978142,,,6/19/20,America,European Centre for Disease Prevention and Control,1238,,BRA,Brazil,BR,22765,47748
-867624,,,6/15/20,America,European Centre for Disease Prevention and Control,612,,BRA,Brazil,BR,17110,43332
-2159654,,,7/22/20,America,European Centre for Disease Prevention and Control,1367,,BRA,Brazil,BR,41008,81487
-310087,,,5/22/20,America,European Centre for Disease Prevention and Control,1188,,BRA,Brazil,BR,18508,20047
-0,,,2/3/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/21/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/20/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-492,,,3/24/20,Asia,European Centre for Disease Prevention and Control,2,,IND,India,IN,53,9
-562,,,3/25/20,Asia,European Centre for Disease Prevention and Control,0,,IND,India,IN,70,9
-649,,,3/26/20,Asia,European Centre for Disease Prevention and Control,4,,IND,India,IN,87,13
-724,,,3/27/20,Asia,European Centre for Disease Prevention and Control,4,,IND,India,IN,75,17
-873,,,3/28/20,Asia,European Centre for Disease Prevention and Control,2,,IND,India,IN,149,19
-47153,,,6/1/20,Asia,European Centre for Disease Prevention and Control,40,,BGD,Bangladesh,BD,2545,650
-71675,,,6/10/20,Asia,European Centre for Disease Prevention and Control,45,,BGD,Bangladesh,BD,3171,975
-1838,,,4/18/20,Asia,European Centre for Disease Prevention and Control,15,,BGD,Bangladesh,BD,266,75
-32078,,,5/24/20,Asia,European Centre for Disease Prevention and Control,20,,BGD,Bangladesh,BD,1873,452
-105535,,,6/20/20,Asia,European Centre for Disease Prevention and Control,45,,BGD,Bangladesh,BD,3243,1388
-0,,,2/1/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-1028,,,5/21/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,1,9
-1530,,,5/29/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,61,10
-108317,,,6/9/20,Asia,European Centre for Disease Prevention and Control,105,,PAK,Pakistan,PK,4646,2172
-22550,,,5/6/20,Asia,European Centre for Disease Prevention and Control,40,,PAK,Pakistan,PK,1049,526
-0,,,2/4/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,2/8/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-31,,,3/16/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,1,0
-18496,,,5/20/20,Asia,European Centre for Disease Prevention and Control,30,,IDN,Indonesia,ID,486,1221
-514,,,3/23/20,Asia,European Centre for Disease Prevention and Control,10,,IDN,Indonesia,ID,64,48
-0,,,2/12/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-12776,,,5/8/20,Asia,European Centre for Disease Prevention and Control,35,,IDN,Indonesia,ID,338,930
-0,,,1/28/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-11719,,,5/17/20,Africa,European Centre for Disease Prevention and Control,20,,EGY,Egypt,EG,491,612
-2350,,,4/15/20,Africa,European Centre for Disease Prevention and Control,14,,EGY,Egypt,EG,160,178
-86474,,,7/18/20,Africa,European Centre for Disease Prevention and Control,68,,EGY,Egypt,EG,703,4188
-7981,,,5/8/20,Africa,European Centre for Disease Prevention and Control,13,,EGY,Egypt,EG,393,482
-81158,,,7/12/20,Africa,European Centre for Disease Prevention and Control,67,,EGY,Egypt,EG,923,3769
-41304,,,6/13/20,Africa,European Centre for Disease Prevention and Control,45,,EGY,Egypt,EG,1578,1422
-1539081,,,7/4/20,America,European Centre for Disease Prevention and Control,1290,,BRA,Brazil,BR,42223,63174
-291579,,,5/21/20,America,European Centre for Disease Prevention and Control,888,,BRA,Brazil,BR,19951,18859
-0,,,2/15/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-2915,,,3/27/20,America,European Centre for Disease Prevention and Control,20,,BRA,Brazil,BR,482,77
-802828,,,6/12/20,America,European Centre for Disease Prevention and Control,1239,,BRA,Brazil,BR,30412,40919
-2,,,3/2/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,2/9/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/7/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-979,,,3/29/20,Asia,European Centre for Disease Prevention and Control,6,,IND,India,IN,106,25
-1071,,,3/30/20,Asia,European Centre for Disease Prevention and Control,4,,IND,India,IN,92,29
-1251,,,3/31/20,Asia,European Centre for Disease Prevention and Control,3,,IND,India,IN,180,32
-1397,,,4/1/20,Asia,European Centre for Disease Prevention and Control,3,,IND,India,IN,146,35
-1231,,,4/16/20,Asia,European Centre for Disease Prevention and Control,4,,BGD,Bangladesh,BD,219,50
-49,,,3/31/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,5
-55140,,,6/4/20,Asia,European Centre for Disease Prevention and Control,37,,BGD,Bangladesh,BD,2695,746
-74865,,,6/11/20,Asia,European Centre for Disease Prevention and Control,37,,BGD,Bangladesh,BD,3190,1012
-30205,,,5/23/20,Asia,European Centre for Disease Prevention and Control,24,,BGD,Bangladesh,BD,1694,432
-0,,,1/18/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-1965,,,4/2/20,Asia,European Centre for Disease Prevention and Control,15,,IND,India,IN,568,50
-2301,,,4/3/20,Asia,European Centre for Disease Prevention and Control,6,,IND,India,IN,336,56
-2730,,,7/21/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,6,11
-960,,,5/17/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,25,9
-1,,,2/17/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1950,,,6/22/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,11
-1947,,,6/19/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,23,11
-1,,,2/3/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,2/8/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,2/6/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/15/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-225283,,,7/4/20,Asia,European Centre for Disease Prevention and Control,68,,PAK,Pakistan,PK,3387,4619
-228474,,,7/5/20,Asia,European Centre for Disease Prevention and Control,93,,PAK,Pakistan,PK,3191,4712
-125933,,,6/12/20,Asia,European Centre for Disease Prevention and Control,107,,PAK,Pakistan,PK,6397,2463
-0,,,2/2/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/2/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-24538,,,5/29/20,Asia,European Centre for Disease Prevention and Control,23,,IDN,Indonesia,ID,687,1496
-55092,,,6/30/20,Asia,European Centre for Disease Prevention and Control,51,,IDN,Indonesia,ID,1082,2805
-91583,,,7/26/20,Africa,European Centre for Disease Prevention and Control,40,,EGY,Egypt,EG,511,4558
-74035,,,7/5/20,Africa,European Centre for Disease Prevention and Control,79,,EGY,Egypt,EG,1324,3280
-1070,,,4/6/20,Africa,European Centre for Disease Prevention and Control,5,,EGY,Egypt,EG,85,71
-52211,,,6/20/20,Africa,European Centre for Disease Prevention and Control,79,,EGY,Egypt,EG,1774,2017
-35444,,,6/9/20,Africa,European Centre for Disease Prevention and Control,34,,EGY,Egypt,EG,1365,1271
-0,,,1/28/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,2/24/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-1891,,,3/24/20,America,European Centre for Disease Prevention and Control,9,,BRA,Brazil,BR,345,34
-2074860,,,7/19/20,America,European Centre for Disease Prevention and Control,921,,BRA,Brazil,BR,28532,78772
-1274974,,,6/27/20,America,European Centre for Disease Prevention and Control,990,,BRA,Brazil,BR,46860,55961
-2,,,3/4/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/6/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-2902,,,4/4/20,Asia,European Centre for Disease Prevention and Control,12,,IND,India,IN,601,68
-3374,,,4/5/20,Asia,European Centre for Disease Prevention and Control,9,,IND,India,IN,472,77
-4067,,,4/6/20,Asia,European Centre for Disease Prevention and Control,32,,IND,India,IN,693,109
-4421,,,4/7/20,Asia,European Centre for Disease Prevention and Control,5,,IND,India,IN,354,114
-5194,,,4/8/20,Asia,European Centre for Disease Prevention and Control,35,,IND,India,IN,773,149
-5734,,,4/9/20,Asia,European Centre for Disease Prevention and Control,17,,IND,India,IN,540,166
-6412,,,4/10/20,Asia,European Centre for Disease Prevention and Control,33,,IND,India,IN,678,199
-7447,,,4/11/20,Asia,European Centre for Disease Prevention and Control,40,,IND,India,IN,1035,239
-4998,,,4/26/20,Asia,European Centre for Disease Prevention and Control,9,,BGD,Bangladesh,BD,309,140
-190057,,,7/15/20,Asia,European Centre for Disease Prevention and Control,33,,BGD,Bangladesh,BD,3163,2424
-13770,,,5/10/20,Asia,European Centre for Disease Prevention and Control,8,,BGD,Bangladesh,BD,636,214
-8238,,,5/2/20,Asia,European Centre for Disease Prevention and Control,2,,BGD,Bangladesh,BD,571,170
-0,,,2/22/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-84379,,,6/14/20,Asia,European Centre for Disease Prevention and Control,44,,BGD,Bangladesh,BD,2856,1139
-9455,,,5/4/20,Asia,European Centre for Disease Prevention and Control,2,,BGD,Bangladesh,BD,665,177
-10143,,,5/5/20,Asia,European Centre for Disease Prevention and Control,5,,BGD,Bangladesh,BD,688,182
-0,,,2/27/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/16/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,2/18/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-8356,,,4/12/20,Asia,European Centre for Disease Prevention and Control,34,,IND,India,IN,909,273
-153277,,,7/3/20,Asia,European Centre for Disease Prevention and Control,38,,BGD,Bangladesh,BD,4019,1926
-915,,,5/14/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,26,9
-847,,,5/10/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,12,9
-1089,,,5/24/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,21,9
-159,,,4/5/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,8,5
-1,,,3/2/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1889,,,6/15/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,5,11
-188926,,,6/24/20,Asia,European Centre for Disease Prevention and Control,60,,PAK,Pakistan,PK,3892,3755
-1197,,,3/27/20,Asia,European Centre for Disease Prevention and Control,1,,PAK,Pakistan,PK,140,9
-0,,,2/17/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-9749,,,4/22/20,Asia,European Centre for Disease Prevention and Control,17,,PAK,Pakistan,PK,533,209
-4,,,3/2/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-21501,,,5/5/20,Asia,European Centre for Disease Prevention and Control,24,,PAK,Pakistan,PK,1315,486
-0,,,1/10/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/25/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/17/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-76398,,,6/2/20,Asia,European Centre for Disease Prevention and Control,78,,PAK,Pakistan,PK,3938,1621
-52812,,,6/28/20,Asia,European Centre for Disease Prevention and Control,37,,IDN,Indonesia,ID,1385,2720
-3842,,,4/12/20,Asia,European Centre for Disease Prevention and Control,21,,IDN,Indonesia,ID,330,327
-16496,,,5/16/20,Asia,European Centre for Disease Prevention and Control,33,,IDN,Indonesia,ID,490,1076
-20796,,,5/23/20,Asia,European Centre for Disease Prevention and Control,48,,IDN,Indonesia,ID,634,1326
-0,,,2/7/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-28818,,,6/5/20,Asia,European Centre for Disease Prevention and Control,23,,IDN,Indonesia,ID,585,1721
-89869,,,7/22/20,Asia,European Centre for Disease Prevention and Control,81,,IDN,Indonesia,ID,1655,4320
-0,,,1/6/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/2/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-2065,,,4/13/20,Africa,European Centre for Disease Prevention and Control,13,,EGY,Egypt,EG,126,159
-2,,,3/3/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-50437,,,6/19/20,Africa,European Centre for Disease Prevention and Control,88,,EGY,Egypt,EG,1218,1938
-0,,,2/2/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/24/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-17265,,,5/25/20,Africa,European Centre for Disease Prevention and Control,29,,EGY,Egypt,EG,652,764
-76222,,,7/7/20,Africa,European Centre for Disease Prevention and Control,79,,EGY,Egypt,EG,969,3422
-2394513,,,7/26/20,America,European Centre for Disease Prevention and Control,1211,,BRA,Brazil,BR,51147,86449
-25,,,3/10/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-13,,,3/8/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-498440,,,5/31/20,America,European Centre for Disease Prevention and Control,956,,BRA,Brazil,BR,33274,28834
-1067579,,,6/21/20,America,European Centre for Disease Prevention and Control,1022,,BRA,Brazil,BR,34666,49976
-772416,,,6/11/20,America,European Centre for Disease Prevention and Control,1274,,BRA,Brazil,BR,32913,39680
-107780,,,5/5/20,America,European Centre for Disease Prevention and Control,296,,BRA,Brazil,BR,6633,7321
-0,,,1/28/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,2/7/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/13/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-9152,,,4/13/20,Asia,European Centre for Disease Prevention and Control,35,,IND,India,IN,796,308
-10363,,,4/14/20,Asia,European Centre for Disease Prevention and Control,31,,IND,India,IN,1211,339
-11438,,,4/15/20,Asia,European Centre for Disease Prevention and Control,38,,IND,India,IN,1075,377
-12380,,,4/16/20,Asia,European Centre for Disease Prevention and Control,37,,IND,India,IN,942,414
-13387,,,4/17/20,Asia,European Centre for Disease Prevention and Control,23,,IND,India,IN,1007,437
-14378,,,4/18/20,Asia,European Centre for Disease Prevention and Control,43,,IND,India,IN,991,480
-15712,,,4/19/20,Asia,European Centre for Disease Prevention and Control,27,,IND,India,IN,1334,507
-17265,,,4/20/20,Asia,European Centre for Disease Prevention and Control,36,,IND,India,IN,1553,543
-18600,,,4/21/20,Asia,European Centre for Disease Prevention and Control,47,,IND,India,IN,1335,590
-48,,,3/28/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,5
-0,,,2/13/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,2/21/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-2456,,,4/20/20,Asia,European Centre for Disease Prevention and Control,7,,BGD,Bangladesh,BD,312,91
-0,,,3/8/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-33610,,,5/25/20,Asia,European Centre for Disease Prevention and Control,28,,BGD,Bangladesh,BD,1532,480
-0,,,2/26/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-18863,,,5/15/20,Asia,European Centre for Disease Prevention and Control,14,,BGD,Bangladesh,BD,1041,283
-49,,,3/30/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,1,5
-22268,,,5/18/20,Asia,European Centre for Disease Prevention and Control,14,,BGD,Bangladesh,BD,1273,328
-30425,,,4/17/20,America,European Centre for Disease Prevention and Control,188,,BRA,Brazil,BR,2105,1924
-66,,,3/21/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,13,0
-42,,,3/18/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,13,0
-0,,,2/12/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-2,,,2/28/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/29/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-2,,,3/2/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,2,0
-0,,,1/27/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-686,,,3/25/20,Asia,European Centre for Disease Prevention and Control,6,,IDN,Indonesia,ID,107,55
-172,,,3/18/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,38,5
-49009,,,6/25/20,Asia,European Centre for Disease Prevention and Control,38,,IDN,Indonesia,ID,1113,2573
-0,,,1/30/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-2673,,,4/17/20,Africa,European Centre for Disease Prevention and Control,13,,EGY,Egypt,EG,168,196
-92062,,,7/27/20,Africa,European Centre for Disease Prevention and Control,48,,EGY,Egypt,EG,479,4606
-93,,,3/15/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,2
-10829,,,5/15/20,Africa,European Centre for Disease Prevention and Control,15,,EGY,Egypt,EG,398,571
-46289,,,6/16/20,Africa,European Centre for Disease Prevention and Control,97,,EGY,Egypt,EG,1691,1672
-66754,,,6/30/20,Africa,European Centre for Disease Prevention and Control,83,,EGY,Egypt,EG,1566,2872
-0,,,1/16/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/4/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/11/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-526447,,,6/2/20,America,European Centre for Disease Prevention and Control,623,,BRA,Brazil,BR,11598,29937
-49492,,,4/24/20,America,European Centre for Disease Prevention and Control,407,,BRA,Brazil,BR,3735,3313
-34,,,3/11/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,9,0
-155939,,,5/10/20,America,European Centre for Disease Prevention and Control,730,,BRA,Brazil,BR,10611,10627
-1402041,,,7/1/20,America,European Centre for Disease Prevention and Control,1280,,BRA,Brazil,BR,33846,59594
-15927,,,4/9/20,America,European Centre for Disease Prevention and Control,133,,BRA,Brazil,BR,2210,800
-1368195,,,6/30/20,America,European Centre for Disease Prevention and Control,692,,BRA,Brazil,BR,24052,58314
-52,,,3/12/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,18,0
-234,,,3/17/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,34,0
-0,,,1/19/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-19984,,,4/22/20,Asia,European Centre for Disease Prevention and Control,50,,IND,India,IN,1384,640
-21393,,,4/23/20,Asia,European Centre for Disease Prevention and Control,41,,IND,India,IN,1409,681
-10929,,,5/6/20,Asia,European Centre for Disease Prevention and Control,1,,BGD,Bangladesh,BD,786,183
-2948,,,4/21/20,Asia,European Centre for Disease Prevention and Control,10,,BGD,Bangladesh,BD,492,101
-0,,,2/9/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-23077,,,4/24/20,Asia,European Centre for Disease Prevention and Control,37,,IND,India,IN,1684,718
-24506,,,4/25/20,Asia,European Centre for Disease Prevention and Control,57,,IND,India,IN,1429,775
-26496,,,4/26/20,Asia,European Centre for Disease Prevention and Control,49,,IND,India,IN,1990,824
-0,,,2/7/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/31/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-78,,,3/22/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,12,0
-148,,,4/3/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,5,3
-1,,,2/21/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-2074,,,7/5/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,5,11
-1915,,,6/17/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,10,11
-2010,,,6/26/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,9,11
-755,,,5/5/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,37,8
-0,,,1/4/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/2/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-16,,,3/11/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-5038,,,4/12/20,Asia,European Centre for Disease Prevention and Control,15,,PAK,Pakistan,PK,250,86
-240848,,,7/9/20,Asia,European Centre for Disease Prevention and Control,61,,PAK,Pakistan,PK,3359,4983
-4788,,,4/11/20,Asia,European Centre for Disease Prevention and Control,5,,PAK,Pakistan,PK,187,71
-0,,,1/27/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/15/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-2738,,,4/8/20,Asia,European Centre for Disease Prevention and Control,12,,IDN,Indonesia,ID,247,221
-88214,,,7/21/20,Asia,European Centre for Disease Prevention and Control,96,,IDN,Indonesia,ID,1693,4239
-6575,,,4/20/20,Asia,European Centre for Disease Prevention and Control,47,,IDN,Indonesia,ID,327,582
-2,,,3/4/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/11/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-200,,,3/16/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,79,0
-0,,,1/23/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-27892,,,4/27/20,Asia,European Centre for Disease Prevention and Control,48,,IND,India,IN,1396,872
-29435,,,4/28/20,Asia,European Centre for Disease Prevention and Control,62,,IND,India,IN,1543,934
-31332,,,4/29/20,Asia,European Centre for Disease Prevention and Control,73,,IND,India,IN,1897,1007
-33050,,,4/30/20,Asia,European Centre for Disease Prevention and Control,67,,IND,India,IN,1718,1074
-36751,,,5/27/20,Asia,European Centre for Disease Prevention and Control,21,,BGD,Bangladesh,BD,1166,522
-0,,,1/28/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/9/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-366,,,3/25/20,Africa,European Centre for Disease Prevention and Control,5,,EGY,Egypt,EG,39,19
-47856,,,6/17/20,Africa,European Centre for Disease Prevention and Control,94,,EGY,Egypt,EG,1567,1766
-1,,,2/20/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-18756,,,5/27/20,Africa,European Centre for Disease Prevention and Control,14,,EGY,Egypt,EG,789,797
-0,,,1/9/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/22/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/6/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/1/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-75699,,,7/13/20,Asia,European Centre for Disease Prevention and Control,71,,IDN,Indonesia,ID,1681,3606
-35295,,,6/12/20,Asia,European Centre for Disease Prevention and Control,41,,IDN,Indonesia,ID,979,2000
-32033,,,6/9/20,Asia,European Centre for Disease Prevention and Control,32,,IDN,Indonesia,ID,847,1883
-893,,,3/27/20,Asia,European Centre for Disease Prevention and Control,20,,IDN,Indonesia,ID,103,78
-42762,,,6/19/20,Asia,European Centre for Disease Prevention and Control,63,,IDN,Indonesia,ID,1331,2339
-2092,,,4/5/20,Asia,European Centre for Disease Prevention and Control,10,,IDN,Indonesia,ID,106,191
-54010,,,6/29/20,Asia,European Centre for Disease Prevention and Control,34,,IDN,Indonesia,ID,1198,2754
-16006,,,5/15/20,Asia,European Centre for Disease Prevention and Control,15,,IDN,Indonesia,ID,568,1043
-27549,,,6/3/20,Asia,European Centre for Disease Prevention and Control,22,,IDN,Indonesia,ID,609,1663
-1,,,3/3/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-11,,,3/15/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,5,0
-1,,,2/27/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-120,,,3/31/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,1
-2730,,,7/22/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,11
-1,,,1/29/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,2/4/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/20/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/19/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-11155,,,4/24/20,Asia,European Centre for Disease Prevention and Control,28,,PAK,Pakistan,PK,1406,237
-198883,,,6/27/20,Asia,European Centre for Disease Prevention and Control,73,,PAK,Pakistan,PK,3138,4035
-4322,,,4/9/20,Asia,European Centre for Disease Prevention and Control,5,,PAK,Pakistan,PK,250,63
-478,,,3/20/20,Asia,European Centre for Disease Prevention and Control,2,,PAK,Pakistan,PK,176,2
-4,,,3/1/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,2,0
-237489,,,7/8/20,Asia,European Centre for Disease Prevention and Control,83,,PAK,Pakistan,PK,2980,4922
-0,,,1/26/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/19/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-438238,,,5/29/20,America,European Centre for Disease Prevention and Control,1156,,BRA,Brazil,BR,26417,26754
-43079,,,4/22/20,America,European Centre for Disease Prevention and Control,166,,BRA,Brazil,BR,2498,2741
-0,,,2/8/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-35043,,,5/1/20,Asia,European Centre for Disease Prevention and Control,73,,IND,India,IN,1993,1147
-26738,,,5/21/20,Asia,European Centre for Disease Prevention and Control,16,,BGD,Bangladesh,BD,1617,386
-145483,,,7/1/20,Asia,European Centre for Disease Prevention and Control,64,,BGD,Bangladesh,BD,3682,1847
-37336,,,5/2/20,Asia,European Centre for Disease Prevention and Control,71,,IND,India,IN,2293,1218
-39980,,,5/3/20,Asia,European Centre for Disease Prevention and Control,83,,IND,India,IN,2644,1301
-42533,,,5/4/20,Asia,European Centre for Disease Prevention and Control,72,,IND,India,IN,2553,1373
-6462,,,4/29/20,Asia,European Centre for Disease Prevention and Control,3,,BGD,Bangladesh,BD,549,155
-0,,,1/19/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-707412,,,6/9/20,America,European Centre for Disease Prevention and Control,679,,BRA,Brazil,BR,15654,37134
-6836,,,4/2/20,America,European Centre for Disease Prevention and Control,40,,BRA,Brazil,BR,1119,241
-0,,,2/3/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/5/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-46433,,,5/5/20,Asia,European Centre for Disease Prevention and Control,195,,IND,India,IN,3900,1568
-1,,,2/25/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-23449,,,5/31/20,Africa,European Centre for Disease Prevention and Control,34,,EGY,Egypt,EG,1367,913
-2844,,,4/18/20,Africa,European Centre for Disease Prevention and Control,9,,EGY,Egypt,EG,171,205
-83001,,,7/14/20,Africa,European Centre for Disease Prevention and Control,166,,EGY,Egypt,EG,1843,3935
-3490,,,4/22/20,Africa,European Centre for Disease Prevention and Control,14,,EGY,Egypt,EG,157,264
-576,,,3/30/20,Africa,European Centre for Disease Prevention and Control,6,,EGY,Egypt,EG,40,36
-28615,,,6/4/20,Africa,European Centre for Disease Prevention and Control,36,,EGY,Egypt,EG,1079,1088
-12229,,,5/18/20,Africa,European Centre for Disease Prevention and Control,18,,EGY,Egypt,EG,510,630
-656,,,4/1/20,Africa,European Centre for Disease Prevention and Control,1,,EGY,Egypt,EG,47,41
-0,,,2/3/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-26473,,,6/1/20,Asia,European Centre for Disease Prevention and Control,40,,IDN,Indonesia,ID,700,1613
-9771,,,4/30/20,Asia,European Centre for Disease Prevention and Control,11,,IDN,Indonesia,ID,260,784
-9096,,,4/28/20,Asia,European Centre for Disease Prevention and Control,22,,IDN,Indonesia,ID,214,765
-81668,,,7/17/20,Asia,European Centre for Disease Prevention and Control,76,,IDN,Indonesia,ID,1574,3873
-134,,,3/17/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,17,5
-66226,,,7/8/20,Asia,European Centre for Disease Prevention and Control,68,,IDN,Indonesia,ID,1268,3309
-1,,,2/19/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,2/15/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/23/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/12/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,2/10/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,12/31/19,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,2/23/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-263496,,,7/19/20,Asia,European Centre for Disease Prevention and Control,46,,PAK,Pakistan,PK,1579,5568
-270400,,,7/24/20,Asia,European Centre for Disease Prevention and Control,54,,PAK,Pakistan,PK,1209,5763
-187,,,3/18/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-192970,,,6/25/20,Asia,European Centre for Disease Prevention and Control,148,,PAK,Pakistan,PK,4044,3903
-32081,,,5/12/20,Asia,European Centre for Disease Prevention and Control,39,,PAK,Pakistan,PK,1140,706
-139230,,,6/14/20,Asia,European Centre for Disease Prevention and Control,81,,PAK,Pakistan,PK,6825,2632
-0,,,1/16/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/24/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,2/13/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-2098389,,,7/20/20,America,European Centre for Disease Prevention and Control,716,,BRA,Brazil,BR,23529,79488
-49391,,,5/6/20,Asia,European Centre for Disease Prevention and Control,126,,IND,India,IN,2958,1694
-52952,,,5/7/20,Asia,European Centre for Disease Prevention and Control,89,,IND,India,IN,3561,1783
-482,,,4/12/20,Asia,European Centre for Disease Prevention and Control,3,,BGD,Bangladesh,BD,58,30
-39,,,3/25/20,Asia,European Centre for Disease Prevention and Control,1,,BGD,Bangladesh,BD,6,4
-44608,,,5/31/20,Asia,European Centre for Disease Prevention and Control,28,,BGD,Bangladesh,BD,1764,610
-0,,,1/11/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-218658,,,7/25/20,Asia,European Centre for Disease Prevention and Control,35,,BGD,Bangladesh,BD,2548,2836
-0,,,1/6/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-59,,,3/11/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,4,1
-1073,,,4/7/20,Africa,European Centre for Disease Prevention and Control,7,,EGY,Egypt,EG,3,78
-39726,,,6/12/20,Africa,European Centre for Disease Prevention and Control,35,,EGY,Egypt,EG,1442,1377
-71299,,,7/3/20,Africa,European Centre for Disease Prevention and Control,86,,EGY,Egypt,EG,1485,3120
-0,,,2/9/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,2/4/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-17025,,,5/17/20,Asia,European Centre for Disease Prevention and Control,13,,IDN,Indonesia,ID,529,1089
-13645,,,5/10/20,Asia,European Centre for Disease Prevention and Control,16,,IDN,Indonesia,ID,533,959
-8211,,,4/25/20,Asia,European Centre for Disease Prevention and Control,42,,IDN,Indonesia,ID,436,689
-0,,,1/14/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/15/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-619,,,4/29/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,31,7
-199,,,4/12/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,2,7
-151,,,4/4/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,3,4
-2001,,,6/25/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,10,11
-310,,,4/22/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,6,7
-935,,,5/16/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,10,9
-665,,,5/1/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,16,7
-1880,,,6/13/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,3,11
-0,,,1/6/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-5374,,,4/13/20,Asia,European Centre for Disease Prevention and Control,7,,PAK,Pakistan,PK,336,93
-495,,,3/21/20,Asia,European Centre for Disease Prevention and Control,1,,PAK,Pakistan,PK,17,3
-195745,,,6/26/20,Asia,European Centre for Disease Prevention and Control,59,,PAK,Pakistan,PK,2775,3962
-19103,,,5/3/20,Asia,European Centre for Disease Prevention and Control,23,,PAK,Pakistan,PK,989,440
-113702,,,6/10/20,Asia,European Centre for Disease Prevention and Control,83,,PAK,Pakistan,PK,5385,2255
-7481,,,4/18/20,Asia,European Centre for Disease Prevention and Control,8,,PAK,Pakistan,PK,456,143
-209337,,,6/30/20,Asia,European Centre for Disease Prevention and Control,137,,PAK,Pakistan,PK,2825,4304
-119536,,,6/11/20,Asia,European Centre for Disease Prevention and Control,101,,PAK,Pakistan,PK,5834,2356
-80463,,,6/3/20,Asia,European Centre for Disease Prevention and Control,67,,PAK,Pakistan,PK,4065,1688
-6,,,3/9/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,12/31/19,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-78162,,,4/30/20,America,European Centre for Disease Prevention and Control,449,,BRA,Brazil,BR,6276,5466
-1106470,,,6/23/20,America,European Centre for Disease Prevention and Control,654,,BRA,Brazil,BR,21432,51271
-52995,,,4/25/20,America,European Centre for Disease Prevention and Control,357,,BRA,Brazil,BR,3503,3670
-149258,,,7/2/20,Asia,European Centre for Disease Prevention and Control,41,,BGD,Bangladesh,BD,3775,1888
-0,,,1/27/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-233142,,,5/17/20,America,European Centre for Disease Prevention and Control,816,,BRA,Brazil,BR,14919,15633
-2046328,,,7/18/20,America,European Centre for Disease Prevention and Control,1163,,BRA,Brazil,BR,34177,77851
-1032913,,,6/20/20,America,European Centre for Disease Prevention and Control,1206,,BRA,Brazil,BR,54771,48954
-0,,,1/18/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-56342,,,5/8/20,Asia,European Centre for Disease Prevention and Control,103,,IND,India,IN,3390,1886
-59662,,,5/9/20,Asia,European Centre for Disease Prevention and Control,95,,IND,India,IN,3320,1981
-62939,,,5/10/20,Asia,European Centre for Disease Prevention and Control,128,,IND,India,IN,3277,2109
-67152,,,5/11/20,Asia,European Centre for Disease Prevention and Control,97,,IND,India,IN,4213,2206
-70756,,,5/12/20,Asia,European Centre for Disease Prevention and Control,87,,IND,India,IN,3604,2293
-23870,,,5/19/20,Asia,European Centre for Disease Prevention and Control,21,,BGD,Bangladesh,BD,1602,349
-0,,,1/8/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-25262,,,4/15/20,America,European Centre for Disease Prevention and Control,204,,BRA,Brazil,BR,1832,1532
-74281,,,5/13/20,Asia,European Centre for Disease Prevention and Control,122,,IND,India,IN,3525,2415
-78003,,,5/14/20,Asia,European Centre for Disease Prevention and Control,134,,IND,India,IN,3722,2549
-69814,,,7/2/20,Africa,European Centre for Disease Prevention and Control,81,,EGY,Egypt,EG,1503,3034
-4782,,,4/28/20,Africa,European Centre for Disease Prevention and Control,30,,EGY,Egypt,EG,463,337
-710,,,4/2/20,Africa,European Centre for Disease Prevention and Control,5,,EGY,Egypt,EG,54,46
-1560,,,4/9/20,Africa,European Centre for Disease Prevention and Control,18,,EGY,Egypt,EG,238,103
-26940,,,6/2/20,Asia,European Centre for Disease Prevention and Control,28,,IDN,Indonesia,ID,467,1641
-70736,,,7/10/20,Asia,European Centre for Disease Prevention and Control,58,,IDN,Indonesia,ID,2657,3417
-2,,,3/6/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-4557,,,4/14/20,Asia,European Centre for Disease Prevention and Control,26,,IDN,Indonesia,ID,316,399
-0,,,2/23/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-172,,,3/19/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,5
-33076,,,6/10/20,Asia,European Centre for Disease Prevention and Control,40,,IDN,Indonesia,ID,1043,1923
-34,,,3/12/20,Asia,European Centre for Disease Prevention and Control,1,,IDN,Indonesia,ID,15,1
-771,,,5/6/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,16,9
-1859,,,6/10/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,2,11
-2697,,,7/18/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,10,11
-0,,,2/19/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,2/18/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-213470,,,7/1/20,Asia,European Centre for Disease Prevention and Control,91,,PAK,Pakistan,PK,4133,4395
-42125,,,5/18/20,Asia,European Centre for Disease Prevention and Control,30,,PAK,Pakistan,PK,1974,903
-19638,,,4/11/20,America,European Centre for Disease Prevention and Control,115,,BRA,Brazil,BR,1781,1056
-0,,,1/14/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-81970,,,5/15/20,Asia,European Centre for Disease Prevention and Control,100,,IND,India,IN,3967,2649
-85940,,,5/16/20,Asia,European Centre for Disease Prevention and Control,103,,IND,India,IN,3970,2752
-90927,,,5/17/20,Asia,European Centre for Disease Prevention and Control,120,,IND,India,IN,4987,2872
-96169,,,5/18/20,Asia,European Centre for Disease Prevention and Control,157,,IND,India,IN,5242,3029
-101139,,,5/19/20,Asia,European Centre for Disease Prevention and Control,134,,IND,India,IN,4970,3163
-106750,,,5/20/20,Asia,European Centre for Disease Prevention and Control,140,,IND,India,IN,5611,3303
-112359,,,5/21/20,Asia,European Centre for Disease Prevention and Control,132,,IND,India,IN,5609,3435
-118447,,,5/22/20,Asia,European Centre for Disease Prevention and Control,148,,IND,India,IN,6088,3583
-164,,,4/8/20,Asia,European Centre for Disease Prevention and Control,5,,BGD,Bangladesh,BD,41,17
-133978,,,6/28/20,Asia,European Centre for Disease Prevention and Control,34,,BGD,Bangladesh,BD,3504,1695
-13717,,,4/8/20,America,European Centre for Disease Prevention and Control,114,,BRA,Brazil,BR,1661,667
-71886,,,4/29/20,America,European Centre for Disease Prevention and Control,474,,BRA,Brazil,BR,5385,5017
-1313667,,,6/28/20,America,European Centre for Disease Prevention and Control,1109,,BRA,Brazil,BR,38693,57070
-0,,,1/26/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-125101,,,5/23/20,Asia,European Centre for Disease Prevention and Control,137,,IND,India,IN,6654,3720
-131868,,,5/24/20,Asia,European Centre for Disease Prevention and Control,147,,IND,India,IN,6767,3867
-138845,,,5/25/20,Asia,European Centre for Disease Prevention and Control,154,,IND,India,IN,6977,4021
-145380,,,5/26/20,Asia,European Centre for Disease Prevention and Control,146,,IND,India,IN,6535,4167
-151767,,,5/27/20,Asia,European Centre for Disease Prevention and Control,170,,IND,India,IN,6387,4337
-158333,,,5/28/20,Asia,European Centre for Disease Prevention and Control,194,,IND,India,IN,6566,4531
-165799,,,5/29/20,Asia,European Centre for Disease Prevention and Control,175,,IND,India,IN,7466,4706
-5416,,,4/27/20,Asia,European Centre for Disease Prevention and Control,5,,BGD,Bangladesh,BD,418,145
-213254,,,7/23/20,Asia,European Centre for Disease Prevention and Control,42,,BGD,Bangladesh,BD,2744,2751
-52445,,,6/3/20,Asia,European Centre for Disease Prevention and Control,37,,BGD,Bangladesh,BD,2911,709
-0,,,2/10/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-199357,,,7/18/20,Asia,European Centre for Disease Prevention and Control,51,,BGD,Bangladesh,BD,3034,2547
-62755,,,6/27/20,Africa,European Centre for Disease Prevention and Control,87,,EGY,Egypt,EG,1625,2620
-2190,,,4/14/20,Africa,European Centre for Disease Prevention and Control,5,,EGY,Egypt,EG,125,164
-0,,,2/17/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-1677,,,4/2/20,Asia,European Centre for Disease Prevention and Control,21,,IDN,Indonesia,ID,149,157
-98778,,,7/27/20,Asia,European Centre for Disease Prevention and Control,67,,IDN,Indonesia,ID,1492,4781
-5923,,,4/18/20,Asia,European Centre for Disease Prevention and Control,24,,IDN,Indonesia,ID,407,520
-0,,,1/17/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-4839,,,4/15/20,Asia,European Centre for Disease Prevention and Control,60,,IDN,Indonesia,ID,282,459
-1528,,,4/1/20,Asia,European Centre for Disease Prevention and Control,14,,IDN,Indonesia,ID,114,136
-0,,,2/10/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/26/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/1/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-1857,,,6/9/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,22,11
-835,,,5/9/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,11,9
-190,,,4/10/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,1,7
-2646,,,7/14/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,29,11
-1835,,,6/8/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,21,11
-2076,,,7/6/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,2,11
-6,,,3/14/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,3,0
-1,,,2/26/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-271887,,,7/25/20,Asia,European Centre for Disease Prevention and Control,24,,PAK,Pakistan,PK,1487,5787
-40151,,,5/17/20,Asia,European Centre for Disease Prevention and Control,39,,PAK,Pakistan,PK,1352,873
-243599,,,7/10/20,Asia,European Centre for Disease Prevention and Control,75,,PAK,Pakistan,PK,2751,5058
-38799,,,5/16/20,Asia,European Centre for Disease Prevention and Control,31,,PAK,Pakistan,PK,1581,834
-20186,,,5/4/20,Asia,European Centre for Disease Prevention and Control,22,,PAK,Pakistan,PK,1083,462
-275225,,,7/28/20,Asia,European Centre for Disease Prevention and Control,23,,PAK,Pakistan,PK,936,5865
-2039,,,4/1/20,Asia,European Centre for Disease Prevention and Control,8,,PAK,Pakistan,PK,414,26
-202918,,,5/15/20,America,European Centre for Disease Prevention and Control,844,,BRA,Brazil,BR,13944,13993
-0,,,2/17/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-330890,,,5/23/20,America,European Centre for Disease Prevention and Control,1001,,BRA,Brazil,BR,20803,21048
-173763,,,5/30/20,Asia,European Centre for Disease Prevention and Control,265,,IND,India,IN,7964,4971
-182143,,,5/31/20,Asia,European Centre for Disease Prevention and Control,193,,IND,India,IN,8380,5164
-0,,,3/5/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-207453,,,7/21/20,Asia,European Centre for Disease Prevention and Control,50,,BGD,Bangladesh,BD,2928,2668
-2144,,,4/19/20,Asia,European Centre for Disease Prevention and Control,9,,BGD,Bangladesh,BD,306,84
-78052,,,6/12/20,Asia,European Centre for Disease Prevention and Control,37,,BGD,Bangladesh,BD,3187,1049
-22169,,,4/13/20,America,European Centre for Disease Prevention and Control,99,,BRA,Brazil,BR,1442,1223
-33682,,,4/18/20,America,European Centre for Disease Prevention and Control,217,,BRA,Brazil,BR,3257,2141
-347398,,,5/24/20,America,European Centre for Disease Prevention and Control,965,,BRA,Brazil,BR,16508,22013
-190535,,,6/1/20,Asia,European Centre for Disease Prevention and Control,230,,IND,India,IN,8392,5394
-198706,,,6/2/20,Asia,European Centre for Disease Prevention and Control,204,,IND,India,IN,8171,5598
-207615,,,6/3/20,Asia,European Centre for Disease Prevention and Control,217,,IND,India,IN,8909,5815
-216919,,,6/4/20,Asia,European Centre for Disease Prevention and Control,260,,IND,India,IN,9304,6075
-27,,,3/23/20,Asia,European Centre for Disease Prevention and Control,1,,BGD,Bangladesh,BD,3,3
-172134,,,7/9/20,Asia,European Centre for Disease Prevention and Control,46,,BGD,Bangladesh,BD,3489,2197
-465166,,,5/30/20,America,European Centre for Disease Prevention and Control,1124,,BRA,Brazil,BR,26928,27878
-0,,,1/4/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-80235,,,7/11/20,Africa,European Centre for Disease Prevention and Control,85,,EGY,Egypt,EG,981,3702
-256,,,3/21/20,Africa,European Centre for Disease Prevention and Control,1,,EGY,Egypt,EG,46,7
-61130,,,6/26/20,Africa,European Centre for Disease Prevention and Control,168,,EGY,Egypt,EG,2989,2533
-3333,,,4/21/20,Africa,European Centre for Disease Prevention and Control,11,,EGY,Egypt,EG,189,250
-75253,,,7/6/20,Africa,European Centre for Disease Prevention and Control,63,,EGY,Egypt,EG,1218,3343
-985,,,4/5/20,Africa,European Centre for Disease Prevention and Control,14,,EGY,Egypt,EG,206,66
-85771,,,7/17/20,Africa,European Centre for Disease Prevention and Control,53,,EGY,Egypt,EG,928,4120
-0,,,1/3/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-779,,,4/3/20,Africa,European Centre for Disease Prevention and Control,6,,EGY,Egypt,EG,69,52
-0,,,2/16/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-50187,,,6/26/20,Asia,European Centre for Disease Prevention and Control,47,,IDN,Indonesia,ID,1178,2620
-19,,,3/11/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,13,0
-17514,,,5/18/20,Asia,European Centre for Disease Prevention and Control,59,,IDN,Indonesia,ID,489,1148
-0,,,1/24/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-87,,,3/23/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,9,0
-1951,,,6/23/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,1,11
-304,,,4/21/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,9,7
-1055,,,5/22/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,27,9
-1,,,1/31/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-42,,,3/19/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-274289,,,7/27/20,Asia,European Centre for Disease Prevention and Control,20,,PAK,Pakistan,PK,1176,5842
-160118,,,6/18/20,Asia,European Centre for Disease Prevention and Control,118,,PAK,Pakistan,PK,5358,3093
-21,,,3/14/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/11/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-1864681,,,7/13/20,America,European Centre for Disease Prevention and Control,631,,BRA,Brazil,BR,24831,72100
-85380,,,5/1/20,America,European Centre for Disease Prevention and Control,435,,BRA,Brazil,BR,7218,5901
-621,,,3/20/20,America,European Centre for Disease Prevention and Control,2,,BRA,Brazil,BR,193,6
-0,,,1/16/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/7/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-168331,,,5/12/20,America,European Centre for Disease Prevention and Control,396,,BRA,Brazil,BR,5632,11519
-0,,,1/15/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-226770,,,6/5/20,Asia,European Centre for Disease Prevention and Control,273,,IND,India,IN,9851,6348
-236657,,,6/6/20,Asia,European Centre for Disease Prevention and Control,294,,IND,India,IN,9887,6642
-246628,,,6/7/20,Asia,European Centre for Disease Prevention and Control,287,,IND,India,IN,9971,6929
-256611,,,6/8/20,Asia,European Centre for Disease Prevention and Control,206,,IND,India,IN,9983,7135
-1572,,,4/17/20,Asia,European Centre for Disease Prevention and Control,10,,BGD,Bangladesh,BD,341,60
-17,,,3/21/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,7,0
-54,,,4/2/20,Asia,European Centre for Disease Prevention and Control,1,,BGD,Bangladesh,BD,3,6
-14657,,,5/11/20,Asia,European Centre for Disease Prevention and Control,14,,BGD,Bangladesh,BD,887,228
-181129,,,7/12/20,Asia,European Centre for Disease Prevention and Control,30,,BGD,Bangladesh,BD,2686,2305
-70,,,4/5/20,Asia,European Centre for Disease Prevention and Control,2,,BGD,Bangladesh,BD,9,8
-0,,,1/12/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/3/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,2/10/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-183795,,,7/13/20,Asia,European Centre for Disease Prevention and Control,47,,BGD,Bangladesh,BD,2666,2352
-0,,,2/15/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/23/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,2/8/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-91072,,,7/25/20,Africa,European Centre for Disease Prevention and Control,38,,EGY,Egypt,EG,659,4518
-1,,,2/16/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-536,,,3/29/20,Africa,European Centre for Disease Prevention and Control,6,,EGY,Egypt,EG,41,30
-442,,,3/26/20,Africa,European Centre for Disease Prevention and Control,2,,EGY,Egypt,EG,76,21
-1,,,2/15/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,1,0
-210,,,3/20/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,14,6
-27536,,,6/3/20,Africa,European Centre for Disease Prevention and Control,47,,EGY,Egypt,EG,1152,1052
-53758,,,6/21/20,Africa,European Centre for Disease Prevention and Control,89,,EGY,Egypt,EG,1547,2106
-0,,,1/2/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-97286,,,7/26/20,Asia,European Centre for Disease Prevention and Control,49,,IDN,Indonesia,ID,1868,4714
-7775,,,4/24/20,Asia,European Centre for Disease Prevention and Control,12,,IDN,Indonesia,ID,357,647
-0,,,2/11/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,2/28/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,2/13/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-6760,,,4/21/20,Asia,European Centre for Disease Prevention and Control,8,,IDN,Indonesia,ID,185,590
-6,,,3/9/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,2,0
-0,,,2/2/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-2782,,,7/27/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,12,11
-2704,,,7/19/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,7,11
-189,,,4/9/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,4,7
-178,,,4/7/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,12,5
-1950,,,6/20/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,3,11
-1068,,,5/23/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,13,9
-265083,,,7/20/20,Asia,European Centre for Disease Prevention and Control,31,,PAK,Pakistan,PK,1587,5599
-257914,,,7/16/20,Asia,European Centre for Disease Prevention and Control,40,,PAK,Pakistan,PK,2145,5426
-93983,,,6/6/20,Asia,European Centre for Disease Prevention and Control,97,,PAK,Pakistan,PK,4734,1935
-2291,,,4/2/20,Asia,European Centre for Disease Prevention and Control,5,,PAK,Pakistan,PK,252,31
-57705,,,5/26/20,Asia,European Centre for Disease Prevention and Control,30,,PAK,Pakistan,PK,1356,1197
-302,,,3/19/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,115,0
-248872,,,7/12/20,Asia,European Centre for Disease Prevention and Control,74,,PAK,Pakistan,PK,2521,5197
-221896,,,7/3/20,Asia,European Centre for Disease Prevention and Control,78,,PAK,Pakistan,PK,4087,4551
-0,,,1/20/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,2/7/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/18/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-38654,,,4/20/20,America,European Centre for Disease Prevention and Control,115,,BRA,Brazil,BR,2055,2462
-20727,,,4/12/20,America,European Centre for Disease Prevention and Control,68,,BRA,Brazil,BR,1089,1124
-1228114,,,6/26/20,America,European Centre for Disease Prevention and Control,1141,,BRA,Brazil,BR,39483,54971
-121,,,3/15/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,23,0
-0,,,2/22/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-391222,,,5/27/20,America,European Centre for Disease Prevention and Control,1039,,BRA,Brazil,BR,16324,24512
-266598,,,6/9/20,Asia,European Centre for Disease Prevention and Control,331,,IND,India,IN,9987,7466
-178443,,,7/11/20,Asia,European Centre for Disease Prevention and Control,37,,BGD,Bangladesh,BD,2949,2275
-123,,,4/7/20,Asia,European Centre for Disease Prevention and Control,3,,BGD,Bangladesh,BD,35,12
-48,,,3/27/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,9,5
-0,,,2/28/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-28511,,,5/22/20,Asia,European Centre for Disease Prevention and Control,22,,BGD,Bangladesh,BD,1773,408
-1800827,,,7/11/20,America,European Centre for Disease Prevention and Control,1214,,BRA,Brazil,BR,45048,70398
-0,,,2/21/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-2483191,,,7/29/20,America,European Centre for Disease Prevention and Control,921,,BRA,Brazil,BR,40816,88539
-2287475,,,7/24/20,America,European Centre for Disease Prevention and Control,1311,,BRA,Brazil,BR,59961,84082
-98,,,3/14/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,21,0
-276583,,,6/10/20,Asia,European Centre for Disease Prevention and Control,279,,IND,India,IN,9985,7745
-286579,,,6/11/20,Asia,European Centre for Disease Prevention and Control,357,,IND,India,IN,9996,8102
-159679,,,7/5/20,Asia,European Centre for Disease Prevention and Control,29,,BGD,Bangladesh,BD,3288,1997
-3,,,3/15/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,3/2/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/21/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-2,,,3/3/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-297535,,,6/12/20,Asia,European Centre for Disease Prevention and Control,396,,IND,India,IN,10956,8498
-308993,,,6/13/20,Asia,European Centre for Disease Prevention and Control,386,,IND,India,IN,11458,8884
-20995,,,5/17/20,Asia,European Centre for Disease Prevention and Control,16,,BGD,Bangladesh,BD,930,314
-8790,,,5/3/20,Asia,European Centre for Disease Prevention and Control,5,,BGD,Bangladesh,BD,552,175
-320922,,,6/14/20,Asia,European Centre for Disease Prevention and Control,311,,IND,India,IN,11929,9195
-1322,,,4/8/20,Africa,European Centre for Disease Prevention and Control,7,,EGY,Egypt,EG,249,85
-31115,,,6/6/20,Africa,European Centre for Disease Prevention and Control,40,,EGY,Egypt,EG,1348,1166
-68311,,,7/1/20,Africa,European Centre for Disease Prevention and Control,81,,EGY,Egypt,EG,1557,2953
-2,,,3/2/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,1,0
-6813,,,5/5/20,Africa,European Centre for Disease Prevention and Control,7,,EGY,Egypt,EG,348,436
-80,,,3/13/20,Africa,European Centre for Disease Prevention and Control,1,,EGY,Egypt,EG,20,2
-0,,,2/1/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-15786,,,5/23/20,Africa,European Centre for Disease Prevention and Control,11,,EGY,Egypt,EG,783,707
-0,,,2/24/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-15438,,,5/14/20,Asia,European Centre for Disease Prevention and Control,21,,IDN,Indonesia,ID,689,1028
-309,,,3/21/20,Asia,European Centre for Disease Prevention and Control,6,,IDN,Indonesia,ID,82,25
-1414,,,3/31/20,Asia,European Centre for Disease Prevention and Control,8,,IDN,Indonesia,ID,129,122
-0,,,1/7/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-6248,,,4/19/20,Asia,European Centre for Disease Prevention and Control,15,,IDN,Indonesia,ID,325,535
-34316,,,6/11/20,Asia,European Centre for Disease Prevention and Control,36,,IDN,Indonesia,ID,1240,1959
-705,,,5/3/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,15,7
-102,,,3/26/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1319,,,5/27/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,137,10
-53,,,3/20/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,11,0
-35788,,,5/14/20,Asia,European Centre for Disease Prevention and Control,33,,PAK,Pakistan,PK,1452,770
-9749,,,4/23/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,209
-5,,,3/5/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-6,,,3/7/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,1,0
-154760,,,6/17/20,Asia,European Centre for Disease Prevention and Control,136,,PAK,Pakistan,PK,5839,2975
-15759,,,4/30/20,Asia,European Centre for Disease Prevention and Control,19,,PAK,Pakistan,PK,874,346
-30,,,3/15/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,9,0
-0,,,2/11/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-79254,,,7/10/20,Africa,European Centre for Disease Prevention and Control,53,,EGY,Egypt,EG,950,3617
-2505,,,4/16/20,Africa,European Centre for Disease Prevention and Control,5,,EGY,Egypt,EG,155,183
-2,,,3/4/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-20793,,,5/29/20,Africa,European Centre for Disease Prevention and Control,29,,EGY,Egypt,EG,1127,845
-34079,,,6/8/20,Africa,European Centre for Disease Prevention and Control,39,,EGY,Egypt,EG,1467,1237
-55233,,,6/22/20,Africa,European Centre for Disease Prevention and Control,87,,EGY,Egypt,EG,1475,2193
-0,,,1/30/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/8/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-363211,,,5/25/20,America,European Centre for Disease Prevention and Control,653,,BRA,Brazil,BR,15813,22666
-0,,,2/11/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/2/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/3/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/1/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-332424,,,6/15/20,Asia,European Centre for Disease Prevention and Control,325,,IND,India,IN,11502,9520
-343091,,,6/16/20,Asia,European Centre for Disease Prevention and Control,380,,IND,India,IN,10667,9900
-354065,,,6/17/20,Asia,European Centre for Disease Prevention and Control,2003,,IND,India,IN,10974,11903
-366946,,,6/18/20,Asia,European Centre for Disease Prevention and Control,334,,IND,India,IN,12881,12237
-380532,,,6/19/20,Asia,European Centre for Disease Prevention and Control,336,,IND,India,IN,13586,12573
-395048,,,6/20/20,Asia,European Centre for Disease Prevention and Control,375,,IND,India,IN,14516,12948
-218,,,4/9/20,Asia,European Centre for Disease Prevention and Control,3,,BGD,Bangladesh,BD,54,20
-0,,,3/6/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,2/17/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-102292,,,6/19/20,Asia,European Centre for Disease Prevention and Control,38,,BGD,Bangladesh,BD,3803,1343
-0,,,2/14/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-12438,,,5/7/20,Asia,European Centre for Disease Prevention and Control,23,,IDN,Indonesia,ID,367,895
-45029,,,6/21/20,Asia,European Centre for Disease Prevention and Control,56,,IDN,Indonesia,ID,1226,2429
-19189,,,5/21/20,Asia,European Centre for Disease Prevention and Control,21,,IDN,Indonesia,ID,693,1242
-41431,,,6/18/20,Asia,European Centre for Disease Prevention and Control,45,,IDN,Indonesia,ID,1031,2276
-0,,,2/4/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,2/6/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-76981,,,7/14/20,Asia,European Centre for Disease Prevention and Control,50,,IDN,Indonesia,ID,1282,3656
-30514,,,6/7/20,Asia,European Centre for Disease Prevention and Control,31,,IDN,Indonesia,ID,993,1801
-0,,,1/19/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-368,,,4/24/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,38,7
-2753,,,7/24/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,1,11
-0,,,1/1/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,2/13/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-5988,,,4/15/20,Asia,European Centre for Disease Prevention and Control,11,,PAK,Pakistan,PK,272,107
-18114,,,5/2/20,Asia,European Centre for Disease Prevention and Control,32,,PAK,Pakistan,PK,1297,417
-25837,,,5/8/20,Asia,European Centre for Disease Prevention and Control,30,,PAK,Pakistan,PK,1764,594
-16817,,,5/1/20,Asia,European Centre for Disease Prevention and Control,39,,PAK,Pakistan,PK,1058,385
-1,,,2/24/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-1,,,2/19/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-14229,,,5/21/20,Africa,European Centre for Disease Prevention and Control,21,,EGY,Egypt,EG,745,680
-779,,,4/4/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,52
-3,,,3/6/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,1,0
-9746,,,5/12/20,Africa,European Centre for Disease Prevention and Control,8,,EGY,Egypt,EG,346,533
-89078,,,7/22/20,Africa,European Centre for Disease Prevention and Control,47,,EGY,Egypt,EG,676,4399
-584016,,,6/4/20,America,European Centre for Disease Prevention and Control,1349,,BRA,Brazil,BR,28633,32548
-614932,,,6/5/20,America,European Centre for Disease Prevention and Control,1473,,BRA,Brazil,BR,30916,34021
-410461,,,6/21/20,Asia,European Centre for Disease Prevention and Control,306,,IND,India,IN,15413,13254
-425282,,,6/22/20,Asia,European Centre for Disease Prevention and Control,445,,IND,India,IN,14821,13699
-440215,,,6/23/20,Asia,European Centre for Disease Prevention and Control,312,,IND,India,IN,14933,14011
-456183,,,6/24/20,Asia,European Centre for Disease Prevention and Control,465,,IND,India,IN,15968,14476
-473105,,,6/25/20,Asia,European Centre for Disease Prevention and Control,418,,IND,India,IN,16922,14894
-490401,,,6/26/20,Asia,European Centre for Disease Prevention and Control,407,,IND,India,IN,17296,15301
-7103,,,4/30/20,Asia,European Centre for Disease Prevention and Control,8,,BGD,Bangladesh,BD,641,163
-87520,,,6/15/20,Asia,European Centre for Disease Prevention and Control,32,,BGD,Bangladesh,BD,3141,1171
-450,,,3/22/20,Asia,European Centre for Disease Prevention and Control,13,,IDN,Indonesia,ID,141,38
-21745,,,5/24/20,Asia,European Centre for Disease Prevention and Control,25,,IDN,Indonesia,ID,949,1351
-227,,,3/20/20,Asia,European Centre for Disease Prevention and Control,14,,IDN,Indonesia,ID,55,19
-462,,,4/26/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,42,7
-1643,,,6/2/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,10,11
-295,,,4/20/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,41,7
-1182,,,5/26/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,41,10
-2047,,,7/1/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,5,11
-1,,,3/4/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-106,,,3/27/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,4,0
-1,,,2/14/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,3/9/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/11/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/21/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,2/7/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/3/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1197,,,3/28/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,9
-0,,,2/24/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,2/11/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-32612,,,6/7/20,Africa,European Centre for Disease Prevention and Control,32,,EGY,Egypt,EG,1497,1198
-110,,,3/16/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,17,2
-49,,,3/9/20,Africa,European Centre for Disease Prevention and Control,1,,EGY,Egypt,EG,34,1
-0,,,1/29/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/23/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,2/7/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-1699,,,4/10/20,Africa,European Centre for Disease Prevention and Control,15,,EGY,Egypt,EG,139,118
-96559,,,5/3/20,America,European Centre for Disease Prevention and Control,421,,BRA,Brazil,BR,4970,6750
-114715,,,5/6/20,America,European Centre for Disease Prevention and Control,600,,BRA,Brazil,BR,6935,7921
-888271,,,6/16/20,America,European Centre for Disease Prevention and Control,627,,BRA,Brazil,BR,20647,43959
-0,,,2/20/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,2/1/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,2/4/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-508953,,,6/27/20,Asia,European Centre for Disease Prevention and Control,384,,IND,India,IN,18552,15685
-528859,,,6/28/20,Asia,European Centre for Disease Prevention and Control,410,,IND,India,IN,19906,16095
-548318,,,6/29/20,Asia,European Centre for Disease Prevention and Control,380,,IND,India,IN,19459,16475
-88,,,4/6/20,Asia,European Centre for Disease Prevention and Control,1,,BGD,Bangladesh,BD,18,9
-202066,,,7/19/20,Asia,European Centre for Disease Prevention and Control,34,,BGD,Bangladesh,BD,2709,2581
-39,,,3/26/20,Asia,European Centre for Disease Prevention and Control,1,,BGD,Bangladesh,BD,0,5
-216110,,,7/24/20,Asia,European Centre for Disease Prevention and Control,50,,BGD,Bangladesh,BD,2856,2801
-47896,,,6/24/20,Asia,European Centre for Disease Prevention and Control,35,,IDN,Indonesia,ID,1051,2535
-72347,,,7/11/20,Asia,European Centre for Disease Prevention and Control,52,,IDN,Indonesia,ID,1611,3469
-69,,,3/14/20,Asia,European Centre for Disease Prevention and Control,3,,IDN,Indonesia,ID,35,4
-117,,,3/16/20,Asia,European Centre for Disease Prevention and Control,1,,IDN,Indonesia,ID,21,5
-0,,,1/8/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-797,,,5/7/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,26,9
-1,,,3/6/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1869,,,6/11/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,10,11
-122,,,4/1/20,Asia,European Centre for Disease Prevention and Control,1,,LKA,Sri Lanka,LK,2,2
-266096,,,7/21/20,Asia,European Centre for Disease Prevention and Control,40,,PAK,Pakistan,PK,1013,5639
-54601,,,5/24/20,Asia,European Centre for Disease Prevention and Control,32,,PAK,Pakistan,PK,2164,1133
-7993,,,4/19/20,Asia,European Centre for Disease Prevention and Control,16,,PAK,Pakistan,PK,512,159
-87775,,,7/20/20,Africa,European Centre for Disease Prevention and Control,51,,EGY,Egypt,EG,603,4302
-88402,,,7/21/20,Africa,European Centre for Disease Prevention and Control,50,,EGY,Egypt,EG,627,4352
-1939,,,4/12/20,Africa,European Centre for Disease Prevention and Control,11,,EGY,Egypt,EG,145,146
-63923,,,6/28/20,Africa,European Centre for Disease Prevention and Control,88,,EGY,Egypt,EG,1168,2708
-55,,,3/10/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,6,1
-6193,,,5/3/20,Africa,European Centre for Disease Prevention and Control,9,,EGY,Egypt,EG,298,415
-5895,,,5/2/20,Africa,European Centre for Disease Prevention and Control,14,,EGY,Egypt,EG,358,406
-4092,,,4/25/20,Africa,European Centre for Disease Prevention and Control,18,,EGY,Egypt,EG,433,294
-1,,,2/28/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,2/10/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/26/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-1128,,,3/22/20,America,European Centre for Disease Prevention and Control,7,,BRA,Brazil,BR,224,18
-1448753,,,7/2/20,America,European Centre for Disease Prevention and Control,1038,,BRA,Brazil,BR,46712,60632
-12056,,,4/7/20,America,European Centre for Disease Prevention and Control,67,,BRA,Brazil,BR,926,553
-36599,,,4/19/20,America,European Centre for Disease Prevention and Control,206,,BRA,Brazil,BR,2917,2347
-218223,,,5/16/20,America,European Centre for Disease Prevention and Control,824,,BRA,Brazil,BR,15305,14817
-1,,,2/28/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-411821,,,5/28/20,America,European Centre for Disease Prevention and Control,1086,,BRA,Brazil,BR,20599,25598
-0,,,2/14/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-77,,,3/13/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,25,0
-566840,,,6/30/20,Asia,European Centre for Disease Prevention and Control,418,,IND,India,IN,18522,16893
-585493,,,7/1/20,Asia,European Centre for Disease Prevention and Control,507,,IND,India,IN,18653,17400
-604641,,,7/2/20,Asia,European Centre for Disease Prevention and Control,434,,IND,India,IN,19148,17834
-625544,,,7/3/20,Asia,European Centre for Disease Prevention and Control,379,,IND,India,IN,20903,18213
-68504,,,6/9/20,Asia,European Centre for Disease Prevention and Control,42,,BGD,Bangladesh,BD,2735,930
-330,,,4/10/20,Asia,European Centre for Disease Prevention and Control,1,,BGD,Bangladesh,BD,112,21
-196323,,,7/17/20,Asia,European Centre for Disease Prevention and Control,39,,BGD,Bangladesh,BD,2733,2496
-0,,,2/6/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-8607,,,4/26/20,Asia,European Centre for Disease Prevention and Control,31,,IDN,Indonesia,ID,396,720
-1790,,,4/3/20,Asia,European Centre for Disease Prevention and Control,13,,IDN,Indonesia,ID,113,170
-11587,,,5/5/20,Asia,European Centre for Disease Prevention and Control,19,,IDN,Indonesia,ID,395,864
-51427,,,6/27/20,Asia,European Centre for Disease Prevention and Control,63,,IDN,Indonesia,ID,1240,2683
-38277,,,6/15/20,Asia,European Centre for Disease Prevention and Control,43,,IDN,Indonesia,ID,857,2134
-23165,,,5/27/20,Asia,European Centre for Disease Prevention and Control,27,,IDN,Indonesia,ID,415,1418
-0,,,2/14/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/4/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-1027,,,5/20/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,35,9
-2,,,3/12/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,1,0
-1884,,,6/14/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,4,11
-1749,,,6/4/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,66,11
-1877,,,6/12/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,8,11
-29,,,3/17/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,10,0
-1,,,2/9/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-251625,,,7/13/20,Asia,European Centre for Disease Prevention and Control,69,,PAK,Pakistan,PK,2753,5266
-2291,,,4/3/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,31
-0,,,2/21/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-14079,,,4/28/20,Asia,European Centre for Disease Prevention and Control,20,,PAK,Pakistan,PK,751,301
-1526,,,3/30/20,Asia,European Centre for Disease Prevention and Control,2,,PAK,Pakistan,PK,118,13
-187,,,3/17/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,156,0
-0,,,1/4/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-645762,,,6/6/20,America,European Centre for Disease Prevention and Control,1005,,BRA,Brazil,BR,30830,35026
-904,,,3/21/20,America,European Centre for Disease Prevention and Control,5,,BRA,Brazil,BR,283,11
-91589,,,5/2/20,America,European Centre for Disease Prevention and Control,428,,BRA,Brazil,BR,6209,6329
-648315,,,7/4/20,Asia,European Centre for Disease Prevention and Control,442,,IND,India,IN,22771,18655
-673165,,,7/5/20,Asia,European Centre for Disease Prevention and Control,613,,IND,India,IN,24850,19268
-697413,,,7/6/20,Asia,European Centre for Disease Prevention and Control,425,,IND,India,IN,24248,19693
-719665,,,7/7/20,Asia,European Centre for Disease Prevention and Control,467,,IND,India,IN,22252,20160
-742417,,,7/8/20,Asia,European Centre for Disease Prevention and Control,482,,IND,India,IN,22752,20642
-767296,,,7/9/20,Asia,European Centre for Disease Prevention and Control,487,,IND,India,IN,24879,21129
-793802,,,7/10/20,Asia,European Centre for Disease Prevention and Control,475,,IND,India,IN,26506,21604
-820916,,,7/11/20,Asia,European Centre for Disease Prevention and Control,519,,IND,India,IN,27114,22123
-193590,,,7/16/20,Asia,European Centre for Disease Prevention and Control,33,,BGD,Bangladesh,BD,3533,2457
-229185,,,7/29/20,Asia,European Centre for Disease Prevention and Control,35,,BGD,Bangladesh,BD,2960,3000
-60391,,,6/6/20,Asia,European Centre for Disease Prevention and Control,30,,BGD,Bangladesh,BD,2828,811
-0,,,2/23/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-35585,,,5/26/20,Asia,European Centre for Disease Prevention and Control,21,,BGD,Bangladesh,BD,1975,501
-10,,,3/19/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,2,0
-115786,,,6/23/20,Asia,European Centre for Disease Prevention and Control,38,,BGD,Bangladesh,BD,3480,1502
-0,,,2/11/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-849553,,,7/12/20,Asia,European Centre for Disease Prevention and Control,551,,IND,India,IN,28637,22674
-0,,,2/2/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-7201,,,5/6/20,Africa,European Centre for Disease Prevention and Control,16,,EGY,Egypt,EG,388,452
-456,,,3/27/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,14,21
-3032,,,4/19/20,Africa,European Centre for Disease Prevention and Control,19,,EGY,Egypt,EG,188,224
-0,,,1/20/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,2/19/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-78572,,,7/15/20,Asia,European Centre for Disease Prevention and Control,54,,IDN,Indonesia,ID,1591,3710
-13112,,,5/9/20,Asia,European Centre for Disease Prevention and Control,13,,IDN,Indonesia,ID,336,943
-0,,,1/18/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-62142,,,7/5/20,Asia,European Centre for Disease Prevention and Control,53,,IDN,Indonesia,ID,1447,3089
-0,,,2/26/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-31186,,,6/8/20,Asia,European Centre for Disease Prevention and Control,50,,IDN,Indonesia,ID,672,1851
-43803,,,6/20/20,Asia,European Centre for Disease Prevention and Control,34,,IDN,Indonesia,ID,1041,2373
-100303,,,7/28/20,Asia,European Centre for Disease Prevention and Control,57,,IDN,Indonesia,ID,1525,4838
-0,,,2/5/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-2454,,,7/11/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,104,11
-2350,,,7/10/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,256,11
-863,,,5/11/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,16,9
-1797,,,6/5/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,48,11
-2066,,,7/3/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,12,11
-0,,,1/25/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/17/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-16,,,3/10/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,10,0
-2291,,,4/4/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,31
-37218,,,5/15/20,Asia,European Centre for Disease Prevention and Control,33,,PAK,Pakistan,PK,1430,803
-30941,,,5/11/20,Asia,European Centre for Disease Prevention and Control,28,,PAK,Pakistan,PK,1476,667
-89249,,,6/5/20,Asia,European Centre for Disease Prevention and Control,68,,PAK,Pakistan,PK,3985,1838
-0,,,1/13/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-15,,,3/8/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-166,,,3/18/20,Africa,European Centre for Disease Prevention and Control,2,,EGY,Egypt,EG,40,4
-36829,,,6/10/20,Africa,European Centre for Disease Prevention and Control,35,,EGY,Egypt,EG,1385,1306
-89745,,,7/23/20,Africa,European Centre for Disease Prevention and Control,41,,EGY,Egypt,EG,667,4440
-44598,,,6/15/20,Africa,European Centre for Disease Prevention and Control,91,,EGY,Egypt,EG,1618,1575
-0,,,1/10/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/25/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-0,,,1/13/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-3,,,3/5/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,1,0
-271628,,,5/20/20,America,European Centre for Disease Prevention and Control,1179,,BRA,Brazil,BR,17408,17971
-1966748,,,7/16/20,America,European Centre for Disease Prevention and Control,1233,,BRA,Brazil,BR,39924,75366
-1577004,,,7/5/20,America,European Centre for Disease Prevention and Control,1091,,BRA,Brazil,BR,37923,64265
-739503,,,6/10/20,America,European Centre for Disease Prevention and Control,1272,,BRA,Brazil,BR,32091,38406
-101147,,,5/4/20,America,European Centre for Disease Prevention and Control,275,,BRA,Brazil,BR,4588,7025
-2012151,,,7/17/20,America,European Centre for Disease Prevention and Control,1322,,BRA,Brazil,BR,45403,76688
-878254,,,7/13/20,Asia,European Centre for Disease Prevention and Control,500,,IND,India,IN,28701,23174
-906752,,,7/14/20,Asia,European Centre for Disease Prevention and Control,553,,IND,India,IN,28498,23727
-936181,,,7/15/20,Asia,European Centre for Disease Prevention and Control,582,,IND,India,IN,29429,24309
-968876,,,7/16/20,Asia,European Centre for Disease Prevention and Control,606,,IND,India,IN,32695,24915
-1003832,,,7/17/20,Asia,European Centre for Disease Prevention and Control,687,,IND,India,IN,34956,25602
-24,,,3/22/20,Asia,European Centre for Disease Prevention and Control,2,,BGD,Bangladesh,BD,7,2
-0,,,2/25/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-33,,,3/24/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,6,3
-3,,,3/10/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-48,,,3/29/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,5
-3382,,,4/22/20,Asia,European Centre for Disease Prevention and Control,9,,BGD,Bangladesh,BD,434,110
-0,,,1/22/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,1/26/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-1085038,,,6/22/20,America,European Centre for Disease Prevention and Control,641,,BRA,Brazil,BR,17459,50617
-119198,,,6/24/20,Asia,European Centre for Disease Prevention and Control,43,,BGD,Bangladesh,BD,3412,1545
-9511,,,4/29/20,Asia,European Centre for Disease Prevention and Control,8,,IDN,Indonesia,ID,415,773
-4,,,3/8/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-34,,,3/13/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,1
-0,,,1/12/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/16/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-210,,,4/13/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,11,7
-1,,,2/16/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,3/7/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1,,,3/10/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-1620,,,5/31/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,62,10
-217809,,,7/2/20,Asia,European Centre for Disease Prevention and Control,78,,PAK,Pakistan,PK,4339,4473
-8418,,,4/20/20,Asia,European Centre for Disease Prevention and Control,17,,PAK,Pakistan,PK,425,176
-202955,,,6/28/20,Asia,European Centre for Disease Prevention and Control,83,,PAK,Pakistan,PK,4072,4118
-991,,,3/25/20,Asia,European Centre for Disease Prevention and Control,1,,PAK,Pakistan,PK,104,7
-2,,,2/29/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-253604,,,7/14/20,Asia,European Centre for Disease Prevention and Control,54,,PAK,Pakistan,PK,1979,5320
-1625,,,3/31/20,Asia,European Centre for Disease Prevention and Control,5,,PAK,Pakistan,PK,99,18
-171666,,,6/20/20,Asia,European Centre for Disease Prevention and Control,153,,PAK,Pakistan,PK,6604,3382
-231818,,,7/6/20,Asia,European Centre for Disease Prevention and Control,50,,PAK,Pakistan,PK,3344,4762
-59151,,,5/27/20,Asia,European Centre for Disease Prevention and Control,28,,PAK,Pakistan,PK,1446,1225
-81158,,,7/13/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,3769
-196,,,3/19/20,Africa,European Centre for Disease Prevention and Control,2,,EGY,Egypt,EG,30,6
-11228,,,5/16/20,Africa,European Centre for Disease Prevention and Control,21,,EGY,Egypt,EG,399,592
-1794,,,4/11/20,Africa,European Centre for Disease Prevention and Control,17,,EGY,Egypt,EG,95,135
-126,,,3/17/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,16,2
-188974,,,5/14/20,America,European Centre for Disease Prevention and Control,749,,BRA,Brazil,BR,11385,13149
-1926824,,,7/15/20,America,European Centre for Disease Prevention and Control,1300,,BRA,Brazil,BR,41857,74133
-13,,,3/7/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,5,0
-7910,,,4/3/20,America,European Centre for Disease Prevention and Control,58,,BRA,Brazil,BR,1074,299
-1,,,2/29/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-1188631,,,6/25/20,America,European Centre for Disease Prevention and Control,1185,,BRA,Brazil,BR,42725,53830
-4579,,,3/31/20,America,European Centre for Disease Prevention and Control,23,,BRA,Brazil,BR,323,159
-0,,,1/22/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-1038716,,,7/18/20,Asia,European Centre for Disease Prevention and Control,671,,IND,India,IN,34884,26273
-1077618,,,7/19/20,Asia,European Centre for Disease Prevention and Control,543,,IND,India,IN,38902,26816
-1118043,,,7/20/20,Asia,European Centre for Disease Prevention and Control,681,,IND,India,IN,40425,27497
-1155191,,,7/21/20,Asia,European Centre for Disease Prevention and Control,587,,IND,India,IN,37148,28084
-1192915,,,7/22/20,Asia,European Centre for Disease Prevention and Control,648,,IND,India,IN,37724,28732
-1238635,,,7/23/20,Asia,European Centre for Disease Prevention and Control,1129,,IND,India,IN,45720,29861
-1287945,,,7/24/20,Asia,European Centre for Disease Prevention and Control,740,,IND,India,IN,49310,30601
-13134,,,5/9/20,Asia,European Centre for Disease Prevention and Control,7,,BGD,Bangladesh,BD,709,206
-0,,,2/29/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-40321,,,5/29/20,Asia,European Centre for Disease Prevention and Control,15,,BGD,Bangladesh,BD,2029,559
-20065,,,5/16/20,Asia,European Centre for Disease Prevention and Control,15,,BGD,Bangladesh,BD,1202,298
-0,,,1/4/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-60695,,,7/4/20,Asia,European Centre for Disease Prevention and Control,49,,IDN,Indonesia,ID,1301,3036
-25773,,,5/31/20,Asia,European Centre for Disease Prevention and Control,53,,IDN,Indonesia,ID,557,1573
-2491,,,4/7/20,Asia,European Centre for Disease Prevention and Control,11,,IDN,Indonesia,ID,218,209
-0,,,2/20/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/9/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-96,,,3/15/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,27,4
-45891,,,6/22/20,Asia,European Centre for Disease Prevention and Control,36,,IDN,Indonesia,ID,862,2465
-0,,,1/5/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-0,,,1/3/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-1,,,3/5/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-2069,,,7/4/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,3,11
-1558,,,5/30/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,28,10
-1924,,,6/18/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,9,11
-2042,,,6/30/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,5,11
-2805,,,7/28/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,23,11
-0,,,1/9/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-14885,,,4/29/20,Asia,European Centre for Disease Prevention and Control,26,,PAK,Pakistan,PK,806,327
-4601,,,4/10/20,Asia,European Centre for Disease Prevention and Control,3,,PAK,Pakistan,PK,279,66
-69496,,,5/31/20,Asia,European Centre for Disease Prevention and Control,88,,PAK,Pakistan,PK,3039,1483
-0,,,2/22/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-181088,,,6/22/20,Asia,European Centre for Disease Prevention and Control,89,,PAK,Pakistan,PK,4471,3590
-98943,,,6/7/20,Asia,European Centre for Disease Prevention and Control,67,,PAK,Pakistan,PK,4960,2002
-52437,,,5/23/20,Asia,European Centre for Disease Prevention and Control,34,,PAK,Pakistan,PK,1743,1101
-0,,,1/9/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,2/10/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-0,,,1/5/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-495,,,3/28/20,Africa,European Centre for Disease Prevention and Control,3,,EGY,Egypt,EG,39,24
-26384,,,6/2/20,Africa,European Centre for Disease Prevention and Control,46,,EGY,Egypt,EG,1399,1005
-8476,,,5/9/20,Africa,European Centre for Disease Prevention and Control,21,,EGY,Egypt,EG,495,503
-8964,,,5/10/20,Africa,European Centre for Disease Prevention and Control,11,,EGY,Egypt,EG,488,514
-90413,,,7/24/20,Africa,European Centre for Disease Prevention and Control,40,,EGY,Egypt,EG,668,4480
-60,,,3/12/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,1,1
-29767,,,6/5/20,Africa,European Centre for Disease Prevention and Control,38,,EGY,Egypt,EG,1152,1126
-15003,,,5/22/20,Africa,European Centre for Disease Prevention and Control,16,,EGY,Egypt,EG,774,696
-0,,,2/5/20,Africa,European Centre for Disease Prevention and Control,0,,EGY,Egypt,EG,0,0
-514849,,,6/1/20,America,European Centre for Disease Prevention and Control,480,,BRA,Brazil,BR,16409,29314
-0,,,2/12/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-254220,,,5/19/20,America,European Centre for Disease Prevention and Control,674,,BRA,Brazil,BR,13140,16792
-10278,,,4/5/20,America,European Centre for Disease Prevention and Control,73,,BRA,Brazil,BR,1222,432
-1496858,,,7/3/20,America,European Centre for Disease Prevention and Control,1252,,BRA,Brazil,BR,48105,61884
-0,,,1/29/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/10/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-0,,,1/31/20,America,European Centre for Disease Prevention and Control,0,,BRA,Brazil,BR,0,0
-1336861,,,7/25/20,Asia,European Centre for Disease Prevention and Control,757,,IND,India,IN,48916,31358
-1385522,,,7/26/20,Asia,European Centre for Disease Prevention and Control,705,,IND,India,IN,48661,32063
-1435453,,,7/27/20,Asia,European Centre for Disease Prevention and Control,708,,IND,India,IN,49931,32771
-1483156,,,7/28/20,Asia,European Centre for Disease Prevention and Control,654,,IND,India,IN,47703,33425
-1531669,,,7/29/20,Asia,European Centre for Disease Prevention and Control,768,,IND,India,IN,48513,34193
-0,,,2/16/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-0,,,3/4/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-90619,,,6/16/20,Asia,European Centre for Disease Prevention and Control,38,,BGD,Bangladesh,BD,3099,1209
-0,,,2/20/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-112306,,,6/22/20,Asia,European Centre for Disease Prevention and Control,39,,BGD,Bangladesh,BD,3531,1464
-81523,,,6/13/20,Asia,European Centre for Disease Prevention and Control,46,,BGD,Bangladesh,BD,3471,1095
-0,,,1/24/20,Asia,European Centre for Disease Prevention and Control,0,,BGD,Bangladesh,BD,0,0
-49534,,,6/2/20,Asia,European Centre for Disease Prevention and Control,22,,BGD,Bangladesh,BD,2381,672
-64958,,,7/7/20,Asia,European Centre for Disease Prevention and Control,70,,IDN,Indonesia,ID,1209,3241
-39294,,,6/16/20,Asia,European Centre for Disease Prevention and Control,64,,IDN,Indonesia,ID,1017,2198
-83130,,,7/18/20,Asia,European Centre for Disease Prevention and Control,84,,IDN,Indonesia,ID,1462,3957
-0,,,1/29/20,Asia,European Centre for Disease Prevention and Control,0,,IDN,Indonesia,ID,0,0
-2033,,,6/28/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,19,11
-1,,,3/8/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-19,,,3/16/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,8,0
-1,,,2/1/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/16/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-0,,,1/13/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,0,0
-646,,,3/22/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,151,3
-11940,,,4/25/20,Asia,European Centre for Disease Prevention and Control,16,,PAK,Pakistan,PK,785,253
-0,,,2/15/20,Asia,European Centre for Disease Prevention and Control,0,,PAK,Pakistan,PK,0,0
-2014,,,6/27/20,Asia,European Centre for Disease Prevention and Control,0,,LKA,Sri Lanka,LK,4,11
+﻿PEOPLE_POSITIVE_CASES_COUNT,REPORT_DATE,PEOPLE_DEATH_NEW_COUNT,COUNTRY_SHORT_NAME,PEOPLE_POSITIVE_NEW_CASES_COUNT,PEOPLE_DEATH_COUNT
+102051,7/29/20,63,Indonesia,1748,4901
+2810,7/29/20,0,Sri Lanka,5,11
+276288,7/29/20,27,Pakistan,1063,5892
+92947,7/29/20,39,Egypt,465,4691
+2483191,7/29/20,921,Brazil,40816,88539
+229185,7/29/20,35,Bangladesh,2960,3000
+1531669,7/29/20,768,India,48513,34193
+226225,7/28/20,37,Bangladesh,2772,2965
+92482,7/28/20,46,Egypt,420,4652
+2442375,7/28/20,614,Brazil,23284,87618
+275225,7/28/20,23,Pakistan,936,5865
+100303,7/28/20,57,Indonesia,1525,4838
+2805,7/28/20,0,Sri Lanka,23,11
+1483156,7/28/20,654,India,47703,33425
+223453,7/27/20,54,Bangladesh,2275,2928
+2419091,7/27/20,555,Brazil,24578,87004
+92062,7/27/20,48,Egypt,479,4606
+98778,7/27/20,67,Indonesia,1492,4781
+274289,7/27/20,20,Pakistan,1176,5842
+2782,7/27/20,0,Sri Lanka,12,11
+1435453,7/27/20,708,India,49931,32771
+2770,7/26/20,0,Sri Lanka,6,11
+273113,7/26/20,35,Pakistan,1226,5822
+221178,7/26/20,38,Bangladesh,2520,2874
+91583,7/26/20,40,Egypt,511,4558
+2394513,7/26/20,1211,Brazil,51147,86449
+97286,7/26/20,49,Indonesia,1868,4714
+1385522,7/26/20,705,India,48661,32063
+2343366,7/25/20,1156,Brazil,55891,85238
+95418,7/25/20,89,Indonesia,1761,4665
+2764,7/25/20,0,Sri Lanka,11,11
+218658,7/25/20,35,Bangladesh,2548,2836
+271887,7/25/20,24,Pakistan,1487,5787
+91072,7/25/20,38,Egypt,659,4518
+1336861,7/25/20,757,India,48916,31358
+93657,7/24/20,117,Indonesia,1906,4576
+270400,7/24/20,54,Pakistan,1209,5763
+2287475,7/24/20,1311,Brazil,59961,84082
+2753,7/24/20,0,Sri Lanka,1,11
+216110,7/24/20,50,Bangladesh,2856,2801
+1287945,7/24/20,740,India,49310,30601
+90413,7/24/20,40,Egypt,668,4480
+91751,7/23/20,139,Indonesia,1882,4459
+2752,7/23/20,0,Sri Lanka,22,11
+2227514,7/23/20,1284,Brazil,67860,82771
+269191,7/23/20,32,Pakistan,1763,5709
+213254,7/23/20,42,Bangladesh,2744,2751
+89745,7/23/20,41,Egypt,667,4440
+1238635,7/23/20,1129,India,45720,29861
+267428,7/22/20,38,Pakistan,1332,5677
+210510,7/22/20,41,Bangladesh,3057,2709
+2159654,7/22/20,1367,Brazil,41008,81487
+89869,7/22/20,81,Indonesia,1655,4320
+2730,7/22/20,0,Sri Lanka,0,11
+89078,7/22/20,47,Egypt,676,4399
+1192915,7/22/20,648,India,37724,28732
+2118646,7/21/20,632,Brazil,20257,80120
+2730,7/21/20,0,Sri Lanka,6,11
+88214,7/21/20,96,Indonesia,1693,4239
+207453,7/21/20,50,Bangladesh,2928,2668
+266096,7/21/20,40,Pakistan,1013,5639
+88402,7/21/20,50,Egypt,627,4352
+1155191,7/21/20,587,India,37148,28084
+86521,7/20/20,127,Indonesia,1639,4143
+2724,7/20/20,0,Sri Lanka,20,11
+204525,7/20/20,37,Bangladesh,2459,2618
+2098389,7/20/20,716,Brazil,23529,79488
+265083,7/20/20,31,Pakistan,1587,5599
+87775,7/20/20,51,Egypt,603,4302
+1118043,7/20/20,681,India,40425,27497
+87172,7/19/20,63,Egypt,698,4251
+84882,7/19/20,59,Indonesia,1752,4016
+2074860,7/19/20,921,Brazil,28532,78772
+263496,7/19/20,46,Pakistan,1579,5568
+2704,7/19/20,0,Sri Lanka,7,11
+202066,7/19/20,34,Bangladesh,2709,2581
+1077618,7/19/20,543,India,38902,26816
+261917,7/18/20,47,Pakistan,1918,5522
+86474,7/18/20,68,Egypt,703,4188
+2046328,7/18/20,1163,Brazil,34177,77851
+2697,7/18/20,0,Sri Lanka,10,11
+199357,7/18/20,51,Bangladesh,3034,2547
+1038716,7/18/20,671,India,34884,26273
+83130,7/18/20,84,Indonesia,1462,3957
+259999,7/17/20,49,Pakistan,2085,5475
+2687,7/17/20,0,Sri Lanka,13,11
+81668,7/17/20,76,Indonesia,1574,3873
+85771,7/17/20,53,Egypt,928,4120
+196323,7/17/20,39,Bangladesh,2733,2496
+2012151,7/17/20,1322,Brazil,45403,76688
+1003832,7/17/20,687,India,34956,25602
+2674,7/16/20,0,Sri Lanka,9,11
+84843,7/16/20,59,Egypt,913,4067
+80094,7/16/20,87,Indonesia,1522,3797
+257914,7/16/20,40,Pakistan,2145,5426
+193590,7/16/20,33,Bangladesh,3533,2457
+1966748,7/16/20,1233,Brazil,39924,75366
+968876,7/16/20,606,India,32695,24915
+83930,7/15/20,73,Egypt,929,4008
+255769,7/15/20,66,Pakistan,2165,5386
+2665,7/15/20,0,Sri Lanka,19,11
+190057,7/15/20,33,Bangladesh,3163,2424
+78572,7/15/20,54,Indonesia,1591,3710
+936181,7/15/20,582,India,29429,24309
+1926824,7/15/20,1300,Brazil,41857,74133
+186894,7/14/20,39,Bangladesh,3099,2391
+1884967,7/14/20,733,Brazil,20286,72833
+83001,7/14/20,166,Egypt,1843,3935
+2646,7/14/20,0,Sri Lanka,29,11
+76981,7/14/20,50,Indonesia,1282,3656
+906752,7/14/20,553,India,28498,23727
+253604,7/14/20,54,Pakistan,1979,5320
+2617,7/13/20,0,Sri Lanka,106,11
+75699,7/13/20,71,Indonesia,1681,3606
+1864681,7/13/20,631,Brazil,24831,72100
+183795,7/13/20,47,Bangladesh,2666,2352
+251625,7/13/20,69,Pakistan,2753,5266
+878254,7/13/20,500,India,28701,23174
+81158,7/13/20,0,Egypt,0,3769
+1839850,7/12/20,1071,Brazil,39023,71469
+74018,7/12/20,66,Indonesia,1671,3535
+2511,7/12/20,0,Sri Lanka,57,11
+81158,7/12/20,67,Egypt,923,3769
+181129,7/12/20,30,Bangladesh,2686,2305
+248872,7/12/20,74,Pakistan,2521,5197
+849553,7/12/20,551,India,28637,22674
+246351,7/11/20,65,Pakistan,2752,5123
+80235,7/11/20,85,Egypt,981,3702
+178443,7/11/20,37,Bangladesh,2949,2275
+1800827,7/11/20,1214,Brazil,45048,70398
+72347,7/11/20,52,Indonesia,1611,3469
+820916,7/11/20,519,India,27114,22123
+2454,7/11/20,0,Sri Lanka,104,11
+1755779,7/10/20,1220,Brazil,42619,69184
+175494,7/10/20,41,Bangladesh,3360,2238
+70736,7/10/20,58,Indonesia,2657,3417
+243599,7/10/20,75,Pakistan,2751,5058
+79254,7/10/20,53,Egypt,950,3617
+793802,7/10/20,475,India,26506,21604
+2350,7/10/20,0,Sri Lanka,256,11
+68079,7/9/20,50,Indonesia,1853,3359
+1713160,7/9/20,1223,Brazil,44571,67964
+78304,7/9/20,75,Egypt,1025,3564
+2094,7/9/20,0,Sri Lanka,13,11
+240848,7/9/20,61,Pakistan,3359,4983
+172134,7/9/20,46,Bangladesh,3489,2197
+767296,7/9/20,487,India,24879,21129
+77279,7/8/20,67,Egypt,1057,3489
+168645,7/8/20,55,Bangladesh,3027,2151
+1668589,7/8/20,1254,Brazil,45305,66741
+2081,7/8/20,0,Sri Lanka,3,11
+237489,7/8/20,83,Pakistan,2980,4922
+66226,7/8/20,68,Indonesia,1268,3309
+742417,7/8/20,482,India,22752,20642
+2078,7/7/20,0,Sri Lanka,2,11
+165618,7/7/20,44,Bangladesh,3201,2096
+1623284,7/7/20,620,Brazil,20229,65487
+234509,7/7/20,77,Pakistan,2691,4839
+76222,7/7/20,79,Egypt,969,3422
+719665,7/7/20,467,India,22252,20160
+64958,7/7/20,70,Indonesia,1209,3241
+63749,7/6/20,82,Indonesia,1607,3171
+1603055,7/6/20,602,Brazil,26051,64867
+162417,7/6/20,55,Bangladesh,2738,2052
+2076,7/6/20,0,Sri Lanka,2,11
+75253,7/6/20,63,Egypt,1218,3343
+697413,7/6/20,425,India,24248,19693
+231818,7/6/20,50,Pakistan,3344,4762
+228474,7/5/20,93,Pakistan,3191,4712
+74035,7/5/20,79,Egypt,1324,3280
+2074,7/5/20,0,Sri Lanka,5,11
+159679,7/5/20,29,Bangladesh,3288,1997
+673165,7/5/20,613,India,24850,19268
+62142,7/5/20,53,Indonesia,1447,3089
+1577004,7/5/20,1091,Brazil,37923,64265
+156391,7/4/20,42,Bangladesh,3114,1968
+72711,7/4/20,81,Egypt,1412,3201
+1539081,7/4/20,1290,Brazil,42223,63174
+225283,7/4/20,68,Pakistan,3387,4619
+648315,7/4/20,442,India,22771,18655
+60695,7/4/20,49,Indonesia,1301,3036
+2069,7/4/20,0,Sri Lanka,3,11
+59394,7/3/20,53,Indonesia,1624,2987
+153277,7/3/20,38,Bangladesh,4019,1926
+71299,7/3/20,86,Egypt,1485,3120
+221896,7/3/20,78,Pakistan,4087,4551
+625544,7/3/20,379,India,20903,18213
+2066,7/3/20,0,Sri Lanka,12,11
+1496858,7/3/20,1252,Brazil,48105,61884
+2054,7/2/20,0,Sri Lanka,7,11
+57770,7/2/20,58,Indonesia,1385,2934
+149258,7/2/20,41,Bangladesh,3775,1888
+69814,7/2/20,81,Egypt,1503,3034
+1448753,7/2/20,1038,Brazil,46712,60632
+604641,7/2/20,434,India,19148,17834
+217809,7/2/20,78,Pakistan,4339,4473
+56385,7/1/20,71,Indonesia,1293,2876
+1402041,7/1/20,1280,Brazil,33846,59594
+145483,7/1/20,64,Bangladesh,3682,1847
+213470,7/1/20,91,Pakistan,4133,4395
+68311,7/1/20,81,Egypt,1557,2953
+2047,7/1/20,0,Sri Lanka,5,11
+585493,7/1/20,507,India,18653,17400
+141801,6/30/20,45,Bangladesh,4014,1783
+55092,6/30/20,51,Indonesia,1082,2805
+66754,6/30/20,83,Egypt,1566,2872
+1368195,6/30/20,692,Brazil,24052,58314
+209337,6/30/20,137,Pakistan,2825,4304
+566840,6/30/20,418,India,18522,16893
+2042,6/30/20,0,Sri Lanka,5,11
+65188,6/29/20,81,Egypt,1265,2789
+2037,6/29/20,0,Sri Lanka,4,11
+1344143,6/29/20,552,Brazil,30476,57622
+206512,6/29/20,49,Pakistan,3557,4167
+137787,6/29/20,43,Bangladesh,3809,1738
+54010,6/29/20,34,Indonesia,1198,2754
+548318,6/29/20,380,India,19459,16475
+52812,6/28/20,37,Indonesia,1385,2720
+133978,6/28/20,34,Bangladesh,3504,1695
+1313667,6/28/20,1109,Brazil,38693,57070
+528859,6/28/20,410,India,19906,16095
+63923,6/28/20,88,Egypt,1168,2708
+202955,6/28/20,83,Pakistan,4072,4118
+2033,6/28/20,0,Sri Lanka,19,11
+130474,6/27/20,40,Bangladesh,3868,1661
+1274974,6/27/20,990,Brazil,46860,55961
+198883,6/27/20,73,Pakistan,3138,4035
+62755,6/27/20,87,Egypt,1625,2620
+508953,6/27/20,384,India,18552,15685
+51427,6/27/20,63,Indonesia,1240,2683
+2014,6/27/20,0,Sri Lanka,4,11
+126606,6/26/20,39,Bangladesh,3946,1621
+2010,6/26/20,0,Sri Lanka,9,11
+195745,6/26/20,59,Pakistan,2775,3962
+61130,6/26/20,168,Egypt,2989,2533
+50187,6/26/20,47,Indonesia,1178,2620
+1228114,6/26/20,1141,Brazil,39483,54971
+490401,6/26/20,407,India,17296,15301
+122660,6/25/20,37,Bangladesh,3462,1582
+58141,6/25/20,0,Egypt,0,2365
+49009,6/25/20,38,Indonesia,1113,2573
+192970,6/25/20,148,Pakistan,4044,3903
+2001,6/25/20,0,Sri Lanka,10,11
+473105,6/25/20,418,India,16922,14894
+1188631,6/25/20,1185,Brazil,42725,53830
+1145906,6/24/20,1374,Brazil,39436,52645
+1991,6/24/20,0,Sri Lanka,40,11
+58141,6/24/20,87,Egypt,1332,2365
+188926,6/24/20,60,Pakistan,3892,3755
+456183,6/24/20,465,India,15968,14476
+47896,6/24/20,35,Indonesia,1051,2535
+119198,6/24/20,43,Bangladesh,3412,1545
+46845,6/23/20,35,Indonesia,954,2500
+56809,6/23/20,85,Egypt,1576,2278
+185034,6/23/20,105,Pakistan,3946,3695
+1106470,6/23/20,654,Brazil,21432,51271
+1951,6/23/20,0,Sri Lanka,1,11
+440215,6/23/20,312,India,14933,14011
+115786,6/23/20,38,Bangladesh,3480,1502
+1950,6/22/20,0,Sri Lanka,0,11
+55233,6/22/20,87,Egypt,1475,2193
+425282,6/22/20,445,India,14821,13699
+1085038,6/22/20,641,Brazil,17459,50617
+45891,6/22/20,36,Indonesia,862,2465
+181088,6/22/20,89,Pakistan,4471,3590
+112306,6/22/20,39,Bangladesh,3531,1464
+1950,6/21/20,0,Sri Lanka,0,11
+108775,6/21/20,37,Bangladesh,3240,1425
+176617,6/21/20,119,Pakistan,4951,3501
+1067579,6/21/20,1022,Brazil,34666,49976
+53758,6/21/20,89,Egypt,1547,2106
+45029,6/21/20,56,Indonesia,1226,2429
+410461,6/21/20,306,India,15413,13254
+105535,6/20/20,45,Bangladesh,3243,1388
+52211,6/20/20,79,Egypt,1774,2017
+1032913,6/20/20,1206,Brazil,54771,48954
+1950,6/20/20,0,Sri Lanka,3,11
+395048,6/20/20,375,India,14516,12948
+43803,6/20/20,34,Indonesia,1041,2373
+171666,6/20/20,153,Pakistan,6604,3382
+165062,6/19/20,136,Pakistan,4944,3229
+978142,6/19/20,1238,Brazil,22765,47748
+1947,6/19/20,0,Sri Lanka,23,11
+50437,6/19/20,88,Egypt,1218,1938
+42762,6/19/20,63,Indonesia,1331,2339
+380532,6/19/20,336,India,13586,12573
+102292,6/19/20,38,Bangladesh,3803,1343
+955377,6/18/20,1269,Brazil,32188,46510
+98489,6/18/20,43,Bangladesh,4008,1305
+49219,6/18/20,84,Egypt,1363,1850
+160118,6/18/20,118,Pakistan,5358,3093
+366946,6/18/20,334,India,12881,12237
+41431,6/18/20,45,Indonesia,1031,2276
+1924,6/18/20,0,Sri Lanka,9,11
+923189,6/17/20,1282,Brazil,34918,45241
+40400,6/17/20,33,Indonesia,1106,2231
+94481,6/17/20,53,Bangladesh,3862,1262
+1915,6/17/20,0,Sri Lanka,10,11
+47856,6/17/20,94,Egypt,1567,1766
+154760,6/17/20,136,Pakistan,5839,2975
+354065,6/17/20,2003,India,10974,11903
+1905,6/16/20,0,Sri Lanka,16,11
+148921,6/16/20,110,Pakistan,4443,2839
+46289,6/16/20,97,Egypt,1691,1672
+343091,6/16/20,380,India,10667,9900
+888271,6/16/20,627,Brazil,20647,43959
+90619,6/16/20,38,Bangladesh,3099,1209
+39294,6/16/20,64,Indonesia,1017,2198
+144478,6/15/20,97,Pakistan,5248,2729
+867624,6/15/20,612,Brazil,17110,43332
+1889,6/15/20,0,Sri Lanka,5,11
+332424,6/15/20,325,India,11502,9520
+87520,6/15/20,32,Bangladesh,3141,1171
+38277,6/15/20,43,Indonesia,857,2134
+44598,6/15/20,91,Egypt,1618,1575
+850514,6/14/20,892,Brazil,21704,42720
+37420,6/14/20,43,Indonesia,1014,2091
+42980,6/14/20,62,Egypt,1676,1484
+84379,6/14/20,44,Bangladesh,2856,1139
+139230,6/14/20,81,Pakistan,6825,2632
+320922,6/14/20,311,India,11929,9195
+1884,6/14/20,0,Sri Lanka,4,11
+132405,6/13/20,88,Pakistan,6472,2551
+36406,6/13/20,48,Indonesia,1111,2048
+828810,6/13/20,909,Brazil,25982,41828
+41304,6/13/20,45,Egypt,1578,1422
+1880,6/13/20,0,Sri Lanka,3,11
+308993,6/13/20,386,India,11458,8884
+81523,6/13/20,46,Bangladesh,3471,1095
+802828,6/12/20,1239,Brazil,30412,40919
+125933,6/12/20,107,Pakistan,6397,2463
+35295,6/12/20,41,Indonesia,979,2000
+39726,6/12/20,35,Egypt,1442,1377
+78052,6/12/20,37,Bangladesh,3187,1049
+297535,6/12/20,396,India,10956,8498
+1877,6/12/20,0,Sri Lanka,8,11
+38284,6/11/20,36,Egypt,1455,1342
+74865,6/11/20,37,Bangladesh,3190,1012
+772416,6/11/20,1274,Brazil,32913,39680
+119536,6/11/20,101,Pakistan,5834,2356
+286579,6/11/20,357,India,9996,8102
+34316,6/11/20,36,Indonesia,1240,1959
+1869,6/11/20,0,Sri Lanka,10,11
+71675,6/10/20,45,Bangladesh,3171,975
+113702,6/10/20,83,Pakistan,5385,2255
+33076,6/10/20,40,Indonesia,1043,1923
+1859,6/10/20,0,Sri Lanka,2,11
+276583,6/10/20,279,India,9985,7745
+36829,6/10/20,35,Egypt,1385,1306
+739503,6/10/20,1272,Brazil,32091,38406
+108317,6/9/20,105,Pakistan,4646,2172
+35444,6/9/20,34,Egypt,1365,1271
+32033,6/9/20,32,Indonesia,847,1883
+707412,6/9/20,679,Brazil,15654,37134
+1857,6/9/20,0,Sri Lanka,22,11
+266598,6/9/20,331,India,9987,7466
+68504,6/9/20,42,Bangladesh,2735,930
+103671,6/8/20,65,Pakistan,4728,2067
+65769,6/8/20,42,Bangladesh,2743,888
+691758,6/8/20,525,Brazil,18921,36455
+1835,6/8/20,0,Sri Lanka,21,11
+256611,6/8/20,206,India,9983,7135
+34079,6/8/20,39,Egypt,1467,1237
+31186,6/8/20,50,Indonesia,672,1851
+672837,6/7/20,904,Brazil,27075,35930
+63026,6/7/20,35,Bangladesh,2635,846
+1814,6/7/20,0,Sri Lanka,13,11
+246628,6/7/20,287,India,9971,6929
+30514,6/7/20,31,Indonesia,993,1801
+32612,6/7/20,32,Egypt,1497,1198
+98943,6/7/20,67,Pakistan,4960,2002
+1801,6/6/20,0,Sri Lanka,4,11
+29521,6/6/20,49,Indonesia,703,1770
+236657,6/6/20,294,India,9887,6642
+93983,6/6/20,97,Pakistan,4734,1935
+31115,6/6/20,40,Egypt,1348,1166
+645762,6/6/20,1005,Brazil,30830,35026
+60391,6/6/20,30,Bangladesh,2828,811
+57563,6/5/20,35,Bangladesh,2423,781
+28818,6/5/20,23,Indonesia,585,1721
+226770,6/5/20,273,India,9851,6348
+614932,6/5/20,1473,Brazil,30916,34021
+1797,6/5/20,0,Sri Lanka,48,11
+89249,6/5/20,68,Pakistan,3985,1838
+29767,6/5/20,38,Egypt,1152,1126
+85264,6/4/20,82,Pakistan,4801,1770
+28233,6/4/20,35,Indonesia,684,1698
+55140,6/4/20,37,Bangladesh,2695,746
+28615,6/4/20,36,Egypt,1079,1088
+216919,6/4/20,260,India,9304,6075
+584016,6/4/20,1349,Brazil,28633,32548
+1749,6/4/20,0,Sri Lanka,66,11
+1683,6/3/20,0,Sri Lanka,40,11
+555383,6/3/20,1262,Brazil,28936,31199
+27549,6/3/20,22,Indonesia,609,1663
+80463,6/3/20,67,Pakistan,4065,1688
+52445,6/3/20,37,Bangladesh,2911,709
+207615,6/3/20,217,India,8909,5815
+27536,6/3/20,47,Egypt,1152,1052
+76398,6/2/20,78,Pakistan,3938,1621
+526447,6/2/20,623,Brazil,11598,29937
+26940,6/2/20,28,Indonesia,467,1641
+198706,6/2/20,204,India,8171,5598
+1643,6/2/20,1,Sri Lanka,10,11
+26384,6/2/20,46,Egypt,1399,1005
+49534,6/2/20,22,Bangladesh,2381,672
+24985,6/1/20,46,Egypt,1536,959
+1633,6/1/20,0,Sri Lanka,13,10
+72460,6/1/20,60,Pakistan,2964,1543
+47153,6/1/20,40,Bangladesh,2545,650
+26473,6/1/20,40,Indonesia,700,1613
+190535,6/1/20,230,India,8392,5394
+514849,6/1/20,480,Brazil,16409,29314
+498440,5/31/20,956,Brazil,33274,28834
+23449,5/31/20,34,Egypt,1367,913
+44608,5/31/20,28,Bangladesh,1764,610
+182143,5/31/20,193,India,8380,5164
+1620,5/31/20,0,Sri Lanka,62,10
+25773,5/31/20,53,Indonesia,557,1573
+69496,5/31/20,88,Pakistan,3039,1483
+22082,5/30/20,34,Egypt,1289,879
+42844,5/30/20,23,Bangladesh,2523,582
+25216,5/30/20,24,Indonesia,678,1520
+66457,5/30/20,78,Pakistan,2429,1395
+173763,5/30/20,265,India,7964,4971
+465166,5/30/20,1124,Brazil,26928,27878
+1558,5/30/20,0,Sri Lanka,28,10
+64028,5/29/20,57,Pakistan,2801,1317
+1530,5/29/20,0,Sri Lanka,61,10
+24538,5/29/20,23,Indonesia,687,1496
+438238,5/29/20,1156,Brazil,26417,26754
+165799,5/29/20,175,India,7466,4706
+20793,5/29/20,29,Egypt,1127,845
+40321,5/29/20,15,Bangladesh,2029,559
+1469,5/28/20,0,Sri Lanka,150,10
+61227,5/28/20,35,Pakistan,2076,1260
+19666,5/28/20,19,Egypt,910,816
+23851,5/28/20,55,Indonesia,686,1473
+38292,5/28/20,22,Bangladesh,1541,544
+158333,5/28/20,194,India,6566,4531
+411821,5/28/20,1086,Brazil,20599,25598
+36751,5/27/20,21,Bangladesh,1166,522
+18756,5/27/20,14,Egypt,789,797
+151767,5/27/20,170,India,6387,4337
+391222,5/27/20,1039,Brazil,16324,24512
+1319,5/27/20,0,Sri Lanka,137,10
+23165,5/27/20,27,Indonesia,415,1418
+59151,5/27/20,28,Pakistan,1446,1225
+22750,5/26/20,19,Indonesia,479,1391
+374898,5/26/20,807,Brazil,11687,23473
+17967,5/26/20,19,Egypt,702,783
+145380,5/26/20,146,India,6535,4167
+57705,5/26/20,30,Pakistan,1356,1197
+1182,5/26/20,1,Sri Lanka,41,10
+35585,5/26/20,21,Bangladesh,1975,501
+56349,5/25/20,34,Pakistan,1748,1167
+1141,5/25/20,0,Sri Lanka,52,9
+22271,5/25/20,21,Indonesia,526,1372
+17265,5/25/20,29,Egypt,652,764
+33610,5/25/20,28,Bangladesh,1532,480
+138845,5/25/20,154,India,6977,4021
+363211,5/25/20,653,Brazil,15813,22666
+16613,5/24/20,28,Egypt,827,735
+32078,5/24/20,20,Bangladesh,1873,452
+1089,5/24/20,0,Sri Lanka,21,9
+131868,5/24/20,147,India,6767,3867
+347398,5/24/20,965,Brazil,16508,22013
+21745,5/24/20,25,Indonesia,949,1351
+54601,5/24/20,32,Pakistan,2164,1133
+30205,5/23/20,24,Bangladesh,1694,432
+20796,5/23/20,48,Indonesia,634,1326
+125101,5/23/20,137,India,6654,3720
+330890,5/23/20,1001,Brazil,20803,21048
+1068,5/23/20,0,Sri Lanka,13,9
+15786,5/23/20,11,Egypt,783,707
+52437,5/23/20,34,Pakistan,1743,1101
+50694,5/22/20,50,Pakistan,2603,1067
+20162,5/22/20,36,Indonesia,973,1278
+310087,5/22/20,1188,Brazil,18508,20047
+118447,5/22/20,148,India,6088,3583
+1055,5/22/20,0,Sri Lanka,27,9
+28511,5/22/20,22,Bangladesh,1773,408
+15003,5/22/20,16,Egypt,774,696
+48091,5/21/20,32,Pakistan,2193,1017
+1028,5/21/20,0,Sri Lanka,1,9
+291579,5/21/20,888,Brazil,19951,18859
+26738,5/21/20,16,Bangladesh,1617,386
+112359,5/21/20,132,India,5609,3435
+19189,5/21/20,21,Indonesia,693,1242
+14229,5/21/20,21,Egypt,745,680
+13484,5/20/20,14,Egypt,720,659
+25121,5/20/20,21,Bangladesh,1251,370
+45898,5/20/20,46,Pakistan,1932,985
+18496,5/20/20,30,Indonesia,486,1221
+106750,5/20/20,140,India,5611,3303
+1027,5/20/20,0,Sri Lanka,35,9
+271628,5/20/20,1179,Brazil,17408,17971
+992,5/19/20,0,Sri Lanka,11,9
+43966,5/19/20,36,Pakistan,1841,939
+18010,5/19/20,43,Indonesia,496,1191
+12764,5/19/20,15,Egypt,535,645
+23870,5/19/20,21,Bangladesh,1602,349
+101139,5/19/20,134,India,4970,3163
+254220,5/19/20,674,Brazil,13140,16792
+981,5/18/20,0,Sri Lanka,21,9
+241080,5/18/20,485,Brazil,7938,16118
+22268,5/18/20,14,Bangladesh,1273,328
+12229,5/18/20,18,Egypt,510,630
+42125,5/18/20,30,Pakistan,1974,903
+96169,5/18/20,157,India,5242,3029
+17514,5/18/20,59,Indonesia,489,1148
+11719,5/17/20,20,Egypt,491,612
+960,5/17/20,0,Sri Lanka,25,9
+17025,5/17/20,13,Indonesia,529,1089
+233142,5/17/20,816,Brazil,14919,15633
+90927,5/17/20,120,India,4987,2872
+40151,5/17/20,39,Pakistan,1352,873
+20995,5/17/20,16,Bangladesh,930,314
+16496,5/16/20,33,Indonesia,490,1076
+935,5/16/20,0,Sri Lanka,10,9
+85940,5/16/20,103,India,3970,2752
+38799,5/16/20,31,Pakistan,1581,834
+218223,5/16/20,824,Brazil,15305,14817
+11228,5/16/20,21,Egypt,399,592
+20065,5/16/20,15,Bangladesh,1202,298
+925,5/15/20,0,Sri Lanka,10,9
+18863,5/15/20,14,Bangladesh,1041,283
+10829,5/15/20,15,Egypt,398,571
+16006,5/15/20,15,Indonesia,568,1043
+81970,5/15/20,100,India,3967,2649
+202918,5/15/20,844,Brazil,13944,13993
+37218,5/15/20,33,Pakistan,1430,803
+17822,5/14/20,19,Bangladesh,1162,269
+10431,5/14/20,12,Egypt,338,556
+915,5/14/20,0,Sri Lanka,26,9
+78003,5/14/20,134,India,3722,2549
+15438,5/14/20,21,Indonesia,689,1028
+35788,5/14/20,33,Pakistan,1452,770
+188974,5/14/20,749,Brazil,11385,13149
+889,5/13/20,0,Sri Lanka,20,9
+14749,5/13/20,16,Indonesia,484,1007
+177589,5/13/20,881,Brazil,9258,12400
+16660,5/13/20,11,Bangladesh,969,250
+34336,5/13/20,31,Pakistan,2255,737
+10093,5/13/20,11,Egypt,347,544
+74281,5/13/20,122,India,3525,2415
+14265,5/12/20,18,Indonesia,233,991
+869,5/12/20,0,Sri Lanka,6,9
+15691,5/12/20,11,Bangladesh,1034,239
+32081,5/12/20,39,Pakistan,1140,706
+70756,5/12/20,87,India,3604,2293
+168331,5/12/20,396,Brazil,5632,11519
+9746,5/12/20,8,Egypt,346,533
+14032,5/11/20,14,Indonesia,387,973
+9400,5/11/20,11,Egypt,436,525
+162699,5/11/20,496,Brazil,6760,11123
+67152,5/11/20,97,India,4213,2206
+14657,5/11/20,14,Bangladesh,887,228
+863,5/11/20,0,Sri Lanka,16,9
+30941,5/11/20,28,Pakistan,1476,667
+29465,5/10/20,21,Pakistan,1991,639
+13770,5/10/20,8,Bangladesh,636,214
+847,5/10/20,0,Sri Lanka,12,9
+155939,5/10/20,730,Brazil,10611,10627
+13645,5/10/20,16,Indonesia,533,959
+62939,5/10/20,128,India,3277,2109
+8964,5/10/20,11,Egypt,488,514
+27474,5/9/20,24,Pakistan,1637,618
+145328,5/9/20,751,Brazil,10222,9897
+59662,5/9/20,95,India,3320,1981
+835,5/9/20,0,Sri Lanka,11,9
+13112,5/9/20,13,Indonesia,336,943
+13134,5/9/20,7,Bangladesh,709,206
+8476,5/9/20,21,Egypt,495,503
+135106,5/8/20,610,Brazil,9888,9146
+824,5/8/20,0,Sri Lanka,27,9
+12425,5/8/20,13,Bangladesh,706,199
+12776,5/8/20,35,Indonesia,338,930
+7981,5/8/20,13,Egypt,393,482
+56342,5/8/20,103,India,3390,1886
+25837,5/8/20,30,Pakistan,1764,594
+7588,5/7/20,17,Egypt,387,469
+24073,5/7/20,38,Pakistan,1523,564
+11719,5/7/20,3,Bangladesh,790,186
+125218,5/7/20,615,Brazil,10503,8536
+52952,5/7/20,89,India,3561,1783
+12438,5/7/20,23,Indonesia,367,895
+797,5/7/20,0,Sri Lanka,26,9
+12071,5/6/20,8,Indonesia,484,872
+22550,5/6/20,40,Pakistan,1049,526
+10929,5/6/20,1,Bangladesh,786,183
+49391,5/6/20,126,India,2958,1694
+771,5/6/20,1,Sri Lanka,16,9
+114715,5/6/20,600,Brazil,6935,7921
+7201,5/6/20,16,Egypt,388,452
+10143,5/5/20,5,Bangladesh,688,182
+21501,5/5/20,24,Pakistan,1315,486
+107780,5/5/20,296,Brazil,6633,7321
+755,5/5/20,1,Sri Lanka,37,8
+46433,5/5/20,195,India,3900,1568
+6813,5/5/20,7,Egypt,348,436
+11587,5/5/20,19,Indonesia,395,864
+11192,5/4/20,14,Indonesia,349,845
+718,5/4/20,0,Sri Lanka,13,7
+6465,5/4/20,14,Egypt,272,429
+9455,5/4/20,2,Bangladesh,665,177
+42533,5/4/20,72,India,2553,1373
+20186,5/4/20,22,Pakistan,1083,462
+101147,5/4/20,275,Brazil,4588,7025
+10843,5/3/20,31,Indonesia,292,831
+39980,5/3/20,83,India,2644,1301
+19103,5/3/20,23,Pakistan,989,440
+8790,5/3/20,5,Bangladesh,552,175
+705,5/3/20,0,Sri Lanka,15,7
+96559,5/3/20,421,Brazil,4970,6750
+6193,5/3/20,9,Egypt,298,415
+690,5/2/20,0,Sri Lanka,25,7
+10551,5/2/20,8,Indonesia,433,800
+8238,5/2/20,2,Bangladesh,571,170
+37336,5/2/20,71,India,2293,1218
+18114,5/2/20,32,Pakistan,1297,417
+5895,5/2/20,14,Egypt,358,406
+91589,5/2/20,428,Brazil,6209,6329
+5537,5/1/20,12,Egypt,269,392
+10118,5/1/20,8,Indonesia,347,792
+7667,5/1/20,5,Bangladesh,564,168
+35043,5/1/20,73,India,1993,1147
+665,5/1/20,0,Sri Lanka,16,7
+85380,5/1/20,435,Brazil,7218,5901
+16817,5/1/20,39,Pakistan,1058,385
+649,4/30/20,0,Sri Lanka,30,7
+5268,4/30/20,21,Egypt,226,380
+33050,4/30/20,67,India,1718,1074
+9771,4/30/20,11,Indonesia,260,784
+78162,4/30/20,449,Brazil,6276,5466
+15759,4/30/20,19,Pakistan,874,346
+7103,4/30/20,8,Bangladesh,641,163
+5042,4/29/20,22,Egypt,260,359
+31332,4/29/20,73,India,1897,1007
+6462,4/29/20,3,Bangladesh,549,155
+619,4/29/20,0,Sri Lanka,31,7
+71886,4/29/20,474,Brazil,5385,5017
+9511,4/29/20,8,Indonesia,415,773
+14885,4/29/20,26,Pakistan,806,327
+66501,4/28/20,338,Brazil,4613,4543
+588,4/28/20,0,Sri Lanka,65,7
+5913,4/28/20,7,Bangladesh,497,152
+29435,4/28/20,62,India,1543,934
+9096,4/28/20,22,Indonesia,214,765
+4782,4/28/20,30,Egypt,463,337
+14079,4/28/20,20,Pakistan,751,301
+61888,4/27/20,189,Brazil,3379,4205
+4319,4/27/20,0,Egypt,0,307
+8882,4/27/20,23,Indonesia,275,743
+523,4/27/20,0,Sri Lanka,61,7
+13328,4/27/20,12,Pakistan,605,281
+27892,4/27/20,48,India,1396,872
+5416,4/27/20,5,Bangladesh,418,145
+4319,4/26/20,13,Egypt,227,307
+58509,4/26/20,346,Brazil,5514,4016
+12723,4/26/20,16,Pakistan,783,269
+4998,4/26/20,9,Bangladesh,309,140
+26496,4/26/20,49,India,1990,824
+462,4/26/20,0,Sri Lanka,42,7
+8607,4/26/20,31,Indonesia,396,720
+420,4/25/20,0,Sri Lanka,52,7
+4689,4/25/20,4,Bangladesh,503,131
+24506,4/25/20,57,India,1429,775
+8211,4/25/20,42,Indonesia,436,689
+52995,4/25/20,357,Brazil,3503,3670
+4092,4/25/20,18,Egypt,433,294
+11940,4/25/20,16,Pakistan,785,253
+4186,4/24/20,7,Bangladesh,414,127
+3659,4/24/20,12,Egypt,169,276
+49492,4/24/20,407,Brazil,3735,3313
+23077,4/24/20,37,India,1684,718
+11155,4/24/20,28,Pakistan,1406,237
+7775,4/24/20,12,Indonesia,357,647
+368,4/24/20,0,Sri Lanka,38,7
+3490,4/23/20,0,Egypt,0,264
+3772,4/23/20,10,Bangladesh,390,120
+7418,4/23/20,19,Indonesia,283,635
+330,4/23/20,0,Sri Lanka,20,7
+45757,4/23/20,165,Brazil,2678,2906
+21393,4/23/20,41,India,1409,681
+9749,4/23/20,0,Pakistan,0,209
+7135,4/22/20,26,Indonesia,375,616
+9749,4/22/20,17,Pakistan,533,209
+19984,4/22/20,50,India,1384,640
+43079,4/22/20,166,Brazil,2498,2741
+3490,4/22/20,14,Egypt,157,264
+310,4/22/20,0,Sri Lanka,6,7
+3382,4/22/20,9,Bangladesh,434,110
+40581,4/21/20,113,Brazil,1927,2575
+9216,4/21/20,16,Pakistan,798,192
+18600,4/21/20,47,India,1335,590
+2948,4/21/20,10,Bangladesh,492,101
+3333,4/21/20,11,Egypt,189,250
+304,4/21/20,0,Sri Lanka,9,7
+6760,4/21/20,8,Indonesia,185,590
+3144,4/20/20,15,Egypt,112,239
+17265,4/20/20,36,India,1553,543
+2456,4/20/20,7,Bangladesh,312,91
+6575,4/20/20,47,Indonesia,327,582
+38654,4/20/20,115,Brazil,2055,2462
+295,4/20/20,0,Sri Lanka,41,7
+8418,4/20/20,17,Pakistan,425,176
+254,4/19/20,0,Sri Lanka,10,7
+15712,4/19/20,27,India,1334,507
+2144,4/19/20,9,Bangladesh,306,84
+6248,4/19/20,15,Indonesia,325,535
+7993,4/19/20,16,Pakistan,512,159
+36599,4/19/20,206,Brazil,2917,2347
+3032,4/19/20,19,Egypt,188,224
+244,4/18/20,0,Sri Lanka,6,7
+1838,4/18/20,15,Bangladesh,266,75
+14378,4/18/20,43,India,991,480
+2844,4/18/20,9,Egypt,171,205
+7481,4/18/20,8,Pakistan,456,143
+5923,4/18/20,24,Indonesia,407,520
+33682,4/18/20,217,Brazil,3257,2141
+7025,4/17/20,11,Pakistan,520,135
+238,4/17/20,0,Sri Lanka,1,7
+5516,4/17/20,27,Indonesia,380,496
+13387,4/17/20,23,India,1007,437
+30425,4/17/20,188,Brazil,2105,1924
+2673,4/17/20,13,Egypt,168,196
+1572,4/17/20,10,Bangladesh,341,60
+237,4/16/20,0,Sri Lanka,4,7
+5136,4/16/20,10,Indonesia,297,469
+6505,4/16/20,17,Pakistan,517,124
+28320,4/16/20,204,Brazil,3058,1736
+1231,4/16/20,4,Bangladesh,219,50
+12380,4/16/20,37,India,942,414
+2505,4/16/20,5,Egypt,155,183
+1012,4/15/20,7,Bangladesh,209,46
+233,4/15/20,0,Sri Lanka,15,7
+2350,4/15/20,14,Egypt,160,178
+11438,4/15/20,38,India,1075,377
+25262,4/15/20,204,Brazil,1832,1532
+4839,4/15/20,60,Indonesia,282,459
+5988,4/15/20,11,Pakistan,272,107
+5716,4/14/20,3,Pakistan,342,96
+23430,4/14/20,105,Brazil,1261,1328
+803,4/14/20,5,Bangladesh,182,39
+218,4/14/20,0,Sri Lanka,8,7
+10363,4/14/20,31,India,1211,339
+4557,4/14/20,26,Indonesia,316,399
+2190,4/14/20,5,Egypt,125,164
+4241,4/13/20,46,Indonesia,399,373
+621,4/13/20,4,Bangladesh,139,34
+2065,4/13/20,13,Egypt,126,159
+9152,4/13/20,35,India,796,308
+5374,4/13/20,7,Pakistan,336,93
+22169,4/13/20,99,Brazil,1442,1223
+210,4/13/20,0,Sri Lanka,11,7
+8356,4/12/20,34,India,909,273
+3842,4/12/20,21,Indonesia,330,327
+5038,4/12/20,15,Pakistan,250,86
+482,4/12/20,3,Bangladesh,58,30
+199,4/12/20,0,Sri Lanka,2,7
+20727,4/12/20,68,Brazil,1089,1124
+1939,4/12/20,11,Egypt,145,146
+197,4/11/20,0,Sri Lanka,7,7
+424,4/11/20,6,Bangladesh,94,27
+3512,4/11/20,26,Indonesia,219,306
+7447,4/11/20,40,India,1035,239
+4788,4/11/20,5,Pakistan,187,71
+19638,4/11/20,115,Brazil,1781,1056
+1794,4/11/20,17,Egypt,95,135
+3293,4/10/20,40,Indonesia,337,280
+17857,4/10/20,141,Brazil,1930,941
+6412,4/10/20,33,India,678,199
+190,4/10/20,0,Sri Lanka,1,7
+1699,4/10/20,15,Egypt,139,118
+330,4/10/20,1,Bangladesh,112,21
+4601,4/10/20,3,Pakistan,279,66
+2956,4/9/20,19,Indonesia,218,240
+5734,4/9/20,17,India,540,166
+15927,4/9/20,133,Brazil,2210,800
+4322,4/9/20,5,Pakistan,250,63
+1560,4/9/20,18,Egypt,238,103
+189,4/9/20,1,Sri Lanka,4,7
+218,4/9/20,3,Bangladesh,54,20
+4072,4/8/20,4,Pakistan,208,58
+185,4/8/20,1,Sri Lanka,7,6
+5194,4/8/20,35,India,773,149
+2738,4/8/20,12,Indonesia,247,221
+164,4/8/20,5,Bangladesh,41,17
+13717,4/8/20,114,Brazil,1661,667
+1322,4/8/20,7,Egypt,249,85
+3864,4/7/20,4,Pakistan,587,54
+4421,4/7/20,5,India,354,114
+1073,4/7/20,7,Egypt,3,78
+178,4/7/20,0,Sri Lanka,12,5
+123,4/7/20,3,Bangladesh,35,12
+12056,4/7/20,67,Brazil,926,553
+2491,4/7/20,11,Indonesia,218,209
+166,4/6/20,0,Sri Lanka,7,5
+11130,4/6/20,54,Brazil,852,486
+3277,4/6/20,15,Pakistan,827,50
+2273,4/6/20,7,Indonesia,181,198
+1070,4/6/20,5,Egypt,85,71
+4067,4/6/20,32,India,693,109
+88,4/6/20,1,Bangladesh,18,9
+2450,4/5/20,4,Pakistan,159,35
+3374,4/5/20,9,India,472,77
+159,4/5/20,1,Sri Lanka,8,5
+2092,4/5/20,10,Indonesia,106,191
+985,4/5/20,14,Egypt,206,66
+70,4/5/20,2,Bangladesh,9,8
+10278,4/5/20,73,Brazil,1222,432
+1986,4/4/20,11,Indonesia,196,181
+9056,4/4/20,60,Brazil,1146,359
+61,4/4/20,0,Bangladesh,5,6
+2902,4/4/20,12,India,601,68
+151,4/4/20,1,Sri Lanka,3,4
+779,4/4/20,0,Egypt,0,52
+2291,4/4/20,0,Pakistan,0,31
+56,4/3/20,0,Bangladesh,2,6
+2301,4/3/20,6,India,336,56
+148,4/3/20,1,Sri Lanka,5,3
+779,4/3/20,6,Egypt,69,52
+1790,4/3/20,13,Indonesia,113,170
+2291,4/3/20,0,Pakistan,0,31
+7910,4/3/20,58,Brazil,1074,299
+143,4/2/20,0,Sri Lanka,21,2
+1965,4/2/20,15,India,568,50
+6836,4/2/20,40,Brazil,1119,241
+710,4/2/20,5,Egypt,54,46
+1677,4/2/20,21,Indonesia,149,157
+54,4/2/20,1,Bangladesh,3,6
+2291,4/2/20,5,Pakistan,252,31
+51,4/1/20,0,Bangladesh,2,5
+5717,4/1/20,42,Brazil,1138,201
+1397,4/1/20,3,India,146,35
+656,4/1/20,1,Egypt,47,41
+1528,4/1/20,14,Indonesia,114,136
+2039,4/1/20,8,Pakistan,414,26
+122,4/1/20,1,Sri Lanka,2,2
+609,3/31/20,4,Egypt,33,40
+1251,3/31/20,3,India,180,32
+49,3/31/20,0,Bangladesh,0,5
+120,3/31/20,0,Sri Lanka,0,1
+1414,3/31/20,8,Indonesia,129,122
+1625,3/31/20,5,Pakistan,99,18
+4579,3/31/20,23,Brazil,323,159
+1285,3/30/20,12,Indonesia,130,114
+120,3/30/20,0,Sri Lanka,5,1
+4256,3/30/20,22,Brazil,352,136
+1071,3/30/20,4,India,92,29
+49,3/30/20,0,Bangladesh,1,5
+576,3/30/20,6,Egypt,40,36
+1526,3/30/20,2,Pakistan,118,13
+115,3/29/20,1,Sri Lanka,9,1
+3904,3/29/20,22,Brazil,487,114
+1155,3/29/20,15,Indonesia,109,102
+1408,3/29/20,2,Pakistan,211,11
+979,3/29/20,6,India,106,25
+536,3/29/20,6,Egypt,41,30
+48,3/29/20,0,Bangladesh,0,5
+106,3/28/20,0,Sri Lanka,0,0
+1046,3/28/20,9,Indonesia,153,87
+3417,3/28/20,15,Brazil,502,92
+873,3/28/20,2,India,149,19
+48,3/28/20,0,Bangladesh,0,5
+1197,3/28/20,0,Pakistan,0,9
+495,3/28/20,3,Egypt,39,24
+724,3/27/20,4,India,75,17
+2915,3/27/20,20,Brazil,482,77
+1197,3/27/20,1,Pakistan,140,9
+893,3/27/20,20,Indonesia,103,78
+48,3/27/20,0,Bangladesh,9,5
+106,3/27/20,0,Sri Lanka,4,0
+456,3/27/20,0,Egypt,14,21
+1057,3/26/20,1,Pakistan,66,8
+790,3/26/20,3,Indonesia,104,58
+2433,3/26/20,11,Brazil,232,57
+649,3/26/20,4,India,87,13
+442,3/26/20,2,Egypt,76,21
+102,3/26/20,0,Sri Lanka,0,0
+39,3/26/20,1,Bangladesh,0,5
+2201,3/25/20,12,Brazil,310,46
+102,3/25/20,0,Sri Lanka,5,0
+562,3/25/20,0,India,70,9
+686,3/25/20,6,Indonesia,107,55
+366,3/25/20,5,Egypt,39,19
+39,3/25/20,1,Bangladesh,6,4
+991,3/25/20,1,Pakistan,104,7
+887,3/24/20,1,Pakistan,103,6
+579,3/24/20,1,Indonesia,65,49
+327,3/24/20,4,Egypt,33,14
+97,3/24/20,0,Sri Lanka,10,0
+492,3/24/20,2,India,53,9
+1891,3/24/20,9,Brazil,345,34
+33,3/24/20,0,Bangladesh,6,3
+294,3/23/20,2,Egypt,9,10
+1546,3/23/20,7,Brazil,418,25
+784,3/23/20,2,Pakistan,138,5
+439,3/23/20,3,India,119,7
+514,3/23/20,10,Indonesia,64,48
+27,3/23/20,1,Bangladesh,3,3
+87,3/23/20,0,Sri Lanka,9,0
+285,3/22/20,1,Egypt,29,8
+320,3/22/20,0,India,89,4
+78,3/22/20,0,Sri Lanka,12,0
+450,3/22/20,13,Indonesia,141,38
+1128,3/22/20,7,Brazil,224,18
+24,3/22/20,2,Bangladesh,7,2
+646,3/22/20,0,Pakistan,151,3
+231,3/21/20,0,India,40,4
+66,3/21/20,0,Sri Lanka,13,0
+495,3/21/20,1,Pakistan,17,3
+256,3/21/20,1,Egypt,46,7
+17,3/21/20,0,Bangladesh,7,0
+309,3/21/20,6,Indonesia,82,25
+904,3/21/20,5,Brazil,283,11
+10,3/20/20,0,Bangladesh,0,0
+191,3/20/20,1,India,26,4
+478,3/20/20,2,Pakistan,176,2
+621,3/20/20,2,Brazil,193,6
+210,3/20/20,0,Egypt,14,6
+53,3/20/20,0,Sri Lanka,11,0
+227,3/20/20,14,Indonesia,55,19
+428,3/19/20,3,Brazil,137,4
+165,3/19/20,0,India,28,3
+172,3/19/20,0,Indonesia,0,5
+42,3/19/20,0,Sri Lanka,0,0
+302,3/19/20,0,Pakistan,115,0
+10,3/19/20,0,Bangladesh,2,0
+196,3/19/20,2,Egypt,30,6
+291,3/18/20,1,Brazil,57,1
+8,3/18/20,0,Bangladesh,3,0
+137,3/18/20,0,India,12,3
+42,3/18/20,0,Sri Lanka,13,0
+172,3/18/20,0,Indonesia,38,5
+187,3/18/20,0,Pakistan,0,0
+166,3/18/20,2,Egypt,40,4
+5,3/17/20,0,Bangladesh,2,0
+125,3/17/20,1,India,32,3
+234,3/17/20,0,Brazil,34,0
+134,3/17/20,0,Indonesia,17,5
+29,3/17/20,0,Sri Lanka,10,0
+187,3/17/20,0,Pakistan,156,0
+126,3/17/20,0,Egypt,16,2
+3,3/16/20,0,Bangladesh,0,0
+93,3/16/20,0,India,3,2
+31,3/16/20,0,Pakistan,1,0
+200,3/16/20,0,Brazil,79,0
+110,3/16/20,0,Egypt,17,2
+117,3/16/20,1,Indonesia,21,5
+19,3/16/20,0,Sri Lanka,8,0
+90,3/15/20,0,India,7,2
+93,3/15/20,0,Egypt,0,2
+11,3/15/20,0,Sri Lanka,5,0
+121,3/15/20,0,Brazil,23,0
+3,3/15/20,0,Bangladesh,0,0
+30,3/15/20,0,Pakistan,9,0
+96,3/15/20,0,Indonesia,27,4
+3,3/14/20,0,Bangladesh,0,0
+93,3/14/20,0,Egypt,13,2
+83,3/14/20,1,India,8,2
+6,3/14/20,0,Sri Lanka,3,0
+21,3/14/20,0,Pakistan,0,0
+98,3/14/20,0,Brazil,21,0
+69,3/14/20,3,Indonesia,35,4
+21,3/13/20,0,Pakistan,1,0
+3,3/13/20,0,Bangladesh,0,0
+3,3/13/20,0,Sri Lanka,1,0
+75,3/13/20,1,India,2,1
+80,3/13/20,1,Egypt,20,2
+77,3/13/20,0,Brazil,25,0
+34,3/13/20,0,Indonesia,0,1
+3,3/12/20,0,Bangladesh,0,0
+20,3/12/20,0,Pakistan,4,0
+73,3/12/20,0,India,23,0
+52,3/12/20,0,Brazil,18,0
+34,3/12/20,1,Indonesia,15,1
+2,3/12/20,0,Sri Lanka,1,0
+60,3/12/20,0,Egypt,1,1
+1,3/11/20,0,Sri Lanka,0,0
+50,3/11/20,0,India,6,0
+3,3/11/20,0,Bangladesh,0,0
+34,3/11/20,0,Brazil,9,0
+16,3/11/20,0,Pakistan,0,0
+59,3/11/20,0,Egypt,4,1
+19,3/11/20,0,Indonesia,13,0
+6,3/10/20,0,Indonesia,0,0
+44,3/10/20,0,India,10,0
+25,3/10/20,0,Brazil,0,0
+55,3/10/20,0,Egypt,6,1
+16,3/10/20,0,Pakistan,10,0
+3,3/10/20,0,Bangladesh,0,0
+1,3/10/20,0,Sri Lanka,0,0
+3,3/9/20,0,Bangladesh,3,0
+25,3/9/20,0,Brazil,12,0
+34,3/9/20,0,India,0,0
+6,3/9/20,0,Pakistan,0,0
+6,3/9/20,0,Indonesia,2,0
+1,3/9/20,0,Sri Lanka,0,0
+49,3/9/20,1,Egypt,34,1
+6,3/8/20,0,Pakistan,0,0
+34,3/8/20,0,India,3,0
+13,3/8/20,0,Brazil,0,0
+0,3/8/20,0,Bangladesh,0,0
+15,3/8/20,0,Egypt,0,0
+4,3/8/20,0,Indonesia,0,0
+1,3/8/20,0,Sri Lanka,0,0
+15,3/7/20,0,Egypt,12,0
+31,3/7/20,0,India,2,0
+4,3/7/20,0,Indonesia,2,0
+0,3/7/20,0,Bangladesh,0,0
+6,3/7/20,0,Pakistan,1,0
+1,3/7/20,0,Sri Lanka,0,0
+13,3/7/20,0,Brazil,5,0
+5,3/6/20,0,Pakistan,0,0
+8,3/6/20,0,Brazil,5,0
+29,3/6/20,0,India,1,0
+2,3/6/20,0,Indonesia,0,0
+0,3/6/20,0,Bangladesh,0,0
+3,3/6/20,0,Egypt,1,0
+1,3/6/20,0,Sri Lanka,0,0
+2,3/5/20,0,Egypt,0,0
+2,3/5/20,0,Indonesia,0,0
+28,3/5/20,0,India,22,0
+0,3/5/20,0,Bangladesh,0,0
+5,3/5/20,0,Pakistan,0,0
+3,3/5/20,0,Brazil,1,0
+1,3/5/20,0,Sri Lanka,0,0
+5,3/4/20,0,Pakistan,1,0
+6,3/4/20,0,India,1,0
+2,3/4/20,0,Brazil,0,0
+2,3/4/20,0,Indonesia,0,0
+2,3/4/20,0,Egypt,0,0
+1,3/4/20,0,Sri Lanka,0,0
+0,3/4/20,0,Bangladesh,0,0
+4,3/3/20,0,Pakistan,0,0
+0,3/3/20,0,Bangladesh,0,0
+2,3/3/20,0,Indonesia,0,0
+5,3/3/20,0,India,2,0
+2,3/3/20,0,Egypt,0,0
+1,3/3/20,0,Sri Lanka,0,0
+2,3/3/20,0,Brazil,0,0
+3,3/2/20,0,India,0,0
+2,3/2/20,0,Brazil,0,0
+1,3/2/20,0,Sri Lanka,0,0
+4,3/2/20,0,Pakistan,0,0
+2,3/2/20,0,Indonesia,2,0
+0,3/2/20,0,Bangladesh,0,0
+2,3/2/20,0,Egypt,1,0
+0,3/1/20,0,Indonesia,0,0
+1,3/1/20,0,Egypt,0,0
+0,3/1/20,0,Bangladesh,0,0
+2,3/1/20,0,Brazil,1,0
+3,3/1/20,0,India,0,0
+1,3/1/20,0,Sri Lanka,0,0
+4,3/1/20,0,Pakistan,2,0
+0,2/29/20,0,Indonesia,0,0
+1,2/29/20,0,Egypt,0,0
+1,2/29/20,0,Sri Lanka,0,0
+3,2/29/20,0,India,0,0
+2,2/29/20,0,Pakistan,0,0
+1,2/29/20,0,Brazil,0,0
+0,2/29/20,0,Bangladesh,0,0
+3,2/28/20,0,India,0,0
+1,2/28/20,0,Sri Lanka,0,0
+2,2/28/20,0,Pakistan,0,0
+0,2/28/20,0,Indonesia,0,0
+0,2/28/20,0,Bangladesh,0,0
+1,2/28/20,0,Egypt,0,0
+1,2/28/20,0,Brazil,0,0
+1,2/27/20,0,Egypt,0,0
+0,2/27/20,0,Indonesia,0,0
+2,2/27/20,0,Pakistan,2,0
+3,2/27/20,0,India,0,0
+1,2/27/20,0,Brazil,0,0
+0,2/27/20,0,Bangladesh,0,0
+1,2/27/20,0,Sri Lanka,0,0
+1,2/26/20,0,Egypt,0,0
+1,2/26/20,0,Brazil,1,0
+3,2/26/20,0,India,0,0
+0,2/26/20,0,Pakistan,0,0
+0,2/26/20,0,Bangladesh,0,0
+1,2/26/20,0,Sri Lanka,0,0
+0,2/26/20,0,Indonesia,0,0
+0,2/25/20,0,Pakistan,0,0
+0,2/25/20,0,Brazil,0,0
+1,2/25/20,0,Sri Lanka,0,0
+3,2/25/20,0,India,0,0
+0,2/25/20,0,Indonesia,0,0
+1,2/25/20,0,Egypt,0,0
+0,2/25/20,0,Bangladesh,0,0
+1,2/24/20,0,Sri Lanka,0,0
+0,2/24/20,0,Bangladesh,0,0
+3,2/24/20,0,India,0,0
+0,2/24/20,0,Brazil,0,0
+0,2/24/20,0,Indonesia,0,0
+1,2/24/20,0,Egypt,0,0
+0,2/24/20,0,Pakistan,0,0
+1,2/23/20,0,Egypt,0,0
+3,2/23/20,0,India,0,0
+0,2/23/20,0,Brazil,0,0
+1,2/23/20,0,Sri Lanka,0,0
+0,2/23/20,0,Pakistan,0,0
+0,2/23/20,0,Indonesia,0,0
+0,2/23/20,0,Bangladesh,0,0
+1,2/22/20,0,Egypt,0,0
+0,2/22/20,0,Indonesia,0,0
+3,2/22/20,0,India,0,0
+1,2/22/20,0,Sri Lanka,0,0
+0,2/22/20,0,Bangladesh,0,0
+0,2/22/20,0,Brazil,0,0
+0,2/22/20,0,Pakistan,0,0
+3,2/21/20,0,India,0,0
+0,2/21/20,0,Indonesia,0,0
+1,2/21/20,0,Egypt,0,0
+0,2/21/20,0,Bangladesh,0,0
+1,2/21/20,0,Sri Lanka,0,0
+0,2/21/20,0,Brazil,0,0
+0,2/21/20,0,Pakistan,0,0
+1,2/20/20,0,Sri Lanka,0,0
+3,2/20/20,0,India,0,0
+0,2/20/20,0,Pakistan,0,0
+1,2/20/20,0,Egypt,0,0
+0,2/20/20,0,Brazil,0,0
+0,2/20/20,0,Indonesia,0,0
+0,2/20/20,0,Bangladesh,0,0
+0,2/19/20,0,Brazil,0,0
+3,2/19/20,0,India,0,0
+0,2/19/20,0,Bangladesh,0,0
+1,2/19/20,0,Sri Lanka,0,0
+0,2/19/20,0,Pakistan,0,0
+1,2/19/20,0,Egypt,0,0
+0,2/19/20,0,Indonesia,0,0
+0,2/18/20,0,Bangladesh,0,0
+0,2/18/20,0,Indonesia,0,0
+3,2/18/20,0,India,0,0
+1,2/18/20,0,Sri Lanka,0,0
+1,2/18/20,0,Egypt,0,0
+0,2/18/20,0,Brazil,0,0
+0,2/18/20,0,Pakistan,0,0
+3,2/17/20,0,India,0,0
+1,2/17/20,0,Egypt,0,0
+1,2/17/20,0,Sri Lanka,0,0
+0,2/17/20,0,Pakistan,0,0
+0,2/17/20,0,Indonesia,0,0
+0,2/17/20,0,Brazil,0,0
+0,2/17/20,0,Bangladesh,0,0
+0,2/16/20,0,Pakistan,0,0
+0,2/16/20,0,Brazil,0,0
+3,2/16/20,0,India,0,0
+0,2/16/20,0,Indonesia,0,0
+1,2/16/20,0,Egypt,0,0
+1,2/16/20,0,Sri Lanka,0,0
+0,2/16/20,0,Bangladesh,0,0
+3,2/15/20,0,India,0,0
+0,2/15/20,0,Indonesia,0,0
+0,2/15/20,0,Brazil,0,0
+1,2/15/20,0,Sri Lanka,0,0
+0,2/15/20,0,Bangladesh,0,0
+1,2/15/20,0,Egypt,1,0
+0,2/15/20,0,Pakistan,0,0
+0,2/14/20,0,Egypt,0,0
+0,2/14/20,0,Pakistan,0,0
+3,2/14/20,0,India,0,0
+0,2/14/20,0,Bangladesh,0,0
+1,2/14/20,0,Sri Lanka,0,0
+0,2/14/20,0,Brazil,0,0
+0,2/14/20,0,Indonesia,0,0
+0,2/13/20,0,Egypt,0,0
+3,2/13/20,0,India,0,0
+1,2/13/20,0,Sri Lanka,0,0
+0,2/13/20,0,Bangladesh,0,0
+0,2/13/20,0,Brazil,0,0
+0,2/13/20,0,Indonesia,0,0
+0,2/13/20,0,Pakistan,0,0
+3,2/12/20,0,India,0,0
+1,2/12/20,0,Sri Lanka,0,0
+0,2/12/20,0,Egypt,0,0
+0,2/12/20,0,Bangladesh,0,0
+0,2/12/20,0,Indonesia,0,0
+0,2/12/20,0,Pakistan,0,0
+0,2/12/20,0,Brazil,0,0
+1,2/11/20,0,Sri Lanka,0,0
+3,2/11/20,0,India,0,0
+0,2/11/20,0,Indonesia,0,0
+0,2/11/20,0,Pakistan,0,0
+0,2/11/20,0,Brazil,0,0
+0,2/11/20,0,Egypt,0,0
+0,2/11/20,0,Bangladesh,0,0
+3,2/10/20,0,India,0,0
+1,2/10/20,0,Sri Lanka,0,0
+0,2/10/20,0,Bangladesh,0,0
+0,2/10/20,0,Indonesia,0,0
+0,2/10/20,0,Brazil,0,0
+0,2/10/20,0,Egypt,0,0
+0,2/10/20,0,Pakistan,0,0
+0,2/9/20,0,Indonesia,0,0
+0,2/9/20,0,Pakistan,0,0
+3,2/9/20,0,India,0,0
+0,2/9/20,0,Brazil,0,0
+0,2/9/20,0,Bangladesh,0,0
+0,2/9/20,0,Egypt,0,0
+1,2/9/20,0,Sri Lanka,0,0
+0,2/8/20,0,Indonesia,0,0
+0,2/8/20,0,Egypt,0,0
+3,2/8/20,0,India,0,0
+0,2/8/20,0,Pakistan,0,0
+1,2/8/20,0,Sri Lanka,0,0
+0,2/8/20,0,Brazil,0,0
+0,2/8/20,0,Bangladesh,0,0
+3,2/7/20,0,India,0,0
+0,2/7/20,0,Indonesia,0,0
+0,2/7/20,0,Brazil,0,0
+0,2/7/20,0,Bangladesh,0,0
+0,2/7/20,0,Pakistan,0,0
+1,2/7/20,0,Sri Lanka,0,0
+0,2/7/20,0,Egypt,0,0
+0,2/6/20,0,Brazil,0,0
+3,2/6/20,0,India,0,0
+0,2/6/20,0,Pakistan,0,0
+0,2/6/20,0,Egypt,0,0
+1,2/6/20,0,Sri Lanka,0,0
+0,2/6/20,0,Indonesia,0,0
+0,2/6/20,0,Bangladesh,0,0
+0,2/5/20,0,Bangladesh,0,0
+0,2/5/20,0,Pakistan,0,0
+3,2/5/20,0,India,0,0
+1,2/5/20,0,Sri Lanka,0,0
+0,2/5/20,0,Brazil,0,0
+0,2/5/20,0,Indonesia,0,0
+0,2/5/20,0,Egypt,0,0
+0,2/4/20,0,Bangladesh,0,0
+3,2/4/20,0,India,1,0
+0,2/4/20,0,Pakistan,0,0
+1,2/4/20,0,Sri Lanka,0,0
+0,2/4/20,0,Egypt,0,0
+0,2/4/20,0,Indonesia,0,0
+0,2/4/20,0,Brazil,0,0
+0,2/3/20,0,Pakistan,0,0
+2,2/3/20,0,India,0,0
+0,2/3/20,0,Indonesia,0,0
+0,2/3/20,0,Brazil,0,0
+1,2/3/20,0,Sri Lanka,0,0
+0,2/3/20,0,Bangladesh,0,0
+0,2/3/20,0,Egypt,0,0
+0,2/2/20,0,Brazil,0,0
+1,2/2/20,0,Sri Lanka,0,0
+2,2/2/20,0,India,1,0
+0,2/2/20,0,Pakistan,0,0
+0,2/2/20,0,Egypt,0,0
+0,2/2/20,0,Indonesia,0,0
+0,2/2/20,0,Bangladesh,0,0
+0,2/1/20,0,Pakistan,0,0
+1,2/1/20,0,India,0,0
+0,2/1/20,0,Indonesia,0,0
+0,2/1/20,0,Bangladesh,0,0
+0,2/1/20,0,Egypt,0,0
+0,2/1/20,0,Brazil,0,0
+1,2/1/20,0,Sri Lanka,0,0
+0,1/31/20,0,Pakistan,0,0
+1,1/31/20,0,India,0,0
+0,1/31/20,0,Indonesia,0,0
+0,1/31/20,0,Egypt,0,0
+0,1/31/20,0,Bangladesh,0,0
+1,1/31/20,0,Sri Lanka,0,0
+0,1/31/20,0,Brazil,0,0
+1,1/30/20,0,India,1,0
+1,1/30/20,0,Sri Lanka,0,0
+0,1/30/20,0,Pakistan,0,0
+0,1/30/20,0,Brazil,0,0
+0,1/30/20,0,Bangladesh,0,0
+0,1/30/20,0,Indonesia,0,0
+0,1/30/20,0,Egypt,0,0
+0,1/29/20,0,India,0,0
+0,1/29/20,0,Bangladesh,0,0
+0,1/29/20,0,Pakistan,0,0
+1,1/29/20,0,Sri Lanka,0,0
+0,1/29/20,0,Egypt,0,0
+0,1/29/20,0,Brazil,0,0
+0,1/29/20,0,Indonesia,0,0
+0,1/28/20,0,Pakistan,0,0
+0,1/28/20,0,India,0,0
+1,1/28/20,0,Sri Lanka,1,0
+0,1/28/20,0,Indonesia,0,0
+0,1/28/20,0,Egypt,0,0
+0,1/28/20,0,Brazil,0,0
+0,1/28/20,0,Bangladesh,0,0
+0,1/27/20,0,Egypt,0,0
+0,1/27/20,0,India,0,0
+0,1/27/20,0,Brazil,0,0
+0,1/27/20,0,Sri Lanka,0,0
+0,1/27/20,0,Indonesia,0,0
+0,1/27/20,0,Pakistan,0,0
+0,1/27/20,0,Bangladesh,0,0
+0,1/26/20,0,India,0,0
+0,1/26/20,0,Sri Lanka,0,0
+0,1/26/20,0,Pakistan,0,0
+0,1/26/20,0,Brazil,0,0
+0,1/26/20,0,Indonesia,0,0
+0,1/26/20,0,Egypt,0,0
+0,1/26/20,0,Bangladesh,0,0
+0,1/25/20,0,Brazil,0,0
+0,1/25/20,0,India,0,0
+0,1/25/20,0,Bangladesh,0,0
+0,1/25/20,0,Indonesia,0,0
+0,1/25/20,0,Pakistan,0,0
+0,1/25/20,0,Sri Lanka,0,0
+0,1/25/20,0,Egypt,0,0
+0,1/24/20,0,India,0,0
+0,1/24/20,0,Sri Lanka,0,0
+0,1/24/20,0,Brazil,0,0
+0,1/24/20,0,Egypt,0,0
+0,1/24/20,0,Pakistan,0,0
+0,1/24/20,0,Indonesia,0,0
+0,1/24/20,0,Bangladesh,0,0
+0,1/23/20,0,India,0,0
+0,1/23/20,0,Indonesia,0,0
+0,1/23/20,0,Pakistan,0,0
+0,1/23/20,0,Brazil,0,0
+0,1/23/20,0,Sri Lanka,0,0
+0,1/23/20,0,Bangladesh,0,0
+0,1/23/20,0,Egypt,0,0
+0,1/22/20,0,India,0,0
+0,1/22/20,0,Pakistan,0,0
+0,1/22/20,0,Indonesia,0,0
+0,1/22/20,0,Sri Lanka,0,0
+0,1/22/20,0,Egypt,0,0
+0,1/22/20,0,Bangladesh,0,0
+0,1/22/20,0,Brazil,0,0
+0,1/21/20,0,India,0,0
+0,1/21/20,0,Pakistan,0,0
+0,1/21/20,0,Egypt,0,0
+0,1/21/20,0,Indonesia,0,0
+0,1/21/20,0,Brazil,0,0
+0,1/21/20,0,Bangladesh,0,0
+0,1/21/20,0,Sri Lanka,0,0
+0,1/20/20,0,India,0,0
+0,1/20/20,0,Bangladesh,0,0
+0,1/20/20,0,Indonesia,0,0
+0,1/20/20,0,Brazil,0,0
+0,1/20/20,0,Sri Lanka,0,0
+0,1/20/20,0,Pakistan,0,0
+0,1/20/20,0,Egypt,0,0
+0,1/19/20,0,India,0,0
+0,1/19/20,0,Egypt,0,0
+0,1/19/20,0,Brazil,0,0
+0,1/19/20,0,Sri Lanka,0,0
+0,1/19/20,0,Pakistan,0,0
+0,1/19/20,0,Bangladesh,0,0
+0,1/19/20,0,Indonesia,0,0
+0,1/18/20,0,Egypt,0,0
+0,1/18/20,0,India,0,0
+0,1/18/20,0,Sri Lanka,0,0
+0,1/18/20,0,Bangladesh,0,0
+0,1/18/20,0,Brazil,0,0
+0,1/18/20,0,Pakistan,0,0
+0,1/18/20,0,Indonesia,0,0
+0,1/17/20,0,Egypt,0,0
+0,1/17/20,0,India,0,0
+0,1/17/20,0,Brazil,0,0
+0,1/17/20,0,Bangladesh,0,0
+0,1/17/20,0,Pakistan,0,0
+0,1/17/20,0,Indonesia,0,0
+0,1/17/20,0,Sri Lanka,0,0
+0,1/16/20,0,India,0,0
+0,1/16/20,0,Bangladesh,0,0
+0,1/16/20,0,Egypt,0,0
+0,1/16/20,0,Pakistan,0,0
+0,1/16/20,0,Brazil,0,0
+0,1/16/20,0,Indonesia,0,0
+0,1/16/20,0,Sri Lanka,0,0
+0,1/15/20,0,India,0,0
+0,1/15/20,0,Egypt,0,0
+0,1/15/20,0,Bangladesh,0,0
+0,1/15/20,0,Sri Lanka,0,0
+0,1/15/20,0,Pakistan,0,0
+0,1/15/20,0,Indonesia,0,0
+0,1/15/20,0,Brazil,0,0
+0,1/14/20,0,India,0,0
+0,1/14/20,0,Pakistan,0,0
+0,1/14/20,0,Egypt,0,0
+0,1/14/20,0,Sri Lanka,0,0
+0,1/14/20,0,Bangladesh,0,0
+0,1/14/20,0,Indonesia,0,0
+0,1/14/20,0,Brazil,0,0
+0,1/13/20,0,Indonesia,0,0
+0,1/13/20,0,India,0,0
+0,1/13/20,0,Bangladesh,0,0
+0,1/13/20,0,Brazil,0,0
+0,1/13/20,0,Pakistan,0,0
+0,1/13/20,0,Egypt,0,0
+0,1/13/20,0,Sri Lanka,0,0
+0,1/12/20,0,India,0,0
+0,1/12/20,0,Egypt,0,0
+0,1/12/20,0,Pakistan,0,0
+0,1/12/20,0,Brazil,0,0
+0,1/12/20,0,Sri Lanka,0,0
+0,1/12/20,0,Bangladesh,0,0
+0,1/12/20,0,Indonesia,0,0
+0,1/11/20,0,India,0,0
+0,1/11/20,0,Brazil,0,0
+0,1/11/20,0,Egypt,0,0
+0,1/11/20,0,Indonesia,0,0
+0,1/11/20,0,Bangladesh,0,0
+0,1/11/20,0,Pakistan,0,0
+0,1/11/20,0,Sri Lanka,0,0
+0,1/10/20,0,Indonesia,0,0
+0,1/10/20,0,Sri Lanka,0,0
+0,1/10/20,0,India,0,0
+0,1/10/20,0,Bangladesh,0,0
+0,1/10/20,0,Pakistan,0,0
+0,1/10/20,0,Egypt,0,0
+0,1/10/20,0,Brazil,0,0
+0,1/9/20,0,India,0,0
+0,1/9/20,0,Bangladesh,0,0
+0,1/9/20,0,Brazil,0,0
+0,1/9/20,0,Egypt,0,0
+0,1/9/20,0,Indonesia,0,0
+0,1/9/20,0,Sri Lanka,0,0
+0,1/9/20,0,Pakistan,0,0
+0,1/8/20,0,Brazil,0,0
+0,1/8/20,0,India,0,0
+0,1/8/20,0,Pakistan,0,0
+0,1/8/20,0,Sri Lanka,0,0
+0,1/8/20,0,Bangladesh,0,0
+0,1/8/20,0,Egypt,0,0
+0,1/8/20,0,Indonesia,0,0
+0,1/7/20,0,Egypt,0,0
+0,1/7/20,0,India,0,0
+0,1/7/20,0,Sri Lanka,0,0
+0,1/7/20,0,Pakistan,0,0
+0,1/7/20,0,Brazil,0,0
+0,1/7/20,0,Bangladesh,0,0
+0,1/7/20,0,Indonesia,0,0
+0,1/6/20,0,India,0,0
+0,1/6/20,0,Pakistan,0,0
+0,1/6/20,0,Brazil,0,0
+0,1/6/20,0,Indonesia,0,0
+0,1/6/20,0,Egypt,0,0
+0,1/6/20,0,Bangladesh,0,0
+0,1/6/20,0,Sri Lanka,0,0
+0,1/5/20,0,India,0,0
+0,1/5/20,0,Sri Lanka,0,0
+0,1/5/20,0,Brazil,0,0
+0,1/5/20,0,Egypt,0,0
+0,1/5/20,0,Bangladesh,0,0
+0,1/5/20,0,Indonesia,0,0
+0,1/5/20,0,Pakistan,0,0
+0,1/4/20,0,India,0,0
+0,1/4/20,0,Egypt,0,0
+0,1/4/20,0,Sri Lanka,0,0
+0,1/4/20,0,Brazil,0,0
+0,1/4/20,0,Indonesia,0,0
+0,1/4/20,0,Pakistan,0,0
+0,1/4/20,0,Bangladesh,0,0
+0,1/3/20,0,India,0,0
+0,1/3/20,0,Pakistan,0,0
+0,1/3/20,0,Egypt,0,0
+0,1/3/20,0,Bangladesh,0,0
+0,1/3/20,0,Brazil,0,0
+0,1/3/20,0,Sri Lanka,0,0
+0,1/3/20,0,Indonesia,0,0
+0,1/2/20,0,India,0,0
+0,1/2/20,0,Bangladesh,0,0
+0,1/2/20,0,Pakistan,0,0
+0,1/2/20,0,Indonesia,0,0
+0,1/2/20,0,Sri Lanka,0,0
+0,1/2/20,0,Egypt,0,0
+0,1/2/20,0,Brazil,0,0
+0,1/1/20,0,India,0,0
+0,1/1/20,0,Pakistan,0,0
+0,1/1/20,0,Bangladesh,0,0
+0,1/1/20,0,Egypt,0,0
+0,1/1/20,0,Indonesia,0,0
+0,1/1/20,0,Brazil,0,0
+0,1/1/20,0,Sri Lanka,0,0
+0,12/31/19,0,India,0,0
+0,12/31/19,0,Egypt,0,0
+0,12/31/19,0,Indonesia,0,0
+0,12/31/19,0,Brazil,0,0
+0,12/31/19,0,Bangladesh,0,0
+0,12/31/19,0,Sri Lanka,0,0
+0,12/31/19,0,Pakistan,0,0
