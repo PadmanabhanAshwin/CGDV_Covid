@@ -1,3 +1,8 @@
+<!-- Doubts: 
+
+What does select(".rectagle") mean? How diff from select("rectangle") 
+
+-->
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>
@@ -13,10 +18,16 @@
 .axis {
   font: 13px sans-serif;
 }
-path { 
+.path { 
   stroke: red;
   stroke-width: 2;
   fill: none;
+}
+
+path{
+	stroke: red;
+  	stroke-width: 2;
+  	fill: none;
 }
 
 .axis path,
@@ -64,7 +75,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 	// #########################################################################################################
 
 	var data = rawdata.filter(function(d){ return d["date"].getTime() >cutoffdate.getTime()})
-	console.log(data.length)
+
 	// Get every column name
 	var elements = [... new Set(data.map(
 								function(d){
@@ -155,67 +166,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.style("text-anchor", "middle")
 		.text("Daily cases")
 
-	var selector = d3.select("#drop")
-    	.append("select")
-    	.attr("id","dropdown")
-    	.on("change", function(d){
-        	selection = document.getElementById("dropdown");
-			country_selection = selection.value
-
-			data_country = data.filter(function(d){
-							return d.country == country_selection
-			})
-			console.log(data_country)
-			
-			mindate = d3.min(data_country, function(d){return d.date})
-			maxdate = d3.max(data_country, function(d){return d.date})
-			
-			// x axis has to be a timescale and not a ordinal scale. 
-			x.domain([mindate, maxdate])
-			
-        	y.domain([d3.min(data_country, function(d){return d[metric_select]}), d3.max(data_country, function(d){return d[metric_select];})
-			]);
-
-			xAxis.scale(x)
-        	yAxis.scale(y);
-
-        	d3.selectAll(".rectangle")
-			.data(data_country)
-           		.transition()
-	            .attr("height", function(d){
-					return height - y(d[metric_select]);
-				})
-				.attr("x", function(d){
-					return x(d.date);
-				})
-				.attr("y", function(d){
-					return y(d[metric_select]);
-				})
-           		.ease("linear")
-           		.select("title")
-           		.text(function(d){
-           			return d.country + " : " + d[metric_select];
-           	});
-      
-           	d3.selectAll("g.y.axis")
-           		.transition()
-           		.call(yAxis);
-
-			d3.selectAll("x axis")
-           		.transition()
-           		.call(xAxis);
-        });
-
-    selector.selectAll("option")
-      .data(elements)
-      .enter().append("option")
-      .attr("value", function(d){
-        return d;
-      })
-      .text(function(d){
-        return d;
-      })
-
 	// ########################################## PLOTTING THE LINE ##########################################
 	// #######################################################################################################
 
@@ -249,7 +199,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
 	var rolling_avg = new Array()
 	let avg_window = 7
 	let rolling_avg_inst = 0 
-
 	
 	for (let i = 0 ; i <len; i++){
 		let item = country_raw[i];
@@ -261,19 +210,110 @@ d3.csv("covid_case_death_counts.csv", function(d){
 			rolling_avg_inst = runningsum/avg_window
 			rolling_avg.push({date: item["date"], avg: rolling_avg_inst})
 		}
-		
 	}
 	//#endregion
-	
-	console.log("Rolling average is = ", rolling_avg[0])
-	
+		
 	var trendline = d3.svg.line()
 						.x(function(d){return x(d.date)})
 						.y(function(d){return y(d.avg)})
 	
-	svg.append("path")
+	var line = svg
+		.append("g")
+		.append("path")
 		.attr("class", "line")
 		.attr("d", trendline(rolling_avg))
+
+	// ############################################# TRANSITION #######################################################
+	// ################################################################################################################
+
+	var selector = d3.select("#drop")
+    	.append("select")
+    	.attr("id","dropdown")
+    	.on("change", function(d){
+        	selection = document.getElementById("dropdown");
+			country_selection = selection.value
+
+			data_country = data.filter(function(d){
+							return d.country == country_selection
+			})
+			
+			mindate = d3.min(data_country, function(d){return d.date})
+			maxdate = d3.max(data_country, function(d){return d.date})
+			
+			// x axis has to be a timescale and not a ordinal scale. 
+			x.domain([mindate, maxdate])
+			
+        	y.domain([d3.min(data_country, function(d){return d[metric_select]}), d3.max(data_country, function(d){return d[metric_select];})
+			]);
+
+			xAxis.scale(x)
+        	yAxis.scale(y);
+
+        	d3.selectAll(".rectangle")
+				.data(data_country)
+           		.transition()
+	            .attr("height", function(d){
+					return height - y(d[metric_select]);
+				})
+				.attr("x", function(d){
+					return x(d.date);
+				})
+				.attr("y", function(d){
+					return y(d[metric_select]);
+				})
+           		.ease("linear")
+           		.select("title")
+           		.text(function(d){
+           			return d.country + " : " + d[metric_select];
+           	});
+			
+			// For the line chart
+			country_raw = rawdata.filter(function(d){
+							return d.country == country_selection
+			})
+			country_raw.sort(compare);
+
+			let runningsum = 0;
+			const len = country_raw.length;
+			let item = null; 
+			var rolling_avg = new Array()
+			let avg_window = 7
+			let rolling_avg_inst = 0 
+			
+			for (let i = 0 ; i <len; i++){
+				let item = country_raw[i];
+				if(item["date"].getTime() > cutoffdate.getTime()){
+					runningsum = 0 
+					for (let iter = 0 ; iter < avg_window; iter ++){
+							runningsum = runningsum + country_raw[i - iter][metric_select] 
+						}
+					rolling_avg_inst = runningsum/avg_window
+					rolling_avg.push({date: item["date"], avg: rolling_avg_inst})
+				}
+			}
+			line
+				.transition()
+				.attr("d", trendline(rolling_avg))
+				.ease("linear")
+		
+           	d3.selectAll("g.y.axis")
+           		.transition()
+           		.call(yAxis);
+
+			d3.selectAll("x axis")
+           		.transition()
+           		.call(xAxis);
+        });
+
+    selector.selectAll("option")
+      .data(elements)
+      .enter().append("option")
+      .attr("value", function(d){
+        return d;
+      })
+      .text(function(d){
+        return d;
+      })
 
 });
 
