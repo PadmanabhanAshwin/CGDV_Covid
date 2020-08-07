@@ -60,7 +60,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
 								))
 					];
 
-	console.log(elements)
 
 	//get first column name 
 	var country_selection = elements[0];
@@ -78,7 +77,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 				return d.new_case;
 			})])
 			.range([height, 0]);
-	
+
 	var mindate = d3.min(data_country, function(d){return d.date})
 	var maxdate = d3.max(data_country, function(d){return d.date})
 
@@ -138,7 +137,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
     	.on("change", function(d){
         	selection = document.getElementById("dropdown");
 			country_selection = selection.value
-			console.log(country_selection)
 
 			data_country = data.filter(function(d){
 							return d.country == country_selection
@@ -151,22 +149,21 @@ d3.csv("covid_case_death_counts.csv", function(d){
 			// x axis has to be a timescale and not a ordinal scale. 
 			x.domain([mindate, maxdate])
 			
-			console.log(d3.max(data_country, function(d){return d[metric_select]}))
+        	y.domain([d3.min(data_country, function(d){return d[metric_select]}), d3.max(data_country, function(d){return d[metric_select];})
+			]);
 
-        	y.domain([d3.min(data_country, function(d){return d.new_case}), d3.max(data_country, function(d){
-				return d.new_case;
-			})]);
+			console.log(y(d3.min(data_country, function(d){return d[metric_select];})))
 
 			xAxis.scale(x)
         	yAxis.scale(y);
 
         	d3.selectAll(".rectangle")
+			.data(data_country)
            		.transition()
 	            .attr("height", function(d){
 					return height - y(d[metric_select]);
 				})
 				.attr("x", function(d){
-					console.log(x(d.date));
 					return x(d.date);
 				})
 				.attr("y", function(d){
