@@ -4,7 +4,7 @@
 <style>
 
 .rectangle {
-	fill: pink;
+	fill: red;
 }
 .rectangle:hover {
 	fill: maroon;
@@ -38,33 +38,56 @@ var svg = d3.select("body").append("svg")
 	.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("covid_case_death_counts.csv", function(error, data){
+d3.csv("covid_case_death_counts.csv", function(d){
+	var dateparse = d3.time.format("%m/%d/%y").parse
 
-	//console.log(data)
-	//suspect: data is array of objects
+	return {
+		country: d["COUNTRY_SHORT_NAME"],
+		total_case: +d["PEOPLE_POSITIVE_CASES_COUNT"],
+		new_death : +d["PEOPLE_DEATH_NEW_COUNT"],
+		new_case : +d["PEOPLE_POSITIVE_NEW_CASES_COUNT"],
+		total_death : +d["PEOPLE_DEATH_COUNT"],
+		date: dateparse(d["REPORT_DATE"])
+		};
+}, function(error, data){
+	console.log(data)
+	
+	// Get every column name
+	var elements = [... new Set(data.map(
+								function(d){
+									return d.country
+											}
+								))
+					];
 
-	// Get every column names
-	var elements = Object.keys(data[0])
-		.filter(function(d){
-			return ((d != "Year") & (d != "State"));
-		});
+	console.log(elements)
 
 	//get first column name 
-	var selection = elements[0];
+	var country_selection = elements[0];
+	var metric_select = "new_case"
 
-	//this is giving the max value at each row. We just need to track new cases. This changes. 
+	// Country specific data, data where country == selection
+	var data_country = data.filter(function(d){
+							return d.country == country_selection
+	})
+
+	//this is giving the max value at each row. We just need to track new cases. This changes. But still would use linear 
+	// scale
 	var y = d3.scale.linear()
-			.domain([0, d3.max(data, function(d){
-				return +d[selection];
+			.domain([d3.min(data_country, function(d){return d.new_case}), d3.max(data_country, function(d){
+				return d.new_case;
 			})])
 			.range([height, 0]);
 	
-	console.log(y)
+	var mindate = d3.min(data_country, function(d){return d.date})
+	var maxdate = d3.max(data_country, function(d){return d.date})
 
-	var x = d3.scale.ordinal()
-			.domain(data.map(function(d){ return d.State;}))
-			.rangeBands([0, width]);
-
+	// x axis has to be a timescale and not a ordinal scale. 
+	var x = d3.time.scale()
+			.domain([mindate, maxdate])
+			.nice(d3.time.month)
+			.range([0, width]);
+	
 	var xAxis = d3.svg.axis()
 		.scale(x)
 	    .orient("bottom");
@@ -90,23 +113,23 @@ d3.csv("covid_case_death_counts.csv", function(error, data){
     	.call(yAxis);
 
 	svg.selectAll("rectangle")
-		.data(data)
+		.data(data_country)
 		.enter()
 		.append("rect")
 		.attr("class","rectangle")
 		.attr("width", width/data.length)
 		.attr("height", function(d){
-			return height - y(+d[selection]);
+			return height - y(d[metric_select]);
 		})
 		.attr("x", function(d, i){
-			return (width / data.length) * i ;
+			return x(d.date) ;
 		})
 		.attr("y", function(d){
-			return y(+d[selection]);
+			return y(d[metric_select]);
 		})
 		.append("title")
 		.text(function(d){
-			return d.State + " : " + d[selection];
+			return d.country + " : " + d[metric_select];
 		});
 
 	var selector = d3.select("#drop")
@@ -114,34 +137,55 @@ d3.csv("covid_case_death_counts.csv", function(error, data){
     	.attr("id","dropdown")
     	.on("change", function(d){
         	selection = document.getElementById("dropdown");
+			country_selection = selection.value
+			console.log(country_selection)
 
-        	y.domain([0, d3.max(data, function(d){
-				return +d[selection.value];})]);
+			data_country = data.filter(function(d){
+							return d.country == country_selection
+			})
+			console.log(data_country)
+			
+			mindate = d3.min(data_country, function(d){return d.date})
+			maxdate = d3.max(data_country, function(d){return d.date})
+			
+			// x axis has to be a timescale and not a ordinal scale. 
+			x.domain([mindate, maxdate])
+			
+			console.log(d3.max(data_country, function(d){return d[metric_select]}))
 
+        	y.domain([d3.min(data_country, function(d){return d.new_case}), d3.max(data_country, function(d){
+				return d.new_case;
+			})]);
+
+			xAxis.scale(x)
         	yAxis.scale(y);
 
         	d3.selectAll(".rectangle")
            		.transition()
 	            .attr("height", function(d){
-					return height - y(+d[selection.value]);
+					return height - y(d[metric_select]);
 				})
-				.attr("x", function(d, i){
-					return (width / data.length) * i ;
+				.attr("x", function(d){
+					console.log(x(d.date));
+					return x(d.date);
 				})
 				.attr("y", function(d){
-					return y(+d[selection.value]);
+					return y(d[metric_select]);
 				})
            		.ease("linear")
            		.select("title")
            		.text(function(d){
-           			return d.State + " : " + d[selection.value];
-           		});
+           			return d.country + " : " + d[metric_select];
+           	});
       
            	d3.selectAll("g.y.axis")
            		.transition()
            		.call(yAxis);
 
-         });
+			d3.selectAll("x axis")
+           		.transition()
+           		.call(xAxis);
+        });
 
     selector.selectAll("option")
       .data(elements)
