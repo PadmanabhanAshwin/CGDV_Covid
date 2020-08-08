@@ -15,13 +15,13 @@ Storytelling using Visualizations for showcasing economic impact of COVID19 viru
 | age_gender_india      |   Age/Gender distribution in India  by state     |     NA.      | https://tradingeconomics.com/india/unemployment-rate.    |
 | age_gender_bangla      |   Age/Gender distribution in Bangladesh  aggregate     |     Census 2011      |  WIKIPEDIA,  https://unstats.un.org/unsd/demographic/products/dyb/dyb2013/Table07.pdf  |
 | age_gender_brasil      |   Age/Gender distribution in Brazil  aggregate     |     NA      |  https://www.cia.gov/library/publications/the-world-factbook/fields/341.html  |
-| age_gender_indonasia      |   Age/Gender distribution in Indonasia  aggregate     |     NA      |  https://www.cia.gov/library/publications/the-world-factbook/fields/341.html  |
+| age_gender_indonasia      |   Age/Gender distribution in Indonesia  aggregate     |     NA      |  https://www.cia.gov/library/publications/the-world-factbook/fields/341.html  |
 | age_gender_pak      |   Age/Gender distribution in Pakistan      |     NA      |  WIKIPEDIA https://unstats.un.org/unsd/demographic-social/products/dyb/index.cshtml |
 | age_gender_egypt     |   Age/Gender distribution in Egypt      |     NA      |  https://www.cia.gov/library/publications/the-world-factbook/fields/341.html |
 | age_gender_lanka     |   Age/Gender distribution in Sri Lanka      |     NA      |  https://www.cia.gov/library/publications/the-world-factbook/fields/341.html |
 | routes.txt     |   International flight traffic      |     Cols: Airline, AirlineID, Source, SourceID, Dest, DestID, CodeShare, Stops, Equip      |  https://openflights.org/data.html |
 | pop_density	    |   Population Density by Lat/Lon      |     ASCII, GeoTiff format.     |  https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density-rev11/data-download |
-| hospital_beds	    |   Timeseries of hospital beds by country     |     NA     | WHO https://apps.who.int/gho/data/view.main.HS07v     |
+| hospital_beds	    |   Time-series of hospital beds by country     |     NA     | WHO https://apps.who.int/gho/data/view.main.HS07v     |
 | health_infra	    |   Health Infrastructure, Types of hospitals by country     |     NA     | WHO https://apps.who.int/gho/data/view.main.30000     |
 | positive_rate	    |   Positivity rate by country     |     NA     | https://ourworldindata.org/coronavirus-testing     |
 | testing	    |   testing by country     |     NA     | https://ourworldindata.org/grapher/full-list-total-tests-for-covid-19     |
