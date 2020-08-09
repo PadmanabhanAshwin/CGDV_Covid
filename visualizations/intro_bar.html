@@ -15,9 +15,9 @@
 }
 
 path{
-	stroke: darkblue;
-  	stroke-width: 2;
-  	fill: none;
+	stroke: darkblue; /* For the average line */
+  stroke-width: 2;
+  fill: none;
 }
 
 .axis path,
@@ -47,7 +47,7 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv("covid_case_death_counts.csv", function(d){
-	// Creating an accesor function with relevent data type rtype. 
+	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse
 
 	return {
@@ -63,12 +63,12 @@ d3.csv("covid_case_death_counts.csv", function(d){
 	// #########################################################################################################
 
 
-	// counting starts from zero. That is 00 is Jan. 02 is March. 
-	var cutoffdate = new Date(2020, 02, 01)	
-	// whatever needs to be plotted. 
+	// counting starts from zero. That is 00 is Jan. 02 is March.
+	var cutoffdate = new Date(2020, 02, 01)
+	// whatever needs to be plotted.
 	var metric_select = "new_case"
-	
-	// Rawdata has all data. We only want data starting from a cutoff point, defined above. 
+
+	// Rawdata has all data. We only want data starting from a cutoff point, defined above.
 	var data = rawdata.filter(function(d){ return d["date"].getTime() >cutoffdate.getTime()})
 
 	// Get every column name
@@ -79,26 +79,26 @@ d3.csv("covid_case_death_counts.csv", function(d){
 								))
 					];
 
-	//get first column name 
+	//get first column name
 	var country_selection = elements[0];
-	
+
 	// Country specific data, data where country == selection
 	var data_country = data.filter(function(d){
 							return d.country == country_selection
 	})
 
 
-	// Get minimum and maximum dates for x axis. 
+	// Get minimum and maximum dates for x axis.
 	var mindate = d3.min(data_country, function(d){return d.date})
 	var maxdate = d3.max(data_country, function(d){return d.date})
 
-	// defining x scale. 
+	// defining x scale.
 	var x = d3.time.scale()
 			.domain([mindate, maxdate])
 			.nice(d3.time.month)
 			.range([0, width]);
-	
-	// defining XAxis 
+
+	// defining XAxis
 	var xAxis = d3.svg.axis()
 		.scale(x)
 	    .orient("bottom");
@@ -109,13 +109,13 @@ d3.csv("covid_case_death_counts.csv", function(d){
 			return d.new_case;
 		})])
 		.range([height, 0]);
-	
-	//defining y axis. 
+
+	//defining y axis.
 	var yAxis = d3.svg.axis()
 		.scale(y)
 	    .orient("left");
-	
-	// sticking the x and y axis into the canvas. 
+
+	// sticking the x and y axis into the canvas.
 	svg.append("g")
     	.attr("class", "x axis")
     	.attr("transform", "translate(0," + height + ")")
@@ -131,7 +131,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
     	.attr("class", "y axis")
     	.call(yAxis);
 
-	// sticking the rectangles into the canvas. 
+	// sticking the rectangles into the canvas.
 	svg.selectAll("rectangle")
 		.data(data_country)
 		.enter()
@@ -194,30 +194,30 @@ d3.csv("covid_case_death_counts.csv", function(d){
 	//#region
 	let runningsum = 0;
 	const len = country_raw.length;
-	let item = null; 
+	let item = null;
 	var rolling_avg = new Array()
 	let avg_window = 7
-	let rolling_avg_inst = 0 
-	
+	let rolling_avg_inst = 0
+
 	for (let i = 0 ; i <len; i++){
 		let item = country_raw[i];
 		if(item["date"].getTime() > cutoffdate.getTime()){
-			runningsum = 0 
+			runningsum = 0
 			for (let iter = 0 ; iter < avg_window; iter ++){
-					runningsum = runningsum + country_raw[i - iter][metric_select] 
+					runningsum = runningsum + country_raw[i - iter][metric_select]
 				}
 			rolling_avg_inst = runningsum/avg_window
 			rolling_avg.push({date: item["date"], avg: rolling_avg_inst})
 		}
 	}
 	//#endregion
-	
-	// creating the line object 
+
+	// creating the line object
 	var trendline = d3.svg.line()
 						.x(function(d){return x(d.date)})
 						.y(function(d){return y(d.avg)})
-	
-	// sticking the line into the canvas. 
+
+	// sticking the line into the canvas.
 	var line = svg
 		.append("g")
 		.append("path")
@@ -235,26 +235,26 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 			//value in the dropdown is = country_selection
 			country_selection = selection.value
-			
+
 			// get the data for this country
 			data_country = data.filter(function(d){
 							return d.country == country_selection
 			})
-			
+
 			mindate = d3.min(data_country, function(d){return d.date})
 			maxdate = d3.max(data_country, function(d){return d.date})
-			
-			// redefine the x and y scale domains. The range remain the same, obviously. 
+
+			// redefine the x and y scale domains. The range remain the same, obviously.
 			x.domain([mindate, maxdate])
-			
+
         	y.domain([d3.min(data_country, function(d){return d[metric_select]}), d3.max(data_country, function(d){return d[metric_select];})
 			]);
-			
-			// change the axis to take into consideration the new scale. 
+
+			// change the axis to take into consideration the new scale.
 			xAxis.scale(x)
         	yAxis.scale(y);
-			
-			// Redraw the rectangle. Why is it selectAll(.rectagle)? Workaround = define a variable instead. See line transition. 
+
+			// Redraw the rectangle. Why is it selectAll(.rectagle)? Workaround = define a variable instead. See line transition.
         	d3.selectAll(".rectangle")
 				.data(data_country)
            		.transition()
@@ -272,7 +272,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
            		.text(function(d){
            			return d.country + " : " + d[metric_select];
            	});
-			
+
 			// For the line chart
 
 			//Reperform the rolling average and save in rolling_avg
@@ -281,35 +281,35 @@ d3.csv("covid_case_death_counts.csv", function(d){
 			})
 			country_raw.sort(compare);
 
-			//calculating the rolling average. 
+			//calculating the rolling average.
 			// #region
 			let runningsum = 0;
 			const len = country_raw.length;
-			let item = null; 
+			let item = null;
 			var rolling_avg = new Array()
 			let avg_window = 7
-			let rolling_avg_inst = 0 
-			
+			let rolling_avg_inst = 0
+
 			for (let i = 0 ; i <len; i++){
 				let item = country_raw[i];
 				if(item["date"].getTime() > cutoffdate.getTime()){
-					runningsum = 0 
+					runningsum = 0
 					for (let iter = 0 ; iter < avg_window; iter ++){
-							runningsum = runningsum + country_raw[i - iter][metric_select] 
+							runningsum = runningsum + country_raw[i - iter][metric_select]
 						}
 					rolling_avg_inst = runningsum/avg_window
 					rolling_avg.push({date: item["date"], avg: rolling_avg_inst})
 				}
 			}
 			//#endregion
-			
-			//define the line transition. 
+
+			//define the line transition.
 			line
 				.transition()
 				.attr("d", trendline(rolling_avg))
 				.ease("linear")
-			
-			// not sure why it is g.y.axis; calling the new axis. 
+
+			// not sure why it is g.y.axis; calling the new axis.
            	d3.selectAll("g.y.axis")
            		.transition()
            		.call(yAxis);
@@ -318,7 +318,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
            		.transition()
            		.call(xAxis);
         });
-	//drop down options. 
+	//drop down options.
     selector.selectAll("option")
       .data(elements)
       .enter().append("option")
