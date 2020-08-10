@@ -2,11 +2,11 @@
 <meta charset="utf-8">
 <head>
 <style>
-
+/* 
 .rectangle {
 	fill: lightskyblue;
 	stroke: maroon
-}
+} */
 .rectangle:hover {
 	fill: deepskyblue;
 }
@@ -35,6 +35,12 @@ path{
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
+
+//Animation settings: 
+var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "lightsalmon"}
+var stroke_color = {"Indonesia": "maroon", "India": "green", "Pakistan": "maroon", "Bangladesh": "maroon", "Brazil": "maroon", "Egypt": "maroon", "Sri Lanka": "purple"}
+var delay = 5
+
 
 var margin = {top: 80, right: 180, bottom: 80, left: 180},
     width = 960 - margin.left - margin.right,
@@ -147,6 +153,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.attr("y", function(d){
 			return y(d[metric_select]);
 		})
+		.attr("fill", country_color[country_selection])
+		.attr("stroke", "maroon")
 		.append("title")
 		.text(function(d){
 			return d.country + " : " + d[metric_select];
@@ -267,6 +275,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
 				.attr("y", function(d){
 					return y(d[metric_select]);
 				})
+				.attr("fill", country_color[country_selection])
+				.attr("stroke", stroke_color[country_selection])
+				.delay(function(d, i){return delay*(data_country.length - i)})
            		.ease("linear")
            		.select("title")
            		.text(function(d){
@@ -306,8 +317,10 @@ d3.csv("covid_case_death_counts.csv", function(d){
 			//define the line transition. 
 			line
 				.transition()
+				.delay(delay*data_country.length)
 				.attr("d", trendline(rolling_avg))
 				.ease("linear")
+				
 			
 			// not sure why it is g.y.axis; calling the new axis. 
            	d3.selectAll("g.y.axis")
