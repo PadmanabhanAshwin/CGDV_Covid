@@ -7,6 +7,16 @@
 	fill: lightskyblue;
 	stroke: maroon
 } */
+h3 {
+	text-align: center;
+	color: black;
+}
+
+.p1 {
+	font-size: 1px; 
+	color: pink
+}
+
 .rectangle:hover {
 	fill: deepskyblue;
 }
@@ -23,22 +33,52 @@ path{
 div.tooltip{
     position: absolute;			
     text-align: center;			
-    width: 60px;					
-    height: 28px;					
+    width: 130px;					
+    height: 20px;					
     padding: 2px;				
     font: 12px sans-serif;		
-    background: lightsteelblue;	
-    border: 0px;		
-    border-radius: 8px;			
+    background: rgb(243, 240, 237);	
+    border: 3px;		
+    border-radius: 1px;			
     pointer-events: none;	
 }
-
 .axis path,
 .axis line {
   fill: none;
   stroke: black;
   shape-rendering: crispEdges;
 }
+
+.d3-tip {
+  line-height: 1.2;
+  font-weight: bold;
+  padding: 10px;
+  background: rgba(243, 242, 248, 0.8);
+  color: rgb(236, 103, 103);
+  border-radius: 1px;
+  top: 10px
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
 
 </style>
 </head>
@@ -47,6 +87,8 @@ div.tooltip{
 <div class="chosen-wrapper chosen-wrapper--style2" data-js="custom-scroll" id="drop" align=left></div>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
 <script>
 
 //Animation settings: 
@@ -67,9 +109,17 @@ var svg = d3.select("body").append("svg")
 
 // tooltip
 var tooltip = d3.select("body").append("div")
-	.attr("id", "tooltip1")
 	.attr("class", "tooltip")
 	.style("opacity", 0)
+
+var timeformatter = d3.time.format("%B %d")
+
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    return "<h3>"+ timeformatter(d.date) + "</h3> <p1 style='color:grey'> New case count.</p1> <span style='color:darkblue'>" + d.new_case + "</span> <br>  <p1 style='color:grey'> Cummlative case count.</p1> <span style='color:darkblue'>" + d.total_case + "</span>" ;
+  })
 
 d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype. 
@@ -140,6 +190,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.scale(y)
 	    .orient("left");
 	
+	svg.call(tip);
+	
 	// sticking the x and y axis into the canvas. 
 	svg.append("g")
     	.attr("class", "x axis")
@@ -174,20 +226,15 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		})
 		.attr("fill", country_color[country_selection])
 		.attr("stroke", "maroon")
-		.on("mouseover", function(d){
-				tooltip
-					.style("opacity", 1)
-					.text("New cases: " + d.new_case)
-		})
-		.on("mouseout", function(d){
-			tooltip
-				.style("opacity", 0)
-		})
-		.on("mousemove", function(d){
-			tooltip
-			.style('left', (d3.event.pageX) + 'px')
-			.style('top', (y(d[metric_select])+65) + 'px')
-			})
+		.on("mouseover", tip.show)
+		.on("mouseout", tip.hide)
+		// .on("mousemove", function(d){
+		// 	tooltip
+		// 		.style('left', (d3.event.pageX) + 'px')
+		// 		.transition()
+		// 		.duration(1000)
+		// 		.style('top', (y(d[metric_select])+65) + 'px')
+		// 	})
 		.append("title")
 		.text(function(d){
 			return d.country + " : " + d[metric_select];
