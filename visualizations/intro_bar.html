@@ -20,6 +20,19 @@ path{
   	fill: none;
 }
 
+div.tooltip{
+    position: absolute;			
+    text-align: center;			
+    width: 60px;					
+    height: 28px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;	
+}
+
 .axis path,
 .axis line {
   fill: none;
@@ -51,6 +64,12 @@ var svg = d3.select("body").append("svg")
     .attr("height", height + margin.top + margin.bottom)
 	.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// tooltip
+var tooltip = d3.select("body").append("div")
+	.attr("id", "tooltip1")
+	.attr("class", "tooltip")
+	.style("opacity", 0)
 
 d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype. 
@@ -155,6 +174,20 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		})
 		.attr("fill", country_color[country_selection])
 		.attr("stroke", "maroon")
+		.on("mouseover", function(d){
+				tooltip
+					.style("opacity", 1)
+					.text("New cases: " + d.new_case)
+		})
+		.on("mouseout", function(d){
+			tooltip
+				.style("opacity", 0)
+		})
+		.on("mousemove", function(d){
+			tooltip
+			.style('left', (d3.event.pageX) + 'px')
+			.style('top', (y(d[metric_select])+65) + 'px')
+			})
 		.append("title")
 		.text(function(d){
 			return d.country + " : " + d[metric_select];
@@ -231,6 +264,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.append("path")
 		.attr("class", "line")
 		.attr("d", trendline(rolling_avg))
+	
 
 	// ############################################# TRANSITION #######################################################
 	// ################################################################################################################
