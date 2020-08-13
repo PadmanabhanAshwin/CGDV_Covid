@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head>
 <style>
 
 .node {
@@ -7,9 +8,32 @@
 }
 
 </style>
+</head>
 <body>
-<script src="//d3js.org/d3.v3.min.js"></script>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
+
+var width = 960,
+    height = 500;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+d3.csv("covid_case_death_counts.csv", function(d){
+	// Creating an accesor function with relevent data type rtype. 
+	var dateparse = d3.time.format("%m/%d/%y").parse
+
+	return {
+		country: d["COUNTRY_SHORT_NAME"],
+		total_case: +d["PEOPLE_POSITIVE_CASES_COUNT"],
+		new_death : +d["PEOPLE_DEATH_NEW_COUNT"],
+		new_case : +d["PEOPLE_POSITIVE_NEW_CASES_COUNT"],
+		total_death : +d["PEOPLE_DEATH_COUNT"],
+		date: dateparse(d["REPORT_DATE"])
+		};
+}, function(error, rawdata){
 
     function creategroup(){
         var centers = { "Brazil": {"center": {x: 0, y:0}}, 
@@ -23,31 +47,9 @@
         return centers
     }
     var c_map = creategroup()
+    console.log(c_map)
 
-    var width = 960,
-        height = 500;
-
-    var svg = d3.select("body").append("svg")
-        .attr("width", width)
-        .attr("height", height);
-
-    console.log("before data read")
-    d3.csv("covid_case_death_counts.csv"), function(d){
-        // Creating an accesor function with relevent data type rtype. 
-        var dateparse = d3.time.format("%m/%d/%y").parse
-
-        return {
-            country: d["COUNTRY_SHORT_NAME"],
-            total_case: +d["PEOPLE_POSITIVE_CASES_COUNT"],
-            new_death : +d["PEOPLE_DEATH_NEW_COUNT"],
-            new_case : +d["PEOPLE_POSITIVE_NEW_CASES_COUNT"],
-            total_death : +d["PEOPLE_DEATH_COUNT"],
-            date: dateparse(d["REPORT_DATE"])
-            };
-    }, function(error, rawdata){ 
-
-        var fill = d3.scale.category10();
-
+    var fill = d3.scale.category10();
 
         var nodes = rawdata.map(function(d, i) {
             return {index: i, center: c_map[d.country].center};
@@ -99,8 +101,8 @@
         });
         force.resume();
     }
-
-    }
-    console.log("skip data reads")
+	
+});
 
 </script>
+</body>
