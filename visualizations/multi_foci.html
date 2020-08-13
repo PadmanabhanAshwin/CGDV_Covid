@@ -14,12 +14,16 @@
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
 
-var width = 960,
-    height = 500;
+
+var margin = {top: 80, right: 20, bottom: 80, left: 80},
+    width = 960 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height)
+	.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype. 
@@ -36,58 +40,67 @@ d3.csv("covid_case_death_counts.csv", function(d){
 }, function(error, rawdata){
 
     function creategroup(){
-        var centers = { "Brazil": {"center": {x: 0, y:0}}, 
-                    "Bangladesh": {"center": {x: width/7, y:0}}, 
-                    "India": {"center": {x: 2*width/7, y:0}}, 
-                    "Indonesia": {"center": {x: 3*width/7, y:0}},
-                    "Pakistan": {"center": {x: 4*width/7, y:0}},
-                    "Sri Lanka": {"center": {x: 5*width/7, y:0}},
-                    "Egypt": {"center": {x: 6*width/7, y:0}},
+        var centers = { "Brazil": {"center": {x: 0, y:height/2}}, 
+                    "Bangladesh": {"center": {x: width/7, y:height/2}}, 
+                    "India": {"center": {x: 2*width/7, y:height/2}}, 
+                    "Indonesia": {"center": {x: 3*width/7, y:height/2}},
+                    "Pakistan": {"center": {x: 4*width/7, y:height/2}},
+                    "Sri Lanka": {"center": {x: 5*width/7, y:height/2}},
+                    "Egypt": {"center": {x: 6*width/7, y:height/2}},
                  }
         return centers
     }
     var c_map = creategroup()
     console.log(c_map)
-
     var fill = d3.scale.category10();
 
-        var nodes = rawdata.map(function(d, i) {
-            return {index: i, center: c_map[d.country].center};
-        });
+    function calcValue(rawdata, measure){
+        var maxdate = new Date(Math.max.apply(null, rawdata.map(function(d){return d.date})))
+        console.log(maxdate)
 
-        var force = d3.layout.force()
-            .nodes(nodes)
-            .size([width, height])
-            .on("tick", tick)
-            .start();
-        
-        var node = svg.selectAll(".node")
-            .data(nodes)
-        .enter().append("circle")
-        .attr("class", "node")
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; })
-        .attr("r", 8)
-        .style("fill", function(d, i) { return fill(i & 3); })
-        .style("stroke", function(d, i) { return d3.rgb(fill(i & 3)).darker(2); })
-        .call(force.drag)
-        .on("mousedown", function() { d3.event.stopPropagation(); });
-        
-        svg.style("opacity", 1e-6)
-        .transition()
-            .duration(1000)
-            .style("opacity", 1);
+        var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
+        console.log(reldata)
+    }
+    calcValue(rawdata, "country")
 
-        d3.select("body")
-            .on("mousedown", mousedown);
+    var nodes = rawdata.map(function(d, i) {
+        return {index: i, center: c_map[d.country].center};
+    });
+
+    console.log(nodes)
+
+    var force = d3.layout.force()
+        .nodes(nodes)
+        .size([width, height])
+        .on("tick", tick)
+        .start();
+        
+    var node = svg.selectAll(".node")
+        .data(nodes)
+    .enter().append("circle")
+    .attr("class", "node")
+    .attr("cx", function(d) { return d.x; })
+    .attr("cy", function(d) { return d.y; })
+    .attr("r", 6)
+    .style("fill", function(d, i) { return fill(i & 3); })
+    .style("stroke", function(d, i) { return d3.rgb(fill(i & 3)).darker(2); })
+    //.call(force.drag)
+    .on("mousedown", function() { d3.event.stopPropagation(); });
+        
+    svg.style("opacity", 1e-6)
+    .transition()
+        .duration(1000)
+        .style("opacity", 1);
+
+    d3.select("body")
+        .on("mousedown", mousedown);
     
-
     function tick(e) {
         var k = 6 * e.alpha;
         nodes.forEach(function(node) {
             var temp_center = node.center
-            node.x += (center.x - node.x) * k;
-            node.y += (center.y - node.y) * k;
+            node.x += (temp_center.x - node.x) * k;
+            node.y += (temp_center.y - node.y) * k;
         });
 
         node.attr("cx", function(d) { return d.x; })
