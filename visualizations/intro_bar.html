@@ -25,7 +25,7 @@ h3 {
 }
 
 path{
-	stroke: darkblue; 
+	/* stroke: darkblue;  */
   	stroke-width: 2;
   	fill: none;
 }
@@ -90,12 +90,16 @@ div.tooltip{
 <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 <script>
 
-//Animation settings: 
+// #########################################################################################################
+// : ################################ MR: Change Animation settings ########################################
+
 var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "lightsalmon"}
 var stroke_color = {"Indonesia": "maroon", "India": "green", "Pakistan": "maroon", "Bangladesh": "maroon", "Brazil": "maroon", "Egypt": "maroon", "Sri Lanka": "purple"}
+var line_color = {"Indonesia": "green", "India": "maroon", "Pakistan": "crimson", "Bangladesh": "yellow", "Brazil": "orange", "Egypt": "lightskyblue", "Sri Lanka": "lightgreen"}
 var delay = 5
 
-
+// #########################################################################################################
+// ##################################### Figure size setting: ##############################################
 var margin = {top: 80, right: 180, bottom: 80, left: 180},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -106,13 +110,14 @@ var svg = d3.select("body").append("svg")
 	.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// tooltip
+// ##################################### General Tooltip setting: ####################################################################
 var tooltip = d3.select("body").append("div")
 	.attr("class", "tooltip")
 	.style("opacity", 0)
 
 var timeformatter = d3.time.format("%B %d")
 
+// ##################### MR: TO CHANGE TOOLIP STYLE CHANGE add HTML in return below:  #################################################
 var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
@@ -120,6 +125,7 @@ var tip = d3.tip()
     return "<h3>"+ timeformatter(d.date) + "</h3> <p1 style='color:grey'> New case count.</p1> <span style='color:darkblue'>" + d.new_case + "</span> <br>  <p1 style='color:grey'> Cummlative case count.</p1> <span style='color:darkblue'>" + d.total_case + "</span>" ;
   })
 
+// ##################################### Data async call: ####################################################################
 d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype. 
 	var dateparse = d3.time.format("%m/%d/%y").parse
@@ -134,10 +140,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		};
 }, function(error, rawdata){
 	// ##################### PLOTTING THE BAR CHART ############################################################
-	// #########################################################################################################
 
-
-	// counting starts from zero. That is 00 is Jan. 02 is March. 
+	// counting starts from zero: That is 00 is Jan. 02 is March. 
 	var cutoffdate = new Date(2020, 02, 01)	
 	// whatever needs to be plotted. 
 	var metric_select = "new_case"
@@ -309,6 +313,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.append("g")
 		.append("path")
 		.attr("class", "line")
+		.style("stroke", "darkblue")
 		.attr("d", trendline(rolling_avg))
 	
 
@@ -398,6 +403,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 			line
 				.transition()
 				.delay(delay*data_country.length)
+				.style("stroke", line_color[country_selection] )
 				.attr("d", trendline(rolling_avg))
 				.ease("linear")
 				
