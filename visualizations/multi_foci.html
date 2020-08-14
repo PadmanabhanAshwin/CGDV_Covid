@@ -57,13 +57,21 @@ d3.csv("covid_case_death_counts.csv", function(d){
     var c_map = creategroup()
     var fill = d3.scale.category10();
 
-    function calcValue(rawdata, measure){
+    function calcValue(rawdata, measure, cmap){
         // INPUT RAWDATA and measure to get proportions.
         var maxdate = new Date(Math.max.apply(null, rawdata.map(function(d){return d.date})))
 
         // get relevenet data on latest date. 
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
-        console.log(reldata)
+
+        // PLOTTING THE COUNTRY TITLES!!
+        for (var k = 0; k < reldata.length; k++){
+            console.log( "centers will be= ", c_map[reldata[k].country].center.x)
+            svg.append("text")
+                .attr("x", c_map[reldata[k].country].center.x)
+                .attr("y", c_map[reldata[k].country].center.y/3)
+                .text(reldata[k].country)
+        }
 
         // data per capita
         var measure_per_capita = reldata.map(function(d){return {country: d.country, value: d[measure]/population[d.country]}})
@@ -134,9 +142,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .on("mousedown", function() { d3.event.stopPropagation(); });
                 
     svg.style("opacity", 1e-6)
-    .transition()
-        .duration(1000)
-        .style("opacity", 1);
+        .transition()
+            .duration(1000)
+            .style("opacity", 1);
 
     d3.select("body")
         .on("mousedown", mousedown);
