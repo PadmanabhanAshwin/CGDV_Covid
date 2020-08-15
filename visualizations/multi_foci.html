@@ -7,11 +7,42 @@
   stroke-width: 1.5px;
 }
 
+.title{
+    font: 30px sans-serif;
+}
+.btn-group .btn-group-toggle{
+    position: relative;
+    top: 1000px
+}
+
 </style>
 </head>
 <body>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+
+<br><br>
+<form id="form" class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="controlHeatmapType" value="MRR" checked>Case Per Capita<br>
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="controlHeatmapType" value="LYL">Deaths Per capita<br>
+  </label>
+  <label class="btn btn-secondary">
+        <input type="radio" name="controlHeatmapType" value="LYL">Tests Per Capita<br>
+    </label>
+    <label class="btn btn-secondary">
+            <input type="radio" name="controlHeatmapType" value="LYL">Recovered Per Capita<br>
+    </label>
+</form>
+
+
+
 <script>
 var population = {"Brazil": 212744941, "Bangladesh": 164891619, "India": 1381567238, "Indonesia": 273855751, "Pakistan": 221366281, "Sri Lanka": 21423831, "Egypt": 102548214}
 var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "lightsalmon"}
@@ -27,6 +58,13 @@ var svg = d3.select("body").append("svg")
     .attr("height", height)
 	.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+svg.append("text")
+    .attr("class", "title")
+    .attr("x", (width-margin.left-margin.right)/3)
+    .attr("y", margin.top - 70)
+    .text("Case count per capita")
+
 
 d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype. 
@@ -124,7 +162,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
     var force = d3.layout.force()
         .nodes(nodes)
         .size([width, height])
-        .charge(-800)
+        .charge(-500)
         .on("tick", tick)
         .start();
         
@@ -160,16 +198,14 @@ d3.csv("covid_case_death_counts.csv", function(d){
         node.attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
     }
-
     function mousedown() {
-        nodes.forEach(function(o, i) {
-            o.x += (Math.random() - .5) * 40;
-            o.y += (Math.random() - .5) * 40;
-        });
         force.resume();
     }
-	
+
+    var formval = d3.select('#form')
+    console.log(formval)
 });
+
 
 </script>
 </body>
