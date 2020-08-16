@@ -25,6 +25,9 @@ Storytelling using Visualizations for showcasing economic impact of COVID19 viru
 | health_infra	    |   Health Infrastructure, Types of hospitals by country     |     NA     | WHO https://apps.who.int/gho/data/view.main.30000     |
 | positive_rate	    |   Positivity rate by country     |     NA     | https://ourworldindata.org/coronavirus-testing     |
 | testing	    |   testing by country     |     NA     | https://ourworldindata.org/grapher/full-list-total-tests-for-covid-19     |
+| Folder-India	    |   Consolidated India data     |     NA     | https://www.kaggle.com/sudalairajkumar/covid19-in-india/data#    |
+| OAG    |   Flight data, cohort, month on month     |     NA     | https://www.oag.com/coronavirus-airline-schedules-data   |
+
 
 
 
