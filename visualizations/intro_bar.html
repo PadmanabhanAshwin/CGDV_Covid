@@ -250,10 +250,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		// 		.duration(1000)
 		// 		.style('top', (y(d[metric_select])+65) + 'px')
 		// 	})
-		.append("title")
-		.text(function(d){
-			return d.country + " : " + d[metric_select];
-		});
+
 	// sticking the x/y axis LABEL into the canvas (Svg)
 	svg.append("text")
 		.attr("x", width/2)
