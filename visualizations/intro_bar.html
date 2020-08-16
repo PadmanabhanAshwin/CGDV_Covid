@@ -28,7 +28,7 @@
 
 path{
 	/* stroke: darkblue;  */
-  	stroke-width: 2;
+  	stroke-width: 3.2;
   	fill: none;
 }
 
@@ -49,6 +49,7 @@ div.tooltip{
   fill: none;
   stroke: black;
   shape-rendering: crispEdges;
+	stroke-width:1.5;
 }
 
 .d3-tip {
@@ -96,7 +97,7 @@ div.tooltip{
 
 var country_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
 var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
-var line_color = {"Indonesia": "green", "India": "maroon", "Pakistan": "crimson", "Bangladesh": "yellow", "Brazil": "orange", "Egypt": "lightskyblue", "Sri Lanka": "lightgreen"}
+var line_color = {"Bangladesh": "#622a62", "Brazil": "#002776", "Egypt": "#624B1C", "India": "#4363D8", "Indonesia": "#C05912", "Pakistan": "#228B22", "Sri Lanka": "#C88C00"}
 var delay = 5
 
 // #########################################################################################################
@@ -123,7 +124,7 @@ var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return "<span class=\"d3-tool-heading\">"+ timeformatter(d.date) + "</span><br> <p1 style='color:grey'> New case count.</p1> <span style='color:darkblue'>" + d.new_case + "</span> <br>  <p1 style='color:grey'> Cummlative case count.</p1> <span style='color:darkblue'>" + d.total_case + "</span>" ;
+    return "<span class=\"d3-tool-heading\">"+ timeformatter(d.date) + "</span><br> <p1 style='color:grey'> New case count:</p1> <span style='color:darkblue'>" + d.new_case + "</span> <br>  <p1 style='color:grey'> Cummlative case count:</p1> <span style='color:darkblue'>" + d.total_case + "</span>" ;
   })
 
 // ##################################### Data async call: ####################################################################
