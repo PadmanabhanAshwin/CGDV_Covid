@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<style>
+
+.node {
+  stroke-width: 1.5px;
+}
+
+</style>
+</head>
+<body>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script>
+var population = {"Brazil": 212744941, "Bangladesh": 164891619, "India": 1381567238, "Indonesia": 273855751, "Pakistan": 221366281, "Sri Lanka": 21423831, "Egypt": 102548214}
+var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "lightsalmon"}
+var stroke_color = {"Indonesia": "maroon", "India": "green", "Pakistan": "maroon", "Bangladesh": "maroon", "Brazil": "maroon", "Egypt": "maroon", "Sri Lanka": "purple"}
+
+
+var margin = {top: 80, right: 0, bottom: 80, left: 100},
+    width = 1260 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+	.append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("covid_case_death_counts.csv", function(d){
+	// Creating an accesor function with relevent data type rtype. 
+	var dateparse = d3.time.format("%m/%d/%y").parse
+
+	return {
+		country: d["COUNTRY_SHORT_NAME"],
+		total_case: +d["PEOPLE_POSITIVE_CASES_COUNT"],
+		new_death : +d["PEOPLE_DEATH_NEW_COUNT"],
+		new_case : +d["PEOPLE_POSITIVE_NEW_CASES_COUNT"],
+		total_death : +d["PEOPLE_DEATH_COUNT"],
+		date: dateparse(d["REPORT_DATE"])
+		};
+}, function(error, rawdata){
+
+    // Position the clusters
+    function creategroup(){
+        var centers = { "Brazil": {"center": {x: 0, y:height/2}}, 
+                    "Bangladesh": {"center": {x: width/7, y:height/2}}, 
+                    "India": {"center": {x: 2*width/7, y:height/2}}, 
+                    "Indonesia": {"center": {x: 3*width/7, y:height/2}},
+                    "Pakistan": {"center": {x: 4*width/7, y:height/2}},
+                    "Sri Lanka": {"center": {x: 5*width/7, y:height/2}},
+                    "Egypt": {"center": {x: 6*width/7, y:height/2}},
+                 }
+        return centers
+    }
+    var c_map = creategroup()
+    var fill = d3.scale.category10();
+
+    function calcValue(rawdata, measure){
+        // INPUT RAWDATA and measure to get proportions.
+        var maxdate = new Date(Math.max.apply(null, rawdata.map(function(d){return d.date})))
+
+        // get relevenet data on latest date. 
+        var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
+        console.log(reldata)
+
+        // data per capita
+        var measure_per_capita = reldata.map(function(d){return {country: d.country, value: d[measure]/population[d.country]}})
+
+        // normalize: find sum and divide.
+        var sum = 0
+        for (var i = 0; i<measure_per_capita.length; i++){
+            sum += measure_per_capita[i]["value"]
+        }
+
+        //Proportions:
+        var proportions = measure_per_capita.map(function(d){ return {country: d.country, value: Math.round(d.value*100/sum ) } })
+
+        var eff_sum =0; 
+        var min_val = 1000; 
+        var min_ix = -1;
+
+        // If rounding causes not to sum to 100, add to smallest value. 
+        for (i = 0; i < proportions.length; i++){
+            eff_sum += proportions[i].value;
+            if (min_val > proportions[i].value){
+                min_val = proportions[i].value; 
+                min_ix = i
+            }
+        }
+        if (eff_sum < 100){
+            proportions[min_ix].value += (100 - eff_sum)
+        }
+        return proportions
+    }
+
+    var proportions = calcValue(rawdata, "total_case")
+    var fin_data = new Array()
+
+    function makedata(proportions){
+        for (var i = 0; i< proportions.length; i++){
+            for (var j =0 ; j <proportions[i].value; j++){
+                fin_data.push({country: proportions[i].country})
+            }
+        }
+        return fin_data
+    }
+
+    var fin_data = makedata(proportions)
+
+    var nodes = fin_data.map(function(d, i) {
+        return {index: i, center: c_map[d.country].center, country: d.country};
+    });
+
+    var force = d3.layout.force()
+        .nodes(nodes)
+        .size([width, height])
+        .charge(-800)
+        .on("tick", tick)
+        .start();
+        
+    var node = svg.selectAll(".node")
+        .data(nodes)
+            .enter().append("circle")
+            .attr("class", "node")
+            .attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; })
+            .attr("r", 5)
+            .style("fill", function(d) { return country_color[d.country]; })
+            //.style("stroke", function(d, i) { return d3.rgb(country_color[d.country]).darker(2); }) Nice trick!
+            .style("stroke", function(d, i) { return stroke_color[d.country]; })
+            .call(force.drag)
+            .on("mousedown", function() { d3.event.stopPropagation(); });
+                
+    svg.style("opacity", 1e-6)
+    .transition()
+        .duration(1000)
+        .style("opacity", 1);
+
+    d3.select("body")
+        .on("mousedown", mousedown);
+
+    function tick(e) {
+        var k = 6 * e.alpha;
+        nodes.forEach(function(node) {
+            var temp_center = node.center
+            node.x += (temp_center.x - node.x) * k;
+            node.y += (temp_center.y - node.y) * k;
+        });
+
+        node.attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; });
+    }
+
+    function mousedown() {
+        nodes.forEach(function(o, i) {
+            o.x += (Math.random() - .5) * 40;
+            o.y += (Math.random() - .5) * 40;
+        });
+        force.resume();
+    }
+	
+});
+
+</script>
+</body>

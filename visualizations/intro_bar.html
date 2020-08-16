@@ -2,30 +2,85 @@
 <meta charset="utf-8">
 <head>
 <style>
-
+/*
 .rectangle {
 	fill: lightskyblue;
 	stroke: maroon
+} */
+ .d3-tool-heading{
+	font-size: 1.2em;
+	text-align: center;
+	color: black;
 }
-.rectangle:hover {
+
+.p1 {
+	font-size: 1px;
+	color: pink
+}
+
+/*.rectangle:hover {
 	fill: deepskyblue;
-}
+}*/
+
 .axis {
   font: 13px sans-serif;
 }
 
 path{
-	stroke: darkblue; /* For the average line */
-  stroke-width: 2;
-  fill: none;
+	/* stroke: darkblue;  */
+  	stroke-width: 3.2;
+  	fill: none;
 }
 
+div.tooltip{
+    position: absolute;
+    text-align: center;
+    width: 130px;
+    height: 20px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: rgb(243, 240, 237);
+    border: 3px;
+    border-radius: 1px;
+    pointer-events: none;
+}
 .axis path,
 .axis line {
   fill: none;
   stroke: black;
   shape-rendering: crispEdges;
+	stroke-width:1.5;
 }
+
+.d3-tip {
+  line-height: 1.2;
+  padding: 10px;
+  background: rgba(243, 242, 248, 0.8);
+  color: rgb(236, 103, 103);
+  border-radius: 1px;
+  top: 10px
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
 
 </style>
 </head>
@@ -34,8 +89,19 @@ path{
 <div class="chosen-wrapper chosen-wrapper--style2" data-js="custom-scroll" id="drop" align=left></div>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 <script>
 
+// #########################################################################################################
+// : ################################ MR: Change Animation settings ########################################
+
+var country_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
+var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
+var line_color = {"Bangladesh": "#622a62", "Brazil": "#002776", "Egypt": "#624B1C", "India": "#4363D8", "Indonesia": "#C05912", "Pakistan": "#228B22", "Sri Lanka": "#C88C00"}
+var delay = 5
+
+// #########################################################################################################
+// ##################################### Figure size setting: ##############################################
 var margin = {top: 80, right: 180, bottom: 80, left: 180},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -46,6 +112,22 @@ var svg = d3.select("body").append("svg")
 	.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+// ##################################### General Tooltip setting: ####################################################################
+var tooltip = d3.select("body").append("div")
+	.attr("class", "tooltip")
+	.style("opacity", 0)
+
+var timeformatter = d3.time.format("%B %d")
+
+// ##################### MR: TO CHANGE TOOLIP STYLE CHANGE add HTML in return below:  #################################################
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    return "<span class=\"d3-tool-heading\">"+ timeformatter(d.date) + "</span><br> <p1 style='color:grey'> New case count:</p1> <span style='color:darkblue'>" + d.new_case + "</span> <br>  <p1 style='color:grey'> Cummlative case count:</p1> <span style='color:darkblue'>" + d.total_case + "</span>" ;
+  })
+
+// ##################################### Data async call: ####################################################################
 d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse
@@ -60,10 +142,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		};
 }, function(error, rawdata){
 	// ##################### PLOTTING THE BAR CHART ############################################################
-	// ##########################################################################################################
 
-
-	// counting starts from zero. That is 00 is Jan. 02 is March.
+	// counting starts from zero: That is 00 is Jan. 02 is March.
 	var cutoffdate = new Date(2020, 02, 01)
 	// whatever needs to be plotted.
 	var metric_select = "new_case"
@@ -115,6 +195,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.scale(y)
 	    .orient("left");
 
+	svg.call(tip);
+
 	// sticking the x and y axis into the canvas.
 	svg.append("g")
     	.attr("class", "x axis")
@@ -123,9 +205,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
     	.selectAll("text")
     	.style("font-size", "12px")
       	.style("text-anchor", "end")
-      	.attr("dx", "-.8em")
-      	.attr("dy", "-.55em")
-      	.attr("transform", "rotate(-90)" );
+      	.attr("dx", ".7em")
+      	.attr("dy", ".55em")
+      	//.attr("transform", "rotate(-90)" );
 
  	svg.append("g")
     	.attr("class", "y axis")
@@ -147,10 +229,29 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.attr("y", function(d){
 			return y(d[metric_select]);
 		})
-		.append("title")
-		.text(function(d){
-			return d.country + " : " + d[metric_select];
-		});
+		.attr("fill", country_color[country_selection])
+		.attr("stroke", stroke_color[country_selection])
+		.on("mouseover", function(d){
+			tip.show(d);
+			d3.select(this)
+			.attr("fill", line_color[country_selection])
+			.attr("stroke", line_color[country_selection]);
+
+		})
+		.on("mouseout", function(d){
+			tip.hide(d);
+			d3.select(this)
+			.attr("fill", country_color[country_selection])
+			.attr("stroke", stroke_color[country_selection]);
+		})
+		// .on("mousemove", function(d){
+		// 	tooltip
+		// 		.style('left', (d3.event.pageX) + 'px')
+		// 		.transition()
+		// 		.duration(1000)
+		// 		.style('top', (y(d[metric_select])+65) + 'px')
+		// 	})
+
 	// sticking the x/y axis LABEL into the canvas (Svg)
 	svg.append("text")
 		.attr("x", width/2)
@@ -222,7 +323,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.append("g")
 		.append("path")
 		.attr("class", "line")
+		.style("stroke", line_color[country_selection])
 		.attr("d", trendline(rolling_avg))
+
 
 	// ############################################# TRANSITION #######################################################
 	// ################################################################################################################
@@ -267,6 +370,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
 				.attr("y", function(d){
 					return y(d[metric_select]);
 				})
+				.attr("fill", country_color[country_selection])
+				.attr("stroke", stroke_color[country_selection])
+				.delay(function(d, i){return delay*(data_country.length - i)})
            		.ease("linear")
            		.select("title")
            		.text(function(d){
@@ -306,13 +412,16 @@ d3.csv("covid_case_death_counts.csv", function(d){
 			//define the line transition.
 			line
 				.transition()
+				.delay(delay*data_country.length)
+				.style("stroke", line_color[country_selection] )
 				.attr("d", trendline(rolling_avg))
 				.ease("linear")
 
+
 			// not sure why it is g.y.axis; calling the new axis.
-           	d3.selectAll("g.y.axis")
-           		.transition()
-           		.call(yAxis);
+      d3.selectAll("g.y.axis")
+     		.transition()
+        .call(yAxis);
 
 			d3.selectAll("x axis")
            		.transition()
