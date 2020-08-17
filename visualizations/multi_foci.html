@@ -41,14 +41,14 @@
     </label>
 </form>
 
-
-
 <script>
+
+// ######################################## ADDING VIZ INFORMATION ################################################################
 var population = {"Brazil": 212744941, "Bangladesh": 164891619, "India": 1381567238, "Indonesia": 273855751, "Pakistan": 221366281, "Sri Lanka": 21423831, "Egypt": 102548214}
 var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "lightsalmon"}
 var stroke_color = {"Indonesia": "maroon", "India": "green", "Pakistan": "maroon", "Bangladesh": "maroon", "Brazil": "maroon", "Egypt": "maroon", "Sri Lanka": "purple"}
 
-
+// ######################################## LAYOUT DEFINITION ########################################################################
 var margin = {top: 80, right: 0, bottom: 80, left: 100},
     width = 1260 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
@@ -66,6 +66,7 @@ svg.append("text")
     .text("Case count per capita")
 
 
+// ################################################ ASYNC CALL FOR DATA ########################################################
 d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype. 
 	var dateparse = d3.time.format("%m/%d/%y").parse
@@ -95,8 +96,12 @@ d3.csv("covid_case_death_counts.csv", function(d){
     var c_map = creategroup()
     var fill = d3.scale.category10();
 
+    // ######################################## GET DATA FOR PLOTTING ################################################
+
     function calcValue(rawdata, measure, cmap){
-        // INPUT RAWDATA and measure to get proportions.
+        // INPUT RAWDATA and measure(total cases, tests etc) to get proportions.
+
+        // Get data only for max date
         var maxdate = new Date(Math.max.apply(null, rawdata.map(function(d){return d.date})))
 
         // get relevenet data on latest date. 
@@ -162,9 +167,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
     var force = d3.layout.force()
         .nodes(nodes)
         .size([width, height])
-        .charge(-500)
+        .charge(-100)
         .on("tick", tick)
-        .start();
         
     var node = svg.selectAll(".node")
         .data(nodes)
@@ -176,19 +180,21 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .style("fill", function(d) { return country_color[d.country]; })
             //.style("stroke", function(d, i) { return d3.rgb(country_color[d.country]).darker(2); }) Nice trick!
             .style("stroke", function(d, i) { return stroke_color[d.country]; })
-            .call(force.drag)
-            .on("mousedown", function() { d3.event.stopPropagation(); });
+            //.call(force.drag)
+            .on("mouseover", function() { d3.event.stopPropagation(); });
                 
+    force.start()
+
     svg.style("opacity", 1e-6)
         .transition()
             .duration(1000)
             .style("opacity", 1);
 
     d3.select("body")
-        .on("mousedown", mousedown);
+        .on("mouseover", mousedown);
 
     function tick(e) {
-        var k = 6 * e.alpha;
+        var k = e.alpha;
         nodes.forEach(function(node) {
             var temp_center = node.center
             node.x += (temp_center.x - node.x) * k;
@@ -202,8 +208,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
         force.resume();
     }
 
-    var formval = d3.select('#form')
-    console.log(formval)
 });
 
 
