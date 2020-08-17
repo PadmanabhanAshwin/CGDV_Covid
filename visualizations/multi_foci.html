@@ -200,13 +200,13 @@ d3.csv("covid_case_death_counts.csv", function(d){
         .data(nodes)
             .enter().append("circle")
             .attr("class", "node")
-            .attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; })
+            //.attr("cx", function(d) { return d.x; })
+            //.attr("cy", function(d) { return d.y; })
             .attr("r", 5)
             .style("fill", function(d) { return country_color[d.country]; })
             //.style("stroke", function(d, i) { return d3.rgb(country_color[d.country]).darker(2); }) Nice trick!
             .style("stroke", function(d, i) { return stroke_color[d.country]; })
-            //.call(force.drag)
+            .call(force.drag)
             .on("mouseover", function() { d3.event.stopPropagation(); });
                 
     force.start()
@@ -234,6 +234,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         force.resume();
     }
 
+    
 
 
 });
