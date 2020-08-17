@@ -10,36 +10,45 @@
 .title{
     font: 30px sans-serif;
 }
-.btn-group .btn-group-toggle{
-    position: relative;
-    top: 1000px
+.btn-group button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
 }
 
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
 </style>
 </head>
 <body>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="jquery-3.5.1.min.js"></script>
+<!-- <script src="jquery-3.5.1.min.js"></script> -->
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+<!-- <script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script> -->
 
-<br><br>
-<form id="form" class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
-  <label class="btn btn-secondary active">
-    <input type="radio" name="controlHeatmapType" value="MRR" checked>Case Per Capita<br>
-  </label>
-  <label class="btn btn-secondary">
-    <input type="radio" name="controlHeatmapType" value="LYL">Deaths Per capita<br>
-  </label>
-  <label class="btn btn-secondary">
-        <input type="radio" name="controlHeatmapType" value="LYL">Tests Per Capita<br>
-    </label>
-    <label class="btn btn-secondary">
-            <input type="radio" name="controlHeatmapType" value="LYL">Recovered Per Capita<br>
-    </label>
-</form>
+<div class="btn-group">
+        <button>Apple</button>
+        <button>Samsung</button>
+        <button>Sony</button>
+</div>
 
 <script>
 
@@ -191,7 +200,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .style("opacity", 1);
 
     d3.select("body")
-        .on("mouseover", mousedown);
+        .on("mouseover", mouseover);
 
     function tick(e) {
         var k = e.alpha;
@@ -204,9 +213,11 @@ d3.csv("covid_case_death_counts.csv", function(d){
         node.attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
     }
-    function mousedown() {
+    function mouseover() {
         force.resume();
     }
+
+
 
 });
 
