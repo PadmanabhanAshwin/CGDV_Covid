@@ -10,30 +10,41 @@
 .title{
     font: 30px sans-serif;
 }
-.btn-group button {
-  background-color: #4CAF50; /* Green background */
-  border: 1px solid green; /* Green border */
-  color: white; /* White text */
-  padding: 10px 24px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
 }
 
-.btn-group button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
+label {
+  color: red;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
+input[type=radio]:checked + label {
+  color: red;
+  background: skyblue;
 }
 
-/* Add a background color on hover */
-.btn-group button:hover {
-  background-color: #3e8e41;
+label + input[type=radio] + label {
+  border-left: solid 1px black;
 }
+
+.radio-group {
+  border: solid 3px red;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 </style>
 </head>
 <body>
@@ -44,20 +55,27 @@
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 <!-- <script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script> -->
 
-<div class="btn-group">
-        <button>Apple</button>
-        <button>Samsung</button>
-        <button>Sony</button>
-</div>
-
+<body>
+        <form>
+        <div class="radio-group">
+                <input type="radio" id="option-one" name="selector" value= "total_case" checked>
+                    <label for="option-one">Total Cases Per Capita</label>
+                <input type="radio" id="option-two" name="selector" value = "total_death">
+                    <label for="option-two">Total Deaths Per Capita</label>
+                <input type="radio" id="option-three" name="selector" value = "Tests">
+                    <label for="option-three">Tests Per Capita</label>
+            </div>
+         </form>
 <script>
+
+d3.selectAll("input").on("change", function(){console.log(this.value)})
 
 // ######################################## ADDING VIZ INFORMATION ################################################################
 var population = {"Brazil": 212744941, "Bangladesh": 164891619, "India": 1381567238, "Indonesia": 273855751, "Pakistan": 221366281, "Sri Lanka": 21423831, "Egypt": 102548214}
 var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "lightsalmon"}
 var stroke_color = {"Indonesia": "maroon", "India": "green", "Pakistan": "maroon", "Bangladesh": "maroon", "Brazil": "maroon", "Egypt": "maroon", "Sri Lanka": "purple"}
 
-// ######################################## LAYOUT DEFINITION ########################################################################
+// ######################################## LAYOUT DEFINITION #######################################################################
 var margin = {top: 80, right: 0, bottom: 80, left: 100},
     width = 1260 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
@@ -73,7 +91,6 @@ svg.append("text")
     .attr("x", (width-margin.left-margin.right)/3)
     .attr("y", margin.top - 70)
     .text("Case count per capita")
-
 
 // ################################################ ASYNC CALL FOR DATA ########################################################
 d3.csv("covid_case_death_counts.csv", function(d){
