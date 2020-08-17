@@ -2,6 +2,8 @@ var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
+  console.log(screen.width);
+  console.log(screen.height);
   showDivs(slideIndex += n);
 }
 

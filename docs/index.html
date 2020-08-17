@@ -6,8 +6,16 @@
 
   <head>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7a015c6a1f.js" crossorigin="anonymous"></script>
+
+    <!--D3 Stuff -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
   </head>
 
   <body>
@@ -20,40 +28,15 @@
       </div>
 
       <div class="mySlides content animate-fading">
-          <h1 style="margin-bottom:20px;"> TODAY'S HEADLINE PANDEMIC HITS </h1>
-          <div class="content-text">
-          <img src="images/sample_image.jpg" style="width: 300px; height: 300px; margin:0px 20px 20PX 0px; float:left;">
-          <p style="font-size: 80%; text-align: justify;"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed tempus tellus.
-            Maecenas laoreet augue eu nisl sodales ultrices consequat a nulla.
-            Duis ut mauris lobortis, lacinia nisl nec, volutpat elit.
-            Nulla pretium pharetra quam eu accumsan. In at risus nunc. </i></p>
-          <p>Curabitur velit quam, consectetur eu suscipit vel, euismod ut quam.
-            Nulla a hendrerit turpis. Aenean viverra eros mollis dictum hendrerit.
-            Morbi dictum, augue ut varius fermentum, augue ex pharetra dui, nec eleifend urna metus at mauris.
-            Nulla facilisi. Vestibulum at ligula a sapien tristique interdum.
-            Sed sagittis, elit id aliquam consectetur, enim diam ornare libero, in porttitor libero velit in libero.
-            Vestibulum ut feugiat nulla.</p>
-          <p>Etiam facilisis magna non dapibus bibendum.
-            Curabitur aliquet, eros non sagittis imperdiet, massa felis rutrum nisl, nec volutpat enim metus ut lacus.
-            Aliquam sit amet felis vitae dolor viverra fermentum eget vel augue. Nulla facilisi. Etiam at sollicitudin nunc.
-            Sed eget tincidunt eros. Phasellus vel imperdiet turpis.
-            Aenean elit nisi, pharetra a nibh sit amet, eleifend tempor urna.
-            Nunc egestas eros iaculis nunc ornare, ut semper quam ullamcorper. Etiam sit amet mi est.
-            Nam quam nisl, viverra eu risus in, vestibulum placerat eros.
-            Donec felis enim, vestibulum a nibh vitae, hendrerit varius sapien.</p>
-          <p>Curabitur neque lacus, ultrices non dapibus et, faucibus non tortor.
-            Praesent a sem porttitor, dictum ipsum et, tempor lorem.
-            Quisque tincidunt magna non fringilla hendrerit. Duis porta ornare nisi, in dictum neque feugiat a.
-            Vestibulum sodales augue eget consectetur rhoncus. Cras ligula augue, faucibus id ornare eu, fringilla ac lacus.
-            Donec dignissim dapibus convallis. Praesent ipsum turpis, dictum sed pretium quis, malesuada vel eros.
-            Pellentesque rutrum ante nec lorem rhoncus lacinia non eget ipsum.
-            Integer enim velit, consectetur sed egestas id, consectetur ac enim.</p>
-          <p>Cras facilisis magna vel purus eleifend sagittis. In in nibh in nisl elementum viverra.
-            Proin ac placerat orci. Mauris fermentum finibus lectus vitae fermentum.
-            In hac habitasse platea dictumst. Mauris viverra mauris vitae egestas pulvinar.
-            Sed feugiat nulla eu hendrerit malesuada. Maecenas vel euismod mauris.
-            Fusce leo est, commodo eget varius eget, congue eu turpis. In eget diam magna.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          <h1 style="margin-bottom:20px;"> Today's Headline Pandemic Hits </h1>
+          <div class="s1-graph">
+          </div>
+          <div class="s1-country left">
+          </div>
+          <div class="s1-main-plot">
+             <script src="d3plots/country_bar.js"></script>
+          </div>
+          <div class="s1-country right">
           </div>
       </div>
 
