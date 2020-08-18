@@ -67,12 +67,10 @@ label + input[type=radio] + label {
             </div>
          </form>
 <script>
-
-d3.selectAll("input").on("change", function(){console.log(this.value)})
-
+    
 // ######################################## ADDING VIZ INFORMATION ################################################################
 var population = {"Brazil": 212744941, "Bangladesh": 164891619, "India": 1381567238, "Indonesia": 273855751, "Pakistan": 221366281, "Sri Lanka": 21423831, "Egypt": 102548214}
-var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "lightsalmon"}
+var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "grey"}
 var stroke_color = {"Indonesia": "maroon", "India": "green", "Pakistan": "maroon", "Bangladesh": "maroon", "Brazil": "maroon", "Egypt": "maroon", "Sri Lanka": "purple"}
 
 // ######################################## LAYOUT DEFINITION #######################################################################
@@ -124,7 +122,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
     // ######################################## GET DATA FOR PLOTTING ################################################
 
-    function calcValue(rawdata, measure, cmap){
+    function calcValue(rawdata, measure, titles, cmap ){
+        console.log(titles)
         // INPUT RAWDATA and measure(total cases, tests etc) to get proportions.
 
         // Get data only for max date
@@ -132,14 +131,16 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
         // get relevenet data on latest date. 
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
+        console.log("Latest date: ", reldata)
 
+        if (titles){
         // PLOTTING THE COUNTRY TITLES!!
-        for (var k = 0; k < reldata.length; k++){
-            console.log( "centers will be= ", c_map[reldata[k].country].center.x)
-            svg.append("text")
-                .attr("x", c_map[reldata[k].country].center.x)
-                .attr("y", c_map[reldata[k].country].center.y/3)
-                .text(reldata[k].country)
+            for (var k = 0; k < reldata.length; k++){
+                svg.append("text")
+                    .attr("x", c_map[reldata[k].country].center.x)
+                    .attr("y", c_map[reldata[k].country].center.y/3)
+                    .text(reldata[k].country)
+            }
         }
 
         // data per capita
@@ -172,19 +173,21 @@ d3.csv("covid_case_death_counts.csv", function(d){
         return proportions
     }
 
-    var proportions = calcValue(rawdata, "total_case")
+    var proportions = calcValue(rawdata, "total_case", titles = true)
     var fin_data = new Array()
 
     function makedata(proportions){
+        var ret_data = new Array()
         for (var i = 0; i< proportions.length; i++){
             for (var j =0 ; j <proportions[i].value; j++){
-                fin_data.push({country: proportions[i].country})
+                ret_data.push({country: proportions[i].country})
             }
         }
-        return fin_data
+        return ret_data
     }
 
     var fin_data = makedata(proportions)
+    console.log(fin_data)
 
     var nodes = fin_data.map(function(d, i) {
         return {index: i, center: c_map[d.country].center, country: d.country};
@@ -193,7 +196,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
     var force = d3.layout.force()
         .nodes(nodes)
         .size([width, height])
-        .charge(-100)
+        .charge(-200)
         .on("tick", tick)
         
     var node = svg.selectAll(".node")
@@ -220,7 +223,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         .on("mouseover", mouseover);
 
     function tick(e) {
-        var k = e.alpha;
+        var k = 2*e.alpha;
         nodes.forEach(function(node) {
             var temp_center = node.center
             node.x += (temp_center.x - node.x) * k;
@@ -234,9 +237,31 @@ d3.csv("covid_case_death_counts.csv", function(d){
         force.resume();
     }
 
+    function transition(){        
+        var processdata = calcValue(rawdata, this.value, false); 
+        console.log(processdata)
+        var findata = new Array()
+        var findata = makedata(processdata)
+
+        console.log("findata = ", findata)
+
+        nodes = findata.map(function(d, i) {
+                        return {index: i, center: c_map[d.country].center, country: d.country};
+                        });
+        
+        force.nodes(nodes)
+
+        d3.selectAll(".node").data(nodes)
+            .transition()
+                .attr("fill", function(d) { return country_color[d.country]; })
+                .attr("cx", function(d){return d.center.x})
+                .attr("cy", function(d){return d.center.y})
+
+        force.start()
+    }
+
+    d3.selectAll("input").on("change", transition)
     
-
-
 });
 
 
