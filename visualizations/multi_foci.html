@@ -123,7 +123,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
     // ######################################## GET DATA FOR PLOTTING ################################################
 
     function calcValue(rawdata, measure, titles, cmap ){
-        console.log(titles)
         // INPUT RAWDATA and measure(total cases, tests etc) to get proportions.
 
         // Get data only for max date
@@ -131,7 +130,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
         // get relevenet data on latest date. 
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
-        console.log("Latest date: ", reldata)
 
         if (titles){
         // PLOTTING THE COUNTRY TITLES!!
@@ -187,7 +185,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
     }
 
     var fin_data = makedata(proportions)
-    console.log(fin_data)
 
     var nodes = fin_data.map(function(d, i) {
         return {index: i, center: c_map[d.country].center, country: d.country};
@@ -198,13 +195,13 @@ d3.csv("covid_case_death_counts.csv", function(d){
         .size([width, height])
         .charge(-200)
         .on("tick", tick)
-        
+    
     var node = svg.selectAll(".node")
         .data(nodes)
             .enter().append("circle")
             .attr("class", "node")
-            //.attr("cx", function(d) { return d.x; })
-            //.attr("cy", function(d) { return d.y; })
+            .attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; })
             .attr("r", 5)
             .style("fill", function(d) { return country_color[d.country]; })
             //.style("stroke", function(d, i) { return d3.rgb(country_color[d.country]).darker(2); }) Nice trick!
@@ -237,29 +234,39 @@ d3.csv("covid_case_death_counts.csv", function(d){
         force.resume();
     }
 
+    function movenode(e){
+        var k = 3*e.alpha;
+        nodes.forEach(function(node){
+            var temp_center_ = node.center
+            node.x += (temp_center_.x - node.x)*k;
+            node.y += (temp_center_.y - node.y)*k;
+        });
+        node.transition()
+            .duration(450)
+            .attr("cx", function(d){return d.x})
+            .attr("cy", function(d){return d.y})
+
+            .ease("linear");
+    }
+
     function transition(){        
         var processdata = calcValue(rawdata, this.value, false); 
-        console.log(processdata)
-        var findata = new Array()
         var findata = makedata(processdata)
-
-        console.log("findata = ", findata)
 
         nodes = findata.map(function(d, i) {
                         return {index: i, center: c_map[d.country].center, country: d.country};
                         });
-        
+
         force.nodes(nodes)
+                .charge(-200)
+                .on("tick", movenode)
+                .start()
 
-        d3.selectAll(".node").data(nodes)
-            .transition()
-                .attr("fill", function(d) { return country_color[d.country]; })
-                .attr("cx", function(d){return d.center.x})
-                .attr("cy", function(d){return d.center.y})
+        node.data(nodes)
+            .style("fill", function(d) { return country_color[d.country]; })
 
-        force.start()
+            
     }
-
     d3.selectAll("input").on("change", transition)
     
 });
