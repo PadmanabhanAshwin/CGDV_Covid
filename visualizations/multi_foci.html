@@ -62,8 +62,6 @@ label + input[type=radio] + label {
                     <label for="option-one">Total Cases Per Capita</label>
                 <input type="radio" id="option-two" name="selector" value = "total_death">
                     <label for="option-two">Total Deaths Per Capita</label>
-                <input type="radio" id="option-three" name="selector" value = "Tests">
-                    <label for="option-three">Tests Per Capita</label>
             </div>
          </form>
 <script>
@@ -84,11 +82,11 @@ var svg = d3.select("body").append("svg")
 	.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-svg.append("text")
+var title = svg.append("text")
     .attr("class", "title")
     .attr("x", (width-margin.left-margin.right)/3)
     .attr("y", margin.top - 70)
-    .text("Case count per capita")
+    .text("Total Cases Per Capita")
 
 // ################################################ ASYNC CALL FOR DATA ########################################################
 d3.csv("covid_case_death_counts.csv", function(d){
@@ -206,8 +204,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .style("fill", function(d) { return country_color[d.country]; })
             //.style("stroke", function(d, i) { return d3.rgb(country_color[d.country]).darker(2); }) Nice trick!
             .style("stroke", function(d, i) { return stroke_color[d.country]; })
-            .call(force.drag)
-            .on("mouseover", function() { d3.event.stopPropagation(); });
+            //.call(force.drag)
+           // .on("mouseover", function() { d3.event.stopPropagation(); });
                 
     force.start()
 
@@ -242,30 +240,48 @@ d3.csv("covid_case_death_counts.csv", function(d){
             node.y += (temp_center_.y - node.y)*k;
         });
         node.transition()
-            .duration(450)
+            .delay(820)
+            .duration(1050)
             .attr("cx", function(d){return d.x})
             .attr("cy", function(d){return d.y})
-
-            .ease("linear");
+            .ease("CubicIn");
     }
 
     function transition(){        
         var processdata = calcValue(rawdata, this.value, false); 
         var findata = makedata(processdata)
 
+        if (this.value == "total_case"){
+            title.transition()
+                .style("opacity", 0)
+                .transition()
+                .delay(500)
+                .text("Total Cases Per Capita")
+                .style("opacity", 1)
+        }
+        else if (this.value == "total_death"){
+            title.transition()
+                .style("opacity", 0)
+                .transition()
+                .delay(500)
+                .text("Total Deaths Per Capita")
+                .style("opacity", 1)
+        }
+
+
         nodes = findata.map(function(d, i) {
                         return {index: i, center: c_map[d.country].center, country: d.country};
                         });
 
+        d3.selectAll(".node")
+            .data(nodes)
+            .style("fill", function(d) { return country_color[d.country]; })
+
         force.nodes(nodes)
-                .charge(-200)
+                .charge(-300)
                 .on("tick", movenode)
                 .start()
 
-        node.data(nodes)
-            .style("fill", function(d) { return country_color[d.country]; })
-
-            
     }
     d3.selectAll("input").on("change", transition)
     
