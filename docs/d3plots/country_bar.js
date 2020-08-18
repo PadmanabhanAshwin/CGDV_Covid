@@ -8,20 +8,20 @@ var delay = 5
 
 // #########################################################################################################
 // ##################################### Figure size setting: ##############################################
-var margin = {top: 80, right: 180, bottom: 80, left: 180},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+var margin = {top: 80, right: 110, bottom: 80, left: 110},
+    width = 560 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#s1mainplot").append("svg")
 	.attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+  .attr("height", height + margin.top + margin.bottom)
 	.append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // ##################################### General Tooltip setting: ####################################################################
-var tooltip = d3.select("body").append("div")
-	.attr("class", "tooltip")
-	.style("opacity", 0)
+//var tooltip = d3.select("body").append("div")
+//	.attr("class", "tooltip")
+//	.style("opacity", 0)
 
 var timeformatter = d3.time.format("%B %d")
 
@@ -34,7 +34,7 @@ var tip = d3.tip()
   })
 
 // ##################################### Data async call: ####################################################################
-d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/visualizations/covid_case_death_counts.csv", function(d){
+d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse
 
