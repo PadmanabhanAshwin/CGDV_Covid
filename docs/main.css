@@ -31,14 +31,14 @@ div {
 
 .s1-main-plot {
   height: 65%;
-  width: 40%;
-  left: 30%;
+  width: 50%;
+  left: 25%;
   bottom: 0;
   position: absolute;
 }
 
 .s1-country {
-  width: 30%;
+  width: 25%;
   height: 65%;
   bottom: 0;
 }
