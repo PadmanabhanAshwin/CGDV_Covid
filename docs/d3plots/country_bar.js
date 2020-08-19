@@ -8,9 +8,9 @@ var delay = 5
 
 // #########################################################################################################
 // ##################################### Figure size setting: ##############################################
-var margin = {top: 80, right: 110, bottom: 80, left: 110},
-    width = 560 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+var margin = {top: 35, right: 50, bottom: 80, left: 60},
+    width = 440 - margin.left - margin.right,
+    height = 250 - margin.top - margin.bottom;
 
 var svg = d3.select("#s1mainplot").append("svg")
 	.attr("width", width + margin.left + margin.right)
@@ -109,15 +109,21 @@ d3.csv("covid_case_death_counts.csv", function(d){
     	.attr("transform", "translate(0," + height + ")")
     	.call(xAxis)
     	.selectAll("text")
-    	.style("font-size", "12px")
+    	.style("font-size", "10px")
       	.style("text-anchor", "end")
       	.attr("dx", ".7em")
-      	.attr("dy", ".55em")
+      	.attr("dy", ".85em");
       	//.attr("transform", "rotate(-90)" );
 
  	svg.append("g")
     	.attr("class", "y axis")
-    	.call(yAxis);
+    	.call(yAxis
+        .ticks(7)
+        .tickFormat(d3.format("s")))
+        .selectAll("text")
+      	.style("font-size", "10px")
+        .style("text-anchor", "end");
+
 
 	// sticking the rectangles into the canvas.
 	svg.selectAll("rectangle")
@@ -161,13 +167,13 @@ d3.csv("covid_case_death_counts.csv", function(d){
 	// sticking the x/y axis LABEL into the canvas (Svg)
 	svg.append("text")
 		.attr("x", width/2)
-		.attr("y", height + (margin.bottom/1.5) )
+		.attr("y", height + (margin.bottom/2) )
 		.style("text-anchor", "middle")
 		.text("Date")
 
 	svg.append("text")
 		.attr("transform", "rotate(-90)")
-		.attr("y", -margin.left/2.5)
+		.attr("y", -margin.left/1.8)
 		.attr("x",  -(height / 2))
 		.style("text-anchor", "middle")
 		.text("Daily cases")

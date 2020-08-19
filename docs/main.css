@@ -31,14 +31,19 @@ div {
 
 .s1-main-plot {
   height: 65%;
-  width: 50%;
-  left: 25%;
+  width: 58%;
+  left: 21%;
   bottom: 0;
   position: absolute;
 }
 
+.s1-mainplot-half {
+  height: 100%;
+  width: 50%;
+}
+
 .s1-country {
-  width: 25%;
+  width: 21%;
   height: 65%;
   bottom: 0;
 }
@@ -74,12 +79,12 @@ div {
 }*/
 
 .axis {
- font: 13px sans-serif;
+ font: 10px sans-serif;
 }
 
 path{
  /* stroke: darkblue;  */
-   stroke-width: 3.2;
+   stroke-width: 3.2; /*Stroke for average*/
    fill: none;
 }
 
@@ -97,10 +102,10 @@ div.tooltip{
 }
 .axis path,
 .axis line {
- fill: none;
- stroke: black;
- shape-rendering: crispEdges;
- stroke-width:1.5;
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+    stroke-width:1;
 }
 
 .d3-tip {
