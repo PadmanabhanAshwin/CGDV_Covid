@@ -244,9 +244,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 	var selector = d3.select("#drop2")
     	.append("select")
-    	.attr("id","dropdown")
+    	.attr("id","dropdown2")
     	.on("change", function(d){
-        	selection = document.getElementById("dropdown");
+        	selection = document.getElementById("dropdown2");
 
 			//value in the dropdown is = country_selection
 			country_selection = selection.value
