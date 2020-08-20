@@ -15,11 +15,11 @@ blockquote,q { quotes: none;}
 blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
 table { border-collapse: collapse; border-spacing: 0;}
 
-/*div {
+div {
   border-color: #FF0000;
   border-width: thin;
   border-style: solid;
-}*/
+}
 
 /* SLIDE 1 CSS ******************************************************************************/
 
