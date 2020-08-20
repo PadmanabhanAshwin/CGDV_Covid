@@ -78,10 +78,14 @@ div {
  fill: deepskyblue;
 }*/
 
-.axis {
+.axis1 {
  font: 10px sans-serif;
 }
 
+.axis2 {
+  font: 10px sans-serif;
+ }
+ 
 path{
  /* stroke: darkblue;  */
    stroke-width: 3.2; /*Stroke for average*/

@@ -105,7 +105,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 	// sticking the x and y axis into the canvas.
 	svg.append("g")
-    	.attr("class", "x axis")
+    	.attr("class", "x axis2")
     	.attr("transform", "translate(0," + height + ")")
     	.call(xAxis)
     	.selectAll("text")
@@ -116,7 +116,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
       	//.attr("transform", "rotate(-90)" );
 
  	svg.append("g")
-    	.attr("class", "y axis")
+    	.attr("class", "y axis2")
     	.call(yAxis
         .ticks(7)
         .tickFormat(d3.format("s")))
@@ -331,11 +331,11 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 
 			// not sure why it is g.y.axis; calling the new axis.
-      d3.selectAll("g.y.axis")
+      d3.selectAll("g.y.axis2")
      		.transition()
         .call(yAxis);
 
-			d3.selectAll("x axis")
+			d3.selectAll("x axis2")
            		.transition()
            		.call(xAxis);
         });
