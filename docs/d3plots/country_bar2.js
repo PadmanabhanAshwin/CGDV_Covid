@@ -12,7 +12,7 @@ var margin = {top: 35, right: 50, bottom: 80, left: 60},
     width = 440 - margin.left - margin.right,
     height = 250 - margin.top - margin.bottom;
 
-var svg = d3.select("#s1mainplot").append("svg")
+var svg = d3.select("#s1half2").append("svg")
 	.attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
 	.append("g")
@@ -242,7 +242,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 	// ############################################# TRANSITION #######################################################
 	// ################################################################################################################
 
-	var selector = d3.select("#drop")
+	var selector = d3.select("#drop2")
     	.append("select")
     	.attr("id","dropdown")
     	.on("change", function(d){
