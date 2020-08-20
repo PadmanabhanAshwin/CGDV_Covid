@@ -12,7 +12,7 @@ var margin = {top: 35, right: 50, bottom: 80, left: 60},
     width = 440 - margin.left - margin.right,
     height = 250 - margin.top - margin.bottom;
 
-var svg = d3.select("#s1half1").append("svg")
+var svg1 = d3.select("#s1half1").append("svg")
 	.attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
 	.append("g")
@@ -48,6 +48,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		};
 }, function(error, rawdata){
 	// ##################### PLOTTING THE BAR CHART ############################################################
+	console.log("Calling first JS file = ", Date.now())
 
 	// counting starts from zero: That is 00 is Jan. 02 is March.
 	var cutoffdate = new Date(2020, 02, 01)
@@ -101,10 +102,10 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.scale(y)
 	    .orient("left");
 
-	svg.call(tip);
+	svg1.call(tip);
 
 	// sticking the x and y axis into the canvas.
-	svg.append("g")
+	svg1.append("g")
     	.attr("class", "x axis1")
     	.attr("transform", "translate(0," + height + ")")
     	.call(xAxis)
@@ -115,7 +116,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
       	.attr("dy", ".85em");
       	//.attr("transform", "rotate(-90)" );
 
- 	svg.append("g")
+ 	svg1.append("g")
     	.attr("class", "y axis1")
     	.call(yAxis
         .ticks(7)
@@ -126,7 +127,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 
 	// sticking the rectangles into the canvas.
-	svg.selectAll("rectangle1")
+	svg1.selectAll("rectangle1")
 		.data(data_country)
 		.enter()
 		.append("rect")
@@ -165,13 +166,13 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		// 	})
 
 	// sticking the x/y axis LABEL into the canvas (Svg)
-	svg.append("text")
+	svg1.append("text")
 		.attr("x", width/2)
 		.attr("y", height + (margin.bottom/2) )
 		.style("text-anchor", "middle")
 		.text("Date")
 
-	svg.append("text")
+	svg1.append("text")
 		.attr("transform", "rotate(-90)")
 		.attr("y", -margin.left/1.8)
 		.attr("x",  -(height / 2))
@@ -231,7 +232,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 						.y(function(d){return y(d.avg)})
 
 	// sticking the line into the canvas.
-	var line = svg
+	var line = svg1
 		.append("g")
 		.append("path")
 		.attr("class", "line")
