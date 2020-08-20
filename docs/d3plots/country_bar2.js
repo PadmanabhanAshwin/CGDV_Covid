@@ -126,11 +126,11 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 
 	// sticking the rectangles into the canvas.
-	svg.selectAll("rectangle")
+	svg.selectAll("rectangle2")
 		.data(data_country)
 		.enter()
 		.append("rect")
-		.attr("class","rectangle")
+		.attr("class","rectangle2")
 		.attr("width", width/data_country.length)
 		.attr("height", function(d){
 			return height - y(d[metric_select]);
@@ -270,7 +270,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         	yAxis.scale(y);
 
 			// Redraw the rectangle. Why is it selectAll(.rectagle)? Workaround = define a variable instead. See line transition.
-        	d3.selectAll(".rectangle")
+        	d3.selectAll(".rectangle2")
 				.data(data_country)
            		.transition()
 	            .attr("height", function(d){
