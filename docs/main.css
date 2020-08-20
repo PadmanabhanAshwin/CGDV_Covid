@@ -46,6 +46,7 @@ div {
   width: 21%;
   height: 65%;
   bottom: 0;
+  display: none;
 }
 
 .left {
