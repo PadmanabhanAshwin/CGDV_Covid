@@ -248,7 +248,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
     	.on("change", function(d){
         	selection = document.getElementById("dropdown");
 
-          // SElecting the right div box to display
+          // Selecting the right div box to display for article
 
           var xboxes = document.getElementsByClassName("s1-country left");
           for (i = 0; i < xboxes.length; i++) {
