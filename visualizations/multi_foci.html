@@ -71,7 +71,7 @@ var population = {"Brazil": 212744941, "Bangladesh": 164891619, "India": 1381567
 var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "grey"}
 var stroke_color = {"Indonesia": "maroon", "India": "green", "Pakistan": "maroon", "Bangladesh": "maroon", "Brazil": "maroon", "Egypt": "maroon", "Sri Lanka": "purple"}
 
-// ######################################## LAYOUT DEFINITION #######################################################################
+// #####################k################### LAYOUT DEFINITION #######################################################################
 var margin = {top: 80, right: 0, bottom: 80, left: 100},
     width = 1260 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
@@ -170,7 +170,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
     }
 
     var proportions = calcValue(rawdata, "total_case", titles = true)
-    var fin_data = new Array()
+    var findata = new Array()
 
     function makedata(proportions){
         var ret_data = new Array()
@@ -182,11 +182,12 @@ d3.csv("covid_case_death_counts.csv", function(d){
         return ret_data
     }
 
-    var fin_data = makedata(proportions)
+    var findata = makedata(proportions)
 
-    var nodes = fin_data.map(function(d, i) {
+    var nodes = findata.map(function(d, i) {
         return {index: i, center: c_map[d.country].center, country: d.country};
     });
+    console.log("len of finData: ", findata.length)
 
     var force = d3.layout.force()
         .nodes(nodes)
@@ -218,8 +219,10 @@ d3.csv("covid_case_death_counts.csv", function(d){
         .on("mouseover", mouseover);
 
     function tick(e) {
+        // e.alpha constantly reduces with each tick..
         var k = 2*e.alpha;
         nodes.forEach(function(node) {
+            // I want the circles to have: similar/higher x value, if index is higher. 
             var temp_center = node.center
             node.x += (temp_center.x - node.x) * k;
             node.y += (temp_center.y - node.y) * k;
@@ -228,6 +231,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         node.attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
     }
+
     function mouseover() {
         force.resume();
     }
@@ -240,17 +244,20 @@ d3.csv("covid_case_death_counts.csv", function(d){
             node.y += (temp_center_.y - node.y)*k;
         });
         node.transition()
-            .delay(820)
-            .duration(1050)
+            .delay(320)
+            .duration(1000)
             .attr("cx", function(d){return d.x})
             .attr("cy", function(d){return d.y})
-            .ease("CubicIn");
+            .ease("linear");
     }
 
-    function transition(){        
+    function transition(){    
+        // Get the data for the transition:    
         var processdata = calcValue(rawdata, this.value, false); 
-        var findata = makedata(processdata)
+        var backup_findata = findata
+        findata = makedata(processdata)
 
+        // Change the titles.
         if (this.value == "total_case"){
             title.transition()
                 .style("opacity", 0)
@@ -268,7 +275,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
                 .style("opacity", 1)
         }
 
-
         nodes = findata.map(function(d, i) {
                         return {index: i, center: c_map[d.country].center, country: d.country};
                         });
@@ -281,7 +287,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
                 .charge(-300)
                 .on("tick", movenode)
                 .start()
-
     }
     d3.selectAll("input").on("change", transition)
     
