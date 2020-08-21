@@ -27,7 +27,7 @@ Storytelling using Visualizations for showcasing economic impact of COVID19 viru
 | testing	    |   testing by country     |     NA     | https://ourworldindata.org/grapher/full-list-total-tests-for-covid-19     |
 | Folder-India	    |   Consolidated India data     |     NA     | https://www.kaggle.com/sudalairajkumar/covid19-in-india/data#    |
 | OAG    |   Flight data, cohort, month on month     |     NA     | https://www.oag.com/coronavirus-airline-schedules-data   |
-
+| change-visitors-grocery-stores    |   Country-wise grocery store change     |     Could plot heatmap     | https://ourworldindata.org/grapher/change-visitors-grocery-stores   |
 
 
 
