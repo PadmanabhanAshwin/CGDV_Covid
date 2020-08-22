@@ -49,7 +49,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		};
 }, function(error, rawdata){
 	// ##################### PLOTTING THE BAR CHART ############################################################
-	console.log("Calling second JS file = ", Date.now())
+	//console.log("Calling second JS file = ", Date.now())
 
 	// counting starts from zero: That is 00 is Jan. 02 is March.
 	var cutoffdate = new Date(2020, 02, 01)

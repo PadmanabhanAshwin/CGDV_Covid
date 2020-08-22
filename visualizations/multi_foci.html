@@ -29,7 +29,7 @@ var svg = d3.select("body").append("svg")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv("covid_case_death_counts.csv", function(d){
-	// Creating an accesor function with relevent data type rtype. 
+	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse
 
 	return {
@@ -44,9 +44,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
     // Position the clusters
     function creategroup(){
-        var centers = { "Brazil": {"center": {x: 0, y:height/2}}, 
-                    "Bangladesh": {"center": {x: width/7, y:height/2}}, 
-                    "India": {"center": {x: 2*width/7, y:height/2}}, 
+        var centers = { "Brazil": {"center": {x: 0, y:height/2}},
+                    "Bangladesh": {"center": {x: width/7, y:height/2}},
+                    "India": {"center": {x: 2*width/7, y:height/2}},
                     "Indonesia": {"center": {x: 3*width/7, y:height/2}},
                     "Pakistan": {"center": {x: 4*width/7, y:height/2}},
                     "Sri Lanka": {"center": {x: 5*width/7, y:height/2}},
@@ -61,7 +61,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         // INPUT RAWDATA and measure to get proportions.
         var maxdate = new Date(Math.max.apply(null, rawdata.map(function(d){return d.date})))
 
-        // get relevenet data on latest date. 
+        // get relevenet data on latest date.
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
         console.log(reldata)
 
@@ -77,15 +77,15 @@ d3.csv("covid_case_death_counts.csv", function(d){
         //Proportions:
         var proportions = measure_per_capita.map(function(d){ return {country: d.country, value: Math.round(d.value*100/sum ) } })
 
-        var eff_sum =0; 
-        var min_val = 1000; 
+        var eff_sum =0;
+        var min_val = 1000;
         var min_ix = -1;
 
-        // If rounding causes not to sum to 100, add to smallest value. 
+        // If rounding causes not to sum to 100, add to smallest value.
         for (i = 0; i < proportions.length; i++){
             eff_sum += proportions[i].value;
             if (min_val > proportions[i].value){
-                min_val = proportions[i].value; 
+                min_val = proportions[i].value;
                 min_ix = i
             }
         }
@@ -119,7 +119,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         .charge(-800)
         .on("tick", tick)
         .start();
-        
+
     var node = svg.selectAll(".node")
         .data(nodes)
             .enter().append("circle")
@@ -132,7 +132,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .style("stroke", function(d, i) { return stroke_color[d.country]; })
             .call(force.drag)
             .on("mousedown", function() { d3.event.stopPropagation(); });
-                
+
     svg.style("opacity", 1e-6)
     .transition()
         .duration(1000)
@@ -160,7 +160,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         });
         force.resume();
     }
-	
+
 });
 
 </script>

@@ -14,7 +14,7 @@
 
     <!--D3 Stuff -->
     <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 
   </head>
 
@@ -27,10 +27,16 @@
           <i class="fas fa-angle-right fa-2x"></i>
       </div>
 
+<!-- SLIDE1----------->
       <div class="mySlides content animate-fading">
           <h1 style="margin-bottom:20px;"> Today's Headline Pandemic Hits </h1>
-          <div class="s1-graph">
+          <div class="s1-graph" id="countrycomparegraph">
+            <script src="d3plots/country_compare_graph.js"></script>
+
           </div>
+
+<!--LEFT COUNTRY CONTENT AND GRAPH ----------------------------------------------------------->
+
           <div class="s1-country left" id="Bangladeshleft">
             <h2> Bangladesh </h2>
           </div>
@@ -57,6 +63,8 @@
                <div class="s1-dropdown" data-js="custom-scroll" id="drop1" align=right></div>
                <script src="d3plots/country_bar1.js"></script>
              </div>
+
+<!-- RIGHT COUNTRY CONTENT AND GRAPH------------------------------------------------------------>
              <div class="s1-mainplot-half right" id="s1half2">
                <div class="s1-dropdown" data-js="custom-scroll" id="drop2" align=left></div>
                <script src="d3plots/country_bar2.js"></script>
@@ -86,6 +94,7 @@
       </div>
 
 
+<!--SLIDE2------------>
       <div class="mySlides content animate-fading">
           <h1> Slide 2 </h1>
       </div>
