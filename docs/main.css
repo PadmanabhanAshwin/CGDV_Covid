@@ -15,11 +15,11 @@ blockquote,q { quotes: none;}
 blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
 table { border-collapse: collapse; border-spacing: 0;}
 
-div {
+/*div {
   border-color: #FF0000;
   border-width: thin;
   border-style: solid;
-}
+}*/
 
 /* SLIDE 1 CSS ******************************************************************************/
 
@@ -47,6 +47,13 @@ div {
   height: 65%;
   bottom: 0;
   display: none;
+  border-color: #FF0000;
+  border-width: thin;
+  border-style: solid;
+}
+
+.s1-dropdown{
+  margin: 0px 10px;
 }
 
 .left {
@@ -86,7 +93,7 @@ div {
 .axis2 {
   font: 10px sans-serif;
  }
- 
+
 path{
  /* stroke: darkblue;  */
    stroke-width: 3.2; /*Stroke for average*/

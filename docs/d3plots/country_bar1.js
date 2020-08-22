@@ -8,7 +8,7 @@ var delay = 5
 
 // #########################################################################################################
 // ##################################### Figure size setting: ##############################################
-var margin = {top: 35, right: 50, bottom: 80, left: 60},
+var margin = {top: 35, right: 60, bottom: 80, left: 60},
     width = 440 - margin.left - margin.right,
     height = 250 - margin.top - margin.bottom;
 
@@ -48,7 +48,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		};
 }, function(error, rawdata){
 	// ##################### PLOTTING THE BAR CHART ############################################################
-	console.log("Calling first JS file = ", Date.now())
+	//console.log("Calling first JS file = ", Date.now())
 
 	// counting starts from zero: That is 00 is Jan. 02 is March.
 	var cutoffdate = new Date(2020, 02, 01)

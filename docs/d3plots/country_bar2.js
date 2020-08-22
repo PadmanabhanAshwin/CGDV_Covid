@@ -8,7 +8,7 @@ var delay = 5
 
 // #########################################################################################################
 // ##################################### Figure size setting: ##############################################
-var margin = {top: 35, right: 50, bottom: 80, left: 60},
+var margin = {top: 35, right: 60, bottom: 80, left: 60},
     width = 440 - margin.left - margin.right,
     height = 250 - margin.top - margin.bottom;
 
@@ -66,7 +66,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 											}
 								))
 					];
-
+  elements = elements.concat(elements.splice(0,1));
 	//get first column name
 	var country_selection = elements[0];
 
@@ -249,6 +249,16 @@ d3.csv("covid_case_death_counts.csv", function(d){
     	.attr("id","dropdown2")
     	.on("change", function(d){
         	selection = document.getElementById("dropdown2");
+          // Selecting the right div box to display for article
+
+          var xboxes = document.getElementsByClassName("s1-country right");
+          for (i = 0; i < xboxes.length; i++) {
+            xboxes[i].style.display = "none";
+          }
+          var selectcountry = selection.value;
+          //console.log(selectcountry.concat("left"));
+          var thisbox = document.getElementById(selectcountry.concat("right"));
+          thisbox.style.display = "block";
 
 			//value in the dropdown is = country_selection
 			country_selection = selection.value
