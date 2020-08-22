@@ -12,7 +12,7 @@ var margin = {top: 35, right: 50, bottom: 80, left: 60},
     width = 440 - margin.left - margin.right,
     height = 250 - margin.top - margin.bottom;
 
-var svg = d3.select("#s1half2").append("svg")
+var svg2 = d3.select("#s1half2").append("svg")
 	.attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
 	.append("g")
@@ -35,6 +35,7 @@ var tip = d3.tip()
 
 // ##################################### Data async call: ####################################################################
 d3.csv("covid_case_death_counts.csv", function(d){
+
 	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse
 
@@ -48,6 +49,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		};
 }, function(error, rawdata){
 	// ##################### PLOTTING THE BAR CHART ############################################################
+	console.log("Calling second JS file = ", Date.now())
 
 	// counting starts from zero: That is 00 is Jan. 02 is March.
 	var cutoffdate = new Date(2020, 02, 01)
@@ -101,11 +103,11 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.scale(y)
 	    .orient("left");
 
-	svg.call(tip);
+	svg2.call(tip);
 
 	// sticking the x and y axis into the canvas.
-	svg.append("g")
-    	.attr("class", "x axis")
+	svg2.append("g")
+    	.attr("class", "x axis2")
     	.attr("transform", "translate(0," + height + ")")
     	.call(xAxis)
     	.selectAll("text")
@@ -115,8 +117,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
       	.attr("dy", ".85em");
       	//.attr("transform", "rotate(-90)" );
 
- 	svg.append("g")
-    	.attr("class", "y axis")
+ 	svg2.append("g")
+    	.attr("class", "y axis2")
     	.call(yAxis
         .ticks(7)
         .tickFormat(d3.format("s")))
@@ -126,11 +128,11 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 
 	// sticking the rectangles into the canvas.
-	svg.selectAll("rectangle")
+	svg2.selectAll("rectangle2")
 		.data(data_country)
 		.enter()
 		.append("rect")
-		.attr("class","rectangle")
+		.attr("class","rectangle2")
 		.attr("width", width/data_country.length)
 		.attr("height", function(d){
 			return height - y(d[metric_select]);
@@ -165,13 +167,13 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		// 	})
 
 	// sticking the x/y axis LABEL into the canvas (Svg)
-	svg.append("text")
+	svg2.append("text")
 		.attr("x", width/2)
 		.attr("y", height + (margin.bottom/2) )
 		.style("text-anchor", "middle")
 		.text("Date")
 
-	svg.append("text")
+	svg2.append("text")
 		.attr("transform", "rotate(-90)")
 		.attr("y", -margin.left/1.8)
 		.attr("x",  -(height / 2))
@@ -231,7 +233,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 						.y(function(d){return y(d.avg)})
 
 	// sticking the line into the canvas.
-	var line = svg
+	var line = svg2
 		.append("g")
 		.append("path")
 		.attr("class", "line")
@@ -244,9 +246,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 	var selector = d3.select("#drop2")
     	.append("select")
-    	.attr("id","dropdown")
+    	.attr("id","dropdown2")
     	.on("change", function(d){
-        	selection = document.getElementById("dropdown");
+        	selection = document.getElementById("dropdown2");
 
 			//value in the dropdown is = country_selection
 			country_selection = selection.value
@@ -270,7 +272,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         	yAxis.scale(y);
 
 			// Redraw the rectangle. Why is it selectAll(.rectagle)? Workaround = define a variable instead. See line transition.
-        	d3.selectAll(".rectangle")
+        	d3.selectAll(".rectangle2")
 				.data(data_country)
            		.transition()
 	            .attr("height", function(d){
@@ -331,11 +333,11 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 
 			// not sure why it is g.y.axis; calling the new axis.
-      d3.selectAll("g.y.axis")
+      d3.selectAll("g.y.axis2")
      		.transition()
         .call(yAxis);
 
-			d3.selectAll("x axis")
+			d3.selectAll("x axis2")
            		.transition()
            		.call(xAxis);
         });
