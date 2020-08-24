@@ -1,97 +1,3 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<head>
-<style>
-/*
-.rectangle {
-	fill: lightskyblue;
-	stroke: maroon
-} */
- .d3-tool-heading{
-	font-size: 1.2em;
-	text-align: center;
-	color: black;
-}
-
-.p1 {
-	font-size: 1px;
-	color: pink
-}
-
-/*.rectangle:hover {
-	fill: deepskyblue;
-}*/
-
-.axis {
-  font: 13px sans-serif;
-}
-
-path{
-	/* stroke: darkblue;  */
-  	stroke-width: 3.2;
-  	fill: none;
-}
-
-div.tooltip{
-    position: absolute;
-    text-align: center;
-    width: 130px;
-    height: 20px;
-    padding: 2px;
-    font: 12px sans-serif;
-    background: rgb(243, 240, 237);
-    border: 3px;
-    border-radius: 1px;
-    pointer-events: none;
-}
-.axis path,
-.axis line {
-  fill: none;
-  stroke: black;
-  shape-rendering: crispEdges;
-	stroke-width:1.5;
-}
-
-.d3-tip {
-  line-height: 1.2;
-  padding: 10px;
-  background: rgba(243, 242, 248, 0.8);
-  color: rgb(236, 103, 103);
-  border-radius: 1px;
-  top: 10px
-}
-
-/* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  content: "\25BC";
-  position: absolute;
-  text-align: center;
-}
-
-/* Style northward tooltips differently */
-.d3-tip.n:after {
-  margin: -1px 0 0 0;
-  top: 100%;
-  left: 0;
-}
-
-
-</style>
-</head>
-<body>
-
-<div class="chosen-wrapper chosen-wrapper--style2" data-js="custom-scroll" id="drop" align=left></div>
-
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
-<script>
-
 // #########################################################################################################
 // : ################################ MR: Change Animation settings ########################################
 
@@ -102,20 +8,20 @@ var delay = 5
 
 // #########################################################################################################
 // ##################################### Figure size setting: ##############################################
-var margin = {top: 80, right: 180, bottom: 80, left: 180},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+var margin = {top: 35, right: 60, bottom: 80, left: 60},
+    width = 440 - margin.left - margin.right,
+    height = 250 - margin.top - margin.bottom;
 
-var svg = d3.select("body").append("svg")
+var svg1 = d3.select("#s1half1").append("svg")
 	.attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+  .attr("height", height + margin.top + margin.bottom)
 	.append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // ##################################### General Tooltip setting: ####################################################################
-var tooltip = d3.select("body").append("div")
-	.attr("class", "tooltip")
-	.style("opacity", 0)
+//var tooltip = d3.select("body").append("div")
+//	.attr("class", "tooltip")
+//	.style("opacity", 0)
 
 var timeformatter = d3.time.format("%B %d")
 
@@ -142,6 +48,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		};
 }, function(error, rawdata){
 	// ##################### PLOTTING THE BAR CHART ############################################################
+	//console.log("Calling first JS file = ", Date.now())
 
 	// counting starts from zero: That is 00 is Jan. 02 is March.
 	var cutoffdate = new Date(2020, 02, 01)
@@ -195,30 +102,36 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.scale(y)
 	    .orient("left");
 
-	svg.call(tip);
+	svg1.call(tip);
 
 	// sticking the x and y axis into the canvas.
-	svg.append("g")
-    	.attr("class", "x axis")
+	svg1.append("g")
+    	.attr("class", "x axis1")
     	.attr("transform", "translate(0," + height + ")")
     	.call(xAxis)
-    	.selectAll("text")
-    	.style("font-size", "12px")
+    	.append("text")
+    	.style("font-size", "10px")
       	.style("text-anchor", "end")
       	.attr("dx", ".7em")
-      	.attr("dy", ".55em")
+      	.attr("dy", ".85em");
       	//.attr("transform", "rotate(-90)" );
 
- 	svg.append("g")
-    	.attr("class", "y axis")
-    	.call(yAxis);
+ 	svg1.append("g")
+    	.attr("class", "y axis1")
+    	.call(yAxis
+        .ticks(7)
+        .tickFormat(d3.format("s")))
+        .append("text")
+      	.style("font-size", "10px")
+        .style("text-anchor", "end");
+
 
 	// sticking the rectangles into the canvas.
-	svg.selectAll("rectangle")
+	svg1.selectAll("rectangle1")
 		.data(data_country)
 		.enter()
 		.append("rect")
-		.attr("class","rectangle")
+		.attr("class","rectangle1")
 		.attr("width", width/data_country.length)
 		.attr("height", function(d){
 			return height - y(d[metric_select]);
@@ -253,15 +166,15 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		// 	})
 
 	// sticking the x/y axis LABEL into the canvas (Svg)
-	svg.append("text")
+	svg1.append("text")
 		.attr("x", width/2)
-		.attr("y", height + (margin.bottom/1.5) )
+		.attr("y", height + (margin.bottom/2) )
 		.style("text-anchor", "middle")
 		.text("Date")
 
-	svg.append("text")
+	svg1.append("text")
 		.attr("transform", "rotate(-90)")
-		.attr("y", -margin.left/2.5)
+		.attr("y", -margin.left/1.8)
 		.attr("x",  -(height / 2))
 		.style("text-anchor", "middle")
 		.text("Daily cases")
@@ -319,7 +232,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 						.y(function(d){return y(d.avg)})
 
 	// sticking the line into the canvas.
-	var line = svg
+	var line = svg1
 		.append("g")
 		.append("path")
 		.attr("class", "line")
@@ -330,11 +243,23 @@ d3.csv("covid_case_death_counts.csv", function(d){
 	// ############################################# TRANSITION #######################################################
 	// ################################################################################################################
 
-	var selector = d3.select("#drop")
+	var selector = d3.select("#drop1")
     	.append("select")
-    	.attr("id","dropdown")
+    	.attr("id","dropdown1")
     	.on("change", function(d){
-        	selection = document.getElementById("dropdown");
+        	selection = document.getElementById("dropdown1");
+
+          // Selecting the right div box to display for article
+
+          var xboxes = document.getElementsByClassName("s1-country left");
+          for (i = 0; i < xboxes.length; i++) {
+            xboxes[i].style.display = "none";
+          }
+          var selectcountry = selection.value;
+          //console.log(selectcountry.concat("left"));
+          var thisbox = document.getElementById(selectcountry.concat("left"));
+          thisbox.style.display = "block";
+
 
 			//value in the dropdown is = country_selection
 			country_selection = selection.value
@@ -358,7 +283,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         	yAxis.scale(y);
 
 			// Redraw the rectangle. Why is it selectAll(.rectagle)? Workaround = define a variable instead. See line transition.
-        	d3.selectAll(".rectangle")
+        	d3.selectAll(".rectangle1")
 				.data(data_country)
            		.transition()
 	            .attr("height", function(d){
@@ -419,15 +344,15 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 
 			// not sure why it is g.y.axis; calling the new axis.
-      d3.selectAll("g.y.axis")
+      d3.selectAll("g.y.axis1")
      		.transition()
         .call(yAxis);
 
-			d3.selectAll("x axis")
+			d3.selectAll("x axis1")
            		.transition()
            		.call(xAxis);
         });
-	//drop down options.
+	  //drop down options.
     selector.selectAll("option")
       .data(elements)
       .enter().append("option")
@@ -439,6 +364,3 @@ d3.csv("covid_case_death_counts.csv", function(d){
       })
 
 });
-
-</script>
-</body>

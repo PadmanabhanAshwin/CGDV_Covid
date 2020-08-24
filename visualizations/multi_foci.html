@@ -65,7 +65,7 @@ label + input[type=radio] + label {
             </div>
          </form>
 <script>
-    
+
 // ######################################## ADDING VIZ INFORMATION ################################################################
 var population = {"Brazil": 212744941, "Bangladesh": 164891619, "India": 1381567238, "Indonesia": 273855751, "Pakistan": 221366281, "Sri Lanka": 21423831, "Egypt": 102548214}
 var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "grey"}
@@ -90,7 +90,7 @@ var title = svg.append("text")
 
 // ################################################ ASYNC CALL FOR DATA ########################################################
 d3.csv("covid_case_death_counts.csv", function(d){
-	// Creating an accesor function with relevent data type rtype. 
+	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse
 
 	return {
@@ -105,9 +105,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
     // Position the clusters
     function creategroup(){
-        var centers = { "Brazil": {"center": {x: 0, y:height/2}}, 
-                    "Bangladesh": {"center": {x: width/7, y:height/2}}, 
-                    "India": {"center": {x: 2*width/7, y:height/2}}, 
+        var centers = { "Brazil": {"center": {x: 0, y:height/2}},
+                    "Bangladesh": {"center": {x: width/7, y:height/2}},
+                    "India": {"center": {x: 2*width/7, y:height/2}},
                     "Indonesia": {"center": {x: 3*width/7, y:height/2}},
                     "Pakistan": {"center": {x: 4*width/7, y:height/2}},
                     "Sri Lanka": {"center": {x: 5*width/7, y:height/2}},
@@ -126,7 +126,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         // Get data only for max date
         var maxdate = new Date(Math.max.apply(null, rawdata.map(function(d){return d.date})))
 
-        // get relevenet data on latest date. 
+        // get relevenet data on latest date.
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
 
         if (titles){
@@ -151,15 +151,15 @@ d3.csv("covid_case_death_counts.csv", function(d){
         //Proportions:
         var proportions = measure_per_capita.map(function(d){ return {country: d.country, value: Math.round(d.value*100/sum ) } })
 
-        var eff_sum =0; 
-        var min_val = 1000; 
+        var eff_sum =0;
+        var min_val = 1000;
         var min_ix = -1;
 
-        // If rounding causes not to sum to 100, add to smallest value. 
+        // If rounding causes not to sum to 100, add to smallest value.
         for (i = 0; i < proportions.length; i++){
             eff_sum += proportions[i].value;
             if (min_val > proportions[i].value){
-                min_val = proportions[i].value; 
+                min_val = proportions[i].value;
                 min_ix = i
             }
         }
@@ -194,7 +194,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         .size([width, height])
         .charge(-200)
         .on("tick", tick)
-    
+
     var node = svg.selectAll(".node")
         .data(nodes)
             .enter().append("circle")
@@ -207,7 +207,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .style("stroke", function(d, i) { return stroke_color[d.country]; })
             //.call(force.drag)
            // .on("mouseover", function() { d3.event.stopPropagation(); });
-                
+
     force.start()
 
     svg.style("opacity", 1e-6)
@@ -222,7 +222,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         // e.alpha constantly reduces with each tick..
         var k = 2*e.alpha;
         nodes.forEach(function(node) {
-            // I want the circles to have: similar/higher x value, if index is higher. 
+            // I want the circles to have: similar/higher x value, if index is higher.
             var temp_center = node.center
             node.x += (temp_center.x - node.x) * k;
             node.y += (temp_center.y - node.y) * k;
@@ -251,9 +251,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .ease("poly-in-out",1.35);
     }
 
-    function transition(){    
-        // Get the data for the transition:    
-        var processdata = calcValue(rawdata, this.value, false); 
+    function transition(){
+        // Get the data for the transition:
+        var processdata = calcValue(rawdata, this.value, false);
         var backup_findata = findata
         findata = makedata(processdata)
 
@@ -289,7 +289,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
                 .start()
     }
     d3.selectAll("input").on("change", transition)
-    
+
 });
 
 

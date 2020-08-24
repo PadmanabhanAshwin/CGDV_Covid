@@ -1,6 +1,12 @@
 var slideIndex = 1;
 showDivs(slideIndex);
 
+var thisbox = document.getElementById("Indonesia".concat("left"));
+thisbox.style.display = "block";
+
+var thisbox = document.getElementById("Sri Lanka".concat("right"));
+thisbox.style.display = "block";
+
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }

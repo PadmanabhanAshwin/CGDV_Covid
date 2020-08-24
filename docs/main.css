@@ -6,7 +6,7 @@ caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,fig
 footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
 { margin: 0; padding: 0; border: 0; font-size: 97%; font-family: 'Raleway', sans-serif !important; vertical-align: baseline; }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block;}
-h1, h2, h3, h4, h5, h6 { font-family: 'News Cycle', sans-serif !important; margin: 0.1em; color:#3B3B3B}
+h1, h2, h3, h4, h5, h6 {font-family: 'Rozha One', serif !important; margin: 0.1em; color:#3B3B3B}
 .span-high { font-family: 'Shadows Into Light' !important; font-weight: bold;}
 body { line-height: 1; color: #3B3B3B;}
 p { line-height: 1.3; text-align: left; margin-bottom:1em;}
@@ -15,13 +15,142 @@ blockquote,q { quotes: none;}
 blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
 table { border-collapse: collapse; border-spacing: 0;}
 
-/*div {
+div {
   border-color: #FF0000;
   border-width: thin;
   border-style: solid;
+}
+
+/* SLIDE 1 CSS ******************************************************************************/
+
+.s1-graph {
+  height: 28%;
+  width: 100%;
+  top: 0;
+}
+
+.s1-main-plot {
+  height: 65%;
+  width: 58%;
+  left: 21%;
+  bottom: 0;
+  position: absolute;
+}
+
+.s1-mainplot-half {
+  height: 100%;
+  width: 50%;
+}
+
+.s1-country {
+  width: 21%;
+  height: 65%;
+  bottom: 0;
+  display: none;
+  border-color: #FF0000;
+  border-width: thin;
+  border-style: solid;
+}
+
+.s1-dropdown{
+  margin: 0px 10px;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+
+
+
+/* D3 STYLING STUFF **************************************************************************/
+/******** COUNTRY INTRO BAR CHART ******************************************/
+.d3-tool-heading{
+ font-size: 1.2em;
+ text-align: center;
+ color: black;
+}
+
+.p1 {
+ font-size: 1px;
+ color: pink
+}
+
+/*.rectangle:hover {
+ fill: deepskyblue;
 }*/
 
-/* Basic Structure CSS */
+.axis1 {
+ font: 10px sans-serif;
+}
+
+.axis2 {
+  font: 10px sans-serif;
+ }
+
+path{
+ /* stroke: darkblue;  */
+   stroke-width: 3.2; /*Stroke for average*/
+   fill: none;
+}
+
+div.tooltip{
+   position: absolute;
+   text-align: center;
+   width: 130px;
+   height: 20px;
+   padding: 2px;
+   font: 12px sans-serif;
+   background: rgb(243, 240, 237);
+   border: 3px;
+   border-radius: 1px;
+   pointer-events: none;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+    stroke-width:1;
+}
+
+.d3-tip {
+ line-height: 1.2;
+ padding: 10px;
+ background: rgba(243, 242, 248, 0.8);
+ color: rgb(236, 103, 103);
+ border-radius: 1px;
+ top: 10px
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+ box-sizing: border-box;
+ display: inline;
+ font-size: 10px;
+ width: 100%;
+ line-height: 1;
+ color: rgba(0, 0, 0, 0.8);
+ content: "\25BC";
+ position: absolute;
+ text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+ margin: -1px 0 0 0;
+ top: 100%;
+ left: 0;
+}
+
+
+/* Basic Structure CSS **********************************************************************/
 .container {
   width: 100vw;
   height: 100vh;
@@ -35,12 +164,12 @@ table { border-collapse: collapse; border-spacing: 0;}
 }
 
 .content {
-  width: 970px;
-  height: 460px;
+  width: 1368px;
+  height: 714px;
   position: absolute;
   z-index: -1;
   left: 50%;
-  top: 48%;
+  top: 50%;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   overflow-y: scroll;
@@ -68,16 +197,16 @@ table { border-collapse: collapse; border-spacing: 0;}
   background: #8D8D8D;
 }
 
-.content-text {
+/*.content-text {
   column-count: 3;
   column-gap: 1.6em;
-}
+}*/
 
 .subhead::first-letter {
   initial-letter: 3;
 }
 
-.animate-fading {animation:opac 2s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.animate-fading {animation:opac 5s}@keyframes opac{from{opacity:0} to{opacity:1}}
 
 .arrow{
   cursor: pointer;
