@@ -7,17 +7,71 @@
   stroke-width: 1.5px;
 }
 
+.title{
+    font: 30px sans-serif;
+}
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: red;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+input[type=radio]:checked + label {
+  color: red;
+  background: skyblue;
+}
+
+label + input[type=radio] + label {
+  border-left: solid 1px black;
+}
+
+.radio-group {
+  border: solid 3px red;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 </style>
 </head>
 <body>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
+<!-- <script src="jquery-3.5.1.min.js"></script> -->
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+<!-- <script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script> -->
+
+<body>
+        <form>
+        <div class="radio-group">
+                <input type="radio" id="option-one" name="selector" value= "total_case" checked>
+                    <label for="option-one">Total Cases Per Capita</label>
+                <input type="radio" id="option-two" name="selector" value = "total_death">
+                    <label for="option-two">Total Deaths Per Capita</label>
+            </div>
+         </form>
 <script>
+
+// ######################################## ADDING VIZ INFORMATION ################################################################
 var population = {"Brazil": 212744941, "Bangladesh": 164891619, "India": 1381567238, "Indonesia": 273855751, "Pakistan": 221366281, "Sri Lanka": 21423831, "Egypt": 102548214}
-var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "lightsalmon"}
+var country_color = {"Indonesia": "lightskyblue", "India": "orange", "Pakistan": "lightgreen", "Bangladesh": "crimson", "Brazil": "yellow", "Egypt": "lightpink", "Sri Lanka": "grey"}
 var stroke_color = {"Indonesia": "maroon", "India": "green", "Pakistan": "maroon", "Bangladesh": "maroon", "Brazil": "maroon", "Egypt": "maroon", "Sri Lanka": "purple"}
 
-
+// #####################k################### LAYOUT DEFINITION #######################################################################
 var margin = {top: 80, right: 0, bottom: 80, left: 100},
     width = 1260 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
@@ -28,6 +82,13 @@ var svg = d3.select("body").append("svg")
 	.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+var title = svg.append("text")
+    .attr("class", "title")
+    .attr("x", (width-margin.left-margin.right)/3)
+    .attr("y", margin.top - 70)
+    .text("Total Cases Per Capita")
+
+// ################################################ ASYNC CALL FOR DATA ########################################################
 d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse
@@ -57,13 +118,26 @@ d3.csv("covid_case_death_counts.csv", function(d){
     var c_map = creategroup()
     var fill = d3.scale.category10();
 
-    function calcValue(rawdata, measure){
-        // INPUT RAWDATA and measure to get proportions.
+    // ######################################## GET DATA FOR PLOTTING ################################################
+
+    function calcValue(rawdata, measure, titles, cmap ){
+        // INPUT RAWDATA and measure(total cases, tests etc) to get proportions.
+
+        // Get data only for max date
         var maxdate = new Date(Math.max.apply(null, rawdata.map(function(d){return d.date})))
 
         // get relevenet data on latest date.
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
-        console.log(reldata)
+
+        if (titles){
+        // PLOTTING THE COUNTRY TITLES!!
+            for (var k = 0; k < reldata.length; k++){
+                svg.append("text")
+                    .attr("x", c_map[reldata[k].country].center.x)
+                    .attr("y", c_map[reldata[k].country].center.y/3)
+                    .text(reldata[k].country)
+            }
+        }
 
         // data per capita
         var measure_per_capita = reldata.map(function(d){return {country: d.country, value: d[measure]/population[d.country]}})
@@ -95,30 +169,31 @@ d3.csv("covid_case_death_counts.csv", function(d){
         return proportions
     }
 
-    var proportions = calcValue(rawdata, "total_case")
-    var fin_data = new Array()
+    var proportions = calcValue(rawdata, "total_case", titles = true)
+    var findata = new Array()
 
     function makedata(proportions){
+        var ret_data = new Array()
         for (var i = 0; i< proportions.length; i++){
             for (var j =0 ; j <proportions[i].value; j++){
-                fin_data.push({country: proportions[i].country})
+                ret_data.push({country: proportions[i].country})
             }
         }
-        return fin_data
+        return ret_data
     }
 
-    var fin_data = makedata(proportions)
+    var findata = makedata(proportions)
 
-    var nodes = fin_data.map(function(d, i) {
+    var nodes = findata.map(function(d, i) {
         return {index: i, center: c_map[d.country].center, country: d.country};
     });
+    console.log("len of finData: ", findata.length)
 
     var force = d3.layout.force()
         .nodes(nodes)
         .size([width, height])
-        .charge(-800)
+        .charge(-200)
         .on("tick", tick)
-        .start();
 
     var node = svg.selectAll(".node")
         .data(nodes)
@@ -130,20 +205,24 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .style("fill", function(d) { return country_color[d.country]; })
             //.style("stroke", function(d, i) { return d3.rgb(country_color[d.country]).darker(2); }) Nice trick!
             .style("stroke", function(d, i) { return stroke_color[d.country]; })
-            .call(force.drag)
-            .on("mousedown", function() { d3.event.stopPropagation(); });
+            //.call(force.drag)
+           // .on("mouseover", function() { d3.event.stopPropagation(); });
+
+    force.start()
 
     svg.style("opacity", 1e-6)
-    .transition()
-        .duration(1000)
-        .style("opacity", 1);
+        .transition()
+            .duration(1000)
+            .style("opacity", 1);
 
     d3.select("body")
-        .on("mousedown", mousedown);
+        .on("mouseover", mouseover);
 
     function tick(e) {
-        var k = 6 * e.alpha;
+        // e.alpha constantly reduces with each tick..
+        var k = 2*e.alpha;
         nodes.forEach(function(node) {
+            // I want the circles to have: similar/higher x value, if index is higher.
             var temp_center = node.center
             node.x += (temp_center.x - node.x) * k;
             node.y += (temp_center.y - node.y) * k;
@@ -153,15 +232,66 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .attr("cy", function(d) { return d.y; });
     }
 
-    function mousedown() {
-        nodes.forEach(function(o, i) {
-            o.x += (Math.random() - .5) * 40;
-            o.y += (Math.random() - .5) * 40;
-        });
+    function mouseover() {
         force.resume();
     }
 
+    function movenode(e){
+        var k = 3*e.alpha;
+        nodes.forEach(function(node){
+            var temp_center_ = node.center
+            node.x += (temp_center_.x - node.x)*k;
+            node.y += (temp_center_.y - node.y)*k;
+        });
+        node.transition()
+            .delay(320)
+            .duration(1000)
+            .attr("cx", function(d){return d.x})
+            .attr("cy", function(d){return d.y})
+            .ease("poly-in-out",1.35);
+    }
+
+    function transition(){
+        // Get the data for the transition:
+        var processdata = calcValue(rawdata, this.value, false);
+        var backup_findata = findata
+        findata = makedata(processdata)
+
+        // Change the titles.
+        if (this.value == "total_case"){
+            title.transition()
+                .style("opacity", 0)
+                .transition()
+                .delay(500)
+                .text("Total Cases Per Capita")
+                .style("opacity", 1)
+        }
+        else if (this.value == "total_death"){
+            title.transition()
+                .style("opacity", 0)
+                .transition()
+                .delay(500)
+                .text("Total Deaths Per Capita")
+                .style("opacity", 1)
+        }
+
+        nodes = findata.map(function(d, i) {
+                        return {index: i, center: c_map[d.country].center, country: d.country};
+                        });
+
+        d3.selectAll(".node")
+            .data(nodes)
+            .style("fill", function(d) { return country_color[d.country]; })
+
+        force.nodes(nodes)
+                .charge(-300)
+                .on("tick", movenode)
+                .start()
+    }
+    d3.selectAll("input").on("change", transition)
+
 });
+
 
 </script>
 </body>
