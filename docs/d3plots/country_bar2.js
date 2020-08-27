@@ -8,15 +8,15 @@ var delay = 5
 
 // #########################################################################################################
 // ##################################### Figure size setting: ##############################################
-var margin = {top: 35, right: 60, bottom: 80, left: 60},
-    width = 440 - margin.left - margin.right,
-    height = 250 - margin.top - margin.bottom;
+var margin2 = {top: 35, right: 60, bottom: 80, left: 60},
+    width2 = 440 - margin2.left - margin2.right,
+    height2 = 250 - margin2.top - margin2.bottom;
 
 var svg2 = d3.select("#s1half2").append("svg")
-	.attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+	.attr("width", width2 + margin2.left + margin2.right)
+  .attr("height", height2 + margin2.top + margin2.bottom)
 	.append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
 
 // ##################################### General Tooltip setting: ####################################################################
 //var tooltip = d3.select("body").append("div")
@@ -84,7 +84,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 	var x = d3.time.scale()
 			.domain([mindate, maxdate])
 			.nice(d3.time.month)
-			.range([0, width]);
+			.range([0, width2]);
 
 	// defining XAxis
 	var xAxis = d3.svg.axis()
@@ -96,7 +96,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.domain([d3.min(data_country, function(d){return d.new_case}), d3.max(data_country, function(d){
 			return d.new_case;
 		})])
-		.range([height, 0]);
+		.range([height2, 0]);
 
 	//defining y axis.
 	var yAxis = d3.svg.axis()
@@ -108,7 +108,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 	// sticking the x and y axis into the canvas.
 	svg2.append("g")
     	.attr("class", "x axis2")
-    	.attr("transform", "translate(0," + height + ")")
+    	.attr("transform", "translate(0," + height2 + ")")
     	.call(xAxis)
     	.selectAll("text")
     	.style("font-size", "10px")
@@ -133,9 +133,9 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.enter()
 		.append("rect")
 		.attr("class","rectangle2")
-		.attr("width", width/data_country.length)
+		.attr("width", width2/data_country.length)
 		.attr("height", function(d){
-			return height - y(d[metric_select]);
+			return height2 - y(d[metric_select]);
 		})
 		.attr("x", function(d, i){
 			return x(d.date) ;
@@ -168,15 +168,15 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 
 	// sticking the x/y axis LABEL into the canvas (Svg)
 	svg2.append("text")
-		.attr("x", width/2)
-		.attr("y", height + (margin.bottom/2) )
+		.attr("x", width2/2)
+		.attr("y", height2 + (margin2.bottom/2) )
 		.style("text-anchor", "middle")
 		.text("Date")
 
 	svg2.append("text")
 		.attr("transform", "rotate(-90)")
-		.attr("y", -margin.left/1.8)
-		.attr("x",  -(height / 2))
+		.attr("y", -margin2.left/1.8)
+		.attr("x",  -(height2 / 2))
 		.style("text-anchor", "middle")
 		.text("Daily cases")
 
@@ -286,7 +286,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 				.data(data_country)
            		.transition()
 	            .attr("height", function(d){
-					return height - y(d[metric_select]);
+					return height2 - y(d[metric_select]);
 				})
 				.attr("x", function(d){
 					return x(d.date);
