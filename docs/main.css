@@ -122,7 +122,14 @@ label + input[type=radio] + label {
   border-radius: 5px;
   overflow: hidden;
 }
+.block {
+  height: 20px;
+  display: block;
+}
 
+.form{
+  float: left
+}
 
 
 /******** COUNTRY INTRO BAR CHART ******************************************/

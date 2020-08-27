@@ -4,9 +4,9 @@ var country_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1
 var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
 
 // #####################k################### LAYOUT DEFINITION #######################################################################
-const margin = {top: 20, right: 20, bottom: 20, left: 20},
+const margin = {top: 20, right: 10, bottom: 10, left: 135},
     width = 1300 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    height = 260 - margin.top - margin.bottom;
 var svg = d3.select("#countrycomparegraph").append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -16,12 +16,11 @@ var svg = d3.select("#countrycomparegraph").append("svg")
 var title = svg.append("text")
     .attr("class", "h6")
     .attr("x", (width-margin.left-margin.right)/3)
-    .attr("y", margin.top - 30)
+    .attr("y", -10)
     .text("Total Cases Per Capita")
 
 // ################################################ ASYNC CALL FOR DATA ########################################################
 d3.csv("covid_case_death_counts.csv", function(d){
-
 	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse
 
@@ -36,15 +35,16 @@ d3.csv("covid_case_death_counts.csv", function(d){
 }, function(error, rawdata){
     // Position the clusters
     function creategroup(){
-      //var width = 1150
-      //var height = 180
-        var centers = { "Bangladesh": {"center": {x: width/14, y:height/2}},
-                    "Brazil": {"center": {x: 3*width/14, y:height/2}},
-                    "Egypt": {"center": {x: 5*width/14, y:height/2}},
-                    "India": {"center": {x: 7*width/14, y:height/2}},
-                    "Indonesia": {"center": {x: 9*width/14, y:height/2}},
-                    "Pakistan": {"center": {x: 11*width/14, y:height/2}},
-                    "Sri Lanka": {"center": {x: 13*width/14, y:height/2}},
+      //AP: Height/width will be the for canvas. Drawing space is effective width (eff_width/eff_height) shown below;
+      var eff_width = width - margin.left-margin.right
+      var eff_height = height-margin.top-margin.bottom
+        var centers = { "Bangladesh": {"center": {x: eff_width/14, y:eff_height/2}},
+                    "Brazil": {"center": {x: 3*eff_width/14, y:eff_height/2}},
+                    "Egypt": {"center": {x: 5*eff_width/14, y:eff_height/2}},
+                    "India": {"center": {x: 7*eff_width/14, y:eff_height/2}},
+                    "Indonesia": {"center": {x: 9*eff_width/14, y:eff_height/2}},
+                    "Pakistan": {"center": {x: 11*eff_width/14, y:eff_height/2}},
+                    "Sri Lanka": {"center": {x: 13*eff_width/14, y:eff_height/2}},
                  }
         return centers
     }
@@ -67,7 +67,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
             for (var k = 0; k < reldata.length; k++){
                 svg.append("text")
                     .attr("x", c_map[reldata[k].country].center.x)
-                    .attr("y", c_map[reldata[k].country].center.y/6)
+                    .attr("y", c_map[reldata[k].country].center.y/20)
                     .attr("text-anchor", "middle")
                     .text(reldata[k].country)
             }
@@ -214,6 +214,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
         d3.selectAll(".node")
             .data(nodes)
             .style("fill", function(d) { return country_color[d.country]; })
+            .style("stroke", function(d, i) { return stroke_color[d.country]; })
+
 
         force.nodes(nodes)
                 .charge(-300)
