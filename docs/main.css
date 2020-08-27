@@ -19,8 +19,8 @@ table { border-collapse: collapse; border-spacing: 0;}
   border-color: #FF0000;
   border-width: thin;
   border-style: solid;
-}*/
-
+}
+*/
 /* SLIDE 1 CSS ******************************************************************************/
 
 .s1-graph {
@@ -80,6 +80,47 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 
 /* D3 STYLING STUFF **************************************************************************/
+/******** GRAPH FORCE DIRECT GRAPH ******************************************/
+.node {
+  stroke-width: 1.5px;
+}
+
+.title{
+    font: 30px sans-serif;
+}
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: red;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 2px 5px;
+}
+
+input[type=radio]:checked + label {
+  color: red;
+  background: skyblue;
+}
+
+label + input[type=radio] + label {
+  border-left: solid 1px black;
+}
+
+.radio-group {
+  border: solid 1px red;
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+
 /******** COUNTRY INTRO BAR CHART ******************************************/
 .d3-tool-heading{
  font-size: 1.2em;

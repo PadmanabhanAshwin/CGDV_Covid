@@ -34,7 +34,7 @@ var tip = d3.tip()
   })
 
 // ##################################### Data async call: ####################################################################
-d3.csv("covid_case_death_counts.csv", function(d){
+d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/visualizations/covid_case_death_counts.csv", function(d){
 
 	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse

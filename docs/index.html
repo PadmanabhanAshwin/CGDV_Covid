@@ -30,7 +30,18 @@
 <!-- SLIDE1----------->
       <div class="mySlides content animate-fading">
           <h1 style="margin-bottom:20px;"> Today's Headline Pandemic Hits </h1>
+
+
           <div class="s1-graph" id="countrycomparegraph">
+            <form>
+              <div class="radio-group">
+                    <input type="radio" id="option-one" name="selector" value= "total_case" checked>
+                        <label for="option-one">Total Cases Per Capita</label>
+                    <input type="radio" id="option-two" name="selector" value = "total_death">
+                        <label for="option-two">Total Deaths Per Capita</label>
+                </div>
+             </form>
+
             <script src="d3plots/country_compare_graph.js"></script>
 
           </div>
