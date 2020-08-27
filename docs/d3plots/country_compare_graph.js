@@ -4,10 +4,9 @@ var country_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1
 var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
 
 // #####################k################### LAYOUT DEFINITION #######################################################################
-var margin = {top: 20, right: 20, bottom: 20, left: 20},
+const margin = {top: 20, right: 20, bottom: 20, left: 20},
     width = 1300 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
-
 var svg = d3.select("#countrycomparegraph").append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -35,11 +34,10 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		date: dateparse(d["REPORT_DATE"])
 		};
 }, function(error, rawdata){
-
     // Position the clusters
     function creategroup(){
-      var width = 1150
-      var height = 180
+      //var width = 1150
+      //var height = 180
         var centers = { "Bangladesh": {"center": {x: width/14, y:height/2}},
                     "Brazil": {"center": {x: 3*width/14, y:height/2}},
                     "Egypt": {"center": {x: 5*width/14, y:height/2}},
@@ -50,7 +48,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
                  }
         return centers
     }
-
     var c_map = creategroup()
     var fill = d3.scale.category10();
 
@@ -124,8 +121,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
     var nodes = findata.map(function(d, i) {
         return {index: i, center: c_map[d.country].center, country: d.country};
     });
-    //console.log("len of finData: ", findata.length)
-
     var force = d3.layout.force()
         .nodes(nodes)
         .size([width, height])
