@@ -1,0 +1,29 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-default.css" />
+<script src="http://github.hubspot.com/odometer/odometer.js"></script>
+
+<!-- Extra styles for this example -->
+<style>
+.odometer {
+        font-size: 100px;
+}
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+  width: 50%
+}
+</style>
+</head>
+
+<body>
+<div id="odometer" class="odometer">1000</div>
+<script>
+        setTimeout(function(){
+                odometer.innerHTML = 1556;
+        });
+</script>
+</body>
+
+</html>
