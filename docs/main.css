@@ -131,6 +131,12 @@ label + input[type=radio] + label {
   float: left
 }
 
+#s1_counting_left{
+  font-size: 45px
+}
+#s1_counting_right{
+  font-size: 45px
+}
 
 /******** COUNTRY INTRO BAR CHART ******************************************/
 .d3-tool-heading{
