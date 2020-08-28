@@ -51,9 +51,9 @@ table { border-collapse: collapse; border-spacing: 0;}
   height: 65%;
   bottom: 0;
   display: none;
-  border-color: #FF0000;
+  /*border-color: #FF0000;
   border-width: thin;
-  border-style: solid;
+  border-style: solid;*/
 }
 
 .s1-country p{
@@ -81,8 +81,6 @@ table { border-collapse: collapse; border-spacing: 0;}
 }
 
 
-
-
 /* D3 STYLING STUFF **************************************************************************/
 /******** GRAPH FORCE DIRECT GRAPH ******************************************/
 .node {
@@ -100,26 +98,27 @@ input[type=radio] {
 }
 
 label {
-  color: red;
   display: inline-block;
   cursor: pointer;
   font-weight: bold;
-  padding: 2px 5px;
+    border-radius: 5px;
+  padding: 12px 10px 4px 10px;
 }
 
 input[type=radio]:checked + label {
-  color: red;
-  background: skyblue;
+  background: #DADADA;
+}
+
+input[type=radio]:hover + label {
+  background: #DADADA;
 }
 
 label + input[type=radio] + label {
-  border-left: solid 1px black;
+
 }
 
 .radio-group {
-  border: solid 1px red;
   display: inline-block;
-  border-radius: 5px;
   overflow: hidden;
 }
 .block {

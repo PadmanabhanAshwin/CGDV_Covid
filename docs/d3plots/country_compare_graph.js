@@ -4,7 +4,7 @@ var country_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1
 var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
 
 // #####################k################### LAYOUT DEFINITION #######################################################################
-const margin = {top: 20, right: 10, bottom: 10, left: 135},
+const margin = {top: 20, right: 10, bottom: 10, left: 90},
     width = 1300 - margin.left - margin.right,
     height = 260 - margin.top - margin.bottom;
 var svg = d3.select("#countrycomparegraph").append("svg")
@@ -13,11 +13,11 @@ var svg = d3.select("#countrycomparegraph").append("svg")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-var title = svg.append("text")
-    .attr("class", "h6")
-    .attr("x", (width-margin.left-margin.right)/3)
-    .attr("y", -10)
-    .text("Total Cases Per Capita")
+//var title = svg.append("text")
+//    .attr("class", "h6")
+//    .attr("x", (width-margin.left-margin.right)/3)
+//    .attr("y", -10)
+//    .text("Total Cases Per Capita")
 
 // ################################################ ASYNC CALL FOR DATA ########################################################
 d3.csv("covid_case_death_counts.csv", function(d){
@@ -36,14 +36,14 @@ d3.csv("covid_case_death_counts.csv", function(d){
     // Position the clusters
     function creategroup(){
       //AP: Height/width will be the for canvas. Drawing space is effective width (eff_width/eff_height) shown below;
-      var eff_width = width - margin.left-margin.right
+      var eff_width = width - margin.left - margin.right
       var eff_height = height-margin.top-margin.bottom
-        var centers = { "Bangladesh": {"center": {x: eff_width/14, y:eff_height/2}},
-                    "Brazil": {"center": {x: 3*eff_width/14, y:eff_height/2}},
-                    "Egypt": {"center": {x: 5*eff_width/14, y:eff_height/2}},
-                    "India": {"center": {x: 7*eff_width/14, y:eff_height/2}},
-                    "Indonesia": {"center": {x: 9*eff_width/14, y:eff_height/2}},
-                    "Pakistan": {"center": {x: 11*eff_width/14, y:eff_height/2}},
+        var centers = { "Bangladesh": {"center": {x: 0, y:eff_height/2}},
+                    "Brazil": {"center": {x: 13*eff_width/84, y:eff_height/2}},
+                    "Egypt": {"center": {x: 26*eff_width/84, y:eff_height/2}},
+                    "India": {"center": {x: 39*eff_width/84, y:eff_height/2}},
+                    "Indonesia": {"center": {x: 52*eff_width/84, y:eff_height/2}},
+                    "Pakistan": {"center": {x: 65*eff_width/84, y:eff_height/2}},
                     "Sri Lanka": {"center": {x: 13*eff_width/14, y:eff_height/2}},
                  }
         return centers
@@ -190,22 +190,22 @@ d3.csv("covid_case_death_counts.csv", function(d){
         findata = makedata(processdata)
 
         // Change the titles.
-        if (this.value == "total_case"){
-            title.transition()
-                .style("opacity", 0)
-                .transition()
-                .delay(500)
-                .text("Total Cases Per Capita")
-                .style("opacity", 1)
-        }
-        else if (this.value == "total_death"){
-            title.transition()
-                .style("opacity", 0)
-                .transition()
-                .delay(500)
-                .text("Total Deaths Per Capita")
-                .style("opacity", 1)
-        }
+        //if (this.value == "total_case"){
+        //    title.transition()
+        //        .style("opacity", 0)
+        //        .transition()
+        //        .delay(500)
+        //        .text("Total Cases Per Capita")
+        //        .style("opacity", 1)
+        //}
+        //else if (this.value == "total_death"){
+        //    title.transition()
+        //        .style("opacity", 0)
+        //        .transition()
+        //        .delay(500)
+        //        .text("Total Deaths Per Capita")
+        //        .style("opacity", 1)
+        //}
 
         nodes = findata.map(function(d, i) {
                         return {index: i, center: c_map[d.country].center, country: d.country};
