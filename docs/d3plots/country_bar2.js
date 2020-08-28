@@ -8,15 +8,15 @@ var delay = 5
 
 // #########################################################################################################
 // ##################################### Figure size setting: ##############################################
-var margin = {top: 35, right: 50, bottom: 80, left: 60},
-    width = 440 - margin.left - margin.right,
-    height = 250 - margin.top - margin.bottom;
+var margin2 = {top: 35, right: 60, bottom: 80, left: 60},
+    width2 = 440 - margin2.left - margin2.right,
+    height2 = 250 - margin2.top - margin2.bottom;
 
-var svg = d3.select("#s1half2").append("svg")
-	.attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+var svg2 = d3.select("#s1half2").append("svg")
+	.attr("width", width2 + margin2.left + margin2.right)
+  .attr("height", height2 + margin2.top + margin2.bottom)
 	.append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
 
 // ##################################### General Tooltip setting: ####################################################################
 //var tooltip = d3.select("body").append("div")
@@ -34,7 +34,8 @@ var tip = d3.tip()
   })
 
 // ##################################### Data async call: ####################################################################
-d3.csv("covid_case_death_counts.csv", function(d){
+d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/visualizations/covid_case_death_counts.csv", function(d){
+
 	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse
 
@@ -48,6 +49,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		};
 }, function(error, rawdata){
 	// ##################### PLOTTING THE BAR CHART ############################################################
+	//console.log("Calling second JS file = ", Date.now())
 
 	// counting starts from zero: That is 00 is Jan. 02 is March.
 	var cutoffdate = new Date(2020, 02, 01)
@@ -64,7 +66,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 											}
 								))
 					];
-
+  elements = elements.concat(elements.splice(0,1));
 	//get first column name
 	var country_selection = elements[0];
 
@@ -82,7 +84,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 	var x = d3.time.scale()
 			.domain([mindate, maxdate])
 			.nice(d3.time.month)
-			.range([0, width]);
+			.range([0, width2]);
 
 	// defining XAxis
 	var xAxis = d3.svg.axis()
@@ -94,19 +96,19 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		.domain([d3.min(data_country, function(d){return d.new_case}), d3.max(data_country, function(d){
 			return d.new_case;
 		})])
-		.range([height, 0]);
+		.range([height2, 0]);
 
 	//defining y axis.
 	var yAxis = d3.svg.axis()
 		.scale(y)
 	    .orient("left");
 
-	svg.call(tip);
+	svg2.call(tip);
 
 	// sticking the x and y axis into the canvas.
-	svg.append("g")
-    	.attr("class", "x axis")
-    	.attr("transform", "translate(0," + height + ")")
+	svg2.append("g")
+    	.attr("class", "x axis2")
+    	.attr("transform", "translate(0," + height2 + ")")
     	.call(xAxis)
     	.selectAll("text")
     	.style("font-size", "10px")
@@ -115,8 +117,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
       	.attr("dy", ".85em");
       	//.attr("transform", "rotate(-90)" );
 
- 	svg.append("g")
-    	.attr("class", "y axis")
+ 	svg2.append("g")
+    	.attr("class", "y axis2")
     	.call(yAxis
         .ticks(7)
         .tickFormat(d3.format("s")))
@@ -126,14 +128,14 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 
 	// sticking the rectangles into the canvas.
-	svg.selectAll("rectangle")
+	svg2.selectAll("rectangle2")
 		.data(data_country)
 		.enter()
 		.append("rect")
-		.attr("class","rectangle")
-		.attr("width", width/data_country.length)
+		.attr("class","rectangle2")
+		.attr("width", width2/data_country.length)
 		.attr("height", function(d){
-			return height - y(d[metric_select]);
+			return height2 - y(d[metric_select]);
 		})
 		.attr("x", function(d, i){
 			return x(d.date) ;
@@ -165,16 +167,16 @@ d3.csv("covid_case_death_counts.csv", function(d){
 		// 	})
 
 	// sticking the x/y axis LABEL into the canvas (Svg)
-	svg.append("text")
-		.attr("x", width/2)
-		.attr("y", height + (margin.bottom/2) )
+	svg2.append("text")
+		.attr("x", width2/2)
+		.attr("y", height2 + (margin2.bottom/2) )
 		.style("text-anchor", "middle")
 		.text("Date")
 
-	svg.append("text")
+	svg2.append("text")
 		.attr("transform", "rotate(-90)")
-		.attr("y", -margin.left/1.8)
-		.attr("x",  -(height / 2))
+		.attr("y", -margin2.left/1.8)
+		.attr("x",  -(height2 / 2))
 		.style("text-anchor", "middle")
 		.text("Daily cases")
 
@@ -231,7 +233,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 						.y(function(d){return y(d.avg)})
 
 	// sticking the line into the canvas.
-	var line = svg
+	var line = svg2
 		.append("g")
 		.append("path")
 		.attr("class", "line")
@@ -244,9 +246,19 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 	var selector = d3.select("#drop2")
     	.append("select")
-    	.attr("id","dropdown")
+    	.attr("id","dropdown2")
     	.on("change", function(d){
-        	selection = document.getElementById("dropdown");
+        	selection = document.getElementById("dropdown2");
+          // Selecting the right div box to display for article
+
+          var xboxes = document.getElementsByClassName("s1-country right");
+          for (i = 0; i < xboxes.length; i++) {
+            xboxes[i].style.display = "none";
+          }
+          var selectcountry = selection.value;
+          //console.log(selectcountry.concat("left"));
+          var thisbox = document.getElementById(selectcountry.concat("right"));
+          thisbox.style.display = "block";
 
 			//value in the dropdown is = country_selection
 			country_selection = selection.value
@@ -270,11 +282,11 @@ d3.csv("covid_case_death_counts.csv", function(d){
         	yAxis.scale(y);
 
 			// Redraw the rectangle. Why is it selectAll(.rectagle)? Workaround = define a variable instead. See line transition.
-        	d3.selectAll(".rectangle")
+        	d3.selectAll(".rectangle2")
 				.data(data_country)
            		.transition()
 	            .attr("height", function(d){
-					return height - y(d[metric_select]);
+					return height2 - y(d[metric_select]);
 				})
 				.attr("x", function(d){
 					return x(d.date);
@@ -331,11 +343,11 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
 
 			// not sure why it is g.y.axis; calling the new axis.
-      d3.selectAll("g.y.axis")
+      d3.selectAll("g.y.axis2")
      		.transition()
         .call(yAxis);
 
-			d3.selectAll("x axis")
+			d3.selectAll("x axis2")
            		.transition()
            		.call(xAxis);
         });

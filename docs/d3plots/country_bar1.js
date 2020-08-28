@@ -8,15 +8,15 @@ var delay = 5
 
 // #########################################################################################################
 // ##################################### Figure size setting: ##############################################
-var margin = {top: 35, right: 50, bottom: 80, left: 60},
-    width = 440 - margin.left - margin.right,
-    height = 250 - margin.top - margin.bottom;
+var margin1 = {top: 35, right: 60, bottom: 80, left: 60},
+    width1 = 440 - margin1.left - margin1.right,
+    height1 = 250 - margin1.top - margin1.bottom;
 
-var svg = d3.select("#s1half1").append("svg")
-	.attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+var svg1 = d3.select("#s1half1").append("svg")
+	.attr("width", width1 + margin1.left + margin1.right)
+  .attr("height", height1 + margin1.top + margin1.bottom)
 	.append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("transform", "translate(" + margin1.left + "," + margin1.top + ")");
 
 // ##################################### General Tooltip setting: ####################################################################
 //var tooltip = d3.select("body").append("div")
@@ -82,7 +82,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 	var x = d3.time.scale()
 			.domain([mindate, maxdate])
 			.nice(d3.time.month)
-			.range([0, width]);
+			.range([0, width1]);
 
 	// defining XAxis
 	var xAxis = d3.svg.axis()
@@ -94,46 +94,46 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.domain([d3.min(data_country, function(d){return d.new_case}), d3.max(data_country, function(d){
 			return d.new_case;
 		})])
-		.range([height, 0]);
+		.range([height1, 0]);
 
 	//defining y axis.
 	var yAxis = d3.svg.axis()
 		.scale(y)
 	    .orient("left");
 
-	svg.call(tip);
+	svg1.call(tip);
 
 	// sticking the x and y axis into the canvas.
-	svg.append("g")
-    	.attr("class", "x axis")
-    	.attr("transform", "translate(0," + height + ")")
+	svg1.append("g")
+    	.attr("class", "x axis1")
+    	.attr("transform", "translate(0," + height1 + ")")
     	.call(xAxis)
-    	.selectAll("text")
+    	.append("text")
     	.style("font-size", "10px")
       	.style("text-anchor", "end")
       	.attr("dx", ".7em")
       	.attr("dy", ".85em");
       	//.attr("transform", "rotate(-90)" );
 
- 	svg.append("g")
-    	.attr("class", "y axis")
+ 	svg1.append("g")
+    	.attr("class", "y axis1")
     	.call(yAxis
         .ticks(7)
         .tickFormat(d3.format("s")))
-        .selectAll("text")
+        .append("text")
       	.style("font-size", "10px")
         .style("text-anchor", "end");
 
 
 	// sticking the rectangles into the canvas.
-	svg.selectAll("rectangle")
+	svg1.selectAll("rectangle1")
 		.data(data_country)
 		.enter()
 		.append("rect")
-		.attr("class","rectangle")
-		.attr("width", width/data_country.length)
+		.attr("class","rectangle1")
+		.attr("width", width1/data_country.length)
 		.attr("height", function(d){
-			return height - y(d[metric_select]);
+			return height1 - y(d[metric_select]);
 		})
 		.attr("x", function(d, i){
 			return x(d.date) ;
@@ -165,16 +165,16 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		// 	})
 
 	// sticking the x/y axis LABEL into the canvas (Svg)
-	svg.append("text")
-		.attr("x", width/2)
-		.attr("y", height + (margin.bottom/2) )
+	svg1.append("text")
+		.attr("x", width1/2)
+		.attr("y", height1 + (margin1.bottom/2) )
 		.style("text-anchor", "middle")
 		.text("Date")
 
-	svg.append("text")
+	svg1.append("text")
 		.attr("transform", "rotate(-90)")
-		.attr("y", -margin.left/1.8)
-		.attr("x",  -(height / 2))
+		.attr("y", -margin1.left/1.8)
+		.attr("x",  -(height1 / 2))
 		.style("text-anchor", "middle")
 		.text("Daily cases")
 
@@ -231,7 +231,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 						.y(function(d){return y(d.avg)})
 
 	// sticking the line into the canvas.
-	var line = svg
+	var line = svg1
 		.append("g")
 		.append("path")
 		.attr("class", "line")
@@ -244,9 +244,21 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 
 	var selector = d3.select("#drop1")
     	.append("select")
-    	.attr("id","dropdown")
+    	.attr("id","dropdown1")
     	.on("change", function(d){
-        	selection = document.getElementById("dropdown");
+        	selection = document.getElementById("dropdown1");
+
+          // Selecting the right div box to display for article
+
+          var xboxes = document.getElementsByClassName("s1-country left");
+          for (i = 0; i < xboxes.length; i++) {
+            xboxes[i].style.display = "none";
+          }
+          var selectcountry = selection.value;
+          //console.log(selectcountry.concat("left"));
+          var thisbox = document.getElementById(selectcountry.concat("left"));
+          thisbox.style.display = "block";
+
 
 			//value in the dropdown is = country_selection
 			country_selection = selection.value
@@ -270,11 +282,11 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
         	yAxis.scale(y);
 
 			// Redraw the rectangle. Why is it selectAll(.rectagle)? Workaround = define a variable instead. See line transition.
-        	d3.selectAll(".rectangle")
+        	d3.selectAll(".rectangle1")
 				.data(data_country)
            		.transition()
 	            .attr("height", function(d){
-					return height - y(d[metric_select]);
+					return height1 - y(d[metric_select]);
 				})
 				.attr("x", function(d){
 					return x(d.date);
@@ -331,15 +343,16 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 
 
 			// not sure why it is g.y.axis; calling the new axis.
-      d3.selectAll("g.y.axis")
+      d3.selectAll("g.y.axis1")
      		.transition()
         .call(yAxis);
 
-			d3.selectAll("x axis")
+			d3.selectAll("x axis1")
            		.transition()
            		.call(xAxis);
-        });
-	  //drop down options.
+		});
+		
+	//drop down options.
     selector.selectAll("option")
       .data(elements)
       .enter().append("option")
