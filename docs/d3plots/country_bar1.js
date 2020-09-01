@@ -350,8 +350,9 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 			d3.selectAll("x axis1")
            		.transition()
            		.call(xAxis);
-        });
-	  //drop down options.
+		});
+		
+	//drop down options.
     selector.selectAll("option")
       .data(elements)
       .enter().append("option")
