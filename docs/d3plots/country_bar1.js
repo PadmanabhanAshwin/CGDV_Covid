@@ -351,7 +351,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
            		.transition()
            		.call(xAxis);
 		});
-		
+
 	//drop down options.
     selector.selectAll("option")
       .data(elements)
@@ -362,5 +362,4 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
       .text(function(d){
         return d;
       })
-
 });
