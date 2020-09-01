@@ -44,6 +44,7 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 .s1-counting {
   width:100%;
+  margin: 10px;
 }
 
 .s1-country {
@@ -51,9 +52,6 @@ table { border-collapse: collapse; border-spacing: 0;}
   height: 65%;
   bottom: 0;
   display: none;
-  /*border-color: #FF0000;
-  border-width: thin;
-  border-style: solid;*/
 }
 
 .s1-country p{
@@ -64,6 +62,16 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 .s1-country h2{
   margin-left: 12px;
+}
+
+.s1-count-wrapper {
+  padding: 25px;
+  height: 35%;
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%,0);
 }
 
 .s1-dropdown{
