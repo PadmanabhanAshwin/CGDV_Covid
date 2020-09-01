@@ -198,7 +198,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .duration(1000)
             .attr("cx", function(d){return d.x})
             .attr("cy", function(d){return d.y})
-            .ease("poly-in-out",1.35);
+            .ease("poly-in",1.25);
     }
 
     function transition(){
@@ -208,6 +208,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         findata = makedata(processdata)
 
         // Change the titles.
+
         //if (this.value == "total_case"){
         //    title.transition()
         //        .style("opacity", 0)
