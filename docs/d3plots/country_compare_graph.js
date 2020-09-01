@@ -56,7 +56,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
     function calcValue(rawdata, measure, titles, cmap ){
         // INPUT RAWDATA and measure(total cases, tests etc) to get proportions.
 
-        // Get data only for max date
+        // get max date
         var maxdate = new Date(Math.max.apply(null, rawdata.map(function(d){return d.date})))
 
         // get relevenet data on latest date.
@@ -88,6 +88,10 @@ d3.csv("covid_case_death_counts.csv", function(d){
         var eff_sum =0;
         var min_val = 1000;
         var min_ix = -1;
+        var max_ix = -1
+        var max_val = -1
+
+        var zero_pro_array = new Array()
 
         // If rounding causes not to sum to 100, add to smallest value.
         for (i = 0; i < proportions.length; i++){
@@ -96,10 +100,24 @@ d3.csv("covid_case_death_counts.csv", function(d){
                 min_val = proportions[i].value;
                 min_ix = i
             }
+            if (max_val < proportions[i].value){
+                max_val = proportions[i].value
+                max_ix = i
+            }
+            if (proportions[i].value ==0 ){
+                zero_pro_array.push(i)
+            }
         }
         if (eff_sum < 100){
             proportions[min_ix].value += (100 - eff_sum)
         }
+        for (var i = 0; i<zero_pro_array.length; i++){
+            console.log("Zero pro ix = " , zero_pro_array[i])
+            console.log("Adding to= ", proportions[zero_pro_array[i]])
+            proportions[zero_pro_array[i]].value += 1
+            proportions[max_ix].value -= 1
+        }
+        console.log(proportions)
         return proportions
     }
 
