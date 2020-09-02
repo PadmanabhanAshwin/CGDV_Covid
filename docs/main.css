@@ -76,23 +76,14 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 .s1-dropdown{
   margin: 0px 10px;
-  border-color: #FF0000;
-  border-width: thin;
-  border-style: solid;
 }
 
 .s1-dropdown > select {
   border-color: #FFFFFF00;
   padding: 5px 10px;
   border-radius: 0;
-  box-shadow:0 rgba(0, 0, 0, 0);
-}
-
-option {
-  border-color: #FFFFFF00;
-  padding: 5px 10px;
-  border-radius: 0;
-  box-shadow:0 rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
 }
 
 
