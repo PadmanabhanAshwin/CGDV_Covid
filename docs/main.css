@@ -4,7 +4,7 @@ acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,stron
 sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,
 caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,
 footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
-{ margin: 0; padding: 0; border: 0; font-size: 97%; font-family: 'Raleway', sans-serif !important; vertical-align: baseline; }
+{ margin: 0; padding: 0; border: 0; font-size: 97%; font-family: 'Raleway', sans-serif; vertical-align: baseline; }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block;}
 h1, h2, h3, h4, h5, h6 {font-family: 'Merriweather', serif !important; margin: 0.1em; color:#3B3B3B}
 .span-high { font-family: 'Shadows Into Light' !important; font-weight: bold;}
@@ -296,8 +296,7 @@ div.tooltip{
   cursor: pointer;
   position: absolute;
   z-index: 0;
-color: #7B7B7B;
-  color: #000000;
+  color: #7B7B7B;
 }
 
 .arrow:hover {
