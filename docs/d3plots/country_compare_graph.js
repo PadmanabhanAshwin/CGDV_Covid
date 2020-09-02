@@ -19,6 +19,8 @@ var svg = d3.select("#countrycomparegraph").append("svg")
 //    .attr("y", -10)
 //    .text("Total Cases Per Capita")
 
+// Assign number of pixels to the left for country titels. Higher value pushes title to right
+var text_padding = {"Bangladesh": 0, "Brazil": 17, "Egypt": 33, "India": 18, "Indonesia": 10, "Pakistan": -2, "Sri Lanka": -5}
 // ################################################ ASYNC CALL FOR DATA ########################################################
 d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype.
@@ -44,11 +46,12 @@ d3.csv("covid_case_death_counts.csv", function(d){
                     "India": {"center": {x: 39*eff_width/84, y:eff_height/2}},
                     "Indonesia": {"center": {x: 52*eff_width/84, y:eff_height/2}},
                     "Pakistan": {"center": {x: 65*eff_width/84, y:eff_height/2}},
-                    "Sri Lanka": {"center": {x: 13*eff_width/14, y:eff_height/2}},
+                    "Sri Lanka": {"center": {x: 78*eff_width/84, y:eff_height/2}},
                  }
         return centers
     }
     var c_map = creategroup()
+    console.log(c_map)
     var fill = d3.scale.category10();
 
     // ######################################## GET DATA FOR PLOTTING ################################################
@@ -56,17 +59,17 @@ d3.csv("covid_case_death_counts.csv", function(d){
     function calcValue(rawdata, measure, titles, cmap ){
         // INPUT RAWDATA and measure(total cases, tests etc) to get proportions.
 
-        // Get data only for max date
+        // get max date
         var maxdate = new Date(Math.max.apply(null, rawdata.map(function(d){return d.date})))
 
         // get relevenet data on latest date.
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
-
+        console.log(reldata)
         if (titles){
         // PLOTTING THE COUNTRY TITLES!!
             for (var k = 0; k < reldata.length; k++){
                 svg.append("text")
-                    .attr("x", c_map[reldata[k].country].center.x)
+                    .attr("x", c_map[reldata[k].country].center.x + text_padding[reldata[k].country])
                     .attr("y", c_map[reldata[k].country].center.y/20)
                     .attr("text-anchor", "middle")
                     .text(reldata[k].country)
@@ -88,6 +91,10 @@ d3.csv("covid_case_death_counts.csv", function(d){
         var eff_sum =0;
         var min_val = 1000;
         var min_ix = -1;
+        var max_ix = -1
+        var max_val = -1
+
+        var zero_pro_array = new Array()
 
         // If rounding causes not to sum to 100, add to smallest value.
         for (i = 0; i < proportions.length; i++){
@@ -96,10 +103,24 @@ d3.csv("covid_case_death_counts.csv", function(d){
                 min_val = proportions[i].value;
                 min_ix = i
             }
+            if (max_val < proportions[i].value){
+                max_val = proportions[i].value
+                max_ix = i
+            }
+            if (proportions[i].value ==0 ){
+                zero_pro_array.push(i)
+            }
         }
         if (eff_sum < 100){
             proportions[min_ix].value += (100 - eff_sum)
         }
+        for (var i = 0; i<zero_pro_array.length; i++){
+            console.log("Zero pro ix = " , zero_pro_array[i])
+            console.log("Adding to= ", proportions[zero_pro_array[i]])
+            proportions[zero_pro_array[i]].value += 1
+            proportions[max_ix].value -= 1
+        }
+        console.log(proportions)
         return proportions
     }
 
@@ -180,7 +201,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .duration(1000)
             .attr("cx", function(d){return d.x})
             .attr("cy", function(d){return d.y})
-            .ease("poly-in-out",1.35);
+            .ease("poly-in",1.17);
     }
 
     function transition(){
@@ -190,6 +211,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         findata = makedata(processdata)
 
         // Change the titles.
+
         //if (this.value == "total_case"){
         //    title.transition()
         //        .style("opacity", 0)
