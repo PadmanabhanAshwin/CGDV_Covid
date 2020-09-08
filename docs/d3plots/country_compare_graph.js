@@ -51,7 +51,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         return centers
     }
     var c_map = creategroup()
-    console.log(c_map)
+    //console.log(c_map)
     var fill = d3.scale.category10();
 
     // ######################################## GET DATA FOR PLOTTING ################################################
@@ -64,7 +64,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
         // get relevenet data on latest date.
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
-        console.log(reldata)
+        //console.log(reldata)
         if (titles){
         // PLOTTING THE COUNTRY TITLES!!
             for (var k = 0; k < reldata.length; k++){
@@ -115,12 +115,12 @@ d3.csv("covid_case_death_counts.csv", function(d){
             proportions[min_ix].value += (100 - eff_sum)
         }
         for (var i = 0; i<zero_pro_array.length; i++){
-            console.log("Zero pro ix = " , zero_pro_array[i])
-            console.log("Adding to= ", proportions[zero_pro_array[i]])
+            //console.log("Zero pro ix = " , zero_pro_array[i])
+            //console.log("Adding to= ", proportions[zero_pro_array[i]])
             proportions[zero_pro_array[i]].value += 1
             proportions[max_ix].value -= 1
         }
-        console.log(proportions)
+        //console.log(proportions)
         return proportions
     }
 
