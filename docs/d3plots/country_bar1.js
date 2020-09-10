@@ -126,7 +126,6 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
       	.style("font-size", "10px")
         .style("text-anchor", "end");
 
-	console.log("width  = ", (width - margin1.left - margin1.right)/(data_country.length))
 	// sticking the rectangles into the canvas.
 	svg1.selectAll("rectangle1")
 		.data(data_country)

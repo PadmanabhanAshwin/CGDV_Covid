@@ -133,7 +133,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.enter()
 		.append("rect")
 		.attr("class","rectangle2")
-		.attr("width", width2/data_country.length)
+		.attr("width", (width2 - margin2.left - margin2.right)/data_country.length)
 		.attr("height", function(d){
 			return height2 - y(d[metric_select]);
 		})
