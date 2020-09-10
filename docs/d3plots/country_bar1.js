@@ -8,6 +8,8 @@ var stroke_color = {"Bangladesh": "#622a62", "Brazil": "#002776", "Egypt": "#624
 var line_color = {"Bangladesh": "#622a62", "Brazil": "#002776", "Egypt": "#624B1C", "India": "#4363D8", "Indonesia": "#C05912", "Pakistan": "#228B22", "Sri Lanka": "#C88C00"}
 var delay = 5
 
+var labeline
+
 // #########################################################################################################
 // ##################################### Figure size setting: ##############################################
 var margin1 = {top: 35, right: 60, bottom: 80, left: 60},
