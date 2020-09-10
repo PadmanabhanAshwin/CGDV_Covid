@@ -241,6 +241,31 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.attr("d", trendline(rolling_avg))
 
 
+	// Sticking label line into svg. First horizontal line, then slanted line. 
+	svg2.append("line")
+		.attr("x1", margin2.left)
+		.attr("y1", (height2/1.5 ) )
+		.attr("x2", margin2.left + 20)
+		.attr("y2", (height2/1.5 ))
+		.style("stroke", "black")
+
+	// appending slant lines
+	var slantline2 = svg2.append("line")
+		.attr("x1", margin2.left + 20 )
+		.attr("y1", height2/1.5 )
+		.attr("x2", x(rolling_avg[rolling_avg.length/2].date ) )
+		.attr("y2", y(rolling_avg[rolling_avg.length/2].avg ))
+		.style("stroke", "black")
+
+	//appending text "7 day average"
+	svg2.append("text")
+		.attr("x", margin2.left -10)
+		.attr("y", height2/1.6)
+		.style("text-anchor", "middle")
+		.style("font-size", "10px")
+		.text("7 day average")
+	
+
 	// ############################################# TRANSITION #######################################################
 	// ################################################################################################################
 
@@ -340,6 +365,12 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 				.style("stroke", line_color[country_selection] )
 				.attr("d", trendline(rolling_avg))
 				.ease("linear")
+			
+			slantline2
+				.transition()
+				.delay(delay*data_country.length)
+				.attr("x2", x(rolling_avg[rolling_avg.length/2].date ) )
+				.attr("y2", y(rolling_avg[rolling_avg.length/2].avg ))
 
 
 			// not sure why it is g.y.axis; calling the new axis.
