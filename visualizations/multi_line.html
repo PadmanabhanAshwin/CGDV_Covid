@@ -130,7 +130,7 @@ var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return "<span class=\"d3-tool-heading\">"+ timeformatter(d.date) + "</span><br> <p1 style='color:grey'> New case count:</p1> <span style='color:darkblue'>" + d.new_case + "</span> <br>  <p1 style='color:grey'> Cummlative case count:</p1> <span style='color:darkblue'>" + d.total_case + "</span>" ;
+    return "<span class=\"d3-tool-heading\">"+ timeformatter(d.date) + "</span><br> <p1 style='color:grey'> New case count:</p1> <span style='color:darkblue'>" + d.change + "</span> <br>  <p1 style='color:grey'> Cummlative case count:</p1> <span style='color:darkblue'>" + d.total_case + "</span>" ;
   })
 
 // ##################################### Data async call: ####################################################################
@@ -175,27 +175,28 @@ d3.csv("change-visitors-grocery-stores.csv", function(d){
 	// Get minimum and maximum dates for x axis.
 	var mindate = d3.min(data, function(d){return d.date})
 	var maxdate = d3.max(data, function(d){return d.date})
-
-  var miny = d3.min(data, function(d){return d.new_case})
-  var maxy = d3.max(data, function(d){return d.new_case})
+console.log(mindate);
+console.log(maxdate);
+  var miny = d3.min(data, function(d){return d.change})
+  var maxy = d3.max(data, function(d){return d.change})
 
 	// defining x scale.
 	var x = d3.time.scale()
 			.domain([mindate, maxdate])
-			.nice(d3.time.month)
+			//.nice(d3.time.month)
 			.range([0, width]);
 
 	// defining XAxis
 	var xAxis = d3.svg.axis()
 		.scale(x)
-	    .orient("bottom");
+	    .orient("center");
 
 	// defining y scale
 	var y = d3.scale.linear()
 		//.domain([d3.min(data_country, function(d){return d.new_case}), d3.max(data_country, function(d){
 		//	return d.new_case;
 		//})])
-    .domain([miny, maxy])
+    .domain([miny, -miny])
 		.range([height, 0]);
 
 	//defining y axis.
@@ -205,17 +206,6 @@ d3.csv("change-visitors-grocery-stores.csv", function(d){
 
 	svg.call(tip);
 
-	// sticking the x and y axis into the canvas.
-	svg.append("g")
-    	.attr("class", "x axis")
-    	.attr("transform", "translate(0," + height + ")")
-    	.call(xAxis)
-    	.selectAll("text")
-    	.style("font-size", "12px")
-      	.style("text-anchor", "end")
-      	.attr("dx", ".7em")
-      	.attr("dy", ".55em")
-      	//.attr("transform", "rotate(-90)" );
 
  	svg.append("g")
     	.attr("class", "y axis")
@@ -238,7 +228,7 @@ d3.csv("change-visitors-grocery-stores.csv", function(d){
 	// ########################################## PLOTTING THE LINE ##########################################
 	// #######################################################################################################
 
-for (let i = 0; i<7; i++) {
+for (let i = 0; i<elements.length; i++) {
   country_selection = elements[i]
   //Get country data for all dates
   var country_raw = data.filter(function(d){
@@ -283,7 +273,7 @@ for (let i = 0; i<7; i++) {
   var trendline = d3.svg.line()
             .x(function(d){return x(d.date)})
             .y(function(d){return y(d.avg)})
-console.log(rolling_avg);
+//console.log(rolling_avg);
   // sticking the line into the canvas.
   var line = svg
     .append("g")
@@ -292,6 +282,19 @@ console.log(rolling_avg);
     .style("stroke", "#CCCCCC")
     .attr("d", trendline(rolling_avg))
 }
+
+// sticking the x and y axis into the canvas.
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height/2 + ")")
+    .call(xAxis)
+    .selectAll("text")
+    .style("font-size", "12px")
+      .style("text-anchor", "end")
+      .attr("dx", ".7em")
+      .attr("dy", ".55em")
+      //.attr("transform", "rotate(-90)" );
+
 
 country_selection = elements[0]
 
@@ -338,19 +341,22 @@ for (let i = 0 ; i <len; i++){
 var trendline = d3.svg.line()
           .x(function(d){return x(d.date)})
           .y(function(d){return y(d.avg)})
-
+console.log(miny);
+console.log(maxy);
           svg.append("linearGradient")
               .attr("id", "line-gradient")
               .attr("gradientUnits", "userSpaceOnUse")
               .attr("x1", 0)
-              .attr("y1", -10000)
+              .attr("y1", 0)
               .attr("x2", 0)
-              .attr("y2", 10000)
+              .attr("y2", 284)
             .selectAll("stop")
             .data(
                     [
-                     {offset: "100%", color: "blue"},
-                     {offset: "100%", color: "red"},
+                     {offset: "0%", color: "green"},
+                     {offset: "60%", color: "green"},
+                     {offset: "60%", color: "red"},
+                     {offset: "100%", color: "red"}
                     ]
                   )
             .enter().append("stop")
