@@ -2,48 +2,12 @@
 <meta charset="utf-8">
 <head>
 <style>
-/*
-.rectangle {
-	fill: lightskyblue;
-	stroke: maroon
-} */
- .d3-tool-heading{
-	font-size: 1.2em;
-	text-align: center;
-	color: black;
-}
 
-.p1 {
-	font-size: 1px;
-	color: pink
-}
-
-/*.rectangle:hover {
-	fill: deepskyblue;
-}*/
-
+/* Axis Properties */
 .axis {
   font: 13px sans-serif;
 }
 
-path{
-	/* stroke: darkblue;  */
-  	stroke-width: 3.2;
-  	fill: none;
-}
-
-div.tooltip{
-    position: absolute;
-    text-align: center;
-    width: 130px;
-    height: 20px;
-    padding: 2px;
-    font: 12px sans-serif;
-    background: rgb(243, 240, 237);
-    border: 3px;
-    border-radius: 1px;
-    pointer-events: none;
-}
 .axis path,
 .axis line {
   fill: none;
@@ -52,58 +16,24 @@ div.tooltip{
 	stroke-width:1.5;
 }
 
+/* Plot line properties*/
 .line {
     fill: none;
     stroke: url(#line-gradient);
     stroke-width: 2px;
 }
 
-.d3-tip {
-  line-height: 1.2;
-  padding: 10px;
-  background: rgba(243, 242, 248, 0.8);
-  color: rgb(236, 103, 103);
-  border-radius: 1px;
-  top: 10px
-}
-
-/* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  content: "\25BC";
-  position: absolute;
-  text-align: center;
-}
-
-/* Style northward tooltips differently */
-.d3-tip.n:after {
-  margin: -1px 0 0 0;
-  top: 100%;
-  left: 0;
-}
-
-
 </style>
 </head>
 <body>
 
+<!--Select option button -->
 <div class="chosen-wrapper chosen-wrapper--style2" data-js="custom-scroll" id="drop" align=left></div>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
 <script>
 
-// #########################################################################################################
-// : ################################ MR: Change Animation settings ########################################
-
-var country_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
-var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
-var line_color = {"Bangladesh": "#622a62", "Brazil": "#002776", "Egypt": "#624B1C", "India": "#4363D8", "Indonesia": "#C05912", "Pakistan": "#228B22", "Sri Lanka": "#C88C00"}
 var delay = 5
 
 // #########################################################################################################
@@ -118,24 +48,11 @@ var svg = d3.select("body").append("svg")
 	.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// ##################################### General Tooltip setting: ####################################################################
-var tooltip = d3.select("body").append("div")
-	.attr("class", "tooltip")
-	.style("opacity", 0)
 
-var timeformatter = d3.time.format("%B %d")
-
-// ##################### MR: TO CHANGE TOOLIP STYLE CHANGE add HTML in return below:  #################################################
-var tip = d3.tip()
-  .attr('class', 'd3-tip')
-  .offset([-10, 0])
-  .html(function(d) {
-    return "<span class=\"d3-tool-heading\">"+ timeformatter(d.date) + "</span><br> <p1 style='color:grey'> New case count:</p1> <span style='color:darkblue'>" + d.change + "</span> <br>  <p1 style='color:grey'> Cummlative case count:</p1> <span style='color:darkblue'>" + d.total_case + "</span>" ;
-  })
-
-// ##################################### Data async call: ####################################################################
+// ##################################### Data async call: ##################################################
 d3.csv("change-visitors-grocery-stores.csv", function(d){
-	// Creating an accesor function with relevent data type rtype.
+
+  //data formate for date
 	var dateparse = d3.time.format("%b %d, %Y").parse
 
 	return {
@@ -144,74 +61,45 @@ d3.csv("change-visitors-grocery-stores.csv", function(d){
 		date: dateparse(d["Date"])
 		};
 }, function(error, data){
-	// ##################### PLOTTING THE BAR CHART ############################################################
 
-	// counting starts from zero: That is 00 is Jan. 02 is March.
-	// var cutoffdate = new Date(2020, 02, 01)
-	// whatever needs to be plotted.
-	var metric_select = "change"
-
-	// Rawdata has all data. We only want data starting from a cutoff point, defined above.
-	//var data = rawdata.filter(function(d){ return d["date"].getTime() >cutoffdate.getTime()})
-
-	// Get every column name
+  var metric_select = "change"
+	// Get every country name
 	var elements = [... new Set(data.map(
-								function(d){
-									return d.country
-											}
+								function(d){return d.country}
 								))
 					];
-
-	//get first column name
-//	var country_selection = elements[6];
-
-	// Country specific data, data where country == selection
-//	var data_country = data.filter(function(d){
-//							return d.country == country_selection
-//	})
-
-//console.log(data);
 
 	// Get minimum and maximum dates for x axis.
 	var mindate = d3.min(data, function(d){return d.date})
 	var maxdate = d3.max(data, function(d){return d.date})
-console.log(mindate);
-console.log(maxdate);
   var miny = d3.min(data, function(d){return d.change})
   var maxy = d3.max(data, function(d){return d.change})
 
 	// defining x scale.
 	var x = d3.time.scale()
 			.domain([mindate, maxdate])
-			//.nice(d3.time.month)
 			.range([0, width]);
 
 	// defining XAxis
 	var xAxis = d3.svg.axis()
-		.scale(x)
+		  .scale(x)
 	    .orient("center");
 
 	// defining y scale
 	var y = d3.scale.linear()
-		//.domain([d3.min(data_country, function(d){return d.new_case}), d3.max(data_country, function(d){
-		//	return d.new_case;
-		//})])
-    .domain([miny, -miny])
-		.range([height, 0]);
+      .domain([miny, -miny])
+		    .range([height, 0]);
 
 	//defining y axis.
 	var yAxis = d3.svg.axis()
-		.scale(y)
+		  .scale(y)
 	    .orient("left");
-
-	svg.call(tip);
-
 
  	svg.append("g")
     	.attr("class", "y axis")
     	.call(yAxis);
 
-	// sticking the x/y axis LABEL into the canvas (Svg)
+	// sticking the x/y axis LABEL into the canvas
 	svg.append("text")
 		.attr("x", width/2)
 		.attr("y", height + (margin.bottom/1.5) )
@@ -228,52 +116,43 @@ console.log(maxdate);
 	// ########################################## PLOTTING THE LINE ##########################################
 	// #######################################################################################################
 
-for (let i = 0; i<elements.length; i++) {
-  country_selection = elements[i]
-  //Get country data for all dates
-  var country_raw = data.filter(function(d){
-              return d.country == country_selection
-  })
+  for (let i = 0; i<elements.length; i++) {
+      country_selection = elements[i]
+      // Get country data for all dates
+      var country_raw = data.filter(function(d){
+          return d.country == country_selection
+      })
 
   //create a compare function for sorting
   function compare(a, b) {
-    const dateA = a.date;
-    const dateB = b.date;
-
-    let comparison = 0;
-    if (dateA > dateB) {
-      comparison = 1;
-    } else if (dateA < dateB) {
-      comparison = -1;
-    }
+      const dateA = a.date;
+      const dateB = b.date;
+      let comparison = 0;
+      if (dateA > dateB) {
+          comparison = 1;
+      } else if (dateA < dateB) {
+          comparison = -1;
+      }
     return comparison;
   }
 
   //sort the array of objects
   country_raw.sort(compare);
 
-  //create the running average
-  //#region
-  let runningsum = 0;
   const len = country_raw.length;
   let item = null;
   var rolling_avg = new Array()
-  let avg_window = 7
-  let rolling_avg_inst = 0
 
   for (let i = 0 ; i <len; i++){
     let item = country_raw[i];
-    //if(item["date"].getTime() > cutoffdate.getTime()){
       rolling_avg.push({date: item["date"], avg: country_raw[i][metric_select]})
-    //}
   }
-  //#endregion
 
   // creating the line object
   var trendline = d3.svg.line()
             .x(function(d){return x(d.date)})
             .y(function(d){return y(d.avg)})
-//console.log(rolling_avg);
+
   // sticking the line into the canvas.
   var line = svg
     .append("g")
@@ -281,68 +160,44 @@ for (let i = 0; i<elements.length; i++) {
     .attr("class", "line")
     .style("stroke", "#CCCCCC")
     .attr("d", trendline(rolling_avg))
-}
+  }
 
-// sticking the x and y axis into the canvas.
-svg.append("g")
+  // sticking the x axis into the canvas. (To have them over the grey lines)
+  svg.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height/2 + ")")
     .call(xAxis)
     .selectAll("text")
     .style("font-size", "12px")
-      .style("text-anchor", "end")
-      .attr("dx", ".7em")
-      .attr("dy", ".55em")
-      //.attr("transform", "rotate(-90)" );
+    .style("text-anchor", "end")
+    .attr("dx", ".7em")
+    .attr("dy", ".55em")
 
 
-country_selection = elements[0]
+  country_selection = elements[0]
 
-//Get country data for all dates
-var country_raw = data.filter(function(d){
-            return d.country == country_selection
-})
+  //Get country data for all dates
+  var country_raw = data.filter(function(d){
+      return d.country == country_selection
+  })
 
-//create a compare function for sorting
-function compare(a, b) {
-  const dateA = a.date;
-  const dateB = b.date;
 
-  let comparison = 0;
-  if (dateA > dateB) {
-    comparison = 1;
-  } else if (dateA < dateB) {
-    comparison = -1;
-  }
-  return comparison;
-}
+  //sort the array of objects
+  country_raw.sort(compare);
 
-//sort the array of objects
-country_raw.sort(compare);
-
-//create the running average
-//#region
-let runningsum = 0;
-const len = country_raw.length;
-let item = null;
-var rolling_avg = new Array()
-let avg_window = 7
-let rolling_avg_inst = 0
+  //create the running average
+  //#region
+  const len = country_raw.length;
+  let item = null;
+  var rolling_avg = new Array()
 
 for (let i = 0 ; i <len; i++){
   let item = country_raw[i];
-  //if(item["date"].getTime() > cutoffdate.getTime()){
     rolling_avg.push({date: item["date"], avg: country_raw[i][metric_select]})
-  //}
 }
-//#endregion
+
 
 // creating the line object
-var trendline = d3.svg.line()
-          .x(function(d){return x(d.date)})
-          .y(function(d){return y(d.avg)})
-console.log(miny);
-console.log(maxy);
           svg.append("linearGradient")
               .attr("id", "line-gradient")
               .attr("gradientUnits", "userSpaceOnUse")
