@@ -274,7 +274,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 	var selector = d3.select("#drop1")
     	.append("select")
     	.attr("id","dropdown1")
-      .attr("class", "custom-select")
+	  	.attr("class", "selectpicker")
     	.on("change", function(d){
         	selection = document.getElementById("dropdown1");
 
@@ -387,6 +387,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		});
 
 	//drop down options.
+	// Would need to potentially delete. 
     selector.selectAll("option")
       .data(elements)
       .enter().append("option")

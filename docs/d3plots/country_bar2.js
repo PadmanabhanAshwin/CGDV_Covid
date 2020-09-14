@@ -275,7 +275,8 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 
 	var selector = d3.select("#drop2")
     	.append("select")
-    	.attr("id","dropdown2")
+		.attr("id","dropdown2")
+		.attr("class", "selectpicker")
     	.on("change", function(d){
         	selection = document.getElementById("dropdown2");
           // Selecting the right div box to display for article
