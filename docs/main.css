@@ -324,7 +324,7 @@ div.tooltip{
 
 
 /* Basic Structure CSS **********************************************************************/
-.container {
+.covid-container {
   width: 100vw;
   height: 100vh;
   position: absolute;
