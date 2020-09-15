@@ -20,8 +20,11 @@
 .line {
     fill: none;
     stroke: url(#line-gradient);
-    stroke-width: 2px;
 }
+
+/*.line:hover{
+  stroke-width: 4px;
+}*/
 
 </style>
 </head>
@@ -115,6 +118,17 @@ d3.csv("change-visitors-grocery-stores.csv", function(d){
 
 	// ########################################## PLOTTING THE LINE ##########################################
 	// #######################################################################################################
+  var tip = d3.select("body")
+              .append("div")
+              .style("position", "absolute")
+              .style("opacity", 0)
+              .style("background-color", "white")
+              .style("border", "solid")
+              .style("border-width", "2px")
+              .style("border-radius", "5px")
+              .style("padding", "5px")
+              .style("left", (event.pageX)+"px")
+              .style("top", (event.pageY)+"px")
 
   for (let i = 0; i<elements.length; i++) {
       country_selection = elements[i]
@@ -124,17 +138,17 @@ d3.csv("change-visitors-grocery-stores.csv", function(d){
       })
 
   //create a compare function for sorting
-  function compare(a, b) {
-      const dateA = a.date;
-      const dateB = b.date;
-      let comparison = 0;
-      if (dateA > dateB) {
-          comparison = 1;
-      } else if (dateA < dateB) {
-          comparison = -1;
-      }
-    return comparison;
-  }
+    function compare(a, b) {
+        const dateA = a.date;
+        const dateB = b.date;
+        let comparison = 0;
+        if (dateA > dateB) {
+            comparison = 1;
+        } else if (dateA < dateB) {
+            comparison = -1;
+        }
+        return comparison;
+    }
 
   //sort the array of objects
   country_raw.sort(compare);
@@ -157,9 +171,24 @@ d3.csv("change-visitors-grocery-stores.csv", function(d){
   var line = svg
     .append("g")
     .append("path")
-    .attr("class", "line")
-    .style("stroke", "#CCCCCC")
-    .attr("d", trendline(rolling_avg))
+        .attr("class", "line")
+        .style("stroke", "#CCCCCC")
+        .style("stroke-width", "2px")
+        .attr("d", trendline(rolling_avg))
+    .on("mouseover", function(d){
+        tip
+          .style("opacity", 1)
+          .html("The exact value of<br>this cell is: " + function(d){return x(d.avg)})
+        d3.select(this)
+          .style("stroke-width", "4px")
+    })
+    .on("mouseout", function(d){
+      tip
+        .style("opacity", 0)
+      d3.select(this)
+        .style("stroke-width", "2px")
+        .style("stoke", "#CCCCCC")
+    })
   }
 
   // sticking the x axis into the canvas. (To have them over the grey lines)
