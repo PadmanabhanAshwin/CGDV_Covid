@@ -66,7 +66,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
         // get relevenet data on latest date.
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
-        //console.log(reldata)
+        //gconsole.log(reldata)
         if (titles){
         // PLOTTING THE COUNTRY TITLES!!
             for (var k = 0; k < reldata.length; k++){
