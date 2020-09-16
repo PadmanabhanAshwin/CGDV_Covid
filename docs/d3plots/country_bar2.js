@@ -133,7 +133,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.enter()
 		.append("rect")
 		.attr("class","rectangle2")
-		.attr("width", width2/data_country.length)
+		.attr("width", (width2 - margin2.left - margin2.right)/data_country.length)
 		.attr("height", function(d){
 			return height2 - y(d[metric_select]);
 		})
@@ -171,6 +171,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.attr("x", width2/2)
 		.attr("y", height2 + (margin2.bottom/2) )
 		.style("text-anchor", "middle")
+    .style("fill", "#3B3B3B")
 		.text("Date")
 
 	svg2.append("text")
@@ -178,6 +179,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.attr("y", -margin2.left/1.8)
 		.attr("x",  -(height2 / 2))
 		.style("text-anchor", "middle")
+    .style("fill", "#3B3B3B")
 		.text("Daily cases")
 
 	// ########################################## PLOTTING THE LINE ##########################################
@@ -239,6 +241,33 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.attr("class", "line")
 		.style("stroke", line_color[country_selection])
 		.attr("d", trendline(rolling_avg))
+
+
+	// Sticking label line into svg. First horizontal line, then slanted line.
+	svg2.append("line")
+		.attr("x1", margin2.left)
+		.attr("y1", (height2/1.5 ) )
+		.attr("x2", margin2.left + 20)
+		.attr("y2", (height2/1.5 ))
+		.style("stroke", "#7C7C7C")
+
+	// appending slant lines
+	var slantline2 = svg2.append("line")
+		.attr("x1", margin2.left + 20 )
+		.attr("y1", height2/1.5 )
+		.attr("x2", x(rolling_avg[rolling_avg.length/2].date ) )
+		.attr("y2", y(rolling_avg[rolling_avg.length/2].avg ))
+		.style("stroke", "#7C7C7C")
+
+	//appending text "7 day average"
+	svg2.append("text")
+		.attr("x", margin2.left -10)
+		.attr("y", height2/1.6)
+		.style("text-anchor", "middle")
+		.style("font-size", "10px")
+    .style("fill", "#3B3B3B")
+		.text("7 day average")
+
 
 
 	// ############################################# TRANSITION #######################################################
@@ -340,6 +369,12 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 				.style("stroke", line_color[country_selection] )
 				.attr("d", trendline(rolling_avg))
 				.ease("linear")
+
+			slantline2
+				.transition()
+				.delay(delay*data_country.length)
+				.attr("x2", x(rolling_avg[rolling_avg.length/2].date ) )
+				.attr("y2", y(rolling_avg[rolling_avg.length/2].avg ))
 
 
 			// not sure why it is g.y.axis; calling the new axis.

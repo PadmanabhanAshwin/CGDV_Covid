@@ -1,12 +1,13 @@
 // ######################################## ADDING VIZ INFORMATION ################################################################
 var population = {"Brazil": 212744941, "Bangladesh": 164891619, "India": 1381567238, "Indonesia": 273855751, "Pakistan": 221366281, "Sri Lanka": 21423831, "Egypt": 102548214}
 var country_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
-var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
+var line_color = {"Bangladesh": "#622a62", "Brazil": "#002776", "Egypt": "#624B1C", "India": "#4363D8", "Indonesia": "#C05912", "Pakistan": "#228B22", "Sri Lanka": "#C88C00"}
 
 // #####################k################### LAYOUT DEFINITION #######################################################################
 const margin = {top: 20, right: 10, bottom: 10, left: 90},
     width = 1300 - margin.left - margin.right,
     height = 260 - margin.top - margin.bottom;
+
 var svg = d3.select("#countrycomparegraph").append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -21,7 +22,9 @@ var svg = d3.select("#countrycomparegraph").append("svg")
 
 // Assign number of pixels to the left for country titels. Higher value pushes title to right
 var text_padding = {"Bangladesh": 0, "Brazil": 17, "Egypt": 33, "India": 18, "Indonesia": 10, "Pakistan": -2, "Sri Lanka": -5}
+
 // ################################################ ASYNC CALL FOR DATA ########################################################
+
 d3.csv("covid_case_death_counts.csv", function(d){
 	// Creating an accesor function with relevent data type rtype.
 	var dateparse = d3.time.format("%m/%d/%y").parse
@@ -37,9 +40,9 @@ d3.csv("covid_case_death_counts.csv", function(d){
 }, function(error, rawdata){
     // Position the clusters
     function creategroup(){
-      //AP: Height/width will be the for canvas. Drawing space is effective width (eff_width/eff_height) shown below;
-      var eff_width = width - margin.left - margin.right
-      var eff_height = height-margin.top-margin.bottom
+        //AP: Height/width will be the for canvas. Drawing space is effective width (eff_width/eff_height) shown below;
+        var eff_width = width - margin.left - margin.right
+        var eff_height = height-margin.top-margin.bottom
         var centers = { "Bangladesh": {"center": {x: 0, y:eff_height/2}},
                     "Brazil": {"center": {x: 13*eff_width/84, y:eff_height/2}},
                     "Egypt": {"center": {x: 26*eff_width/84, y:eff_height/2}},
@@ -47,11 +50,10 @@ d3.csv("covid_case_death_counts.csv", function(d){
                     "Indonesia": {"center": {x: 52*eff_width/84, y:eff_height/2}},
                     "Pakistan": {"center": {x: 65*eff_width/84, y:eff_height/2}},
                     "Sri Lanka": {"center": {x: 78*eff_width/84, y:eff_height/2}},
-                 }
-        return centers
+                    }
+            return centers
     }
     var c_map = creategroup()
-    console.log(c_map)
     var fill = d3.scale.category10();
 
     // ######################################## GET DATA FOR PLOTTING ################################################
@@ -64,7 +66,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
         // get relevenet data on latest date.
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
-        console.log(reldata)
+        //console.log(reldata)
         if (titles){
         // PLOTTING THE COUNTRY TITLES!!
             for (var k = 0; k < reldata.length; k++){
@@ -72,6 +74,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
                     .attr("x", c_map[reldata[k].country].center.x + text_padding[reldata[k].country])
                     .attr("y", c_map[reldata[k].country].center.y/20)
                     .attr("text-anchor", "middle")
+                    .style("fill", "#3B3B3B")
                     .text(reldata[k].country)
             }
         }
@@ -115,12 +118,12 @@ d3.csv("covid_case_death_counts.csv", function(d){
             proportions[min_ix].value += (100 - eff_sum)
         }
         for (var i = 0; i<zero_pro_array.length; i++){
-            console.log("Zero pro ix = " , zero_pro_array[i])
-            console.log("Adding to= ", proportions[zero_pro_array[i]])
+            //console.log("Zero pro ix = " , zero_pro_array[i])
+            //console.log("Adding to= ", proportions[zero_pro_array[i]])
             proportions[zero_pro_array[i]].value += 1
             proportions[max_ix].value -= 1
         }
-        console.log(proportions)
+        //console.log(proportions)
         return proportions
     }
 
@@ -142,6 +145,8 @@ d3.csv("covid_case_death_counts.csv", function(d){
     var nodes = findata.map(function(d, i) {
         return {index: i, center: c_map[d.country].center, country: d.country};
     });
+
+    // defining the force directed graph.
     var force = d3.layout.force()
         .nodes(nodes)
         .size([width, height])
@@ -156,21 +161,24 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .attr("cy", function(d) { return d.y; })
             .attr("r", 5)
             .style("fill", function(d) { return country_color[d.country]; })
-            //.style("stroke", function(d, i) { return d3.rgb(country_color[d.country]).darker(2); }) Nice trick!
-            .style("stroke", function(d, i) { return stroke_color[d.country]; })
+            .style("stroke", function(d, i) { return line_color[d.country]; })
+            //.style("stroke", function(d, i) { return stroke_color[d.country]; })
             //.call(force.drag)
-           // .on("mouseover", function() { d3.event.stopPropagation(); });
-
+            // .on("mouseover", function() { d3.event.stopPropagation(); });
+console.log(line_color);
     force.start()
 
+    // appearance transition.
     svg.style("opacity", 1e-6)
         .transition()
-            .duration(1000)
-            .style("opacity", 1);
+        .duration(1000)
+        .style("opacity", 1);
 
     d3.select("body")
         .on("mouseover", mouseover);
 
+
+    // runs initially when the forced directed graph is defined.
     function tick(e) {
         // e.alpha constantly reduces with each tick..
         var k = 2*e.alpha;
@@ -190,21 +198,22 @@ d3.csv("covid_case_death_counts.csv", function(d){
     }
 
     function movenode(e){
-        var k = 3*e.alpha;
+        var k = 3*(e.alpha);
         nodes.forEach(function(node){
             var temp_center_ = node.center
             node.x += (temp_center_.x - node.x)*k;
             node.y += (temp_center_.y - node.y)*k;
         });
+
         node.transition()
             .delay(320)
             .duration(1000)
             .attr("cx", function(d){return d.x})
             .attr("cy", function(d){return d.y})
-            .ease("poly-in",1.17);
+            .ease("poly-in",1);
     }
 
-    function transition(){
+    function transitions(){
         // Get the data for the transition:
         var processdata = calcValue(rawdata, this.value, false);
         var backup_findata = findata
@@ -236,7 +245,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         d3.selectAll(".node")
             .data(nodes)
             .style("fill", function(d) { return country_color[d.country]; })
-            .style("stroke", function(d, i) { return stroke_color[d.country]; })
+            .style("stroke", function(d, i) { return line_color[d.country]; })
 
 
         force.nodes(nodes)
@@ -244,6 +253,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
                 .on("tick", movenode)
                 .start()
     }
-    d3.selectAll("input").on("change", transition)
+    d3.selectAll("input").on("change", transitions)
 
 });

@@ -1,4 +1,6 @@
 var case_counts = {"Bangladesh": 1000, "Brazil": 100000, "Egypt": 2000, "India": 200000, "Indonesia": 3000, "Pakistan": 7000, "Sri Lanka": 4000}
+var death_counts = {"Bangladesh": 100, "Brazil": 10000, "Egypt": 200, "India": 20000, "Indonesia": 300, "Pakistan": 700, "Sri Lanka": 400}
+
 
 var clicks1 = new Array()
 var ix1 = 0 
@@ -48,6 +50,8 @@ var count1 = d3.select("#drop1")
                     ix1 = ix1 + 1
                     clicks1.push(selection1.value)
                     animateValue("s1_counting_left",case_counts[clicks1[ix1-1]], case_counts[clicks1[ix1]], 1000)
+                    animateValue("s1_counting_left_deaths",death_counts[clicks1[ix1-1]], death_counts[clicks1[ix1]], 1000)
+
                 })
 
 var count2 = d3.select("#drop2")
@@ -56,4 +60,6 @@ var count2 = d3.select("#drop2")
         ix2 = ix2 + 1
         clicks2.push(selection2.value)
         animateValue("s1_counting_right",case_counts[clicks2[ix2-1]], case_counts[clicks2[ix2]], 1000)
+        animateValue("s1_counting_right_deaths",death_counts[clicks2[ix2-1]], death_counts[clicks2[ix2]], 1000)
+
     })

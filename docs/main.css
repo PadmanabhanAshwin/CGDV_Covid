@@ -47,11 +47,18 @@ table { border-collapse: collapse; border-spacing: 0;}
   margin: 10px;
 }
 
+.s1-counting_death {
+  width:100%;
+  margin: 10px;
+  font-size: 44px;
+}
+
 .s1-country {
   width: 21%;
   height: 65%;
   bottom: 0;
   display: none;
+  animation: zoom 1.5s;
 }
 
 .s1-country p{
@@ -79,13 +86,13 @@ table { border-collapse: collapse; border-spacing: 0;}
 }
 
 .s1-dropdown > select {
-  border-color: #FFFFFF00;
+  border-color: rgba(10, 9, 9, 0);
   padding: 5px 10px;
   border-radius: 0;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-color: transparent;
   background-color: transparent;
+  box-shadow: none;
 }
-
 
 .left {
   position: absolute;
@@ -97,11 +104,100 @@ table { border-collapse: collapse; border-spacing: 0;}
   right: 0;
 }
 
+/* SLIDE 2 CSS ***************************************************************************/
+
+.s2-top-left {
+  width: 40%;
+  height: 40%;
+  position: relative;
+}
+
+.s2-top-right {
+  width: 60%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.s2-bottom-left {
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.s2-bottom-right {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* CUSTOM SELECT ***************************************/
+.custom-select {
+  position: relative;
+  margin: 5px 0 0 5px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #3B3B3B transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #3B3B3B transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  padding: 8px 0px 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 /* D3 STYLING STUFF **************************************************************************/
 /******** GRAPH FORCE DIRECT GRAPH ******************************************/
 .node {
-  stroke-width: 1.5px;
+  stroke-width: 1px;
 }
 
 .title{
@@ -291,6 +387,8 @@ div.tooltip{
 }
 
 .animate-fading {animation:opac 5s}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+@keyframes zoom{from{transform:scale(0.2,0.2)} to{transform: scale(1,1)}}
 
 .arrow{
   cursor: pointer;

@@ -2,7 +2,9 @@
 // : ################################ MR: Change Animation settings ########################################
 
 var country_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
-var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
+//var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
+var stroke_color = {"Bangladesh": "#622a62", "Brazil": "#002776", "Egypt": "#624B1C", "India": "#4363D8", "Indonesia": "#C05912", "Pakistan": "#228B22", "Sri Lanka": "#C88C00"}
+
 var line_color = {"Bangladesh": "#622a62", "Brazil": "#002776", "Egypt": "#624B1C", "India": "#4363D8", "Indonesia": "#C05912", "Pakistan": "#228B22", "Sri Lanka": "#C88C00"}
 var delay = 5
 
@@ -32,6 +34,7 @@ var tip = d3.tip()
   .html(function(d) {
     return "<span class=\"d3-tool-heading\">"+ timeformatter(d.date) + "</span><br> <p1 style='color:grey'> New case count:</p1> <span style='color:darkblue'>" + d.new_case + "</span> <br>  <p1 style='color:grey'> Cummlative case count:</p1> <span style='color:darkblue'>" + d.total_case + "</span>" ;
   })
+
 
 // ##################################### Data async call: ####################################################################
 d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/visualizations/covid_case_death_counts.csv", function(d){
@@ -72,7 +75,6 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 	var data_country = data.filter(function(d){
 							return d.country == country_selection
 	})
-
 
 	// Get minimum and maximum dates for x axis.
 	var mindate = d3.min(data_country, function(d){return d.date})
@@ -124,14 +126,13 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
       	.style("font-size", "10px")
         .style("text-anchor", "end");
 
-
 	// sticking the rectangles into the canvas.
 	svg1.selectAll("rectangle1")
 		.data(data_country)
 		.enter()
 		.append("rect")
 		.attr("class","rectangle1")
-		.attr("width", width1/data_country.length)
+		.attr("width", (width1 - margin1.left - margin1.right)/(data_country.length))
 		.attr("height", function(d){
 			return height1 - y(d[metric_select]);
 		})
@@ -169,6 +170,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.attr("x", width1/2)
 		.attr("y", height1 + (margin1.bottom/2) )
 		.style("text-anchor", "middle")
+    .style("fill", "#3B3B3B")
 		.text("Date")
 
 	svg1.append("text")
@@ -176,7 +178,10 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.attr("y", -margin1.left/1.8)
 		.attr("x",  -(height1 / 2))
 		.style("text-anchor", "middle")
+    .style("fill", "#3B3B3B")
 		.text("Daily cases")
+
+
 
 	// ########################################## PLOTTING THE LINE ##########################################
 	// #######################################################################################################
@@ -238,6 +243,30 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.style("stroke", line_color[country_selection])
 		.attr("d", trendline(rolling_avg))
 
+	// Sticking label line into svg. First horizontal line, then slanted line.
+	svg1.append("line")
+		.attr("x1", margin1.left)
+		.attr("y1", (height1/1.5 ) )
+		.attr("x2", margin1.left + 20)
+		.attr("y2", (height1/1.5 ))
+		.style("stroke", "#7C7C7C")
+
+	// appending slant lines
+	var slantline = svg1.append("line")
+		.attr("x1", margin1.left + 20 )
+		.attr("y1", height1/1.5 )
+		.attr("x2", x(rolling_avg[rolling_avg.length/2].date ) )
+		.attr("y2", y(rolling_avg[rolling_avg.length/2].avg ))
+		.style("stroke", "#7C7C7C")
+
+	//appending text "7 day average"
+	svg1.append("text")
+		.attr("x", margin1.left -10)
+		.attr("y", height1/1.6)
+		.style("text-anchor", "middle")
+		.style("font-size", "10px")
+    .style("fill", "#3B3B3B")
+		.text("7 day average")
 
 	// ############################################# TRANSITION #######################################################
 	// ################################################################################################################
@@ -333,7 +362,6 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 				}
 			}
 			//#endregion
-
 			//define the line transition.
 			line
 				.transition()
@@ -342,8 +370,13 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 				.attr("d", trendline(rolling_avg))
 				.ease("linear")
 
+			slantline
+				.transition()
+				.delay(delay*data_country.length)
+				.attr("x2", x(rolling_avg[rolling_avg.length/2].date ) )
+				.attr("y2", y(rolling_avg[rolling_avg.length/2].avg ))
 
-			// not sure why it is g.y.axis; calling the new axis.
+		// not sure why it is g.y.axis; calling the new axis.
       d3.selectAll("g.y.axis1")
      		.transition()
         .call(yAxis);
