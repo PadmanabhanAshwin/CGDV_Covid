@@ -25,18 +25,24 @@ var text_padding = {"Bangladesh": 0, "Brazil": 17, "Egypt": 33, "India": 18, "In
 
 // ################################################ ASYNC CALL FOR DATA ########################################################
 
-d3.csv("covid_case_death_counts.csv", function(d){
+d3.csv("covid_relevent.csv", function(d){
 	// Creating an accesor function with relevent data type rtype.
-	var dateparse = d3.time.format("%m/%d/%y").parse
+    var dateparse = d3.time.format("%m/%d/%y").parse
 
 	return {
-		country: d["COUNTRY_SHORT_NAME"],
-		total_case: +d["PEOPLE_POSITIVE_CASES_COUNT"],
-		new_death : +d["PEOPLE_DEATH_NEW_COUNT"],
-		new_case : +d["PEOPLE_POSITIVE_NEW_CASES_COUNT"],
-		total_death : +d["PEOPLE_DEATH_COUNT"],
-		date: dateparse(d["REPORT_DATE"])
-		};
+		country: d["location"],
+		total_case: +d["total_cases"],
+		new_death : +d["new_deaths"],
+		new_case : +d["new_cases"],
+		total_death : +d["total_deaths"],
+        date: dateparse(d["date"]),
+        hospital_beds: +d["hospital_beds_per_thousand"]*+d["population"]/1000,
+        //positivity: +d["positive_rate"], 
+        gdp: +d["gdp_per_capita"]*+d["population"],
+        population: +d["population"], 
+        poverty: +d["extreme_poverty"]
+        };
+        
 }, function(error, rawdata){
     // Position the clusters
     function creategroup(){
@@ -66,7 +72,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
         // get relevenet data on latest date.
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
-        //gconsole.log(reldata)
+        console.log(reldata)
         if (titles){
         // PLOTTING THE COUNTRY TITLES!!
             for (var k = 0; k < reldata.length; k++){
@@ -80,7 +86,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         }
 
         // data per capita
-        var measure_per_capita = reldata.map(function(d){return {country: d.country, value: d[measure]/population[d.country]}})
+        var measure_per_capita = reldata.map(function(d){ return {country: d.country, value: d[measure]/d["population"]}})
 
         // normalize: find sum and divide.
         var sum = 0
