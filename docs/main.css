@@ -191,7 +191,7 @@ div {
 /* D3 STYLING STUFF **************************************************************************/
 /******** GRAPH FORCE DIRECT GRAPH ******************************************/
 .node {
-  stroke-width: 1.5px;
+  stroke-width: 1px;
 }
 
 .title{

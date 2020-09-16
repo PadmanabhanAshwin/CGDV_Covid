@@ -178,7 +178,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.attr("x",  -(height1 / 2))
 		.style("text-anchor", "middle")
 		.text("Daily cases")
-	
+
 
 
 	// ########################################## PLOTTING THE LINE ##########################################
@@ -241,7 +241,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.style("stroke", line_color[country_selection])
 		.attr("d", trendline(rolling_avg))
 
-	// Sticking label line into svg. First horizontal line, then slanted line. 
+	// Sticking label line into svg. First horizontal line, then slanted line.
 	svg1.append("line")
 		.attr("x1", margin1.left)
 		.attr("y1", (height1/1.5 ) )
@@ -264,7 +264,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 		.style("text-anchor", "middle")
 		.style("font-size", "10px")
 		.text("7 day average")
-	
+
 	// ############################################# TRANSITION #######################################################
 	// ################################################################################################################
 
@@ -366,7 +366,7 @@ d3.csv("https://raw.githubusercontent.com/PadmanabhanAshwin/CGDV_Covid/master/vi
 				.style("stroke", line_color[country_selection] )
 				.attr("d", trendline(rolling_avg))
 				.ease("linear")
-			
+
 			slantline
 				.transition()
 				.delay(delay*data_country.length)
