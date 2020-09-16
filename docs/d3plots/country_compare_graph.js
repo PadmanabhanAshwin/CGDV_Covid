@@ -74,6 +74,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
                     .attr("x", c_map[reldata[k].country].center.x + text_padding[reldata[k].country])
                     .attr("y", c_map[reldata[k].country].center.y/20)
                     .attr("text-anchor", "middle")
+                    .style("fill", "#3B3B3B")
                     .text(reldata[k].country)
             }
         }
