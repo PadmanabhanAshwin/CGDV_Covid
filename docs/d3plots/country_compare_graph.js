@@ -21,7 +21,7 @@ var svg = d3.select("#countrycomparegraph").append("svg")
 //    .text("Total Cases Per Capita")
 
 // Assign number of pixels to the left for country titels. Higher value pushes title to right
-var text_padding = {"Bangladesh": 0, "Brazil": 17, "Egypt": 33, "India": 18, "Indonesia": 10, "Pakistan": -2, "Sri Lanka": -5}
+var text_padding = {"Bangladesh": 0, "Brazil": 8, "Egypt": 22, "India": 8, "Indonesia": 6, "Pakistan": -8, "Sri Lanka": -5}
 
 // ################################################ ASYNC CALL FOR DATA ########################################################
 
