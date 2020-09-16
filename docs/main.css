@@ -6,9 +6,16 @@ caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,fig
 footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
 { margin: 0; padding: 0; border: 0; font-size: 97%; font-family: 'Raleway', sans-serif; vertical-align: baseline; }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block;}
-h1, h2, h3, h4, h5, h6 {font-family: 'Merriweather', serif !important; margin: 0.1em; color:#3B3B3B}
+#page-overrides h1, h2, h3, h4, h5, h6 {font-family: 'Merriweather', serif !important; margin: 0.1em; color:#3B3B3B;}
+#page-overrides h1 {font-size: 2em; font-weight:bold;}
+#page-overrides h2 {font-size: 1.5em; font-weight:bold;}
+#page-overrides h3 {font-size: 1.17em; font-weight:bold;}
+#page-overrides h4 {font-size: 1em; font-weight:bold;}
+#page-overrides h5 {font-size: 0.83em; font-weight:bold;}
+#page-overrides h6 {font-size: 0.67em; font-weight:bold;}
+
 .span-high { font-family: 'Shadows Into Light' !important; font-weight: bold;}
-body { line-height: 1; color: #3B3B3B;}
+#page-overrides body { line-height: 1; color: #3B3B3B;}
 p { font-size: 97%; font-family: 'Raleway', sans-serif !important; line-height: 1.3; text-align: left; margin-bottom:1em;}
 ol,ul { list-style: none;}
 blockquote,q { quotes: none;}
@@ -203,12 +210,16 @@ input[type=radio] {
   display: none;
 }
 
+#page-overrides label {margin:0;}
+
 label {
   display: inline-block;
   cursor: pointer;
   font-weight: bold;
-    border-radius: 5px;
+  border-radius: 5px;
   padding: 12px 10px 4px 10px;
+  box-sizing: content-box;
+  margin: 0;
 }
 
 input[type=radio]:checked + label {
