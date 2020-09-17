@@ -1,7 +1,7 @@
 // ######################################## ADDING VIZ INFORMATION ################################################################
 var population = {"Brazil": 212744941, "Bangladesh": 164891619, "India": 1381567238, "Indonesia": 273855751, "Pakistan": 221366281, "Sri Lanka": 21423831, "Egypt": 102548214}
 var country_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
-var line_color = {"Bangladesh": "#622a62", "Brazil": "#002776", "Egypt": "#624B1C", "India": "#4363D8", "Indonesia": "#C05912", "Pakistan": "#228B22", "Sri Lanka": "#C88C00"}
+var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
 
 // #####################k################### LAYOUT DEFINITION #######################################################################
 const margin = {top: 20, right: 10, bottom: 10, left: 90},
@@ -66,7 +66,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
 
         // get relevenet data on latest date.
         var reldata = rawdata.filter(function(d){ return d.date.getTime() == maxdate.getTime()})
-        //gconsole.log(reldata)
+        //console.log(reldata)
         if (titles){
         // PLOTTING THE COUNTRY TITLES!!
             for (var k = 0; k < reldata.length; k++){
@@ -74,7 +74,6 @@ d3.csv("covid_case_death_counts.csv", function(d){
                     .attr("x", c_map[reldata[k].country].center.x + text_padding[reldata[k].country])
                     .attr("y", c_map[reldata[k].country].center.y/20)
                     .attr("text-anchor", "middle")
-                    .style("fill", "#3B3B3B")
                     .text(reldata[k].country)
             }
         }
@@ -146,7 +145,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         return {index: i, center: c_map[d.country].center, country: d.country};
     });
 
-    // defining the force directed graph.
+    // defining the force directed graph. 
     var force = d3.layout.force()
         .nodes(nodes)
         .size([width, height])
@@ -161,14 +160,14 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .attr("cy", function(d) { return d.y; })
             .attr("r", 5)
             .style("fill", function(d) { return country_color[d.country]; })
-            .style("stroke", function(d, i) { return line_color[d.country]; })
+            .style("stroke", function(d, i) { return d3.rgb(country_color[d.country]).darker(2); }) 
             //.style("stroke", function(d, i) { return stroke_color[d.country]; })
             //.call(force.drag)
             // .on("mouseover", function() { d3.event.stopPropagation(); });
-console.log(line_color);
+
     force.start()
 
-    // appearance transition.
+    // appearance transition. 
     svg.style("opacity", 1e-6)
         .transition()
         .duration(1000)
@@ -178,7 +177,7 @@ console.log(line_color);
         .on("mouseover", mouseover);
 
 
-    // runs initially when the forced directed graph is defined.
+    // runs initially when the forced directed graph is defined. 
     function tick(e) {
         // e.alpha constantly reduces with each tick..
         var k = 2*e.alpha;
@@ -204,7 +203,7 @@ console.log(line_color);
             node.x += (temp_center_.x - node.x)*k;
             node.y += (temp_center_.y - node.y)*k;
         });
-
+        
         node.transition()
             .delay(320)
             .duration(1000)
@@ -245,7 +244,7 @@ console.log(line_color);
         d3.selectAll(".node")
             .data(nodes)
             .style("fill", function(d) { return country_color[d.country]; })
-            .style("stroke", function(d, i) { return line_color[d.country]; })
+            .style("stroke", function(d, i) { return stroke_color[d.country]; })
 
 
         force.nodes(nodes)

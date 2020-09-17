@@ -37,7 +37,7 @@ Storytelling using Visualizations for showcasing economic impact of COVID19 viru
 
 ## Visualizations
 
-Forced directed graph source- Filtered owid-covid-data by relevant countries. 
+TBD
 
 ## For Contributing: 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

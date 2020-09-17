@@ -22,11 +22,11 @@ blockquote,q { quotes: none;}
 blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
 table { border-collapse: collapse; border-spacing: 0;}
 
-/*div {
+div {
   border-color: #FF0000;
   border-width: thin;
   border-style: solid;
-}*/
+}
 
 /* SLIDE 1 CSS ******************************************************************************/
 
@@ -54,18 +54,11 @@ table { border-collapse: collapse; border-spacing: 0;}
   margin: 10px;
 }
 
-.s1-counting_death {
-  width:100%;
-  margin: 10px;
-  font-size: 44px;
-}
-
 .s1-country {
   width: 21%;
   height: 65%;
   bottom: 0;
   display: none;
-  animation: zoom 1.5s;
 }
 
 .s1-country p{
@@ -204,7 +197,7 @@ table { border-collapse: collapse; border-spacing: 0;}
 /* D3 STYLING STUFF **************************************************************************/
 /******** GRAPH FORCE DIRECT GRAPH ******************************************/
 .node {
-  stroke-width: 1px;
+  stroke-width: 1.5px;
 }
 
 .title{
@@ -398,8 +391,6 @@ div.tooltip{
 }
 
 .animate-fading {animation:opac 5s}@keyframes opac{from{opacity:0} to{opacity:1}}
-
-@keyframes zoom{from{transform:scale(0.2,0.2)} to{transform: scale(1,1)}}
 
 .arrow{
   cursor: pointer;
