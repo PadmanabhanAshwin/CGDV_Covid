@@ -4,13 +4,14 @@ var country_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1
 var stroke_color = {"Bangladesh": "#BF71BF", "Brazil": "#5E66D5", "Egypt": "#C1834F", "India": "#5EC5F0", "Indonesia": "#F89756", "Pakistan": "#69C95F", "Sri Lanka": "#F0CB4A"}
 
 // #####################k################### LAYOUT DEFINITION #######################################################################
-const margin = {top: 20, right: 10, bottom: 10, left: 90},
+const margin = {top: 10, right: 10, bottom: 20, left: 100},
     width = 1300 - margin.left - margin.right,
     height = 260 - margin.top - margin.bottom;
 
 var svg = d3.select("#countrycomparegraph").append("svg")
     .attr("width", width)
     .attr("height", height)
+    .attr("id", "page-overrides")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -145,7 +146,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         return {index: i, center: c_map[d.country].center, country: d.country};
     });
 
-    // defining the force directed graph. 
+    // defining the force directed graph.
     var force = d3.layout.force()
         .nodes(nodes)
         .size([width, height])
@@ -160,14 +161,14 @@ d3.csv("covid_case_death_counts.csv", function(d){
             .attr("cy", function(d) { return d.y; })
             .attr("r", 5)
             .style("fill", function(d) { return country_color[d.country]; })
-            .style("stroke", function(d, i) { return d3.rgb(country_color[d.country]).darker(2); }) 
+            .style("stroke", function(d, i) { return d3.rgb(country_color[d.country]).darker(2); })
             //.style("stroke", function(d, i) { return stroke_color[d.country]; })
             //.call(force.drag)
             // .on("mouseover", function() { d3.event.stopPropagation(); });
 
     force.start()
 
-    // appearance transition. 
+    // appearance transition.
     svg.style("opacity", 1e-6)
         .transition()
         .duration(1000)
@@ -177,7 +178,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
         .on("mouseover", mouseover);
 
 
-    // runs initially when the forced directed graph is defined. 
+    // runs initially when the forced directed graph is defined.
     function tick(e) {
         // e.alpha constantly reduces with each tick..
         var k = 2*e.alpha;
@@ -203,7 +204,7 @@ d3.csv("covid_case_death_counts.csv", function(d){
             node.x += (temp_center_.x - node.x)*k;
             node.y += (temp_center_.y - node.y)*k;
         });
-        
+
         node.transition()
             .delay(320)
             .duration(1000)

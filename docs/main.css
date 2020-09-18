@@ -13,7 +13,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 #page-overrides h4 {font-size: 1em; font-weight:bold;}
 #page-overrides h5 {font-size: 0.83em; font-weight:bold;}
 #page-overrides h6 {font-size: 0.67em; font-weight:bold;}
-
+#page-overrides svg {box-sizing: content-box;}
 .span-high { font-family: 'Shadows Into Light' !important; font-weight: bold;}
 #page-overrides body { line-height: 1; color: #3B3B3B;}
 p { font-size: 97%; font-family: 'Raleway', sans-serif !important; line-height: 1.3; text-align: left; margin-bottom:1em;}
@@ -22,11 +22,11 @@ blockquote,q { quotes: none;}
 blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
 table { border-collapse: collapse; border-spacing: 0;}
 
-div {
+/*div {
   border-color: #FF0000;
   border-width: thin;
   border-style: solid;
-}
+}*/
 
 /* SLIDE 1 CSS ******************************************************************************/
 
@@ -34,6 +34,15 @@ div {
   height: 28%;
   width: 100%;
   top: 0;
+  box-sizing: content-box;
+}
+
+.s1-graph::before {
+  box-sizing: content-box;
+}
+
+.s1-graph::after {
+  box-sizing: content-box;
 }
 
 .s1-main-plot {
@@ -79,6 +88,7 @@ div {
   position: absolute;
   transform: translate(-35%, 0);
   -ms-transform: translate(-35%,0);
+  box-sizing: content-box;
 }
 
 .s1-dropdown{
@@ -210,7 +220,7 @@ input[type=radio] {
   display: none;
 }
 
-#page-overrides label {margin:0;}
+#page-overrides label {margin:0; line-height: normal;}
 
 label {
   display: inline-block;
